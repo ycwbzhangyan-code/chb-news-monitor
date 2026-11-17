@@ -1,0 +1,118 @@
+{
+  "report_date": "2026-11-05",
+  "generated_at": "2026-11-16T01:42:04.710Z",
+  "stats": {
+    "total": 6,
+    "A": 0,
+    "B": 5,
+    "C": 1,
+    "X": 0
+  },
+  "tiers": {
+    "B": [
+      {
+        "id": 1,
+        "hash": "b66458dccedf99a60df65c34c5d197c9910e75ed",
+        "title": "创兴银行参与「香港国际海岸清洁运动2026」以实际行动守护海洋环境",
+        "link": "https://www.chbank.com/sc/personal/footer/about-ch-bank/media-releases/index.shtml",
+        "description": "创兴银行义工联同环保促进会于乌溪沙渡头湾举办海岸清洁活动。香港环境保护署「海岸清洁活动」官方页面列明「环保促进会及创兴银行将在乌溪沙渡头湾举办海岸清洁活动（不开放予公众参与）」，与新闻稿相互印证。",
+        "source_id": "s_official",
+        "source_name": "创兴银行官网·新闻稿",
+        "source_cat": "hk_print",
+        "lang": "CH",
+        "pub_date": "2026-11-05T00:00:00+08:00",
+        "fetch_date": "2026-11-13T01:09:45.253Z",
+        "tier": "B",
+        "tier_reason": "AI深度研判",
+        "status": "active",
+        "ai_researched": 1,
+        "created_at": "2026-11-13T01:09:45.257Z"
+      },
+      {
+        "id": 11,
+        "hash": "93bd0927cc0049456ac84ca950857547bb644471",
+        "title": "新客户定期存款优惠（2026年11月5日至11月30日）",
+        "link": "https://www.chbank.com/offer/nfs2/index.html?lang=sc",
+        "description": "3个月港元定存：50万至1,000万港元 3.25%；2万至49.9999万港元 3.15%。1个月港元定存：50万至1,000万 2.5%；2万至49.9999万 2.45%。3/6/9/12个月美元定存：3,000至125万美元 4.2%。3个月澳元定存：3,800至19万澳元 4.7%。须为全新客户并完成至少2项指定项目。",
+        "source_id": "s_official",
+        "source_name": "创兴银行官网·存款优惠",
+        "source_cat": "hk_print",
+        "lang": "CH",
+        "pub_date": "2026-11-05T00:00:00+08:00",
+        "fetch_date": "2026-11-13T01:09:45.256Z",
+        "tier": "B",
+        "tier_reason": "AI深度研判",
+        "status": "active",
+        "ai_researched": 1,
+        "created_at": "2026-11-13T01:09:45.257Z"
+      },
+      {
+        "hash": "abb7a8b8ac441eac3f2e3a79e96d2071c1d8773e",
+        "title": "创兴银行参与\"香港国际海岸清洁运动2026\" 以实际行动守护海洋环境",
+        "link": "https://chbank.com/sc/personal/footer/about-ch-bank/media-releases/index.shtml",
+        "description": "创兴银行有限公司积极履行企业社会责任，将ESG理念融入企业文化及社区服务。为支持可持续发展，本行近日组织银行义工及其亲友于10月31日前往石澳后滩，参与由环保促进会统筹的\"香港国际海岸清洁运动2026\"。义工收集的垃圾包括即弃餐具、塑料饮管、塑料袋、发泡胶、玻璃碎片、渔网及铁枝等，并记录数据交予环保促进会作海洋保育研究。自2017年以来，本行累计举办逾100场公益活动，员工参与人次超过2,500场次，志愿服务时数突破7,000小时。未来本行将深化ESG战略，推动绿色金融与可持续投资，扩大\"金融+公益\"生态圈。",
+        "source_id": "ai_search",
+        "source_name": "创兴银行官网",
+        "source_cat": "hk_business",
+        "lang": "CH",
+        "pub_date": "2026-11-05T00:00:00+08:00",
+        "fetch_date": "2026-11-13T06:46:22.727Z",
+        "tier": "B",
+        "tier_reason": "AI深度搜索",
+        "status": "active",
+        "ai_researched": 1,
+        "id": 15,
+        "created_at": "2026-11-13T06:46:22.729Z"
+      },
+      {
+        "id": "wn_580",
+        "title": "創興銀行參與「香港國際海岸清潔運動 2026」",
+        "link": "https://www.hkcd.com.hk/",
+        "description": "匯港通訊報道：創興銀行參與「香港國際海岸清潔運動2026」，組織義工前往石澳後灘清理海岸垃圾，以實際行動守護海洋環境。創興銀行自2017年累計舉辦逾100場公益活動。",
+        "source_name": "匯港通訊",
+        "source_cat": "news_agency",
+        "pub_date": "2026-11-05T00:00:00+08:00",
+        "tier": "B",
+        "tier_reason": "ESG/公益活動",
+        "status": "active",
+        "fingerprint": "wn_580_hash",
+        "collected_at": "2026-11-16T01:41:32.299Z"
+      },
+      {
+        "id": "wn_581",
+        "title": "惠譽：首次授予廣州越秀集團\"A-\"長期發行人評級，展望穩定",
+        "link": "https://www.jiuzhicai.com/",
+        "description": "久期財經報道：惠譽評級首次授予廣州越秀集團\"A-\"長期發行人違約評級，展望穩定。越秀集團為創興銀行母公司，2021年完成私有化。集團資產總額超10,000億元。",
+        "source_name": "久期财经",
+        "source_cat": "hk_business",
+        "pub_date": "2026-11-05T00:00:00+08:00",
+        "tier": "B",
+        "tier_reason": "母公司評級動態",
+        "status": "active",
+        "fingerprint": "wn_581_hash",
+        "collected_at": "2026-11-16T01:41:32.301Z"
+      }
+    ],
+    "C": [
+      {
+        "id": 13,
+        "hash": "ee48a60eba056c0ed0ff416aeaee1bc02385fba6",
+        "title": "【邻近窗口·供参考】創興銀行有限公司 認可機構紀錄冊",
+        "link": "https://vpr.hkma.gov.hk/chi/regulatory-resources/registers/register-of-ais-and-lros/info/100039",
+        "description": "金管局持牌银行纪录册：创兴银行有限公司，中环德辅道中24号创兴银行中心地下。列有年报2025、认可机构财务披露报表（2026年三月、六月）、组织大纲暨章程。修订日期 2026年09月16日。",
+        "source_id": "s_hkma",
+        "source_name": "香港金融管理局",
+        "source_cat": "hk_print",
+        "lang": "CH",
+        "pub_date": "2026-11-05T00:00:00+08:00",
+        "fetch_date": "2026-11-13T01:09:45.256Z",
+        "tier": "C",
+        "tier_reason": "AI深度研判",
+        "status": "active",
+        "ai_researched": 1,
+        "created_at": "2026-11-13T01:09:45.257Z"
+      }
+    ],
+    "X": []
+  }
+}

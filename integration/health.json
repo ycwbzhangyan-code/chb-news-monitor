@@ -1,0 +1,522 @@
+{
+  "chonghing-main": {
+    "source_id": "chonghing-main",
+    "last_status": "ok",
+    "last_error": null,
+    "item_count": 4,
+    "consecutive_failures": 0,
+    "last_run_at": "2026-11-12T23:01:18.822Z"
+  },
+  "chonghing-life": {
+    "source_id": "chonghing-life",
+    "last_status": "ok",
+    "last_error": null,
+    "item_count": 2,
+    "consecutive_failures": 0,
+    "last_run_at": "2026-11-12T23:01:09.111Z"
+  },
+  "hsbc-hk": {
+    "source_id": "hsbc-hk",
+    "last_status": "ok",
+    "last_error": null,
+    "item_count": 1,
+    "consecutive_failures": 0,
+    "last_run_at": "2026-11-12T23:01:54.768Z"
+  },
+  "hsbc-commercial": {
+    "source_id": "hsbc-commercial",
+    "last_status": "ok",
+    "last_error": null,
+    "item_count": 1,
+    "consecutive_failures": 0,
+    "last_run_at": "2026-11-12T23:01:52.328Z"
+  },
+  "hsbc-private": {
+    "source_id": "hsbc-private",
+    "last_status": "ok",
+    "last_error": null,
+    "item_count": 1,
+    "consecutive_failures": 0,
+    "last_run_at": "2026-11-12T23:01:57.713Z"
+  },
+  "cmb-wl-main": {
+    "source_id": "cmb-wl-main",
+    "last_status": "ok",
+    "last_error": null,
+    "item_count": 1,
+    "consecutive_failures": 0,
+    "last_run_at": "2026-11-12T23:01:27.700Z"
+  },
+  "cmb-wl-wechat-service": {
+    "source_id": "cmb-wl-wechat-service",
+    "last_status": "ok",
+    "last_error": null,
+    "item_count": 1,
+    "consecutive_failures": 0,
+    "last_run_at": "2026-11-12T23:01:31.239Z"
+  },
+  "cmb-wl-corp-fin": {
+    "source_id": "cmb-wl-corp-fin",
+    "last_status": "ok",
+    "last_error": null,
+    "item_count": 1,
+    "consecutive_failures": 0,
+    "last_run_at": "2026-11-11T05:59:18.923Z"
+  },
+  "bochk": {
+    "source_id": "bochk",
+    "last_status": "ok",
+    "last_error": null,
+    "item_count": 1,
+    "consecutive_failures": 0,
+    "last_run_at": "2026-11-12T23:00:56.424Z"
+  },
+  "bochk-wechat-bank": {
+    "source_id": "bochk-wechat-bank",
+    "last_status": "ok",
+    "last_error": null,
+    "item_count": 1,
+    "consecutive_failures": 0,
+    "last_run_at": "2026-11-12T23:00:58.486Z"
+  },
+  "boc-hk-commercial": {
+    "source_id": "boc-hk-commercial",
+    "last_status": "ok",
+    "last_error": null,
+    "item_count": 1,
+    "consecutive_failures": 0,
+    "last_run_at": "2026-11-11T05:59:26.487Z"
+  },
+  "hangseng-hk": {
+    "source_id": "hangseng-hk",
+    "last_status": "ok",
+    "last_error": null,
+    "item_count": 1,
+    "consecutive_failures": 0,
+    "last_run_at": "2026-11-12T23:01:47.292Z"
+  },
+  "hangseng-main": {
+    "source_id": "hangseng-main",
+    "last_status": "ok",
+    "last_error": null,
+    "item_count": 1,
+    "consecutive_failures": 0,
+    "last_run_at": "2026-11-12T23:01:49.773Z"
+  },
+  "scb-hk": {
+    "source_id": "scb-hk",
+    "last_status": "ok",
+    "last_error": null,
+    "item_count": 1,
+    "consecutive_failures": 0,
+    "last_run_at": "2026-11-12T23:02:10.418Z"
+  },
+  "citi-hk-service": {
+    "source_id": "citi-hk-service",
+    "last_status": "ok",
+    "last_error": null,
+    "item_count": 1,
+    "consecutive_failures": 0,
+    "last_run_at": "2026-11-12T23:01:24.129Z"
+  },
+  "dbs-hk": {
+    "source_id": "dbs-hk",
+    "last_status": "ok",
+    "last_error": null,
+    "item_count": 1,
+    "consecutive_failures": 0,
+    "last_run_at": "2026-11-12T23:01:36.442Z"
+  },
+  "dbs-hk-alt": {
+    "source_id": "dbs-hk-alt",
+    "last_status": "ok",
+    "last_error": null,
+    "item_count": 1,
+    "consecutive_failures": 0,
+    "last_run_at": "2026-11-12T23:01:38.980Z"
+  },
+  "bea-hk": {
+    "source_id": "bea-hk",
+    "last_status": "ok",
+    "last_error": null,
+    "item_count": 1,
+    "consecutive_failures": 0,
+    "last_run_at": "2026-11-12T23:00:54.049Z"
+  },
+  "dahsing-hk": {
+    "source_id": "dahsing-hk",
+    "last_status": "ok",
+    "last_error": null,
+    "item_count": 1,
+    "consecutive_failures": 0,
+    "last_run_at": "2026-11-12T23:01:33.930Z"
+  },
+  "banker-east": {
+    "source_id": "banker-east",
+    "last_status": "ok",
+    "last_error": null,
+    "item_count": 1,
+    "consecutive_failures": 0,
+    "last_run_at": "2026-11-12T23:00:50.539Z"
+  },
+  "ncb-commercial": {
+    "source_id": "ncb-commercial",
+    "last_status": "ok",
+    "last_error": null,
+    "item_count": 1,
+    "consecutive_failures": 0,
+    "last_run_at": "2026-11-12T23:02:03.707Z"
+  },
+  "icbc-asia": {
+    "source_id": "icbc-asia",
+    "last_status": "ok",
+    "last_error": null,
+    "item_count": 1,
+    "consecutive_failures": 0,
+    "last_run_at": "2026-11-12T23:02:00.760Z"
+  },
+  "ccb-asia": {
+    "source_id": "ccb-asia",
+    "last_status": "ok",
+    "last_error": null,
+    "item_count": 1,
+    "consecutive_failures": 0,
+    "last_run_at": "2026-11-12T23:01:03.061Z"
+  },
+  "bocomm-hk": {
+    "source_id": "bocomm-hk",
+    "last_status": "ok",
+    "last_error": null,
+    "item_count": 1,
+    "consecutive_failures": 0,
+    "last_run_at": "2026-11-12T23:01:00.660Z"
+  },
+  "bocomm-hk-alt": {
+    "source_id": "bocomm-hk-alt",
+    "last_status": "ok",
+    "last_error": null,
+    "item_count": 1,
+    "consecutive_failures": 0,
+    "last_run_at": "2026-11-11T06:00:00.182Z"
+  },
+  "cib-hk": {
+    "source_id": "cib-hk",
+    "last_status": "ok",
+    "last_error": null,
+    "item_count": 1,
+    "consecutive_failures": 0,
+    "last_run_at": "2026-11-12T23:01:21.539Z"
+  },
+  "shangcom-hk": {
+    "source_id": "shangcom-hk",
+    "last_status": "ok",
+    "last_error": null,
+    "item_count": 1,
+    "consecutive_failures": 0,
+    "last_run_at": "2026-11-12T23:02:13.499Z"
+  },
+  "zhong-an-hk": {
+    "source_id": "zhong-an-hk",
+    "last_status": "ok",
+    "last_error": null,
+    "item_count": 1,
+    "consecutive_failures": 0,
+    "last_run_at": "2026-11-12T23:02:20.625Z"
+  },
+  "fusion-bank": {
+    "source_id": "fusion-bank",
+    "last_status": "need_biz",
+    "last_error": "缺少 biz id",
+    "item_count": 0,
+    "consecutive_failures": 17,
+    "last_run_at": "2026-11-12T23:02:20.925Z"
+  },
+  "livi-bank": {
+    "source_id": "livi-bank",
+    "last_status": "need_biz",
+    "last_error": "缺少 biz id",
+    "item_count": 0,
+    "consecutive_failures": 17,
+    "last_run_at": "2026-11-12T23:02:20.925Z"
+  },
+  "we-lab-b": {
+    "source_id": "we-lab-b",
+    "last_status": "ok",
+    "last_error": null,
+    "item_count": 1,
+    "consecutive_failures": 0,
+    "last_run_at": "2026-11-12T23:02:16.168Z"
+  },
+  "elebank": {
+    "source_id": "elebank",
+    "last_status": "ok",
+    "last_error": null,
+    "item_count": 1,
+    "consecutive_failures": 0,
+    "last_run_at": "2026-11-12T23:01:42.002Z"
+  },
+  "we-oriental": {
+    "source_id": "we-oriental",
+    "last_status": "ok",
+    "last_error": null,
+    "item_count": 1,
+    "consecutive_failures": 0,
+    "last_run_at": "2026-11-12T23:02:18.257Z"
+  },
+  "asia-bank": {
+    "source_id": "asia-bank",
+    "last_status": "need_biz",
+    "last_error": "缺少 biz id",
+    "item_count": 0,
+    "consecutive_failures": 17,
+    "last_run_at": "2026-11-12T23:02:20.925Z"
+  },
+  "ant-hk": {
+    "source_id": "ant-hk",
+    "last_status": "ok",
+    "last_error": null,
+    "item_count": 1,
+    "consecutive_failures": 0,
+    "last_run_at": "2026-11-11T06:00:14.985Z"
+  },
+  "ocbc-hk": {
+    "source_id": "ocbc-hk",
+    "last_status": "ok",
+    "last_error": null,
+    "item_count": 1,
+    "consecutive_failures": 0,
+    "last_run_at": "2026-11-12T23:02:08.209Z"
+  },
+  "chiyu-bank": {
+    "source_id": "chiyu-bank",
+    "last_status": "need_biz",
+    "last_error": "缺少 biz id",
+    "item_count": 0,
+    "consecutive_failures": 17,
+    "last_run_at": "2026-11-12T23:02:20.925Z"
+  },
+  "fubon-huaying": {
+    "source_id": "fubon-huaying",
+    "last_status": "ok",
+    "last_error": null,
+    "item_count": 1,
+    "consecutive_failures": 0,
+    "last_run_at": "2026-11-12T23:01:44.762Z"
+  },
+  "hsbc-fb": {
+    "source_id": "hsbc-fb",
+    "last_status": "empty",
+    "last_error": "未取得条目",
+    "item_count": 0,
+    "consecutive_failures": 17,
+    "last_run_at": "2026-11-12T23:02:20.925Z"
+  },
+  "bochk-fb": {
+    "source_id": "bochk-fb",
+    "last_status": "empty",
+    "last_error": "未取得条目",
+    "item_count": 0,
+    "consecutive_failures": 17,
+    "last_run_at": "2026-11-12T23:02:20.925Z"
+  },
+  "chonghing-fb": {
+    "source_id": "chonghing-fb",
+    "last_status": "empty",
+    "last_error": "未取得条目",
+    "item_count": 0,
+    "consecutive_failures": 17,
+    "last_run_at": "2026-11-12T23:02:20.925Z"
+  },
+  "scb-hk-fb": {
+    "source_id": "scb-hk-fb",
+    "last_status": "empty",
+    "last_error": "未取得条目",
+    "item_count": 0,
+    "consecutive_failures": 17,
+    "last_run_at": "2026-11-12T23:02:20.925Z"
+  },
+  "hsbc-ig": {
+    "source_id": "hsbc-ig",
+    "last_status": "empty",
+    "last_error": "未取得条目",
+    "item_count": 0,
+    "consecutive_failures": 17,
+    "last_run_at": "2026-11-12T23:02:20.925Z"
+  },
+  "chonghing-ig": {
+    "source_id": "chonghing-ig",
+    "last_status": "empty",
+    "last_error": "未取得条目",
+    "item_count": 0,
+    "consecutive_failures": 17,
+    "last_run_at": "2026-11-12T23:02:20.925Z"
+  },
+  "bochk-ig": {
+    "source_id": "bochk-ig",
+    "last_status": "empty",
+    "last_error": "未取得条目",
+    "item_count": 0,
+    "consecutive_failures": 17,
+    "last_run_at": "2026-11-12T23:02:20.925Z"
+  },
+  "citi-hk-wealth": {
+    "source_id": "citi-hk-wealth",
+    "last_status": "empty",
+    "last_error": "未取得条目",
+    "item_count": 1,
+    "consecutive_failures": 2,
+    "last_run_at": "2026-11-12T23:01:25.133Z"
+  },
+  "ncb-wechat-bank": {
+    "source_id": "ncb-wechat-bank",
+    "last_status": "ok",
+    "last_error": null,
+    "item_count": 1,
+    "consecutive_failures": 0,
+    "last_run_at": "2026-11-12T23:02:06.189Z"
+  },
+  "cmb-wl-corpfin": {
+    "source_id": "cmb-wl-corpfin",
+    "last_status": "need_biz",
+    "last_error": "缺少 biz id",
+    "item_count": 0,
+    "consecutive_failures": 13,
+    "last_run_at": "2026-11-12T23:02:20.925Z"
+  },
+  "bochk-commercial": {
+    "source_id": "bochk-commercial",
+    "last_status": "need_biz",
+    "last_error": "缺少 biz id",
+    "item_count": 0,
+    "consecutive_failures": 13,
+    "last_run_at": "2026-11-12T23:02:20.925Z"
+  },
+  "hsbc-commercial-fb": {
+    "source_id": "hsbc-commercial-fb",
+    "last_status": "empty",
+    "last_error": "未取得条目",
+    "item_count": 0,
+    "consecutive_failures": 11,
+    "last_run_at": "2026-11-12T23:02:20.925Z"
+  },
+  "hangseng-fb": {
+    "source_id": "hangseng-fb",
+    "last_status": "empty",
+    "last_error": "未取得条目",
+    "item_count": 0,
+    "consecutive_failures": 11,
+    "last_run_at": "2026-11-12T23:02:20.925Z"
+  },
+  "citi-hk-fb": {
+    "source_id": "citi-hk-fb",
+    "last_status": "empty",
+    "last_error": "未取得条目",
+    "item_count": 0,
+    "consecutive_failures": 11,
+    "last_run_at": "2026-11-12T23:02:20.925Z"
+  },
+  "dbs-hk-fb": {
+    "source_id": "dbs-hk-fb",
+    "last_status": "empty",
+    "last_error": "未取得条目",
+    "item_count": 0,
+    "consecutive_failures": 11,
+    "last_run_at": "2026-11-12T23:02:20.925Z"
+  },
+  "bea-hk-fb": {
+    "source_id": "bea-hk-fb",
+    "last_status": "empty",
+    "last_error": "未取得条目",
+    "item_count": 0,
+    "consecutive_failures": 11,
+    "last_run_at": "2026-11-12T23:02:20.925Z"
+  },
+  "dahsing-fb": {
+    "source_id": "dahsing-fb",
+    "last_status": "empty",
+    "last_error": "未取得条目",
+    "item_count": 0,
+    "consecutive_failures": 11,
+    "last_run_at": "2026-11-12T23:02:20.925Z"
+  },
+  "fubon-fb": {
+    "source_id": "fubon-fb",
+    "last_status": "empty",
+    "last_error": "未取得条目",
+    "item_count": 0,
+    "consecutive_failures": 11,
+    "last_run_at": "2026-11-12T23:02:20.925Z"
+  },
+  "hangseng-ig": {
+    "source_id": "hangseng-ig",
+    "last_status": "empty",
+    "last_error": "未取得条目",
+    "item_count": 0,
+    "consecutive_failures": 11,
+    "last_run_at": "2026-11-12T23:02:20.925Z"
+  },
+  "scb-hk-ig": {
+    "source_id": "scb-hk-ig",
+    "last_status": "empty",
+    "last_error": "未取得条目",
+    "item_count": 0,
+    "consecutive_failures": 11,
+    "last_run_at": "2026-11-12T23:02:20.925Z"
+  },
+  "citi-hk-ig": {
+    "source_id": "citi-hk-ig",
+    "last_status": "empty",
+    "last_error": "未取得条目",
+    "item_count": 0,
+    "consecutive_failures": 11,
+    "last_run_at": "2026-11-12T23:02:20.925Z"
+  },
+  "dbs-hk-ig": {
+    "source_id": "dbs-hk-ig",
+    "last_status": "empty",
+    "last_error": "未取得条目",
+    "item_count": 0,
+    "consecutive_failures": 11,
+    "last_run_at": "2026-11-12T23:02:20.925Z"
+  },
+  "chonghing-xhs": {
+    "source_id": "chonghing-xhs",
+    "last_status": "empty",
+    "last_error": "未取得条目",
+    "item_count": 0,
+    "consecutive_failures": 11,
+    "last_run_at": "2026-11-12T23:02:20.925Z"
+  },
+  "hsbc-xhs": {
+    "source_id": "hsbc-xhs",
+    "last_status": "empty",
+    "last_error": "未取得条目",
+    "item_count": 0,
+    "consecutive_failures": 11,
+    "last_run_at": "2026-11-12T23:02:20.925Z"
+  },
+  "bochk-xhs": {
+    "source_id": "bochk-xhs",
+    "last_status": "empty",
+    "last_error": "未取得条目",
+    "item_count": 0,
+    "consecutive_failures": 11,
+    "last_run_at": "2026-11-12T23:02:20.925Z"
+  },
+  "scb-hk-xhs": {
+    "source_id": "scb-hk-xhs",
+    "last_status": "empty",
+    "last_error": "未取得条目",
+    "item_count": 0,
+    "consecutive_failures": 11,
+    "last_run_at": "2026-11-12T23:02:20.925Z"
+  },
+  "citi-hk-xhs": {
+    "source_id": "citi-hk-xhs",
+    "last_status": "empty",
+    "last_error": "未取得条目",
+    "item_count": 0,
+    "consecutive_failures": 11,
+    "last_run_at": "2026-11-12T23:02:20.925Z"
+  }
+}

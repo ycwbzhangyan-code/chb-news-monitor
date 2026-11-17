@@ -1,0 +1,72 @@
+{
+  "report_date": "2026-11-09",
+  "generated_at": "2026-11-16T01:42:04.751Z",
+  "stats": {
+    "total": 3,
+    "A": 0,
+    "B": 1,
+    "C": 2,
+    "X": 0
+  },
+  "tiers": {
+    "B": [
+      {
+        "id": 9,
+        "hash": "2e09ad54af8e618dfc192e11523d4fff67c113a0",
+        "title": "越秀资本与奕斯伟集团签署战略合作框架协议",
+        "link": "https://m.10jqka.com.cn/20261109/c681628062.shtml",
+        "description": "越秀资本党委书记、董事长李锋带队拜访奕斯伟集团，越秀资本副总经理、越秀租赁董事长蒲尚泉，越秀产业基金董事长卢荣，创兴银行北京分行行长路亮等参加交流。李锋介绍越秀集团金融板块整体布局和「银、保、证、投」综合跨境金融生态。",
+        "source_id": "s025",
+        "source_name": "同花順財經·公司要聞",
+        "source_cat": "cn_mainland",
+        "lang": "CH",
+        "pub_date": "2026-11-09T00:00:00+08:00",
+        "fetch_date": "2026-11-13T01:09:45.256Z",
+        "tier": "B",
+        "tier_reason": "AI深度研判",
+        "status": "active",
+        "ai_researched": 1,
+        "created_at": "2026-11-13T01:09:45.257Z"
+      }
+    ],
+    "C": [
+      {
+        "id": 5,
+        "hash": "6484b9f3e7135e59086eeffa0c6a74b281bd0e57",
+        "title": "創興銀行港元定存最高10厘！2026年11月最新定期利率",
+        "link": "https://wealth.hket.com/article/4186443/chbank-hkd-time-deposit-rate-offer",
+        "description": "创兴银行出粮户口1个月10%总年利率（5,000-20,000港元，登记出粮并每月入账≥1万港元，优惠至2026-12-31）；全新客户3个月最高3.25%（50万-1000万港元）、3.15%（2万-50万以下）；1个月最高2.65%/2.6%；云利率3个月3.1%。指定项目包括启动数码银行服务、申请创兴信用卡、开立投资账户完成风险评估、外币兑换累计≥HK$1,000、开立智安存账户。",
+        "source_id": "s008",
+        "source_name": "香港經濟日報·理財",
+        "source_cat": "hk_business",
+        "lang": "CH",
+        "pub_date": "2026-11-09T00:00:00+08:00",
+        "fetch_date": "2026-11-13T01:09:45.256Z",
+        "tier": "C",
+        "tier_reason": "AI深度研判",
+        "status": "active",
+        "ai_researched": 1,
+        "created_at": "2026-11-13T01:09:45.257Z"
+      },
+      {
+        "id": 7,
+        "hash": "8e67c2c8b6a62690204f27f17ed93bd2d6e8b9ea",
+        "title": "US dollar time deposit rate comparison — Chong Hing Bank 4.20% (new customers, cap US$1,250,000)",
+        "link": "https://www.10life.com/en/blog/usd-fixed-deposit-rates",
+        "description": "Updated 9 November 2026. 创兴银行美元定存：新客户4.20%，上限125万美元，3/6/12个月，起存3,000美元，须完成至少2项指定项目、须分行办理，优惠期至11月30日。全港3个月美元定存最高为富邦银行4.45%。",
+        "source_id": "s010",
+        "source_name": "10Life",
+        "source_cat": "hk_business",
+        "lang": "ENG",
+        "pub_date": "2026-11-09T00:00:00+08:00",
+        "fetch_date": "2026-11-13T01:09:45.256Z",
+        "tier": "C",
+        "tier_reason": "AI深度研判",
+        "status": "active",
+        "ai_researched": 1,
+        "created_at": "2026-11-13T01:09:45.257Z"
+      }
+    ],
+    "X": []
+  }
+}

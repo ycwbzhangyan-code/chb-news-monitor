@@ -1,0 +1,35 @@
+{
+  "report_date": "2026-11-04",
+  "generated_at": "2026-11-16T01:42:04.698Z",
+  "stats": {
+    "total": 1,
+    "A": 0,
+    "B": 1,
+    "C": 0,
+    "X": 0
+  },
+  "tiers": {
+    "B": [
+      {
+        "id": 2,
+        "hash": "88a019ea7a23cc535a1905655008682847ffa56e",
+        "title": "重要提示：企业网上银行及流动理财服务电子结单服务功能优化",
+        "link": "https://chbank.com/sc/personal/footer/about-ch-bank/corporate-news/news-releases/news_20261104.shtml",
+        "description": "自2026年12月4日起，企业网银默认提供电子结单；原「设定电子结单」功能改为「纸张结单设定」；「处理定期存款到期确认书」并入电子通知书（电子通知书保留12个月）。查询热线 (852) 3768 6864。",
+        "source_id": "s_official",
+        "source_name": "创兴银行官网·公司资讯",
+        "source_cat": "hk_print",
+        "lang": "CH",
+        "pub_date": "2026-11-04T00:00:00+08:00",
+        "fetch_date": "2026-11-13T01:09:45.256Z",
+        "tier": "B",
+        "tier_reason": "AI深度研判",
+        "status": "active",
+        "ai_researched": 1,
+        "created_at": "2026-11-13T01:09:45.257Z"
+      }
+    ],
+    "C": [],
+    "X": []
+  }
+}

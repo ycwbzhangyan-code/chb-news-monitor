@@ -1,0 +1,50 @@
+{
+  "report_date": "2026-11-12",
+  "generated_at": "2026-11-16T02:00:07.558Z",
+  "stats": {
+    "total": 2,
+    "A": 0,
+    "B": 1,
+    "C": 1,
+    "X": 0
+  },
+  "tiers": {
+    "B": [
+      {
+        "id": "wn_599",
+        "title": "港元定存2026｜全港18大銀行利率大比拼！低門檻之選 無需做任務 最高達4.3厘！",
+        "link": "https://www.ulifestyle.com.hk/",
+        "description": "U Lifestyle報道：全港18大銀行港元定存利率大比拼。低門檻之選無需做任務，最高達4.3厘。創興銀行在18大銀行利率比較中列出。",
+        "source_name": "U Lifestyle",
+        "source_cat": "hk_business",
+        "pub_date": "2026-11-12T00:00:00+08:00",
+        "tier": "B",
+        "tier_reason": "定存比較",
+        "status": "active",
+        "fingerprint": "wn_599_hash",
+        "collected_at": "2026-11-16T01:41:32.301Z"
+      }
+    ],
+    "C": [
+      {
+        "id": 8,
+        "hash": "795c679ca9903aa8c89ef360665def3f35cbd609",
+        "title": "创兴6个月美元定存年利率4.1厘",
+        "link": "https://news.mingpao.com/pns/經濟",
+        "description": "【明報專訊】创兴银行客户经网上/手机银行以1000美元或以上开立6个月美元定存，可享4.1厘年利率。明报财经定存栏。",
+        "source_id": "s001",
+        "source_name": "明報·經濟",
+        "source_cat": "hk_print",
+        "lang": "CH",
+        "pub_date": "2026-11-12T00:00:00+08:00",
+        "fetch_date": "2026-11-13T01:09:45.256Z",
+        "tier": "C",
+        "tier_reason": "AI深度研判",
+        "status": "active",
+        "ai_researched": 1,
+        "created_at": "2026-11-13T01:09:45.257Z"
+      }
+    ],
+    "X": []
+  }
+}

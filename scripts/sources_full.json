@@ -1,0 +1,42 @@
+{
+  "meta": {
+    "version": "2.0",
+    "updated": "2026-11-13",
+    "note": "完整 WiseNews 订阅清单，源自5批扫描件（编号1-4189）",
+    "org": "创兴银行 企业传讯处",
+    "total_extracted": 0,
+    "watch_terms": [
+      "创兴银行",
+      "創興銀行",
+      "创興銀行",
+      "Chong Hing Bank",
+      "Chong Hing",
+      "創興",
+      "创兴",
+      "CHB",
+      "廖創興",
+      "廖创兴",
+      "chbank"
+    ],
+    "category_labels": {
+      "hk_print": "香港中文纸媒",
+      "hk_en": "香港英文媒体",
+      "hk_business": "财经/专业网媒",
+      "cn_mainland": "内地媒体",
+      "tv_radio": "电视/广播/通讯社",
+      "news_agency": "通讯社",
+      "government": "政府/监管机构",
+      "education": "学校/教育机构",
+      "community": "社区/地方媒体",
+      "other": "其他"
+    }
+  },
+  "stats": {
+    "total": 0,
+    "by_lang": {},
+    "by_cat": {},
+    "with_rss": 0,
+    "with_domain": 0
+  },
+  "sources": []
+}

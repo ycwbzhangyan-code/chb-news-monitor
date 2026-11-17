@@ -1,0 +1,46 @@
+{
+  "report_date": "2026-11-07",
+  "generated_at": "2026-11-16T01:42:04.735Z",
+  "stats": {
+    "total": 2,
+    "A": 0,
+    "B": 1,
+    "C": 1,
+    "X": 0
+  },
+  "tiers": {
+    "B": [
+      {
+        "id": "wn_586",
+        "title": "港元定期｜3個月年利率3.8厘 新一年賺$9,400！安穩保本度過年",
+        "link": "https://wealth.hket.com/",
+        "description": "香港經濟日報網報道：3個月港元定期年利率3.8厘，新一年可賺$9,400。創興銀行在比較名單中。文章推薦安穩保本的定存方案。",
+        "source_name": "香港經濟日報網",
+        "source_cat": "hk_print",
+        "pub_date": "2026-11-07T00:00:00+08:00",
+        "tier": "B",
+        "tier_reason": "定存比較",
+        "status": "active",
+        "fingerprint": "wn_586_hash",
+        "collected_at": "2026-11-16T01:41:32.301Z"
+      }
+    ],
+    "C": [
+      {
+        "id": "wn_587",
+        "title": "歐元兌港元匯率 | 香港逾22間銀行/找換店兌換歐元匯價比較｜每日更新",
+        "link": "https://www.ulifestyle.com.hk/",
+        "description": "U Lifestyle報道：歐元兌港元匯率比較，涵蓋香港逾22間銀行及找換店的歐元兌換匯價。創興銀行在比較名單中。每日更新匯率資訊。",
+        "source_name": "U Lifestyle",
+        "source_cat": "hk_business",
+        "pub_date": "2026-11-07T00:00:00+08:00",
+        "tier": "C",
+        "tier_reason": "匯率比較中提及",
+        "status": "active",
+        "fingerprint": "wn_587_hash",
+        "collected_at": "2026-11-16T01:41:32.301Z"
+      }
+    ],
+    "X": []
+  }
+}

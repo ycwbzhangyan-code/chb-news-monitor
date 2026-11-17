@@ -1,0 +1,31 @@
+{
+  "report_date": "2026-11-08",
+  "generated_at": "2026-11-16T01:42:04.737Z",
+  "stats": {
+    "total": 1,
+    "A": 0,
+    "B": 1,
+    "C": 0,
+    "X": 0
+  },
+  "tiers": {
+    "B": [
+      {
+        "id": "wn_588",
+        "title": "6個月港元定期｜最高4厘門檻高、新舊資金3.4厘推介 7銀行3.2厘以上",
+        "link": "https://wealth.hket.com/",
+        "description": "香港經濟日報網報道：6個月港元定期最高4厘但門檻高，新舊資金3.4厘推介。7間銀行提供3.2厘以上息率。創興銀行在比較名單中。",
+        "source_name": "香港經濟日報網",
+        "source_cat": "hk_print",
+        "pub_date": "2026-11-08T00:00:00+08:00",
+        "tier": "B",
+        "tier_reason": "定存比較",
+        "status": "active",
+        "fingerprint": "wn_588_hash",
+        "collected_at": "2026-11-16T01:41:32.301Z"
+      }
+    ],
+    "C": [],
+    "X": []
+  }
+}

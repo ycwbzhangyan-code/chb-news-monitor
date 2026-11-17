@@ -1,0 +1,1120 @@
+{
+  "window": {
+    "days": 30,
+    "prevDays": 30,
+    "requestedDays": 30,
+    "start": "2026-10-14T06:00:44.773Z",
+    "end": "2026-11-13T06:00:44.773Z",
+    "prevStart": "2026-09-14T06:00:44.773Z",
+    "prevEnd": "2026-10-14T06:00:44.773Z",
+    "startDate": "2026-10-14",
+    "endDate": "2026-11-13",
+    "prevStartDate": "2026-09-14",
+    "prevEndDate": "2026-10-14"
+  },
+  "params": {
+    "window": 30,
+    "dateFrom": "2026-10-14",
+    "dateTo": "2026-11-13",
+    "prevFrom": "2026-09-14",
+    "prevTo": "2026-10-14"
+  },
+  "platforms": {
+    "active": 4,
+    "total": 124,
+    "profiles": [
+      {
+        "platform": "wechat",
+        "name": "微信公众号",
+        "short": "公众号",
+        "color": "#0F6E56",
+        "count": 41,
+        "prev": 4,
+        "delta": 37,
+        "weeklyAvg": "9.6",
+        "share": "33.1",
+        "banks": 22,
+        "themes": 11,
+        "avgWords": 1437,
+        "longCount": 16,
+        "shortCount": 5,
+        "shortShare": "12.2",
+        "actions": [
+          "促销/优惠活动",
+          "信贷优惠活动",
+          "高息存款推广"
+        ],
+        "likes": null,
+        "comments": null,
+        "avgLikes": null,
+        "avgComments": null,
+        "lastDate": "2026-11-11",
+        "rank": 1
+      },
+      {
+        "platform": "xiaohongshu",
+        "name": "小红书",
+        "short": "小红书",
+        "color": "#A32D2D",
+        "count": 29,
+        "prev": 1,
+        "delta": 28,
+        "weeklyAvg": "6.8",
+        "share": "23.4",
+        "banks": 25,
+        "themes": 8,
+        "avgWords": 20,
+        "longCount": 0,
+        "shortCount": 29,
+        "shortShare": "100.0",
+        "actions": [
+          "高息存款推广",
+          "促销/优惠活动",
+          "信用卡产品推广"
+        ],
+        "likes": null,
+        "comments": null,
+        "avgLikes": null,
+        "avgComments": null,
+        "lastDate": "2026-11-11",
+        "rank": 2
+      },
+      {
+        "platform": "facebook",
+        "name": "Facebook",
+        "short": "Facebook",
+        "color": "#185FA5",
+        "count": 29,
+        "prev": 1,
+        "delta": 28,
+        "weeklyAvg": "6.8",
+        "share": "23.4",
+        "banks": 25,
+        "themes": 8,
+        "avgWords": 42,
+        "longCount": 0,
+        "shortCount": 29,
+        "shortShare": "100.0",
+        "actions": [
+          "促销/优惠活动",
+          "高息存款推广",
+          "跨境/内地业务"
+        ],
+        "likes": null,
+        "comments": null,
+        "avgLikes": null,
+        "avgComments": null,
+        "lastDate": "2026-11-10",
+        "rank": 3
+      },
+      {
+        "platform": "instagram",
+        "name": "Instagram",
+        "short": "IG",
+        "color": "#854F0B",
+        "count": 25,
+        "prev": 1,
+        "delta": 24,
+        "weeklyAvg": "5.8",
+        "share": "20.2",
+        "banks": 25,
+        "themes": 8,
+        "avgWords": 35,
+        "longCount": 0,
+        "shortCount": 25,
+        "shortShare": "100.0",
+        "actions": [
+          "高息存款推广",
+          "财富/投资产品",
+          "跨境/内地业务"
+        ],
+        "likes": null,
+        "comments": null,
+        "avgLikes": null,
+        "avgComments": null,
+        "lastDate": "2026-11-09",
+        "rank": 4
+      }
+    ],
+    "bankMatrix": [
+      {
+        "platform": "wechat",
+        "name": "微信公众号",
+        "short": "公众号",
+        "color": "#0F6E56",
+        "total": 41,
+        "prev": 4,
+        "bankCount": 22,
+        "rows": [
+          {
+            "bank": "创兴银行",
+            "count": 6,
+            "rank": 1,
+            "share": "14.6"
+          },
+          {
+            "bank": "花旗银行",
+            "count": 3,
+            "rank": 2,
+            "share": "7.3"
+          },
+          {
+            "bank": "中银香港",
+            "count": 3,
+            "rank": 3,
+            "share": "7.3"
+          },
+          {
+            "bank": "招商永隆",
+            "count": 3,
+            "rank": 4,
+            "share": "7.3"
+          },
+          {
+            "bank": "汇丰",
+            "count": 3,
+            "rank": 5,
+            "share": "7.3"
+          },
+          {
+            "bank": "恒生银行",
+            "count": 2,
+            "rank": 6,
+            "share": "4.9"
+          },
+          {
+            "bank": "大新银行",
+            "count": 2,
+            "rank": 7,
+            "share": "4.9"
+          },
+          {
+            "bank": "星展银行",
+            "count": 2,
+            "rank": 8,
+            "share": "4.9"
+          },
+          {
+            "bank": "南商银行",
+            "count": 2,
+            "rank": 9,
+            "share": "4.9"
+          },
+          {
+            "bank": "WeLab Bank",
+            "count": 2,
+            "rank": 10,
+            "share": "4.9"
+          },
+          {
+            "bank": "交通银行香港",
+            "count": 2,
+            "rank": 11,
+            "share": "4.9"
+          },
+          {
+            "bank": "建设银行",
+            "count": 1,
+            "rank": 12,
+            "share": "2.4"
+          },
+          {
+            "bank": "EleBank",
+            "count": 1,
+            "rank": 13,
+            "share": "2.4"
+          },
+          {
+            "bank": "渣打银行",
+            "count": 1,
+            "rank": 14,
+            "share": "2.4"
+          },
+          {
+            "bank": "富邦银行",
+            "count": 1,
+            "rank": 15,
+            "share": "2.4"
+          },
+          {
+            "bank": "中信银行(国际)",
+            "count": 1,
+            "rank": 16,
+            "share": "2.4"
+          },
+          {
+            "bank": "东亚银行",
+            "count": 1,
+            "rank": 17,
+            "share": "2.4"
+          },
+          {
+            "bank": "民生银行",
+            "count": 1,
+            "rank": 18,
+            "share": "2.4"
+          },
+          {
+            "bank": "立桥银行",
+            "count": 1,
+            "rank": 19,
+            "share": "2.4"
+          },
+          {
+            "bank": "华侨银行",
+            "count": 1,
+            "rank": 20,
+            "share": "2.4"
+          },
+          {
+            "bank": "上海商业银行",
+            "count": 1,
+            "rank": 21,
+            "share": "2.4"
+          },
+          {
+            "bank": "蚂蚁银行",
+            "count": 1,
+            "rank": 22,
+            "share": "2.4"
+          }
+        ],
+        "hhi": 637,
+        "topBank": "创兴银行",
+        "topBankCount": 6
+      },
+      {
+        "platform": "xiaohongshu",
+        "name": "小红书",
+        "short": "小红书",
+        "color": "#A32D2D",
+        "total": 29,
+        "prev": 1,
+        "bankCount": 25,
+        "rows": [
+          {
+            "bank": "创兴银行",
+            "count": 3,
+            "rank": 1,
+            "share": "10.3"
+          },
+          {
+            "bank": "中银香港",
+            "count": 2,
+            "rank": 2,
+            "share": "6.9"
+          },
+          {
+            "bank": "汇丰",
+            "count": 2,
+            "rank": 3,
+            "share": "6.9"
+          },
+          {
+            "bank": "工银亚洲",
+            "count": 1,
+            "rank": 4,
+            "share": "3.4"
+          },
+          {
+            "bank": "众安银行",
+            "count": 1,
+            "rank": 5,
+            "share": "3.4"
+          },
+          {
+            "bank": "恒生银行",
+            "count": 1,
+            "rank": 6,
+            "share": "3.4"
+          },
+          {
+            "bank": "建设银行",
+            "count": 1,
+            "rank": 7,
+            "share": "3.4"
+          },
+          {
+            "bank": "南商银行",
+            "count": 1,
+            "rank": 8,
+            "share": "3.4"
+          },
+          {
+            "bank": "渣打银行",
+            "count": 1,
+            "rank": 9,
+            "share": "3.4"
+          },
+          {
+            "bank": "招商永隆",
+            "count": 1,
+            "rank": 10,
+            "share": "3.4"
+          },
+          {
+            "bank": "星展银行",
+            "count": 1,
+            "rank": 11,
+            "share": "3.4"
+          },
+          {
+            "bank": "华侨银行",
+            "count": 1,
+            "rank": 12,
+            "share": "3.4"
+          },
+          {
+            "bank": "花旗银行",
+            "count": 1,
+            "rank": 13,
+            "share": "3.4"
+          },
+          {
+            "bank": "东亚银行",
+            "count": 1,
+            "rank": 14,
+            "share": "3.4"
+          },
+          {
+            "bank": "大新银行",
+            "count": 1,
+            "rank": 15,
+            "share": "3.4"
+          },
+          {
+            "bank": "上海商业银行",
+            "count": 1,
+            "rank": 16,
+            "share": "3.4"
+          },
+          {
+            "bank": "汇立银行",
+            "count": 1,
+            "rank": 17,
+            "share": "3.4"
+          },
+          {
+            "bank": "富邦银行",
+            "count": 1,
+            "rank": 18,
+            "share": "3.4"
+          },
+          {
+            "bank": "交通银行",
+            "count": 1,
+            "rank": 19,
+            "share": "3.4"
+          },
+          {
+            "bank": "天星银行",
+            "count": 1,
+            "rank": 20,
+            "share": "3.4"
+          },
+          {
+            "bank": "中信银行国际",
+            "count": 1,
+            "rank": 21,
+            "share": "3.4"
+          },
+          {
+            "bank": "民生银行",
+            "count": 1,
+            "rank": 22,
+            "share": "3.4"
+          },
+          {
+            "bank": "平安银行",
+            "count": 1,
+            "rank": 23,
+            "share": "3.4"
+          },
+          {
+            "bank": "蚂蚁银行",
+            "count": 1,
+            "rank": 24,
+            "share": "3.4"
+          },
+          {
+            "bank": "电子银行",
+            "count": 1,
+            "rank": 25,
+            "share": "3.4"
+          }
+        ],
+        "hhi": 464,
+        "topBank": "创兴银行",
+        "topBankCount": 3
+      },
+      {
+        "platform": "facebook",
+        "name": "Facebook",
+        "short": "Facebook",
+        "color": "#185FA5",
+        "total": 29,
+        "prev": 1,
+        "bankCount": 25,
+        "rows": [
+          {
+            "bank": "创兴银行",
+            "count": 4,
+            "rank": 1,
+            "share": "13.8"
+          },
+          {
+            "bank": "汇丰",
+            "count": 2,
+            "rank": 2,
+            "share": "6.9"
+          },
+          {
+            "bank": "中银香港",
+            "count": 1,
+            "rank": 3,
+            "share": "3.4"
+          },
+          {
+            "bank": "工银亚洲",
+            "count": 1,
+            "rank": 4,
+            "share": "3.4"
+          },
+          {
+            "bank": "众安银行",
+            "count": 1,
+            "rank": 5,
+            "share": "3.4"
+          },
+          {
+            "bank": "恒生银行",
+            "count": 1,
+            "rank": 6,
+            "share": "3.4"
+          },
+          {
+            "bank": "建设银行",
+            "count": 1,
+            "rank": 7,
+            "share": "3.4"
+          },
+          {
+            "bank": "南商银行",
+            "count": 1,
+            "rank": 8,
+            "share": "3.4"
+          },
+          {
+            "bank": "渣打银行",
+            "count": 1,
+            "rank": 9,
+            "share": "3.4"
+          },
+          {
+            "bank": "招商永隆",
+            "count": 1,
+            "rank": 10,
+            "share": "3.4"
+          },
+          {
+            "bank": "星展银行",
+            "count": 1,
+            "rank": 11,
+            "share": "3.4"
+          },
+          {
+            "bank": "华侨银行",
+            "count": 1,
+            "rank": 12,
+            "share": "3.4"
+          },
+          {
+            "bank": "花旗银行",
+            "count": 1,
+            "rank": 13,
+            "share": "3.4"
+          },
+          {
+            "bank": "东亚银行",
+            "count": 1,
+            "rank": 14,
+            "share": "3.4"
+          },
+          {
+            "bank": "大新银行",
+            "count": 1,
+            "rank": 15,
+            "share": "3.4"
+          },
+          {
+            "bank": "上海商业银行",
+            "count": 1,
+            "rank": 16,
+            "share": "3.4"
+          },
+          {
+            "bank": "汇立银行",
+            "count": 1,
+            "rank": 17,
+            "share": "3.4"
+          },
+          {
+            "bank": "富邦银行",
+            "count": 1,
+            "rank": 18,
+            "share": "3.4"
+          },
+          {
+            "bank": "交通银行",
+            "count": 1,
+            "rank": 19,
+            "share": "3.4"
+          },
+          {
+            "bank": "中信银行国际",
+            "count": 1,
+            "rank": 20,
+            "share": "3.4"
+          },
+          {
+            "bank": "天星银行",
+            "count": 1,
+            "rank": 21,
+            "share": "3.4"
+          },
+          {
+            "bank": "民生银行",
+            "count": 1,
+            "rank": 22,
+            "share": "3.4"
+          },
+          {
+            "bank": "平安银行",
+            "count": 1,
+            "rank": 23,
+            "share": "3.4"
+          },
+          {
+            "bank": "蚂蚁银行",
+            "count": 1,
+            "rank": 24,
+            "share": "3.4"
+          },
+          {
+            "bank": "电子银行",
+            "count": 1,
+            "rank": 25,
+            "share": "3.4"
+          }
+        ],
+        "hhi": 511,
+        "topBank": "创兴银行",
+        "topBankCount": 4
+      },
+      {
+        "platform": "instagram",
+        "name": "Instagram",
+        "short": "IG",
+        "color": "#854F0B",
+        "total": 25,
+        "prev": 1,
+        "bankCount": 25,
+        "rows": [
+          {
+            "bank": "创兴银行",
+            "count": 1,
+            "rank": 1,
+            "share": "4.0"
+          },
+          {
+            "bank": "汇丰",
+            "count": 1,
+            "rank": 2,
+            "share": "4.0"
+          },
+          {
+            "bank": "工银亚洲",
+            "count": 1,
+            "rank": 3,
+            "share": "4.0"
+          },
+          {
+            "bank": "众安银行",
+            "count": 1,
+            "rank": 4,
+            "share": "4.0"
+          },
+          {
+            "bank": "中银香港",
+            "count": 1,
+            "rank": 5,
+            "share": "4.0"
+          },
+          {
+            "bank": "南商银行",
+            "count": 1,
+            "rank": 6,
+            "share": "4.0"
+          },
+          {
+            "bank": "建设银行",
+            "count": 1,
+            "rank": 7,
+            "share": "4.0"
+          },
+          {
+            "bank": "大新银行",
+            "count": 1,
+            "rank": 8,
+            "share": "4.0"
+          },
+          {
+            "bank": "恒生银行",
+            "count": 1,
+            "rank": 9,
+            "share": "4.0"
+          },
+          {
+            "bank": "招商永隆",
+            "count": 1,
+            "rank": 10,
+            "share": "4.0"
+          },
+          {
+            "bank": "渣打银行",
+            "count": 1,
+            "rank": 11,
+            "share": "4.0"
+          },
+          {
+            "bank": "东亚银行",
+            "count": 1,
+            "rank": 12,
+            "share": "4.0"
+          },
+          {
+            "bank": "华侨银行",
+            "count": 1,
+            "rank": 13,
+            "share": "4.0"
+          },
+          {
+            "bank": "花旗银行",
+            "count": 1,
+            "rank": 14,
+            "share": "4.0"
+          },
+          {
+            "bank": "上海商业银行",
+            "count": 1,
+            "rank": 15,
+            "share": "4.0"
+          },
+          {
+            "bank": "星展银行",
+            "count": 1,
+            "rank": 16,
+            "share": "4.0"
+          },
+          {
+            "bank": "富邦银行",
+            "count": 1,
+            "rank": 17,
+            "share": "4.0"
+          },
+          {
+            "bank": "汇立银行",
+            "count": 1,
+            "rank": 18,
+            "share": "4.0"
+          },
+          {
+            "bank": "交通银行",
+            "count": 1,
+            "rank": 19,
+            "share": "4.0"
+          },
+          {
+            "bank": "天星银行",
+            "count": 1,
+            "rank": 20,
+            "share": "4.0"
+          },
+          {
+            "bank": "中信银行国际",
+            "count": 1,
+            "rank": 21,
+            "share": "4.0"
+          },
+          {
+            "bank": "平安银行",
+            "count": 1,
+            "rank": 22,
+            "share": "4.0"
+          },
+          {
+            "bank": "民生银行",
+            "count": 1,
+            "rank": 23,
+            "share": "4.0"
+          },
+          {
+            "bank": "蚂蚁银行",
+            "count": 1,
+            "rank": 24,
+            "share": "4.0"
+          },
+          {
+            "bank": "电子银行",
+            "count": 1,
+            "rank": 25,
+            "share": "4.0"
+          }
+        ],
+        "hhi": 400,
+        "topBank": "创兴银行",
+        "topBankCount": 1
+      }
+    ],
+    "themeDist": [
+      {
+        "platform": "wechat",
+        "name": "微信公众号",
+        "color": "#0F6E56",
+        "total": 41,
+        "rows": [
+          {
+            "id": "wealth",
+            "name": "财富与投资",
+            "count": 7,
+            "share": "17.1"
+          },
+          {
+            "id": "fintech",
+            "name": "数字银行与金融科技",
+            "count": 5,
+            "share": "12.2"
+          },
+          {
+            "id": "brand",
+            "name": "品牌活动与节庆内容",
+            "count": 5,
+            "share": "12.2"
+          },
+          {
+            "id": "other",
+            "name": "其他内容",
+            "count": 4,
+            "share": "9.8"
+          },
+          {
+            "id": "market",
+            "name": "经济与市场观点",
+            "count": 4,
+            "share": "9.8"
+          },
+          {
+            "id": "corporate",
+            "name": "企业公告与公司动态",
+            "count": 4,
+            "share": "9.8"
+          },
+          {
+            "id": "creditcard",
+            "name": "信用卡与支付",
+            "count": 3,
+            "share": "7.3"
+          },
+          {
+            "id": "deposit",
+            "name": "存款与利率",
+            "count": 3,
+            "share": "7.3"
+          },
+          {
+            "id": "promo",
+            "name": "优惠与活动",
+            "count": 2,
+            "share": "4.9"
+          },
+          {
+            "id": "crossborder",
+            "name": "跨境金融与内地业务",
+            "count": 2,
+            "share": "4.9"
+          },
+          {
+            "id": "insurance",
+            "name": "保险与保障",
+            "count": 2,
+            "share": "4.9"
+          }
+        ]
+      },
+      {
+        "platform": "xiaohongshu",
+        "name": "小红书",
+        "color": "#A32D2D",
+        "total": 29,
+        "rows": [
+          {
+            "id": "creditcard",
+            "name": "信用卡与支付",
+            "count": 6,
+            "share": "20.7"
+          },
+          {
+            "id": "other",
+            "name": "其他内容",
+            "count": 5,
+            "share": "17.2"
+          },
+          {
+            "id": "wealth",
+            "name": "财富与投资",
+            "count": 5,
+            "share": "17.2"
+          },
+          {
+            "id": "crossborder",
+            "name": "跨境金融与内地业务",
+            "count": 4,
+            "share": "13.8"
+          },
+          {
+            "id": "deposit",
+            "name": "存款与利率",
+            "count": 4,
+            "share": "13.8"
+          },
+          {
+            "id": "promo",
+            "name": "优惠与活动",
+            "count": 3,
+            "share": "10.3"
+          },
+          {
+            "id": "fintech",
+            "name": "数字银行与金融科技",
+            "count": 1,
+            "share": "3.4"
+          },
+          {
+            "id": "insurance",
+            "name": "保险与保障",
+            "count": 1,
+            "share": "3.4"
+          }
+        ]
+      },
+      {
+        "platform": "facebook",
+        "name": "Facebook",
+        "color": "#185FA5",
+        "total": 29,
+        "rows": [
+          {
+            "id": "crossborder",
+            "name": "跨境金融与内地业务",
+            "count": 7,
+            "share": "24.1"
+          },
+          {
+            "id": "wealth",
+            "name": "财富与投资",
+            "count": 6,
+            "share": "20.7"
+          },
+          {
+            "id": "deposit",
+            "name": "存款与利率",
+            "count": 5,
+            "share": "17.2"
+          },
+          {
+            "id": "creditcard",
+            "name": "信用卡与支付",
+            "count": 3,
+            "share": "10.3"
+          },
+          {
+            "id": "other",
+            "name": "其他内容",
+            "count": 3,
+            "share": "10.3"
+          },
+          {
+            "id": "fintech",
+            "name": "数字银行与金融科技",
+            "count": 2,
+            "share": "6.9"
+          },
+          {
+            "id": "promo",
+            "name": "优惠与活动",
+            "count": 2,
+            "share": "6.9"
+          },
+          {
+            "id": "insurance",
+            "name": "保险与保障",
+            "count": 1,
+            "share": "3.4"
+          }
+        ]
+      },
+      {
+        "platform": "instagram",
+        "name": "Instagram",
+        "color": "#854F0B",
+        "total": 25,
+        "rows": [
+          {
+            "id": "wealth",
+            "name": "财富与投资",
+            "count": 6,
+            "share": "24.0"
+          },
+          {
+            "id": "crossborder",
+            "name": "跨境金融与内地业务",
+            "count": 5,
+            "share": "20.0"
+          },
+          {
+            "id": "other",
+            "name": "其他内容",
+            "count": 5,
+            "share": "20.0"
+          },
+          {
+            "id": "creditcard",
+            "name": "信用卡与支付",
+            "count": 3,
+            "share": "12.0"
+          },
+          {
+            "id": "promo",
+            "name": "优惠与活动",
+            "count": 3,
+            "share": "12.0"
+          },
+          {
+            "id": "corporate",
+            "name": "企业公告与公司动态",
+            "count": 1,
+            "share": "4.0"
+          },
+          {
+            "id": "insurance",
+            "name": "保险与保障",
+            "count": 1,
+            "share": "4.0"
+          },
+          {
+            "id": "deposit",
+            "name": "存款与利率",
+            "count": 1,
+            "share": "4.0"
+          }
+        ]
+      }
+    ],
+    "chonghingByPlatform": [
+      {
+        "platform": "wechat",
+        "name": "微信公众号",
+        "color": "#0F6E56",
+        "count": 6,
+        "platformTotal": 41,
+        "share": "14.6",
+        "peerShare": "14.6",
+        "rank": 1,
+        "active": true
+      },
+      {
+        "platform": "xiaohongshu",
+        "name": "小红书",
+        "color": "#A32D2D",
+        "count": 3,
+        "platformTotal": 29,
+        "share": "10.3",
+        "peerShare": "10.3",
+        "rank": 1,
+        "active": true
+      },
+      {
+        "platform": "facebook",
+        "name": "Facebook",
+        "color": "#185FA5",
+        "count": 4,
+        "platformTotal": 29,
+        "share": "13.8",
+        "peerShare": "13.8",
+        "rank": 1,
+        "active": true
+      },
+      {
+        "platform": "instagram",
+        "name": "Instagram",
+        "color": "#854F0B",
+        "count": 1,
+        "platformTotal": 25,
+        "share": "4.0",
+        "peerShare": "4.0",
+        "rank": 1,
+        "active": true
+      }
+    ],
+    "coverage": [
+      {
+        "platform": "wechat",
+        "name": "微信公众号",
+        "short": "公众号",
+        "color": "#0F6E56",
+        "count": 41,
+        "prev": 4,
+        "banks": 22
+      },
+      {
+        "platform": "xiaohongshu",
+        "name": "小红书",
+        "short": "小红书",
+        "color": "#A32D2D",
+        "count": 29,
+        "prev": 1,
+        "banks": 25
+      },
+      {
+        "platform": "facebook",
+        "name": "Facebook",
+        "short": "Facebook",
+        "color": "#185FA5",
+        "count": 29,
+        "prev": 1,
+        "banks": 25
+      },
+      {
+        "platform": "instagram",
+        "name": "Instagram",
+        "short": "IG",
+        "color": "#854F0B",
+        "count": 25,
+        "prev": 1,
+        "banks": 25
+      }
+    ]
+  },
+  "byCategory": {
+    "risk": 9,
+    "chonghing": 11,
+    "competitor": 63,
+    "industry": 14,
+    "other": 27
+  },
+  "total": {
+    "win": 124,
+    "prev": 7,
+    "all": 137
+  }
+}

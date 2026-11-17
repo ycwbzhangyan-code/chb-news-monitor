@@ -1,0 +1,64 @@
+name: CHB News Daily Collection
+
+on:
+  schedule:
+    # 每天香港时间早上8:00（UTC 0:00）运行
+    - cron: '0 0 * * *'
+  workflow_dispatch: # 支持手动触发
+
+jobs:
+  collect-and-report:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+          cache: 'npm'
+          cache-dependency-path: chb-news-site/package-lock.json
+
+      - name: Install Dependencies
+        working-directory: chb-news-site
+        run: npm install
+
+      - name: Run Daily Collection
+        working-directory: chb-news-site
+        env:
+          SMTP_HOST: ${{ secrets.SMTP_HOST }}
+          SMTP_PORT: ${{ secrets.SMTP_PORT }}
+          SMTP_USER: ${{ secrets.SMTP_USER }}
+          SMTP_PASS: ${{ secrets.SMTP_PASS }}
+          FROM_ADDR: ${{ secrets.FROM_ADDR }}
+          TO_ADDRS: ${{ secrets.TO_ADDRS }}
+          BCC_ADDRS: ${{ secrets.BCC_ADDRS }}
+        run: node deploy/cloud/daily_collect.js
+
+      - name: Commit Updated Data
+        working-directory: chb-news-site
+        run: |
+          git config --global user.name "CHB Monitor Bot"
+          git config --global user.email "chb-monitor-bot@chonghing.uk"
+          git add data/news_items.json data/reports.json data/fetch_logs.json data/source_status.json
+          if git diff --staged --quiet; then
+            echo "No data changes to commit"
+          else
+            git commit -m "daily: $(date -u +%Y-%m-%d) news collection update"
+            git push
+          fi
+
+      - name: Trigger Vercel Deploy
+        if: success()
+        env:
+          VERCEL_DEPLOY_HOOK: ${{ secrets.VERCEL_DEPLOY_HOOK }}
+        run: |
+          if [ -n "$VERCEL_DEPLOY_HOOK" ]; then
+            curl -X POST "$VERCEL_DEPLOY_HOOK"
+            echo "Vercel deploy triggered"
+          else
+            echo "No Vercel deploy hook configured, skipping"
+          fi

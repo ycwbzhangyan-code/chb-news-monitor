@@ -1,0 +1,100 @@
+{
+  "report_date": "2026-11-10",
+  "generated_at": "2026-11-16T01:42:04.763Z",
+  "stats": {
+    "total": 5,
+    "A": 0,
+    "B": 1,
+    "C": 4,
+    "X": 0
+  },
+  "tiers": {
+    "B": [
+      {
+        "id": "wn_589",
+        "title": "港元定存｜1個月速賺$3,500！5款10厘至20厘精選 年尾自製花紅",
+        "link": "https://wealth.hket.com/",
+        "description": "香港經濟日報網報道：1個月港元定存可速賺$3,500，精選5款10厘至20厘高息定存。創興銀行在比較名單中。年尾自製花紅的定存攻略。",
+        "source_name": "香港經濟日報網",
+        "source_cat": "hk_print",
+        "pub_date": "2026-11-10T00:00:00+08:00",
+        "tier": "B",
+        "tier_reason": "定存比較",
+        "status": "active",
+        "fingerprint": "wn_589_hash",
+        "collected_at": "2026-11-16T01:41:32.301Z"
+      }
+    ],
+    "C": [
+      {
+        "hash": "e1ce57c2fd7ba0704f8bdeff9a44394dd084e82c",
+        "title": "创兴银行有限公司横琴粤澳深度合作区支行司机服务采购结果公告",
+        "link": "https://www.qianlima.com/common/agents_info.jsp?id=3115812",
+        "description": "创兴银行有限公司横琴粤澳深度合作区支行发布司机服务采购结果公告，公告日期为2026年11月10日。该采购项目为创兴银行横琴粤澳深度合作区支行的日常运营配套服务采购，涉及支行司机外包服务。此前该支行曾于2025年12月发布司机外包服务采购结果公告，本次为新一轮采购周期。创兴银行横琴支行成立于2016年，位于广东省珠海市，注册资本1000万元，参与招投标项目23次，拥有行政许可10个。",
+        "source_id": "ai_search",
+        "source_name": "千里马招标网",
+        "source_cat": "hk_business",
+        "lang": "CH",
+        "pub_date": "2026-11-10T00:00:00+08:00",
+        "fetch_date": "2026-11-13T06:46:22.729Z",
+        "tier": "C",
+        "tier_reason": "AI深度搜索",
+        "status": "active",
+        "ai_researched": 1,
+        "id": 17,
+        "created_at": "2026-11-13T06:46:22.729Z"
+      },
+      {
+        "hash": "4825744266268ff44f09b2c259a7a1a93a202a2d",
+        "title": "广州越秀集团2026年度第八期超短期融资券续发募集说明书",
+        "link": "https://file.finance.sina.com.cn/211.154.219.97:9494/MRGG/BOND/2026/2026-11/2026-11-10/25479194.PDF",
+        "description": "广州越秀集团股份有限公司发布2026年度第八期超短期融资券续发募集说明书，本次注册金额人民币200亿元，本期发行金额8亿元，发行期限270天，无信用增进。牵头主承销商为华夏银行股份有限公司，联席主承销商为恒丰银行股份有限公司。越秀集团是创兴银行的母公司，创兴银行作为越秀集团金融板块的重要组成部分，与越秀资本共同构成越秀集团境内外两大金融业务平台。",
+        "source_id": "ai_search",
+        "source_name": "新浪财经（债券公告）",
+        "source_cat": "cn_mainland",
+        "lang": "CH",
+        "pub_date": "2026-11-10T00:00:00+08:00",
+        "fetch_date": "2026-11-13T06:46:22.729Z",
+        "tier": "C",
+        "tier_reason": "AI深度搜索",
+        "status": "active",
+        "ai_researched": 1,
+        "id": 19,
+        "created_at": "2026-11-13T06:46:22.729Z"
+      },
+      {
+        "hash": "ca38f8b8d59d2a483e2bbd31c161239c0495c65b",
+        "title": "广州越秀集团SCP002将于2026年11月17日进行付息兑付",
+        "link": "https://www.cnfin.com/kx/detail/20261110/4493466_1.html",
+        "description": "广州越秀集团股份有限公司发布公告称，\"26越秀集团SCP002\"将于2026年11月17日进行付息兑付。该债券发行总额为10亿元，债券期限为0.5918年。越秀集团为创兴银行母公司，其融资活动与创兴银行作为旗下金融板块重要组成密切相关。",
+        "source_id": "ai_search",
+        "source_name": "中国金融信息网/新华财经",
+        "source_cat": "cn_mainland",
+        "lang": "CH",
+        "pub_date": "2026-11-10T00:00:00+08:00",
+        "fetch_date": "2026-11-13T06:46:22.729Z",
+        "tier": "C",
+        "tier_reason": "AI深度搜索",
+        "status": "active",
+        "ai_researched": 1,
+        "id": 20,
+        "created_at": "2026-11-13T06:46:22.729Z"
+      },
+      {
+        "id": "wn_590",
+        "title": "兌換台幣攻略｜7大台幣兌換最抵心得ATM提款唔係最平？港元換台幣哪裡換",
+        "link": "https://www.ulifestyle.com.hk/",
+        "description": "U Lifestyle報道：台幣兌換攻略，7大台幣兌換最抵心得。創興銀行在銀行兌換匯率比較中提及。文章比較ATM提款、銀行櫃檯和找換店的匯率差異。",
+        "source_name": "U Lifestyle",
+        "source_cat": "hk_business",
+        "pub_date": "2026-11-10T00:00:00+08:00",
+        "tier": "C",
+        "tier_reason": "匯率比較中提及",
+        "status": "active",
+        "fingerprint": "wn_590_hash",
+        "collected_at": "2026-11-16T01:41:32.301Z"
+      }
+    ],
+    "X": []
+  }
+}

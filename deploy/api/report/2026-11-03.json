@@ -1,0 +1,53 @@
+{
+  "report_date": "2026-11-03",
+  "generated_at": "2026-11-16T01:42:04.685Z",
+  "stats": {
+    "total": 2,
+    "A": 0,
+    "B": 0,
+    "C": 2,
+    "X": 0
+  },
+  "tiers": {
+    "B": [],
+    "C": [
+      {
+        "id": 12,
+        "hash": "2512515826adef1eec38609be14beebe9a5962aa",
+        "title": "【邻近窗口·供参考】HKMA 银行诈骗警示：创兴银行名列其中",
+        "link": "https://www.hkma.gov.hk:8443/eng/news-and-media/scam-alert/2026/11/20261103-3",
+        "description": "金管局警示：东亚银行、上海商业银行、创兴银行、集友银行、富邦银行、汇丰银行发布涉及欺诈网站及伪冒网上银行登录画面的新闻稿。属安全提示类，非本行负面事件。日期略早于监测窗口。",
+        "source_id": "s_hkma",
+        "source_name": "香港金融管理局",
+        "source_cat": "hk_print",
+        "lang": "ENG",
+        "pub_date": "2026-11-03T00:00:00+08:00",
+        "fetch_date": "2026-11-13T01:09:45.256Z",
+        "tier": "C",
+        "tier_reason": "AI深度研判",
+        "status": "active",
+        "ai_researched": 1,
+        "created_at": "2026-11-13T01:09:45.257Z"
+      },
+      {
+        "hash": "95727a1b30ae7080c4a51bcf97f063d4af6ebedf",
+        "title": "创兴银行深圳分行招聘信息更新",
+        "link": "https://m.liepin.com/company/9496537/",
+        "description": "猎聘平台显示创兴银行有限公司深圳分行于2026年11月3日更新招聘信息，正在招聘多个职位，包括银行公司业务客户经理（16-30k）、对公客户经理助理应届生岗位（8-12k）、支行负责人（35-65k，深圳南山区）、银行实习生公司业务方向（100-120元/天）等。深圳分行成立于2016年11月25日，位于深圳市南山区中国华润大厦。",
+        "source_id": "ai_search",
+        "source_name": "猎聘",
+        "source_cat": "hk_business",
+        "lang": "CH",
+        "pub_date": "2026-11-03T00:00:00+08:00",
+        "fetch_date": "2026-11-13T06:46:22.729Z",
+        "tier": "C",
+        "tier_reason": "AI深度搜索",
+        "status": "active",
+        "ai_researched": 1,
+        "id": 25,
+        "created_at": "2026-11-13T06:46:22.729Z"
+      }
+    ],
+    "X": []
+  }
+}

@@ -1,0 +1,52 @@
+# Dependencies
+node_modules/
+
+# Logs
+*.log
+npm-debug.log*
+
+# Runtime data (Vercel serverless 临时文件)
+.tmp/
+.vercel/
+
+# 环境变量（绝不提交）
+.env
+.env.local
+.env.production
+
+# OS 文件
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# 编辑器
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# 重要：data/ 目录需要被 git 跟踪！
+# 这是系统数据持久化的关键机制
+# 不要在这里忽略 data/ 目录
+
+# 备份文件
+*.bak
+*.backup
+*~
+
+# 部署压缩包
+*.zip
+
+# data 目录下的临时图片和脚本（不影响运行）
+data/*.jpg
+data/*.png
+data/*.py
+data/ocr_*.json
+data/sources_part*.json
+data/parse_ocr*.py
+data/cropped/
+data/wisenews_images/
+data/test_images/
+data/p*_*.json
+data/block*.jpg
+data/final_report_*.json

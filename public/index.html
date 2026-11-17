@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>创兴银行新闻监测系统 | 每日舆情研报</title>
+<link rel="stylesheet" href="/css/style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+</head>
+<body>
+<div id="app">
+  <!-- 顶部导航 -->
+  <header class="topbar">
+    <div class="topbar-inner">
+      <div class="brand">
+        <div class="brand-logo">CHB</div>
+        <div class="brand-text">
+          <h1>创兴银行 · 新闻监测系统</h1>
+          <span class="brand-sub">企业传讯处 · 每日舆情研报</span>
+        </div>
+      </div>
+      <nav class="topnav">
+        <a href="#" class="nav-link active" data-view="dashboard">今日研报</a>
+        <a href="#" class="nav-link" data-view="archive">历史归档</a>
+        <a href="#" class="nav-link" data-view="sources">媒体源</a>
+        <a href="#" class="nav-link" data-view="search">搜索</a>
+      </nav>
+      <div class="topbar-right">
+        <button id="btn-refresh" class="btn-icon" title="手动刷新采集">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 4v6h-6M1 20v-6h6"/><path d="M3.51 9a9 9 0 0114.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0020.49 15"/></svg>
+          <span>刷新</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- 主内容区 -->
+  <main class="main-content">
+    <!-- Dashboard 视图 -->
+    <div id="view-dashboard" class="view active">
+      <!-- KPI 卡片 -->
+      <div class="kpi-row" id="kpi-row">
+        <div class="kpi-card kpi-total">
+          <div class="kpi-label">今日新闻总数</div>
+          <div class="kpi-value" id="kpi-total">--</div>
+        </div>
+        <div class="kpi-card kpi-b">
+          <div class="kpi-label">B类·重要新闻</div>
+          <div class="kpi-value" id="kpi-b">--</div>
+        </div>
+        <div class="kpi-card kpi-c">
+          <div class="kpi-label">C类·例行提及</div>
+          <div class="kpi-value" id="kpi-c">--</div>
+        </div>
+      </div>
+
+      <!-- 报告日期 -->
+      <div class="report-meta">
+        <div class="report-date" id="report-date">加载中...</div>
+        <div class="report-summary" id="report-summary"></div>
+      </div>
+
+      <!-- B类·重要新闻 -->
+      <section class="tier-section tier-b" id="section-b" style="display:none;">
+        <div class="section-header">
+          <h2><span class="tier-badge tier-badge-b">B</span> 重要新闻</h2>
+          <span class="section-count" id="count-b">0</span>
+        </div>
+        <div class="news-list" id="list-b"></div>
+      </section>
+
+      <!-- C类·例行提及 -->
+      <section class="tier-section tier-c" id="section-c" style="display:none;">
+        <div class="section-header">
+          <h2><span class="tier-badge tier-badge-c">C</span> 例行提及</h2>
+          <span class="section-count" id="count-c">0</span>
+        </div>
+        <div class="news-list" id="list-c"></div>
+      </section>
+
+      <!-- 无数据提示 -->
+      <div class="empty-state" id="empty-state" style="display:none;">
+        <div class="empty-icon">📡</div>
+        <h3>暂无监测数据</h3>
+        <p>系统正在采集创兴银行相关新闻，请稍后刷新查看。</p>
+        <button class="btn-primary" onclick="runFetch()">立即采集</button>
+      </div>
+    </div>
+
+    <!-- Archive 视图 -->
+    <div id="view-archive" class="view">
+      <h2 class="view-title">历史研报归档</h2>
+      <div class="archive-list" id="archive-list">
+        <div class="loading">加载中...</div>
+      </div>
+    </div>
+
+    <!-- Sources 视图 -->
+    <div id="view-sources" class="view">
+      <h2 class="view-title">媒体源监控 <span id="sources-total-badge" class="sources-total-badge"></span></h2>
+      <div class="sources-summary" id="sources-summary"></div>
+      <div class="sources-filters">
+        <select id="sources-cat-filter" class="filter-select" onchange="loadSources(1)">
+          <option value="">全部分类</option>
+        </select>
+        <label class="filter-check">
+          <input type="checkbox" id="sources-rss-only" onchange="loadSources(1)"> 仅显示有RSS的源
+        </label>
+        <span class="filter-info" id="sources-page-info"></span>
+      </div>
+      <div class="sources-table-wrap">
+        <table class="sources-table" id="sources-table">
+          <thead>
+            <tr>
+              <th>ID</th><th>媒体名称</th><th>分类</th><th>语言</th>
+              <th>RSS</th><th>命中数</th><th>状态</th>
+            </tr>
+          </thead>
+          <tbody id="sources-tbody"></tbody>
+        </table>
+      </div>
+      <div class="sources-pagination" id="sources-pagination"></div>
+    </div>
+
+    <!-- Search 视图 -->
+    <div id="view-search" class="view">
+      <h2 class="view-title">新闻搜索</h2>
+      <div class="search-bar">
+        <input type="text" id="search-input" placeholder="搜索关键词（如：定存、海岸清洁、越秀）..." class="search-input">
+        <button class="btn-primary" onclick="doSearch()">搜索</button>
+      </div>
+      <div class="search-results" id="search-results"></div>
+    </div>
+  </main>
+
+  <!-- 底部 -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <span>创兴银行企业传讯处 · 新闻监测系统 v2.0</span>
+      <span class="footer-meta">3793媒体源 · 263个RSS · RSS+AI双引擎 · 自动去重分级</span>
+    </div>
+  </footer>
+</div>
+<script src="/js/app.js"></script>
+</body>
+</html>
