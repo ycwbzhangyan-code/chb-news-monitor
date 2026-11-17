@@ -1,7 +1,65 @@
 [
   {
+    "report_date": "2026-11-17",
+    "generated_at": "2026-11-17T09:15:52.155Z",
+    "stats": {
+      "total": 1,
+      "A": 0,
+      "B": 0,
+      "C": 1,
+      "X": 0
+    },
+    "summary": "C类·例行提及 1 条",
+    "tiers": {
+      "B": [],
+      "C": [
+        {
+          "id": 41,
+          "hash": "b0e2c1d6b3e676504345e0ca4bd4f8e6deac5172",
+          "title": "Guide stellte die Wärmebildkamera der FAST-Serie vor und setzt damit neue Maßstäbe bei der Inspektion vor Ort",
+          "link": "https://www.prnewswire.com/news-releases/guide-stellte-die-warmebildkamera-der-fast-serie-vor-und-setzt-damit-neue-maWstabe-bei-der-inspektion-vor-ort-302931787.html",
+          "description": "<p>KÖLN, Deutschland, 17. November 2026 /PRNewswire/ -- Guide hat auf der „Power Transmission & Distribution Technology Expo 2026\" in Köln offiziell die fortschrittliche Wärmebildkamera der FAST-Serie vorgestellt. Als einer der Hauptredner im Messeforum stellte Guide den Fachbesuchern seine...</p>",
+          "source_id": "s0322",
+          "source_name": "PR Newsw PR Newswire",
+          "source_cat": "news_agency",
+          "lang": "CH",
+          "pub_date": "Tue, 17 Nov 2026 09:00:00 +0000",
+          "fetch_date": "2026-11-17T09:15:52.133Z",
+          "tier": "C",
+          "tier_reason": "例行提及",
+          "status": "active",
+          "ai_researched": 0,
+          "created_at": "2026-11-17T09:15:52.134Z"
+        }
+      ],
+      "X": []
+    },
+    "by_category": {
+      "news_agency": [
+        {
+          "id": 41,
+          "hash": "b0e2c1d6b3e676504345e0ca4bd4f8e6deac5172",
+          "title": "Guide stellte die Wärmebildkamera der FAST-Serie vor und setzt damit neue Maßstäbe bei der Inspektion vor Ort",
+          "link": "https://www.prnewswire.com/news-releases/guide-stellte-die-warmebildkamera-der-fast-serie-vor-und-setzt-damit-neue-maWstabe-bei-der-inspektion-vor-ort-302931787.html",
+          "description": "<p>KÖLN, Deutschland, 17. November 2026 /PRNewswire/ -- Guide hat auf der „Power Transmission & Distribution Technology Expo 2026\" in Köln offiziell die fortschrittliche Wärmebildkamera der FAST-Serie vorgestellt. Als einer der Hauptredner im Messeforum stellte Guide den Fachbesuchern seine...</p>",
+          "source_id": "s0322",
+          "source_name": "PR Newsw PR Newswire",
+          "source_cat": "news_agency",
+          "lang": "CH",
+          "pub_date": "Tue, 17 Nov 2026 09:00:00 +0000",
+          "fetch_date": "2026-11-17T09:15:52.133Z",
+          "tier": "C",
+          "tier_reason": "例行提及",
+          "status": "active",
+          "ai_researched": 0,
+          "created_at": "2026-11-17T09:15:52.134Z"
+        }
+      ]
+    }
+  },
+  {
     "report_date": "2026-11-12",
-    "generated_at": "2026-11-17T08:13:42.853Z",
+    "generated_at": "2026-11-17T09:15:52.184Z",
     "stats": {
       "total": 2,
       "A": 0,
@@ -90,7 +148,7 @@
   },
   {
     "report_date": "2026-11-11",
-    "generated_at": "2026-11-17T08:13:42.873Z",
+    "generated_at": "2026-11-17T09:15:52.191Z",
     "stats": {
       "total": 6,
       "A": 0,
@@ -299,7 +357,7 @@
   },
   {
     "report_date": "2026-11-10",
-    "generated_at": "2026-11-17T08:13:42.896Z",
+    "generated_at": "2026-11-17T09:15:52.201Z",
     "stats": {
       "total": 5,
       "A": 0,
