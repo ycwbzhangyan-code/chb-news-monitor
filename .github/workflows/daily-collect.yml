@@ -10,6 +10,8 @@ jobs:
   collect-and-report:
     runs-on: ubuntu-latest
     timeout-minutes: 30
+    permissions:
+      contents: write # 允许 git push 回仓库
     
     steps:
       - name: Checkout
@@ -20,14 +22,11 @@ jobs:
         with:
           node-version: '18'
           cache: 'npm'
-          cache-dependency-path: chb-news-site/package-lock.json
 
       - name: Install Dependencies
-        working-directory: chb-news-site
         run: npm install
 
       - name: Run Daily Collection
-        working-directory: chb-news-site
         env:
           SMTP_HOST: ${{ secrets.SMTP_HOST }}
           SMTP_PORT: ${{ secrets.SMTP_PORT }}
@@ -38,8 +37,7 @@ jobs:
           BCC_ADDRS: ${{ secrets.BCC_ADDRS }}
         run: node deploy/cloud/daily_collect.js
 
-      - name: Commit Updated Data
-        working-directory: chb-news-site
+      - name: Commit and Push Updated Data
         run: |
           git config --global user.name "CHB Monitor Bot"
           git config --global user.email "chb-monitor-bot@chonghing.uk"
@@ -49,16 +47,5 @@ jobs:
           else
             git commit -m "daily: $(date -u +%Y-%m-%d) news collection update"
             git push
-          fi
-
-      - name: Trigger Vercel Deploy
-        if: success()
-        env:
-          VERCEL_DEPLOY_HOOK: ${{ secrets.VERCEL_DEPLOY_HOOK }}
-        run: |
-          if [ -n "$VERCEL_DEPLOY_HOOK" ]; then
-            curl -X POST "$VERCEL_DEPLOY_HOOK"
-            echo "Vercel deploy triggered"
-          else
-            echo "No Vercel deploy hook configured, skipping"
+            echo "Data pushed, Vercel will auto-redeploy"
           fi
