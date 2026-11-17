@@ -116,9 +116,10 @@ function searchNews(query) {
 
 function getNewsByDate(dateStr) {
   const all = getAllNews();
+  const target = normalizeDate(dateStr);
   return all.filter(n => {
-    const d = (n.pub_date || '').split('T')[0];
-    return d === dateStr && n.status === 'active';
+    const d = normalizeDate(n.pub_date);
+    return d === target && n.status === 'active';
   }).sort((a, b) => {
     const tierOrder = { A: 0, B: 1, C: 2, X: 3 };
     return (tierOrder[a.tier] || 2) - (tierOrder[b.tier] || 2);
@@ -127,9 +128,11 @@ function getNewsByDate(dateStr) {
 
 function getNewsByDateRange(start, end) {
   const all = getAllNews();
+  const s = normalizeDate(start);
+  const e = normalizeDate(end);
   return all.filter(n => {
-    const d = (n.pub_date || '').split('T')[0];
-    return d >= start && d <= end && n.status === 'active';
+    const d = normalizeDate(n.pub_date);
+    return d >= s && d <= e && n.status === 'active';
   }).sort((a, b) => (b.pub_date || '').localeCompare(a.pub_date || ''));
 }
 
@@ -214,7 +217,7 @@ function getStats() {
     tierBreakdown[n.tier] = (tierBreakdown[n.tier] || 0) + 1;
   }
   const latestDate = all.length > 0
-    ? all.sort((a, b) => (b.pub_date || '').localeCompare(a.pub_date || ''))[0].pub_date
+    ? normalizeDate(all.sort((a, b) => (b.pub_date || '').localeCompare(a.pub_date || ''))[0].pub_date)
     : null;
 
   // 来源统计
@@ -235,6 +238,35 @@ function getStats() {
     latest_date: latestDate,
     top_sources: topSources,
   };
+}
+
+/**
+ * 规范化日期为 YYYY-MM-DD
+ * 兼容多种输入格式：ISO 字符串、JS Date 序列化字符串、带时区的 RFC 格式
+ */
+function normalizeDate(dateVal) {
+  if (!dateVal) return '';
+  if (typeof dateVal !== 'string') {
+    const d = new Date(dateVal);
+    return isNaN(d.getTime()) ? '' : d.toISOString().split('T')[0];
+  }
+
+  // 已符合 YYYY-MM-DD 或 ISO 格式
+  const isoMatch = dateVal.match(/^(\d{4})-(\d{2})-(\d{2})/);
+  if (isoMatch) return isoMatch[0];
+
+  // RFC 格式，如 "Sun, 08 Nov 2026 08:45:09 +0100"
+  const rfcMatch = dateVal.match(/\d{1,2}\s+(\w{3})\s+(\d{4})/);
+  if (rfcMatch) {
+    const months = { Jan:'01', Feb:'02', Mar:'03', Apr:'04', May:'05', Jun:'06',
+                    Jul:'07', Aug:'08', Sep:'09', Oct:'10', Nov:'11', Dec:'12' };
+    const mon = months[rfcMatch[1]];
+    if (mon) return `${rfcMatch[2]}-${mon}-${String(rfcMatch[0]).split(/\s+/)[0].padStart(2,'0')}`;
+  }
+
+  // 兜底用 Date 解析
+  const d = new Date(dateVal);
+  return isNaN(d.getTime()) ? '' : d.toISOString().split('T')[0];
 }
 
 // ===== 工具函数 =====
@@ -262,4 +294,5 @@ module.exports = {
   getSourceStatus,
   getStats,
   normalizeTitle,
+  normalizeDate,
 };

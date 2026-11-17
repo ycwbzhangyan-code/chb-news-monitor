@@ -61,7 +61,7 @@ function getLatestReport() {
     if (reports.length > 0) return reports[0];
     return null;
   }
-  const dateStr = stats.latest_date.split('T')[0];
+  const dateStr = store.normalizeDate(stats.latest_date);
   return getReportForDate(dateStr);
 }
 
@@ -69,7 +69,8 @@ function getReportRange(start, end) {
   const items = store.getNewsByDateRange(start, end);
   const byDate = {};
   for (const item of items) {
-    const d = (item.pub_date || '').split('T')[0];
+    const d = store.normalizeDate(item.pub_date);
+    if (!d) continue;
     if (!byDate[d]) byDate[d] = [];
     byDate[d].push(item);
   }
