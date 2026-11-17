@@ -2,7 +2,7 @@
   "name": "chb-news-monitor",
   "version": "1.0.0",
   "description": "创兴银行新闻监测系统 - 每日自动采集、分级、生成研报",
-  "main": "src/app.js",
+  "main": "api/index.js",
   "scripts": {
     "start": "node src/app.js",
     "dev": "node src/app.js",
@@ -10,6 +10,7 @@
     "report": "node src/services/reportBuilder.js",
     "cron": "node src/services/cronJob.js",
     "cloud-daily": "node deploy/cloud/daily_collect.js",
+    "test-email": "node deploy/cloud/test_email.js",
     "vercel-build": "echo 'No build step needed'",
     "postinstall": "echo 'Dependencies installed'"
   },
