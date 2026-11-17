@@ -5,7 +5,18 @@
 const fs = require('fs');
 const path = require('path');
 
-const DATA_DIR = path.join(__dirname, '..', '..', 'data');
+// 数据目录 — Vercel serverless 环境的文件系统只读，需降级到 /tmp
+let DATA_DIR = path.join(__dirname, '..', '..', 'data');
+try {
+  // 测试目录是否可写
+  fs.accessSync(DATA_DIR, fs.constants.W_OK);
+} catch (e) {
+  // 不可写时使用 /tmp（仅读操作正常，写入会静默失败，由 git commit 机制在 CI 中持久化）
+  if (process.env.VERCEL || process.env.AWS_LAMBDA_FUNCTION_NAME) {
+    console.warn('[Store] 数据目录只读，serverless 模式使用内存/只读读取');
+  }
+}
+
 const NEWS_FILE = path.join(DATA_DIR, 'news_items.json');
 const REPORTS_FILE = path.join(DATA_DIR, 'reports.json');
 const LOGS_FILE = path.join(DATA_DIR, 'fetch_logs.json');
@@ -13,13 +24,21 @@ const SOURCES_STATUS_FILE = path.join(DATA_DIR, 'source_status.json');
 
 // 确保目录存在
 if (!fs.existsSync(DATA_DIR)) {
-  fs.mkdirSync(DATA_DIR, { recursive: true });
+  try {
+    fs.mkdirSync(DATA_DIR, { recursive: true });
+  } catch (e) {
+    console.warn('[Store] 无法创建数据目录:', e.message);
+  }
 }
 
 // 初始化文件
 function initFile(filePath, defaultData) {
   if (!fs.existsSync(filePath)) {
-    fs.writeFileSync(filePath, JSON.stringify(defaultData, null, 2));
+    try {
+      fs.writeFileSync(filePath, JSON.stringify(defaultData, null, 2));
+    } catch (e) {
+      console.warn(`[Store] 无法初始化 ${path.basename(filePath)}: ${e.message}`);
+    }
   }
 }
 
@@ -37,7 +56,13 @@ function readJSON(filePath) {
 }
 
 function writeJSON(filePath, data) {
-  fs.writeFileSync(filePath, JSON.stringify(data, null, 2));
+  try {
+    fs.writeFileSync(filePath, JSON.stringify(data, null, 2));
+    return true;
+  } catch (e) {
+    console.warn(`[Store] 写入 ${path.basename(filePath)} 失败: ${e.message}`);
+    return false;
+  }
 }
 
 // ===== 新闻条目 =====

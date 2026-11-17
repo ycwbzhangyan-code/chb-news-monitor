@@ -7,6 +7,7 @@
  */
 const express = require('express');
 const path = require('path');
+const fs = require('fs');
 const cors = require('cors');
 
 const apiRoutes = require('../src/routes/api');
@@ -19,13 +20,22 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-// 静态文件 — Vercel 会自动处理 /public 下的静态资源
-// 但 API 路由需要显式注册
+// API 路由 — 必须注册在静态资源之前
 app.use('/api', apiRoutes);
 
-// 首页路由
+// 静态资源目录（本地开发用；Vercel 会自动处理 public/）
+const PUBLIC_DIR = path.join(__dirname, '..', 'public');
+if (fs.existsSync(PUBLIC_DIR)) {
+  app.use(express.static(PUBLIC_DIR));
+}
+
+// 首页
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, '..', 'public', 'index.html'));
+  const indexPath = path.join(PUBLIC_DIR, 'index.html');
+  if (fs.existsSync(indexPath)) {
+    return res.sendFile(indexPath);
+  }
+  res.status(200).type('html').send('<h1>CHB News Monitor</h1><p>Index not found.</p>');
 });
 
 // 启动时加载种子数据（仅首次冷启动时）
