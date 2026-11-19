@@ -24,6 +24,7 @@ if (fs.existsSync(fullConfigPath)) {
 const RULES = require(path.join(__dirname, '..', '..', 'config', 'rules.json'));
 
 const WATCH_TERMS = SOURCES.meta.watch_terms;
+const WATCH_TERMS_WB = SOURCES.meta.watch_terms_word_boundary || [];
 const EXCLUDE_KEYWORDS = RULES.exclude_keywords;
 const EXCLUDE_CONTEXT = RULES.exclude_context;
 
@@ -63,6 +64,12 @@ function matchKeywords(title, desc) {
   const text = (title + ' ' + (desc || '')).toLowerCase();
   for (const term of WATCH_TERMS) {
     if (text.includes(term.toLowerCase())) return true;
+  }
+  // 词边界匹配（如CHB需要前后是非字母字符）
+  for (const term of WATCH_TERMS_WB) {
+    const lower = term.toLowerCase();
+    const regex = new RegExp('(^|[^a-z])' + lower.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + '([^a-z]|$)', 'i');
+    if (regex.test(text)) return true;
   }
   return false;
 }

@@ -50,3 +50,5 @@ data/test_images/
 data/p*_*.json
 data/block*.jpg
 data/final_report_*.json
+
+.vercel

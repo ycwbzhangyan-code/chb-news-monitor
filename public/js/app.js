@@ -11,6 +11,8 @@ document.querySelectorAll('.nav-link').forEach(link => {
     document.getElementById('view-' + view).classList.add('active');
     if (view === 'archive') loadArchive();
     if (view === 'sources') loadSources();
+    if (view === 'allnews') loadAllNews(1);
+    if (view === 'stats') loadStats();
   });
 });
 
@@ -335,6 +337,187 @@ async function doSearch() {
 document.getElementById('search-input').addEventListener('keypress', (e) => {
   if (e.key === 'Enter') doSearch();
 });
+
+// ===== 全部新闻 =====
+let allNewsCurrentPage = 1;
+let allNewsTotalPages = 1;
+let allNewsPageSize = 50;
+
+async function loadAllNews(page) {
+  if (page) allNewsCurrentPage = page;
+  const tier = document.getElementById('allnews-tier-filter')?.value || 'all';
+  const sort = document.getElementById('allnews-sort')?.value || 'date_desc';
+
+  try {
+    const params = new URLSearchParams({
+      page: allNewsCurrentPage,
+      pageSize: allNewsPageSize,
+      sort: sort,
+      tier: tier,
+    });
+    const resp = await fetch(`/api/news/all?${params}`);
+    const data = await resp.json();
+
+    allNewsTotalPages = data.totalPages || 1;
+    const badge = document.getElementById('allnews-total-badge');
+    if (badge) badge.textContent = `共 ${data.total} 条`;
+
+    const pageInfo = document.getElementById('allnews-page-info');
+    if (pageInfo) pageInfo.textContent = `第 ${allNewsCurrentPage}/${allNewsTotalPages} 页`;
+
+    const tbody = document.getElementById('allnews-tbody');
+    tbody.innerHTML = data.items.map((item, i) => {
+      const seq = (allNewsCurrentPage - 1) * allNewsPageSize + i + 1;
+      const tierClass = item.tier === 'B' ? 'tier-badge-b' : 'tier-badge-c';
+      const titleHtml = item.link
+        ? `<a href="${item.link}" target="_blank" rel="noopener">${escapeHtml(item.title)}</a>`
+        : escapeHtml(item.title);
+      return `<tr>
+        <td>${seq}</td>
+        <td class="news-date-cell">${item.date_normalized || '--'}</td>
+        <td><span class="tier-badge ${tierClass}">${item.tier}</span></td>
+        <td class="news-title-cell">${titleHtml}</td>
+        <td class="news-source-cell">${escapeHtml(item.source_name)}</td>
+      </tr>`;
+    }).join('');
+
+    renderAllNewsPagination();
+  } catch (e) {
+    console.error('加载全部新闻失败:', e);
+  }
+}
+
+function renderAllNewsPagination() {
+  const container = document.getElementById('allnews-pagination');
+  if (!container) return;
+  const cur = allNewsCurrentPage;
+  const total = allNewsTotalPages;
+  let html = '';
+  html += `<button class="page-btn" ${cur <= 1 ? 'disabled' : ''} onclick="loadAllNews(${cur - 1})">上一页</button>`;
+  let startPage = Math.max(1, cur - 3);
+  let endPage = Math.min(total, startPage + 6);
+  if (endPage - startPage < 6) startPage = Math.max(1, endPage - 6);
+  if (startPage > 1) {
+    html += `<button class="page-btn" onclick="loadAllNews(1)">1</button>`;
+    if (startPage > 2) html += '<span class="page-info">...</span>';
+  }
+  for (let i = startPage; i <= endPage; i++) {
+    html += `<button class="page-btn ${i === cur ? 'active' : ''}" onclick="loadAllNews(${i})">${i}</button>`;
+  }
+  if (endPage < total) {
+    if (endPage < total - 1) html += '<span class="page-info">...</span>';
+    html += `<button class="page-btn" onclick="loadAllNews(${total})">${total}</button>`;
+  }
+  html += `<button class="page-btn" ${cur >= total ? 'disabled' : ''} onclick="loadAllNews(${cur + 1})">下一页</button>`;
+  container.innerHTML = html;
+}
+
+// 导出新闻
+function exportNews(format) {
+  window.open(`/api/news/export?format=${format}`, '_blank');
+}
+
+// ===== 数据统计 =====
+async function loadStats() {
+  try {
+    // 全局统计
+    const [statsResp, dailyResp] = await Promise.all([
+      fetch('/api/stats'),
+      fetch('/api/stats/daily'),
+    ]);
+    const stats = await statsResp.json();
+    const daily = await dailyResp.json();
+
+    // 概览卡片
+    const overview = document.getElementById('stats-overview');
+    overview.innerHTML = `
+      <div class="stats-cards">
+        <div class="stats-card stats-card-total">
+          <div class="stats-label">新闻总数</div>
+          <div class="stats-value">${stats.total_items}</div>
+        </div>
+        <div class="stats-card stats-card-b">
+          <div class="stats-label">B类·重要新闻</div>
+          <div class="stats-value">${(stats.tier_breakdown.find(t => t.tier === 'B') || {}).count || 0}</div>
+        </div>
+        <div class="stats-card stats-card-c">
+          <div class="stats-label">C类·例行提及</div>
+          <div class="stats-value">${(stats.tier_breakdown.find(t => t.tier === 'C') || {}).count || 0}</div>
+        </div>
+        <div class="stats-card stats-card-days">
+          <div class="stats-label">监测天数</div>
+          <div class="stats-value">${daily.total_days}</div>
+        </div>
+        <div class="stats-card stats-card-range">
+          <div class="stats-label">监测日期范围</div>
+          <div class="stats-value-text">${daily.daily.length > 0 ? daily.daily[daily.daily.length-1].date + ' ~ ' + daily.daily[0].date : '--'}</div>
+        </div>
+        <div class="stats-card stats-card-reports">
+          <div class="stats-label">报告总数</div>
+          <div class="stats-value">${stats.total_reports}</div>
+        </div>
+      </div>
+    `;
+
+    // 按日统计表
+    const dailyEl = document.getElementById('stats-daily');
+    dailyEl.innerHTML = `
+      <h3 class="stats-section-title">每日新闻统计</h3>
+      <table class="stats-table">
+        <thead>
+          <tr><th>日期</th><th>总数</th><th>B类</th><th>C类</th><th>占比</th></tr>
+        </thead>
+        <tbody>
+          ${daily.daily.map(d => {
+            const bPct = d.total > 0 ? Math.round(d.B / d.total * 100) : 0;
+            return `<tr>
+              <td>${d.date}</td>
+              <td><strong>${d.total}</strong></td>
+              <td style="color:var(--c-b)">${d.B}</td>
+              <td style="color:var(--c-c)">${d.C}</td>
+              <td>B占${bPct}%</td>
+            </tr>`;
+          }).join('')}
+        </tbody>
+        <tfoot>
+          <tr style="font-weight:bold;background:#f5f7fa;">
+            <td>合计</td>
+            <td>${daily.total_items}</td>
+            <td>${daily.daily.reduce((s,d) => s + d.B, 0)}</td>
+            <td>${daily.daily.reduce((s,d) => s + d.C, 0)}</td>
+            <td>—</td>
+          </tr>
+        </tfoot>
+      </table>
+    `;
+
+    // 来源统计
+    const sourcesEl = document.getElementById('stats-sources');
+    sourcesEl.innerHTML = `
+      <h3 class="stats-section-title">新闻来源TOP20</h3>
+      <table class="stats-table">
+        <thead>
+          <tr><th>#</th><th>来源</th><th>新闻数</th><th>占比</th></tr>
+        </thead>
+        <tbody>
+          ${(stats.top_sources || []).map((s, i) => {
+            const pct = stats.total_items > 0 ? (s.count / stats.total_items * 100).toFixed(1) : 0;
+            return `<tr>
+              <td>${i + 1}</td>
+              <td>${escapeHtml(s.source_name)}</td>
+              <td><strong>${s.count}</strong></td>
+              <td>${pct}%</td>
+            </tr>`;
+          }).join('')}
+        </tbody>
+      </table>
+    `;
+
+  } catch (e) {
+    console.error('加载统计数据失败:', e);
+    document.getElementById('stats-overview').innerHTML = '<div class="loading">加载失败，请刷新重试</div>';
+  }
+}
 
 // 手动触发采集
 async function runFetch() {

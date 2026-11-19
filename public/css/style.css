@@ -375,3 +375,132 @@ body { font-family: var(--ff); background: var(--c-bg); color: var(--c-text); li
   font-size: 13px; color: var(--c-muted);
   margin: 0 8px;
 }
+
+/* ===== 全部新闻视图 ===== */
+.allnews-toolbar {
+  display: flex; justify-content: space-between; align-items: center;
+  margin-bottom: 16px; flex-wrap: wrap; gap: 12px;
+}
+.allnews-filters {
+  display: flex; align-items: center; gap: 10px; flex-wrap: wrap;
+}
+.allnews-export {
+  display: flex; gap: 8px;
+}
+.btn-export {
+  padding: 8px 16px; border: 1px solid var(--c-accent);
+  background: #fff; color: var(--c-accent);
+  border-radius: 6px; cursor: pointer; font-size: 13px;
+  transition: all 0.15s;
+}
+.btn-export:hover {
+  background: var(--c-accent); color: #fff;
+}
+.allnews-table-wrap {
+  overflow-x: auto; background: var(--c-card-bg);
+  border-radius: 8px; border: 1px solid var(--c-border);
+}
+.allnews-table {
+  width: 100%; border-collapse: collapse; font-size: 13px;
+}
+.allnews-table thead {
+  background: var(--c-bg);
+}
+.allnews-table th {
+  padding: 10px 12px; text-align: left; font-weight: 600;
+  color: var(--c-muted); border-bottom: 2px solid var(--c-border);
+  white-space: nowrap;
+}
+.allnews-table td {
+  padding: 10px 12px; border-bottom: 1px solid var(--c-border);
+  vertical-align: top;
+}
+.allnews-table tr:hover {
+  background: #f8fafc;
+}
+.news-date-cell {
+  white-space: nowrap; color: var(--c-muted);
+}
+.news-title-cell {
+  min-width: 300px;
+}
+.news-title-cell a {
+  color: var(--c-accent); text-decoration: none;
+}
+.news-title-cell a:hover {
+  text-decoration: underline;
+}
+.news-source-cell {
+  white-space: nowrap; color: var(--c-muted); font-size: 12px;
+}
+
+/* ===== 数据统计视图 ===== */
+.stats-overview { margin-bottom: 24px; }
+.stats-cards {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 16px; margin-bottom: 8px;
+}
+.stats-card {
+  background: var(--c-card-bg); border-radius: 10px;
+  padding: 20px; text-align: center;
+  border: 1px solid var(--c-border);
+  transition: transform 0.15s;
+}
+.stats-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+}
+.stats-card-total { border-top: 4px solid var(--c-accent); }
+.stats-card-b { border-top: 4px solid var(--c-b); }
+.stats-card-c { border-top: 4px solid var(--c-c); }
+.stats-card-days { border-top: 4px solid #10b981; }
+.stats-card-range { border-top: 4px solid #8b5cf6; }
+.stats-card-reports { border-top: 4px solid #f59e0b; }
+
+.stats-label {
+  font-size: 12px; color: var(--c-muted); margin-bottom: 8px;
+}
+.stats-value {
+  font-size: 28px; font-weight: 700; color: var(--c-text);
+}
+.stats-value-text {
+  font-size: 14px; font-weight: 600; color: var(--c-text);
+}
+
+.stats-section-title {
+  font-size: 16px; font-weight: 600; margin: 24px 0 12px;
+  padding-bottom: 8px; border-bottom: 2px solid var(--c-border);
+}
+.stats-table {
+  width: 100%; border-collapse: collapse; font-size: 13px;
+  background: var(--c-card-bg); border-radius: 8px;
+  overflow: hidden;
+}
+.stats-table thead {
+  background: var(--c-bg);
+}
+.stats-table th {
+  padding: 10px 14px; text-align: left; font-weight: 600;
+  color: var(--c-muted); border-bottom: 2px solid var(--c-border);
+}
+.stats-table td {
+  padding: 10px 14px; border-bottom: 1px solid var(--c-border);
+}
+.stats-table tr:hover {
+  background: #f8fafc;
+}
+.stats-table tfoot td {
+  border-top: 2px solid var(--c-border);
+  border-bottom: none;
+}
+
+/* 打印样式 */
+@media print {
+  .topbar, .footer, .allnews-toolbar, .sources-pagination,
+  .allnews-pagination, nav.topnav {
+    display: none !important;
+  }
+  .allnews-table-wrap { border: none; }
+  .allnews-table { font-size: 11px; }
+  body { background: #fff !important; }
+}

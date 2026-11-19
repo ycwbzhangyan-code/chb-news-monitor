@@ -18,11 +18,11 @@ const nodemailer = require('nodemailer');
 
 // 邮件配置（从环境变量读取）
 const EMAIL_CONFIG = {
-  smtp_host: process.env.SMTP_HOST || 'smtp.gmail.com',
-  smtp_port: parseInt(process.env.SMTP_PORT || '587'),
+  smtp_host: process.env.SMTP_HOST || 'smtp.163.com',
+  smtp_port: parseInt(process.env.SMTP_PORT || '465'),
   smtp_user: process.env.SMTP_USER || '',
   smtp_pass: process.env.SMTP_PASS || '',
-  from_addr: process.env.FROM_ADDR || 'chb-monitor@chonghing.uk',
+  from_addr: process.env.FROM_ADDR || '',
   to_addrs: (process.env.TO_ADDRS || '').split(',').filter(Boolean),
   bcc_addrs: (process.env.BCC_ADDRS || '').split(',').filter(Boolean),
 };
@@ -37,9 +37,11 @@ async function runCloudDailyJob() {
   console.log(`========================================\n`);
 
   const startTime = Date.now();
+  let totalNewNews = 0;
+  let reportSaved = false;
 
+  // ========== 第1步：RSS 采集 ==========
   try {
-    // ========== 第1步：RSS 采集 ==========
     console.log('[1/6] 采集RSS源（263个）...');
     const { results, hits } = await fetchAllSources(7, 20);
     console.log(`  -> 采集完成: ${results.length}个源返回, ${hits.length}条命中`);
@@ -105,14 +107,14 @@ async function runCloudDailyJob() {
     const allHits = [...hits, ...crawlerHits];
     const saveResult = saveAllHits(allHits, aiFormatted);
     console.log(`  -> 新增${saveResult.newCount}条, 重复${saveResult.dupCount}条`);
+    totalNewNews = saveResult.newCount;
 
     // 记录采集日志
-    store.addFetchLogs(results);
+    try { store.addFetchLogs(results); } catch(e) { console.log(`  -> 日志记录失败（非致命）: ${e.message}`); }
 
     // ========== 第5步：生成报告 ==========
     console.log('[5/6] 生成每日报告...');
     const report = getReportForDate(todayStr);
-    let reportSaved = false;
     if (report && report.stats.total > 0) {
       saveDailyReport(report);
       reportSaved = true;
@@ -131,30 +133,39 @@ async function runCloudDailyJob() {
         saveDailyReport(r);
       }
     }
+  } catch (e) {
+    console.error(`[ERROR] 采集步骤失败:`, e.message);
+    console.error(e.stack);
+    // 不退出，继续尝试邮件和提交
+  }
 
-    // ========== 第6步：邮件推送 ==========
+  // ========== 第6步：邮件推送 ==========
+  try {
     console.log('[6/6] 邮件推送...');
-    if (reportSaved && EMAIL_CONFIG.to_addrs.length > 0) {
-      await sendEmailReport(report);
-      console.log(`  -> 邮件已发送至: ${EMAIL_CONFIG.to_addrs.join(', ')}`);
+    if (reportSaved && EMAIL_CONFIG.to_addrs.length > 0 && EMAIL_CONFIG.smtp_user) {
+      const report = getReportForDate(todayStr);
+      if (report && report.stats.total > 0) {
+        await sendEmailReport(report);
+        console.log(`  -> 邮件已发送至: ${EMAIL_CONFIG.to_addrs.join(', ')}`);
+      }
     } else if (!reportSaved) {
       console.log('  -> 今日无报告，跳过邮件推送');
     } else {
-      console.log('  -> 未配置收件人，跳过邮件推送');
+      console.log('  -> 未配置SMTP或收件人，跳过邮件推送');
     }
-
-    const duration = ((Date.now() - startTime) / 1000).toFixed(1);
-    console.log(`\n========================================`);
-    console.log(`  每日采集完成`);
-    console.log(`  耗时: ${duration}s`);
-    console.log(`  新增新闻: ${saveResult.newCount}条`);
-    console.log(`  报告: ${reportSaved ? '已生成' : '无'}`);
-    console.log(`========================================\n`);
-
   } catch (e) {
-    console.error(`[ERROR] 每日采集失败:`, e);
-    process.exit(1);
+    console.error(`[ERROR] 邮件推送失败（非致命）:`, e.message);
   }
+
+  const duration = ((Date.now() - startTime) / 1000).toFixed(1);
+  console.log(`\n========================================`);
+  console.log(`  每日采集完成`);
+  console.log(`  耗时: ${duration}s`);
+  console.log(`  新增新闻: ${totalNewNews}条`);
+  console.log(`  报告: ${reportSaved ? '已生成' : '无'}`);
+  console.log(`========================================\n`);
+  // 始终成功退出（即使无新新闻），确保git commit步骤能执行
+  process.exit(0);
 }
 
 async function sendEmailReport(report) {

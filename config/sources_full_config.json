@@ -13,10 +13,12 @@
       "Chong Hing",
       "創興",
       "创兴",
-      "CHB",
       "廖創興",
       "廖创兴",
       "chbank"
+    ],
+    "watch_terms_word_boundary": [
+      "CHB"
     ],
     "categories": {
       "hk_print": "香港中文纸媒",

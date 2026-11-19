@@ -143,4 +143,142 @@ router.get('/stats', (req, res) => {
   res.json(store.getStats());
 });
 
+// 全量新闻列表（支持分页、日期筛选、排序）
+router.get('/news/all', (req, res) => {
+  const page = parseInt(req.query.page) || 1;
+  const pageSize = parseInt(req.query.pageSize) || 50;
+  const startDate = req.query.start || '';
+  const endDate = req.query.end || '';
+  const tier = req.query.tier || '';
+  const sortBy = req.query.sort || 'date_desc';
+
+  let items = store.getAllNews().filter(n => n.status === 'active');
+
+  // 日期范围筛选
+  if (startDate && endDate) {
+    const s = store.normalizeDate(startDate);
+    const e = store.normalizeDate(endDate);
+    items = items.filter(n => {
+      const d = store.normalizeDate(n.pub_date);
+      return d >= s && d <= e;
+    });
+  }
+
+  // 分级筛选
+  if (tier && tier !== 'all') {
+    items = items.filter(n => n.tier === tier);
+  }
+
+  // 排序
+  if (sortBy === 'date_asc') {
+    items.sort((a, b) => (a.pub_date || '').localeCompare(b.pub_date || ''));
+  } else if (sortBy === 'tier') {
+    const tierOrder = { B: 0, C: 1, X: 2 };
+    items.sort((a, b) => (tierOrder[a.tier] || 2) - (tierOrder[b.tier] || 2));
+  } else {
+    items.sort((a, b) => (b.pub_date || '').localeCompare(a.pub_date || ''));
+  }
+
+  const total = items.length;
+  const totalPages = Math.ceil(total / pageSize);
+  const startIdx = (page - 1) * pageSize;
+  const pageItems = items.slice(startIdx, startIdx + pageSize);
+
+  res.json({
+    total,
+    page,
+    pageSize,
+    totalPages,
+    items: pageItems.map(n => ({
+      id: n.id,
+      title: n.title,
+      link: n.link,
+      description: n.description || '',
+      source_name: n.source_name || '',
+      source_cat: n.source_cat || '',
+      pub_date: n.pub_date || '',
+      date_normalized: store.normalizeDate(n.pub_date),
+      tier: n.tier || 'C',
+      tier_reason: n.tier_reason || '',
+      lang: n.lang || 'CH',
+    })),
+  });
+});
+
+// 全量新闻导出（JSON格式，一次返回全部）
+router.get('/news/export', (req, res) => {
+  const format = req.query.format || 'json';
+  let items = store.getAllNews().filter(n => n.status === 'active');
+  items.sort((a, b) => (b.pub_date || '').localeCompare(a.pub_date || ''));
+
+  const formatted = items.map((n, i) => ({
+    seq: i + 1,
+    date: store.normalizeDate(n.pub_date),
+    tier: n.tier || 'C',
+    title: n.title,
+    source: n.source_name || '',
+    link: n.link || '',
+    description: (n.description || '').substring(0, 500),
+    tier_reason: n.tier_reason || '',
+    lang: n.lang || 'CH',
+  }));
+
+  if (format === 'csv') {
+    // CSV导出
+    const headers = ['序号', '日期', '分级', '标题', '来源', '链接', '分级原因', '语言'];
+    let csv = '\uFEFF' + headers.join(',') + '\n'; // BOM for Excel UTF-8
+    for (const item of formatted) {
+      const row = [
+        item.seq,
+        item.date,
+        item.tier,
+        '"' + (item.title || '').replace(/"/g, '""') + '"',
+        '"' + (item.source || '').replace(/"/g, '""') + '"',
+        '"' + (item.link || '').replace(/"/g, '""') + '"',
+        '"' + (item.tier_reason || '').replace(/"/g, '""') + '"',
+        item.lang,
+      ];
+      csv += row.join(',') + '\n';
+    }
+    res.setHeader('Content-Type', 'text/csv; charset=utf-8');
+    res.setHeader('Content-Disposition', `attachment; filename="chb_news_export_${new Date().toISOString().split('T')[0]}.csv"`);
+    return res.send(csv);
+  }
+
+  // JSON格式
+  res.json({
+    export_date: new Date().toISOString(),
+    total: formatted.length,
+    date_range: {
+      start: formatted.length > 0 ? formatted[formatted.length - 1].date : '',
+      end: formatted.length > 0 ? formatted[0].date : '',
+    },
+    tier_breakdown: {
+      B: formatted.filter(n => n.tier === 'B').length,
+      C: formatted.filter(n => n.tier === 'C').length,
+    },
+    items: formatted,
+  });
+});
+
+// 日期范围内的新闻统计（按日汇总）
+router.get('/stats/daily', (req, res) => {
+  const all = store.getAllNews().filter(n => n.status === 'active');
+  const dailyMap = {};
+  for (const n of all) {
+    const d = store.normalizeDate(n.pub_date);
+    if (!d) continue;
+    if (!dailyMap[d]) dailyMap[d] = { date: d, total: 0, B: 0, C: 0 };
+    dailyMap[d].total++;
+    if (n.tier === 'B') dailyMap[d].B++;
+    if (n.tier === 'C') dailyMap[d].C++;
+  }
+  const daily = Object.values(dailyMap).sort((a, b) => b.date.localeCompare(a.date));
+  res.json({
+    total_days: daily.length,
+    total_items: all.length,
+    daily: daily,
+  });
+});
+
 module.exports = router;

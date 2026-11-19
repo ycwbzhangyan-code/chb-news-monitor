@@ -22,6 +22,8 @@
       <nav class="topnav">
         <a href="#" class="nav-link active" data-view="dashboard">今日研报</a>
         <a href="#" class="nav-link" data-view="archive">历史归档</a>
+        <a href="#" class="nav-link" data-view="allnews">全部新闻</a>
+        <a href="#" class="nav-link" data-view="stats">数据统计</a>
         <a href="#" class="nav-link" data-view="sources">媒体源</a>
         <a href="#" class="nav-link" data-view="search">搜索</a>
       </nav>
@@ -120,6 +122,56 @@
         </table>
       </div>
       <div class="sources-pagination" id="sources-pagination"></div>
+    </div>
+
+    <!-- 全部新闻视图 -->
+    <div id="view-allnews" class="view">
+      <h2 class="view-title">全部新闻 <span id="allnews-total-badge" class="sources-total-badge"></span></h2>
+      <div class="allnews-toolbar">
+        <div class="allnews-filters">
+          <select id="allnews-tier-filter" class="filter-select" onchange="loadAllNews(1)">
+            <option value="all">全部分级</option>
+            <option value="B">B类·重要</option>
+            <option value="C">C类·例行</option>
+          </select>
+          <select id="allnews-sort" class="filter-select" onchange="loadAllNews(1)">
+            <option value="date_desc">日期↓（新到旧）</option>
+            <option value="date_asc">日期↑（旧到新）</option>
+            <option value="tier">按分级排序</option>
+          </select>
+          <span class="filter-info" id="allnews-page-info"></span>
+        </div>
+        <div class="allnews-export">
+          <button class="btn-export" onclick="exportNews('csv')">导出CSV</button>
+          <button class="btn-export" onclick="exportNews('json')">导出JSON</button>
+          <button class="btn-export" onclick="window.print()">打印</button>
+        </div>
+      </div>
+      <div class="allnews-table-wrap">
+        <table class="allnews-table" id="allnews-table">
+          <thead>
+            <tr>
+              <th>#</th><th>日期</th><th>分级</th><th>标题</th><th>来源</th>
+            </tr>
+          </thead>
+          <tbody id="allnews-tbody"></tbody>
+        </table>
+      </div>
+      <div class="sources-pagination" id="allnews-pagination"></div>
+    </div>
+
+    <!-- 数据统计视图 -->
+    <div id="view-stats" class="view">
+      <h2 class="view-title">数据统计</h2>
+      <div class="stats-overview" id="stats-overview">
+        <div class="loading">加载中...</div>
+      </div>
+      <div class="stats-daily" id="stats-daily">
+        <div class="loading">加载中...</div>
+      </div>
+      <div class="stats-sources" id="stats-sources">
+        <div class="loading">加载中...</div>
+      </div>
     </div>
 
     <!-- Search 视图 -->
