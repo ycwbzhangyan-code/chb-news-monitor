@@ -81,7 +81,30 @@ async function runCloudDailyJob() {
       }));
       console.log(`     U Lifestyle: ${ulifeHits.length}条命中`);
       
-      crawlerHits = [...hkcdHits, ...ulifeHits];
+      // 港媒理财聚合爬虫（对标Wiser口径：定存/利率比较类新闻）
+      console.log('  -> 港媒理财聚合爬虫...');
+      try {
+        const { crawlFinanceSites } = require('../../scripts/crawler_finance_sites');
+        const financeResult = await crawlFinanceSites();
+        const financeHits = (financeResult.newHits || []).map(h => ({
+          title: h.title,
+          link: h.link,
+          desc: h.desc,
+          pubDate: h.pubDate || new Date().toISOString(),
+          source_id: h.source_id || 'finance_wire',
+          source_name: h.source_name || '香港财经媒体',
+          source_cat: h.source_cat || 'hk_business',
+          lang: 'CH',
+          tier_hint: h.tier_hint === 'B' ? 'B' : 'C',
+          tier_reason: h.tier_reason,
+        }));
+        console.log(`     港媒理财: ${financeHits.length}条命中`);
+        crawlerHits.push(...financeHits);
+      } catch (e) {
+        console.log(`  -> 理财聚合爬虫出错（非致命）: ${e.message}`);
+      }
+      
+      crawlerHits = [...hkcdHits, ...ulifeHits, ...crawlerHits];
     } catch (e) {
       console.log(`  -> 爬虫运行出错（非致命）: ${e.message}`);
     }
