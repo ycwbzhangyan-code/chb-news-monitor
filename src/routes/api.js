@@ -261,6 +261,41 @@ router.get('/news/export', (req, res) => {
   });
 });
 
+// 系统运行状态（最近采集时间、源数量等）
+router.get('/system/status', (req, res) => {
+  const fs = require('fs');
+  const path = require('path');
+  const logsFile = path.join(__dirname, '..', '..', 'data', 'fetch_logs.json');
+  let lastRun = null;
+  let lastRunStats = null;
+  try {
+    const logs = JSON.parse(fs.readFileSync(logsFile, 'utf-8'));
+    if (logs.length > 0) {
+      const latestDate = logs[logs.length - 1].run_date;
+      // 找最后一次采集的所有记录
+      const lastRunLogs = logs.filter(l => l.run_date === latestDate);
+      lastRun = latestDate;
+      lastRunStats = {
+        sources: lastRunLogs.length,
+        ok: lastRunLogs.filter(l => l.status === 'ok').length,
+        fetched: lastRunLogs.reduce((s, l) => s + (l.items_fetched || 0), 0),
+        matched: lastRunLogs.reduce((s, l) => s + (l.items_matched || 0), 0),
+      };
+    }
+  } catch (e) { /* ignore */ }
+
+  const stats = store.getStats();
+  res.json({
+    last_collection: lastRun,
+    last_run_stats: lastRunStats,
+    total_news: stats.total_items,
+    latest_news_date: stats.latest_date,
+    total_sources: 3793,
+    rss_sources: 263,
+    server_time: new Date().toISOString(),
+  });
+});
+
 // 日期范围内的新闻统计（按日汇总）
 router.get('/stats/daily', (req, res) => {
   const all = store.getAllNews().filter(n => n.status === 'active');

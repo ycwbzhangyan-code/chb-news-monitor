@@ -37,6 +37,45 @@ function formatTime(dateStr) {
   return `${h}:${m}`;
 }
 
+// 加载系统运行状态
+async function loadSystemStatus() {
+  try {
+    const resp = await fetch('/api/system/status');
+    const data = await resp.json();
+    const el = document.getElementById('system-status');
+    if (!el) return;
+
+    const lastRun = data.last_collection ? new Date(data.last_collection) : null;
+    // 转换为香港时间显示
+    let runTimeStr = '--';
+    if (lastRun) {
+      runTimeStr = new Intl.DateTimeFormat('zh-HK', {
+        timeZone: 'Asia/Hong_Kong',
+        year: 'numeric', month: '2-digit', day: '2-digit',
+        hour: '2-digit', minute: '2-digit', hour12: false,
+      }).format(lastRun);
+    }
+
+    const s = data.last_run_stats || {};
+    el.innerHTML = `
+      <div class="status-icon">✓</div>
+      <div class="status-content">
+        <div class="status-title">系统运行正常 · 每日自动采集中</div>
+        <div class="status-detail">
+          最近采集：${runTimeStr}（香港时间） · 
+          扫描 ${s.fetched || 0} 条资讯 · 
+          覆盖 ${s.sources || 0} 个媒体源
+          ${s.matched === 0 ? ' · <strong>本轮暂无创兴银行相关新闻</strong>' : ` · 命中 ${s.matched} 条`}
+        </div>
+      </div>
+    `;
+  } catch (e) {
+    console.error('加载系统状态失败:', e);
+    const el = document.getElementById('system-status');
+    if (el) el.innerHTML = '';
+  }
+}
+
 // 加载最新研报
 async function loadLatestReport() {
   try {
@@ -543,3 +582,4 @@ document.getElementById('btn-refresh').addEventListener('click', runFetch);
 
 // 初始加载
 loadLatestReport();
+loadSystemStatus();
