@@ -219,15 +219,28 @@ async function fetchOneSource(source) {
     result.items_fetched = items.length;
 
     for (const item of items) {
-      if (matchKeywords(item.title, item.description)) {
-        if (!isFalsePositive(item.title, item.description)) {
+      // Google News 聚合源：标题形如「真實標題 - 媒體名」，剝離後綴避免重複去匹配失效
+      let title = item.title;
+      let desc = item.description;
+      let sourceName = source.name;
+      if (source.name.startsWith('GNews') || source.name.startsWith('Google News')) {
+        const parts = String(title).split(' - ');
+        if (parts.length > 1) {
+          const publisher = parts[parts.length - 1].trim();
+          title = parts.slice(0, -1).join(' - ').trim();
+          sourceName = publisher ? `${publisher}（Google News聚合）` : source.name;
+          desc = `${desc || ''} [原始媒体: ${publisher}]`.trim();
+        }
+      }
+      if (matchKeywords(title, desc)) {
+        if (!isFalsePositive(title, desc)) {
           result.hits.push({
-            title: item.title,
+            title,
             link: item.link,
-            desc: item.description,
+            desc,
             pubDate: item.pubDate,
             source_id: source.id,
-            source_name: source.name,
+            source_name: sourceName,
             source_cat: source.cat,
             lang: source.lang,
             tier_hint: null,

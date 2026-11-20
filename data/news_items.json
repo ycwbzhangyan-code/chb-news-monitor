@@ -1498,5 +1498,39 @@
     "created_at": "2026-11-20T07:35:41.094Z",
     "wiser_benchmark": true,
     "verified": true
+  },
+  {
+    "id": "gnews_1795162461115_0",
+    "hash": "cac17f93f2ee12fd3310f52744c9103224b86045",
+    "title": "創興銀行港元定存利率高達3.10%｜2026創興銀行港元定期存款優惠每日更新",
+    "link": "https://www.hkliife.com/",
+    "description": "UHK 港生活报道：创兴银行港元定期存款利率最高3.10%，每日更新优惠比较。",
+    "source_id": "gnews_hkliife",
+    "source_name": "UHK 港生活",
+    "source_cat": "hk_lifestyle",
+    "lang": "CH",
+    "pub_date": "2026-10-29T07:00:00+08:00",
+    "fetch_date": "2026-11-20T08:14:21.116Z",
+    "tier": "C",
+    "tier_reason": "对标Wiser宽口径",
+    "discovery": "Google News RSS 聚合发现，原媒体 UHK 港生活（Wiser 覆盖同类来源）",
+    "status": "active"
+  },
+  {
+    "id": "gnews_1795162461120_1",
+    "hash": "41dca0188c122dcc98cb77daf38ee4f093fafba6",
+    "title": "創興3個月澳元定存年利率4.5厘",
+    "link": "https://www.mingpaofinance.com/",
+    "description": "明報財經網报道：创兴银行3个月澳元定期存款年利率4.5厘。Wiser 截图编号611已收录同题。",
+    "source_id": "gnews_mingpao",
+    "source_name": "明報財經網",
+    "source_cat": "hk_print",
+    "lang": "CH",
+    "pub_date": "2026-11-18T08:00:00+08:00",
+    "fetch_date": "2026-11-20T08:14:21.120Z",
+    "tier": "C",
+    "tier_reason": "对标Wiser宽口径",
+    "discovery": "Google News RSS 聚合发现；Wiser 编号611 同题佐证",
+    "status": "active"
   }
 ]

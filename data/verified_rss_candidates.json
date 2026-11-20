@@ -1,0 +1,138 @@
+[
+  {
+    "name": "明報·即時",
+    "url": "https://news.mingpao.com/rss/pns/s00001.xml",
+    "cat": "hk_print",
+    "lang": "CH",
+    "items": 18,
+    "bytes": 31652
+  },
+  {
+    "name": "明報·財經",
+    "url": "https://news.mingpao.com/rss/pns/s00014.xml",
+    "cat": "hk_print",
+    "lang": "CH",
+    "items": 31,
+    "bytes": 52537
+  },
+  {
+    "name": "星島頭條·RSS",
+    "url": "https://www.stheadline.com/rss",
+    "cat": "hk_print",
+    "lang": "CH",
+    "items": 100,
+    "bytes": 123995
+  },
+  {
+    "name": "人民網·財經",
+    "url": "http://www.people.com.cn/rss/finance.xml",
+    "cat": "cn_mainland",
+    "lang": "CH",
+    "items": 47,
+    "bytes": 200000
+  },
+  {
+    "name": "人民網·時政",
+    "url": "http://www.people.com.cn/rss/politics.xml",
+    "cat": "cn_mainland",
+    "lang": "CH",
+    "items": 52,
+    "bytes": 200000
+  },
+  {
+    "name": "新華網·財經",
+    "url": "http://www.xinhuanet.com/politics/news_politics.xml",
+    "cat": "cn_mainland",
+    "lang": "CH",
+    "items": 300,
+    "bytes": 174092
+  },
+  {
+    "name": "BBC中文",
+    "url": "https://feeds.bbci.co.uk/zhongwen/simp/rss.xml",
+    "cat": "hk_en",
+    "lang": "CH",
+    "items": 42,
+    "bytes": 35358
+  },
+  {
+    "name": "BBC Business",
+    "url": "https://feeds.bbci.co.uk/news/business/rss.xml",
+    "cat": "hk_en",
+    "lang": "ENG",
+    "items": 57,
+    "bytes": 42081
+  },
+  {
+    "name": "CNBC",
+    "url": "https://www.cnbc.com/id/100003114/device/rss/rss.html",
+    "cat": "news_agency",
+    "lang": "ENG",
+    "items": 30,
+    "bytes": 20946
+  },
+  {
+    "name": "MarketWatch",
+    "url": "https://feeds.marketwatch.com/marketwatch/topstories/",
+    "cat": "news_agency",
+    "lang": "ENG",
+    "items": 10,
+    "bytes": 8212
+  },
+  {
+    "name": "FT中文网",
+    "url": "https://www.ftchinese.com/rss/feed",
+    "cat": "hk_en",
+    "lang": "CH",
+    "items": 20,
+    "bytes": 11164
+  },
+  {
+    "name": "彭博·中文",
+    "url": "https://feeds.bloomberg.com/markets/news.rss",
+    "cat": "news_agency",
+    "lang": "ENG",
+    "items": 20,
+    "bytes": 15547
+  },
+  {
+    "name": "WSJ",
+    "url": "https://feeds.a.dj.com/rss/RSSMarketsMain.xml",
+    "cat": "news_agency",
+    "lang": "ENG",
+    "items": 20,
+    "bytes": 12752
+  },
+  {
+    "name": "CNN Business",
+    "url": "http://rss.cnn.com/rss/money_latest.rss",
+    "cat": "news_agency",
+    "lang": "ENG",
+    "items": 1,
+    "bytes": 1632
+  },
+  {
+    "name": "Google News·CHB",
+    "url": "https://news.google.com/rss/search?q=Chong+Hing+Bank&hl=en-US&gl=US&ceid=US:en",
+    "cat": "news_agency",
+    "lang": "ENG",
+    "items": 25,
+    "bytes": 32304
+  },
+  {
+    "name": "Google News·創興銀行",
+    "url": "https://news.google.com/rss/search?q=%E5%89%B5%E8%88%88%E9%8A%80%E8%A1%8C&hl=zh-TW&gl=HK&ceid=HK:zh-Hant",
+    "cat": "news_agency",
+    "lang": "CH",
+    "items": 38,
+    "bytes": 70104
+  },
+  {
+    "name": "Google News·定存香港",
+    "url": "https://news.google.com/rss/search?q=%E5%AE%9A%E5%AD%98+when:7d&hl=zh-TW&gl=HK&ceid=HK:zh-Hant",
+    "cat": "news_agency",
+    "lang": "CH",
+    "items": 54,
+    "bytes": 102387
+  }
+]

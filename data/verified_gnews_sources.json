@@ -1,0 +1,242 @@
+[
+  {
+    "name": "GNews-創興銀行繁中",
+    "url": "https://news.google.com/rss/search?q=%E5%89%B5%E8%88%88%E9%8A%80%E8%A1%8C&hl=zh-TW&gl=HK&ceid=HK:zh-Hant",
+    "cat": "hk_business",
+    "lang": "CH",
+    "items": 38,
+    "query": "創興銀行"
+  },
+  {
+    "name": "GNews-创兴银行简中",
+    "url": "https://news.google.com/rss/search?q=%E5%88%9B%E5%85%B4%E9%93%B6%E8%A1%8C&hl=zh-CN&gl=CN&ceid=CN:zh-Hans",
+    "cat": "cn_mainland",
+    "lang": "CH",
+    "items": 26,
+    "query": "创兴银行"
+  },
+  {
+    "name": "GNews-ChongHingBank",
+    "url": "https://news.google.com/rss/search?q=%22Chong%20Hing%20Bank%22&hl=en-US&gl=US&ceid=US:en",
+    "cat": "news_agency",
+    "lang": "CH",
+    "items": 25,
+    "query": "\"Chong Hing Bank\""
+  },
+  {
+    "name": "GNews-廖創興",
+    "url": "https://news.google.com/rss/search?q=%E5%BB%96%E5%89%B5%E8%88%88&hl=zh-TW&gl=HK&ceid=HK:zh-Hant",
+    "cat": "hk_business",
+    "lang": "CH",
+    "items": 59,
+    "query": "廖創興"
+  },
+  {
+    "name": "GNews-創興銀行定存",
+    "url": "https://news.google.com/rss/search?q=%E5%89%B5%E8%88%88%E9%8A%80%E8%A1%8C%20%E5%AE%9A%E5%AD%98&hl=zh-TW&gl=HK&ceid=HK:zh-Hant",
+    "cat": "hk_business",
+    "lang": "CH",
+    "items": 40,
+    "query": "創興銀行 定存"
+  },
+  {
+    "name": "GNews-創興銀行定期",
+    "url": "https://news.google.com/rss/search?q=%E5%89%B5%E8%88%88%E9%8A%80%E8%A1%8C%20%E5%AE%9A%E6%9C%9F%E5%AD%98%E6%AC%BE&hl=zh-TW&gl=HK&ceid=HK:zh-Hant",
+    "cat": "hk_business",
+    "lang": "CH",
+    "items": 44,
+    "query": "創興銀行 定期存款"
+  },
+  {
+    "name": "GNews-創興银行利率",
+    "url": "https://news.google.com/rss/search?q=%E5%89%B5%E8%88%88%E9%8A%80%E8%A1%8C%20%E5%88%A9%E7%8E%87&hl=zh-TW&gl=HK&ceid=HK:zh-Hant",
+    "cat": "hk_business",
+    "lang": "CH",
+    "items": 34,
+    "query": "創興銀行 利率"
+  },
+  {
+    "name": "GNews-創興銀行港元",
+    "url": "https://news.google.com/rss/search?q=%E5%89%B5%E8%88%88%E9%8A%80%E8%A1%8C%20%E6%B8%AF%E5%85%83&hl=zh-TW&gl=HK&ceid=HK:zh-Hant",
+    "cat": "hk_business",
+    "lang": "CH",
+    "items": 30,
+    "query": "創興銀行 港元"
+  },
+  {
+    "name": "GNews-創興銀行美元",
+    "url": "https://news.google.com/rss/search?q=%E5%89%B5%E8%88%88%E9%8A%80%E8%A1%8C%20%E7%BE%8E%E5%85%83&hl=zh-TW&gl=HK&ceid=HK:zh-Hant",
+    "cat": "hk_business",
+    "lang": "CH",
+    "items": 21,
+    "query": "創興銀行 美元"
+  },
+  {
+    "name": "GNews-創興銀行按揭",
+    "url": "https://news.google.com/rss/search?q=%E5%89%B5%E8%88%88%E9%8A%80%E8%A1%8C%20%E6%8C%89%E6%8F%AD&hl=zh-TW&gl=HK&ceid=HK:zh-Hant",
+    "cat": "hk_business",
+    "lang": "CH",
+    "items": 29,
+    "query": "創興銀行 按揭"
+  },
+  {
+    "name": "GNews-創興銀行理財",
+    "url": "https://news.google.com/rss/search?q=%E5%89%B5%E8%88%88%E9%8A%80%E8%A1%8C%20%E7%90%86%E8%B2%A1&hl=zh-TW&gl=HK&ceid=HK:zh-Hant",
+    "cat": "hk_business",
+    "lang": "CH",
+    "items": 24,
+    "query": "創興銀行 理財"
+  },
+  {
+    "name": "GNews-創興銀行評級",
+    "url": "https://news.google.com/rss/search?q=%E5%89%B5%E8%88%88%E9%8A%80%E8%A1%8C%20%E8%A9%95%E7%B4%9A&hl=zh-TW&gl=HK&ceid=HK:zh-Hant",
+    "cat": "hk_business",
+    "lang": "CH",
+    "items": 12,
+    "query": "創興銀行 評級"
+  },
+  {
+    "name": "GNews-創興銀行越秀",
+    "url": "https://news.google.com/rss/search?q=%E5%89%B5%E8%88%88%E9%8A%80%E8%A1%8C%20%E8%B6%8A%E7%A7%80&hl=zh-TW&gl=HK&ceid=HK:zh-Hant",
+    "cat": "hk_business",
+    "lang": "CH",
+    "items": 27,
+    "query": "創興銀行 越秀"
+  },
+  {
+    "name": "GNews-CHB-HK",
+    "url": "https://news.google.com/rss/search?q=CHB%20bank%20Hong%20Kong&hl=en-US&gl=US&ceid=US:en",
+    "cat": "news_agency",
+    "lang": "CH",
+    "items": 4,
+    "query": "CHB bank Hong Kong"
+  },
+  {
+    "name": "GNews-ChongHing定存",
+    "url": "https://news.google.com/rss/search?q=Chong%20Hing%20time%20deposit&hl=en-US&gl=US&ceid=US:en",
+    "cat": "news_agency",
+    "lang": "CH",
+    "items": 5,
+    "query": "Chong Hing time deposit"
+  },
+  {
+    "name": "GNews-香港定存",
+    "url": "https://news.google.com/rss/search?q=%E9%A6%99%E6%B8%AF%20%E5%AE%9A%E5%AD%98%20%E5%88%A9%E7%8E%87&hl=zh-TW&gl=HK&ceid=HK:zh-Hant",
+    "cat": "hk_business",
+    "lang": "CH",
+    "items": 71,
+    "query": "香港 定存 利率"
+  },
+  {
+    "name": "GNews-港元定期比較",
+    "url": "https://news.google.com/rss/search?q=%E6%B8%AF%E5%85%83%20%E5%AE%9A%E6%9C%9F%E5%AD%98%E6%AC%BE%20%E6%AF%94%E8%BC%83&hl=zh-TW&gl=HK&ceid=HK:zh-Hant",
+    "cat": "hk_business",
+    "lang": "CH",
+    "items": 59,
+    "query": "港元 定期存款 比較"
+  },
+  {
+    "name": "GNews-美元定存香港",
+    "url": "https://news.google.com/rss/search?q=%E7%BE%8E%E5%85%83%20%E5%AE%9A%E5%AD%98%20%E9%A6%99%E6%B8%AF&hl=zh-TW&gl=HK&ceid=HK:zh-Hant",
+    "cat": "hk_business",
+    "lang": "CH",
+    "items": 47,
+    "query": "美元 定存 香港"
+  },
+  {
+    "name": "GNews-稅貸",
+    "url": "https://news.google.com/rss/search?q=%E7%A8%85%E8%B2%B8%20%E9%8A%80%E8%A1%8C&hl=zh-TW&gl=HK&ceid=HK:zh-Hant",
+    "cat": "hk_business",
+    "lang": "CH",
+    "items": 49,
+    "query": "稅貸 銀行"
+  },
+  {
+    "name": "GNews-香港加息",
+    "url": "https://news.google.com/rss/search?q=%E9%A6%99%E6%B8%AF%20%E5%8A%A0%E6%81%AF%20%E9%8A%80%E8%A1%8C&hl=zh-TW&gl=HK&ceid=HK:zh-Hant",
+    "cat": "hk_business",
+    "lang": "CH",
+    "items": 64,
+    "query": "香港 加息 銀行"
+  },
+  {
+    "name": "GNews-越秀集團",
+    "url": "https://news.google.com/rss/search?q=%E8%B6%8A%E7%A7%80%E9%9B%86%E5%9C%98&hl=zh-TW&gl=HK&ceid=HK:zh-Hant",
+    "cat": "cn_mainland",
+    "lang": "CH",
+    "items": 34,
+    "query": "越秀集團"
+  },
+  {
+    "name": "GNews-香港人壽",
+    "url": "https://news.google.com/rss/search?q=%E9%A6%99%E6%B8%AF%E4%BA%BA%E5%A3%BD&hl=zh-TW&gl=HK&ceid=HK:zh-Hant",
+    "cat": "hk_business",
+    "lang": "CH",
+    "items": 34,
+    "query": "香港人壽"
+  },
+  {
+    "name": "GNews-創興證券",
+    "url": "https://news.google.com/rss/search?q=%E5%89%B5%E8%88%88%E8%AD%89%E5%88%B8&hl=zh-TW&gl=HK&ceid=HK:zh-Hant",
+    "cat": "hk_business",
+    "lang": "CH",
+    "items": 12,
+    "query": "創興證券"
+  },
+  {
+    "name": "GNews-創興保險",
+    "url": "https://news.google.com/rss/search?q=%E5%89%B5%E8%88%88%E4%BF%9D%E9%9A%AA&hl=zh-TW&gl=HK&ceid=HK:zh-Hant",
+    "cat": "hk_business",
+    "lang": "CH",
+    "items": 18,
+    "query": "創興保險"
+  },
+  {
+    "name": "GNews-横琴創興",
+    "url": "https://news.google.com/rss/search?q=%E5%88%9B%E5%85%B4%E9%93%B6%E8%A1%8C%20%E6%A8%AA%E7%90%B4&hl=zh-CN&gl=CN&ceid=CN:zh-Hans",
+    "cat": "cn_mainland",
+    "lang": "CH",
+    "items": 5,
+    "query": "创兴银行 横琴"
+  },
+  {
+    "name": "GNews-深圳創興",
+    "url": "https://news.google.com/rss/search?q=%E5%88%9B%E5%85%B4%E9%93%B6%E8%A1%8C%20%E6%B7%B1%E5%9C%B3&hl=zh-CN&gl=CN&ceid=CN:zh-Hans",
+    "cat": "cn_mainland",
+    "lang": "CH",
+    "items": 35,
+    "query": "创兴银行 深圳"
+  },
+  {
+    "name": "GNews-广州創興",
+    "url": "https://news.google.com/rss/search?q=%E5%88%9B%E5%85%B4%E9%93%B6%E8%A1%8C%20%E5%B9%BF%E5%B7%9E&hl=zh-CN&gl=CN&ceid=CN:zh-Hans",
+    "cat": "cn_mainland",
+    "lang": "CH",
+    "items": 12,
+    "query": "创兴银行 广州"
+  },
+  {
+    "name": "GNews-創興銀行債券",
+    "url": "https://news.google.com/rss/search?q=%E5%89%B5%E8%88%88%E9%8A%80%E8%A1%8C%20%E5%82%B5%E5%88%B8&hl=zh-TW&gl=HK&ceid=HK:zh-Hant",
+    "cat": "hk_business",
+    "lang": "CH",
+    "items": 26,
+    "query": "創興銀行 債券"
+  },
+  {
+    "name": "GNews-創興銀行訴訟",
+    "url": "https://news.google.com/rss/search?q=%E5%89%B5%E8%88%88%E9%8A%80%E8%A1%8C%20%E8%A8%B4%E8%A8%9F&hl=zh-TW&gl=HK&ceid=HK:zh-Hant",
+    "cat": "hk_business",
+    "lang": "CH",
+    "items": 7,
+    "query": "創興銀行 訴訟"
+  },
+  {
+    "name": "GNews-創興銀行收購",
+    "url": "https://news.google.com/rss/search?q=%E5%89%B5%E8%88%88%E9%8A%80%E8%A1%8C%20%E6%94%B6%E8%B3%BC&hl=zh-TW&gl=HK&ceid=HK:zh-Hant",
+    "cat": "hk_business",
+    "lang": "CH",
+    "items": 29,
+    "query": "創興銀行 收購"
+  }
+]
