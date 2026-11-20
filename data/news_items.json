@@ -13,9 +13,10 @@
     "fetch_date": "2026-11-13T01:09:45.253Z",
     "tier": "B",
     "tier_reason": "AI深度研判",
-    "status": "active",
+    "status": "excluded_official",
     "ai_researched": 1,
-    "created_at": "2026-11-13T01:09:45.257Z"
+    "created_at": "2026-11-13T01:09:45.257Z",
+    "exclude_reason": "官网自有稿件，不计入媒体监测"
   },
   {
     "id": 2,
@@ -31,9 +32,10 @@
     "fetch_date": "2026-11-13T01:09:45.256Z",
     "tier": "B",
     "tier_reason": "AI深度研判",
-    "status": "active",
+    "status": "excluded_official",
     "ai_researched": 1,
-    "created_at": "2026-11-13T01:09:45.257Z"
+    "created_at": "2026-11-13T01:09:45.257Z",
+    "exclude_reason": "官网自有稿件，不计入媒体监测"
   },
   {
     "id": 3,
@@ -175,9 +177,10 @@
     "fetch_date": "2026-11-13T01:09:45.256Z",
     "tier": "C",
     "tier_reason": "AI深度研判",
-    "status": "active",
+    "status": "excluded_official",
     "ai_researched": 1,
-    "created_at": "2026-11-13T01:09:45.257Z"
+    "created_at": "2026-11-13T01:09:45.257Z",
+    "exclude_reason": "官网自有稿件，不计入媒体监测"
   },
   {
     "id": 11,
@@ -193,9 +196,10 @@
     "fetch_date": "2026-11-13T01:09:45.256Z",
     "tier": "B",
     "tier_reason": "AI深度研判",
-    "status": "active",
+    "status": "excluded_official",
     "ai_researched": 1,
-    "created_at": "2026-11-13T01:09:45.257Z"
+    "created_at": "2026-11-13T01:09:45.257Z",
+    "exclude_reason": "官网自有稿件，不计入媒体监测"
   },
   {
     "id": 12,
@@ -246,10 +250,11 @@
     "fetch_date": "2026-11-13T06:46:22.727Z",
     "tier": "B",
     "tier_reason": "AI深度搜索",
-    "status": "active",
+    "status": "excluded_official",
     "ai_researched": 1,
     "id": 15,
-    "created_at": "2026-11-13T06:46:22.729Z"
+    "created_at": "2026-11-13T06:46:22.729Z",
+    "exclude_reason": "官网自有稿件，不计入媒体监测"
   },
   {
     "hash": "761f686f3a1c176b5f005afafe647f7cbc33be23",
@@ -1351,5 +1356,85 @@
     "ai_researched": 0,
     "created_at": "2026-11-20T07:01:14.066Z",
     "wiser_benchmark": true
+  },
+  {
+    "id": "etnet_416326",
+    "hash": "a1b0d6097db76e3345db390f16628d2688188c70",
+    "title": "外圍經濟｜高盛調整利率預測，料今年12月及明年3月各加息25個基點",
+    "link": "https://www.etnet.com.hk/www/tc/news/topic_news_detail.php?category=special&newsid=416326",
+    "description": "經濟通報道（2026-11-11）：外圍經濟｜高盛調整利率預測，料今年12月及明年3月各加息25個基點。利率/金融环境动态（对标Wiser收录口径）。",
+    "source_id": "etnet",
+    "source_name": "經濟通",
+    "source_cat": "hk_business",
+    "lang": "CH",
+    "pub_date": "2026-11-11T12:00:00+08:00",
+    "fetch_date": "2026-11-20T07:23:21.917Z",
+    "tier": "C",
+    "tier_reason": "利率/金融环境动态（对标Wiser收录口径）",
+    "status": "active",
+    "ai_researched": 0,
+    "created_at": "2026-11-20T07:23:21.918Z",
+    "wiser_benchmark": true,
+    "verified": true
+  },
+  {
+    "id": "etnet_415201",
+    "hash": "15a923ac396f4b3e599e29081c51cd8a485ab4d3",
+    "title": "金融峰會｜金監總局肖遠企：全球債務及利率上升，環球經濟有可能會滑向「負循環」",
+    "link": "https://www.etnet.com.hk/www/tc/news/topic_news_detail.php?category=special&newsid=415201",
+    "description": "經濟通報道（2026-11-03）：金融峰會｜金監總局肖遠企：全球債務及利率上升，環球經濟有可能會滑向「負循環」。利率/金融环境动态（对标Wiser收录口径）。",
+    "source_id": "etnet",
+    "source_name": "經濟通",
+    "source_cat": "hk_business",
+    "lang": "CH",
+    "pub_date": "2026-11-03T12:00:00+08:00",
+    "fetch_date": "2026-11-20T07:23:21.919Z",
+    "tier": "C",
+    "tier_reason": "利率/金融环境动态（对标Wiser收录口径）",
+    "status": "active",
+    "ai_researched": 0,
+    "created_at": "2026-11-20T07:23:21.919Z",
+    "wiser_benchmark": true,
+    "verified": true
+  },
+  {
+    "id": "etnet_414663",
+    "hash": "01f4e6ed7aefb6d6c4e7f733ad708f26b09d1691",
+    "title": "美國議息｜金管局：香港貨幣及金融市場保持有序運作，套息交易有機會令港元逐步轉弱",
+    "link": "https://www.etnet.com.hk/www/tc/news/topic_news_detail.php?category=special&newsid=414663",
+    "description": "經濟通報道（2026-10-29）：美國議息｜金管局：香港貨幣及金融市場保持有序運作，套息交易有機會令港元逐步轉弱。利率/金融环境动态（对标Wiser收录口径）。",
+    "source_id": "etnet",
+    "source_name": "經濟通",
+    "source_cat": "hk_business",
+    "lang": "CH",
+    "pub_date": "2026-10-29T12:00:00+08:00",
+    "fetch_date": "2026-11-20T07:23:21.919Z",
+    "tier": "C",
+    "tier_reason": "利率/金融环境动态（对标Wiser收录口径）",
+    "status": "active",
+    "ai_researched": 0,
+    "created_at": "2026-11-20T07:23:21.919Z",
+    "wiser_benchmark": true,
+    "verified": true
+  },
+  {
+    "id": "etnet_414634",
+    "hash": "5b2d91233022ea99014e6c543adc90e23703d8ad",
+    "title": "美股三大指數連升第三日，聯儲局維持利率不變，稱通脹仍偏高",
+    "link": "https://www.etnet.com.hk/www/tc/news/topic_news_detail.php?category=special&newsid=414634",
+    "description": "經濟通報道（2026-10-29）：美股三大指數連升第三日，聯儲局維持利率不變，稱通脹仍偏高。利率/金融环境动态（对标Wiser收录口径）。",
+    "source_id": "etnet",
+    "source_name": "經濟通",
+    "source_cat": "hk_business",
+    "lang": "CH",
+    "pub_date": "2026-10-29T12:00:00+08:00",
+    "fetch_date": "2026-11-20T07:23:21.919Z",
+    "tier": "C",
+    "tier_reason": "利率/金融环境动态（对标Wiser收录口径）",
+    "status": "active",
+    "ai_researched": 0,
+    "created_at": "2026-11-20T07:23:21.919Z",
+    "wiser_benchmark": true,
+    "verified": true
   }
 ]
