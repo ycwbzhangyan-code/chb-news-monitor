@@ -73,7 +73,9 @@ function getAllNews() {
 function addNews(items) {
   const existing = getAllNews();
   const existingHashes = new Set(existing.map(n => n.hash));
-  const existingTitles = existing.map(n => n.title);
+  // 只与有效条目比对去重，避免重复累积
+  const validExisting = existing.filter(n => n.status === 'active' || !n.status);
+  const existingNorm = validExisting.map(n => normalizeTitle(n.title));
 
   let newCount = 0;
   let dupCount = 0;
@@ -84,10 +86,14 @@ function addNews(items) {
       dupCount++;
       continue;
     }
-    // 前30字二次匹配
+    // 规范化标题前缀匹配（20字）：可捕获"截断标题带..."与完整标题重复
     const normTitle = normalizeTitle(item.title);
-    const prefix = normTitle.substring(0, 30);
-    if (prefix.length >= 5 && existingTitles.some(t => normalizeTitle(t).substring(0, 30) === prefix)) {
+    const prefix = normTitle.substring(0, 20);
+    if (prefix.length >= 6 && existingNorm.some(t => {
+      const p = t.substring(0, 20);
+      // 完全相等，或其中一个是另一个的前缀（截断标题场景）
+      return p === prefix || (p.length >= 6 && prefix.startsWith(p)) || (p.length >= 6 && p.startsWith(prefix));
+    })) {
       dupCount++;
       continue;
     }
@@ -98,7 +104,7 @@ function addNews(items) {
       created_at: new Date().toISOString(),
     });
     existingHashes.add(item.hash);
-    existingTitles.push(item.title);
+    existingNorm.push(normTitle);
     newCount++;
   }
 
@@ -275,8 +281,13 @@ function normalizeTitle(title) {
     .replace(/\s+/g, '')
     .replace(/【.*?】/g, '')
     .replace(/\[.*?\]/g, '')
+    .replace(/（有片）/g, '')
+    .replace(/(有片)$/g, '')
+    .replace(/[…\.]{2,}$/g, '')       // 去掉尾部省略号 5... / …
+    .replace(/…$/g, '')
     .replace(/[｜|].*$/, '')
     .replace(/^.*[｜|]/, '')
+    .replace(/[，,。！!：:、「」\"'（）()《》]/g, '') // 去标点，防截断标题绕过
     .toLowerCase()
     .trim();
 }
