@@ -57,6 +57,11 @@ async function loadSystemStatus() {
     }
 
     const s = data.last_run_stats || {};
+    const paid = (data.paid_subscriptions || []).map(p => {
+      if (p.active) return `${p.name} 已生效`;
+      return `${p.name} ${p.days_until_active} 天后生效`;
+    }).join(' · ');
+
     el.innerHTML = `
       <div class="status-icon">✓</div>
       <div class="status-content">
@@ -67,6 +72,7 @@ async function loadSystemStatus() {
           覆盖 ${s.sources || 0} 个媒体源
           ${s.matched === 0 ? ' · <strong>本轮暂无创兴银行相关新闻</strong>' : ` · 命中 ${s.matched} 条`}
         </div>
+        ${paid ? `<div class="status-detail" style="margin-top:4px">付费订阅：${paid}</div>` : ''}
       </div>
     `;
   } catch (e) {

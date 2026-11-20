@@ -1,0 +1,32 @@
+{
+  "updated_at": "2026-11-20",
+  "note": "用户确认的付费港媒订阅。生效日前继续用免费公开抓取；生效后切换到付费数据接入。",
+  "subscriptions": [
+    {
+      "id": "hkej_paid",
+      "name": "信報（信報財經新聞網）",
+      "aliases": ["信報財經新聞網", "信報"],
+      "effective_date": "2026-12-28",
+      "expiry_date": "2027-12-27",
+      "term": "1 year",
+      "status": "purchased_pending_activation",
+      "access_method": "待采购部确认（账号/API/批量导出）",
+      "wiser_reference_ids": [566, 574, 584, 605, 612, 620]
+    },
+    {
+      "id": "hket_paid",
+      "name": "經濟日報（含經濟日報網/理財）",
+      "aliases": ["香港經濟日報網", "香港經濟日報", "香港經濟日報·理財"],
+      "effective_date": "2027-01-01",
+      "expiry_date": "2027-12-31",
+      "term": "1 year",
+      "status": "purchased_pending_activation",
+      "access_method": "待采购部确认（账号/API/批量导出）",
+      "wiser_reference_ids": [549, 550, 561, 562, 565, 616, 617, 618]
+    }
+  ],
+  "not_purchased": [
+    { "name": "明報", "reason": "本次未采购，继续免费抓取" },
+    { "name": "慧科 WiseSearch / Wiser 全库", "reason": "本次未采购，保留为升级选项（预算锚点 9万–18万元/年）" }
+  ]
+}

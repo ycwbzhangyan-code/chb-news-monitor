@@ -285,6 +285,23 @@ router.get('/system/status', (req, res) => {
   } catch (e) { /* ignore */ }
 
   const stats = store.getStats();
+
+  // 付费订阅生效倒计时（经济日报、信报）
+  let paidSubscriptions = [];
+  try {
+    const paidFile = path.join(__dirname, '..', '..', 'config', 'paid_subscriptions.json');
+    const paid = JSON.parse(fs.readFileSync(paidFile, 'utf-8'));
+    const today = new Date().toISOString().slice(0, 10);
+    paidSubscriptions = (paid.subscriptions || []).map(s => ({
+      name: s.name,
+      effective_date: s.effective_date,
+      expiry_date: s.expiry_date,
+      status: s.status,
+      days_until_active: Math.ceil((new Date(s.effective_date) - new Date(today)) / 86400000),
+      active: today >= s.effective_date && today <= s.expiry_date,
+    }));
+  } catch (e) { /* ignore */ }
+
   res.json({
     last_collection: lastRun,
     last_run_stats: lastRunStats,
@@ -292,6 +309,7 @@ router.get('/system/status', (req, res) => {
     latest_news_date: stats.latest_date,
     total_sources: 3793,
     rss_sources: 263,
+    paid_subscriptions: paidSubscriptions,
     server_time: new Date().toISOString(),
   });
 });
