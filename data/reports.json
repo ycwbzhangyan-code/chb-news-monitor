@@ -1,7 +1,101 @@
 [
   {
+    "report_date": "2026-11-22",
+    "generated_at": "2026-11-22T03:42:10.540Z",
+    "stats": {
+      "total": 2,
+      "A": 0,
+      "B": 0,
+      "C": 2,
+      "X": 0
+    },
+    "summary": "C类·例行提及 2 条",
+    "tiers": {
+      "B": [],
+      "C": [
+        {
+          "id": 267,
+          "hash": "ce9a3f98a1c80f0bcefded5f5075d165d4910852",
+          "title": "【錢夫人巡舖】3個月定存息見3.68厘 1個月短存高見4.5厘",
+          "link": "https://hk.on.cc/hk/bkn/cnt/news/20261122/bkn-20261122090016312-1122_00822_001.html",
+          "description": "東網 on.cc报道：【錢夫人巡舖】3個月定存息見3.68厘 1個月短存高見4.5厘",
+          "source_id": "oncc",
+          "source_name": "東網 on.cc",
+          "source_cat": "hk_business",
+          "lang": "CH",
+          "pub_date": "2026-11-22T03:42:01.474Z",
+          "fetch_date": "2026-11-22T03:42:10.525Z",
+          "tier": "C",
+          "tier_reason": "AI深度研判",
+          "status": "active",
+          "ai_researched": 1,
+          "created_at": "2026-11-22T03:42:10.530Z"
+        },
+        {
+          "id": 268,
+          "hash": "f281240c9b9d0ce0080b5ffc5d5d10d5ce5d3fec",
+          "title": "南洋商業銀行最新上調3個月港元定存年息至3.68厘，存額由10萬元至500萬元，適用於「多元配置．多元賞息」，合資格客戶於推廣期內成功認購基金或股票掛勾產品或一手巿場債券或投保人壽保險可享有定期優惠。&lt;br/&gt;&lt;br/&gt;平安數字銀行推1個月4.5厘的港元定存",
+          "link": "https://hk.on.cc/hk/bkn/cnt/news/20261122/bkn-20261122090016312-1122_00822_001.html",
+          "description": "東網 on.cc报道：南洋商業銀行最新上調3個月港元定存年息至3.68厘，存額由10萬元至500萬元，適用於「多元配置．多元賞息」，合資格客戶於推廣期內成功認購基金或股票掛勾產品或一手巿場債券或投保人壽保險可享有定期優惠。&lt;br/&gt;&lt;br/&gt;平安數字銀行推1個月4.5厘的港元定存",
+          "source_id": "oncc",
+          "source_name": "東網 on.cc",
+          "source_cat": "hk_business",
+          "lang": "CH",
+          "pub_date": "2026-11-22T03:42:01.474Z",
+          "fetch_date": "2026-11-22T03:42:10.525Z",
+          "tier": "C",
+          "tier_reason": "AI深度研判",
+          "status": "active",
+          "ai_researched": 1,
+          "created_at": "2026-11-22T03:42:10.530Z"
+        }
+      ],
+      "X": []
+    },
+    "by_category": {
+      "hk_business": [
+        {
+          "id": 267,
+          "hash": "ce9a3f98a1c80f0bcefded5f5075d165d4910852",
+          "title": "【錢夫人巡舖】3個月定存息見3.68厘 1個月短存高見4.5厘",
+          "link": "https://hk.on.cc/hk/bkn/cnt/news/20261122/bkn-20261122090016312-1122_00822_001.html",
+          "description": "東網 on.cc报道：【錢夫人巡舖】3個月定存息見3.68厘 1個月短存高見4.5厘",
+          "source_id": "oncc",
+          "source_name": "東網 on.cc",
+          "source_cat": "hk_business",
+          "lang": "CH",
+          "pub_date": "2026-11-22T03:42:01.474Z",
+          "fetch_date": "2026-11-22T03:42:10.525Z",
+          "tier": "C",
+          "tier_reason": "AI深度研判",
+          "status": "active",
+          "ai_researched": 1,
+          "created_at": "2026-11-22T03:42:10.530Z"
+        },
+        {
+          "id": 268,
+          "hash": "f281240c9b9d0ce0080b5ffc5d5d10d5ce5d3fec",
+          "title": "南洋商業銀行最新上調3個月港元定存年息至3.68厘，存額由10萬元至500萬元，適用於「多元配置．多元賞息」，合資格客戶於推廣期內成功認購基金或股票掛勾產品或一手巿場債券或投保人壽保險可享有定期優惠。&lt;br/&gt;&lt;br/&gt;平安數字銀行推1個月4.5厘的港元定存",
+          "link": "https://hk.on.cc/hk/bkn/cnt/news/20261122/bkn-20261122090016312-1122_00822_001.html",
+          "description": "東網 on.cc报道：南洋商業銀行最新上調3個月港元定存年息至3.68厘，存額由10萬元至500萬元，適用於「多元配置．多元賞息」，合資格客戶於推廣期內成功認購基金或股票掛勾產品或一手巿場債券或投保人壽保險可享有定期優惠。&lt;br/&gt;&lt;br/&gt;平安數字銀行推1個月4.5厘的港元定存",
+          "source_id": "oncc",
+          "source_name": "東網 on.cc",
+          "source_cat": "hk_business",
+          "lang": "CH",
+          "pub_date": "2026-11-22T03:42:01.474Z",
+          "fetch_date": "2026-11-22T03:42:10.525Z",
+          "tier": "C",
+          "tier_reason": "AI深度研判",
+          "status": "active",
+          "ai_researched": 1,
+          "created_at": "2026-11-22T03:42:10.530Z"
+        }
+      ]
+    }
+  },
+  {
     "report_date": "2026-11-21",
-    "generated_at": "2026-11-21T04:28:34.748Z",
+    "generated_at": "2026-11-22T03:42:10.552Z",
     "stats": {
       "total": 7,
       "A": 0,
@@ -277,7 +371,7 @@
   },
   {
     "report_date": "2026-11-20",
-    "generated_at": "2026-11-21T04:28:34.756Z",
+    "generated_at": "2026-11-22T03:42:10.556Z",
     "stats": {
       "total": 16,
       "A": 0,
@@ -909,7 +1003,7 @@
   },
   {
     "report_date": "2026-11-19",
-    "generated_at": "2026-11-21T04:28:34.759Z",
+    "generated_at": "2026-11-22T03:42:10.560Z",
     "stats": {
       "total": 1,
       "A": 0,
@@ -969,7 +1063,7 @@
   },
   {
     "report_date": "2026-11-18",
-    "generated_at": "2026-11-21T04:28:34.761Z",
+    "generated_at": "2026-11-22T03:42:10.564Z",
     "stats": {
       "total": 2,
       "A": 0,
@@ -1125,7 +1219,7 @@
   },
   {
     "report_date": "2026-11-16",
-    "generated_at": "2026-11-21T04:28:34.766Z",
+    "generated_at": "2026-11-22T03:42:10.570Z",
     "stats": {
       "total": 1,
       "A": 0,
@@ -1187,7 +1281,7 @@
   },
   {
     "report_date": "2026-11-15",
-    "generated_at": "2026-11-21T04:28:34.769Z",
+    "generated_at": "2026-11-22T03:42:10.574Z",
     "stats": {
       "total": 1,
       "A": 0,
