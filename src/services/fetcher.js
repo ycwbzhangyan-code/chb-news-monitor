@@ -293,9 +293,65 @@ function loadAIResearch() {
   return [];
 }
 
+// ===== 入库闸门（2026-11-23 修复）=====
+// 背景：11/21-11/22 自动采集误将 Google News 历史文章(2013-2025)与宽主题噪音入库。
+// 根因：fetchAllSources 的 daysWindow 参数从未使用 + 宽主题候选(定存/加息/外汇)自动入库。
+// 原则：自动采集只入库「创兴银行为主体 + 监测窗口内 + 非官网稿 + 非同名误报」的真实新闻。
+//       宽主题候选仅作发现器，需人工核验后经 import_*.js 入库，不进自动闸门。
+const MONITOR_START = '2026-10-26';       // 监测起始日
+const CORE_CHB = /(创兴银行|創興銀行|创興銀行|chong\s*hing\s*bank|chong\s*hing|廖創興銀行|廖创兴银行|chbank)/i;
+const OFFICIAL_PAT = /(chbank\.com|创兴银行官网|創興銀行官網|官方微信|官方网站)/i;
+// 同名/八卦误报：廖创兴创办人家属八卦、廖创兴企业(00194)等
+const FP_PAT = /(廖倬竩|曾孙女|曾孫女|結婚|结婚|婚纱|婚紗|怒晒|上圍|八卦|廖創興企業|廖创兴企业|00194|樓盤|楼盘)/;
+
+function guardHit(item) {
+  // 1) 日期闸门：必须在监测窗口内（含未来1天容错），无日期的拒绝
+  const d = store.normalizeDate(item.pubDate || item.date);
+  if (!d || d < MONITOR_START) {
+    return { pass: false, reason: 'out_of_window:' + (d || 'no_date') };
+  }
+  const tomorrow = new Date(Date.now() + 86400000).toISOString().split('T')[0];
+  if (d > tomorrow) return { pass: false, reason: 'future_date:' + d };
+
+  const title = String(item.title || '');
+  const desc = String(item.desc || item.description || '');
+  const link = String(item.link || '');
+  const src = String(item.source_name || '');
+  const text = title + ' ' + desc;
+
+  // 2) 官网稿排除：创兴银行自有渠道不算媒体监测
+  if (OFFICIAL_PAT.test(link) || OFFICIAL_PAT.test(src)) {
+    return { pass: false, reason: 'official_excluded' };
+  }
+
+  // 3) 同名/八卦误报排除
+  if (FP_PAT.test(text)) return { pass: false, reason: 'false_positive' };
+
+  // 4) 创兴银行相关性：标题或摘要必须真的提到创兴银行主体
+  if (!CORE_CHB.test(text)) {
+    return { pass: false, reason: 'no_chb_entity' };
+  }
+
+  // 5) 沿用既有误报规则
+  if (isFalsePositive(title, desc)) return { pass: false, reason: 'rule_excluded' };
+
+  return { pass: true };
+}
+
 function saveAllHits(rssHits, aiHits) {
+  // AI 深度研究数据是人工核验过的可信源，直接放行；自动采集命中必须过闸门
+  const autoHits = rssHits;
+  const stats = { total: autoHits.length, pass: 0, rejected: {} };
+
+  const guarded = autoHits.filter(item => {
+    const g = guardHit(item);
+    if (g.pass) { stats.pass++; return true; }
+    stats.rejected[g.reason] = (stats.rejected[g.reason] || 0) + 1;
+    return false;
+  });
+
   // 合并所有命中，添加hash和tier
-  const allItems = [...aiHits, ...rssHits].map(item => {
+  const allItems = [...aiHits, ...guarded].map(item => {
     const hash = hashTitle(item.title);
     const { tier, reason } = classify(item);
     return {
@@ -316,7 +372,9 @@ function saveAllHits(rssHits, aiHits) {
     };
   });
 
-  return store.addNews(allItems);
+  const result = store.addNews(allItems);
+  result.guard = stats;
+  return result;
 }
 
 module.exports = {
@@ -327,4 +385,5 @@ module.exports = {
   matchKeywords,
   isFalsePositive,
   hashTitle,
+  guardHit,
 };

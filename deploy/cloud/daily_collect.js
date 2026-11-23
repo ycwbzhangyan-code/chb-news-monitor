@@ -15,6 +15,8 @@ const { fetchAllSources, saveAllHits, loadAIResearch } = require('../../src/serv
 const { getReportForDate, saveDailyReport, generateSummary } = require('../../src/services/reportBuilder');
 const store = require('../../src/services/store');
 const nodemailer = require('nodemailer');
+const path = require('path');
+const fs = require('fs');
 
 // 邮件配置（从环境变量读取）
 const EMAIL_CONFIG = {
@@ -81,8 +83,10 @@ async function runCloudDailyJob() {
       }));
       console.log(`     U Lifestyle: ${ulifeHits.length}条命中`);
       
-      // 港媒理财聚合爬虫（对标Wiser口径：定存/利率比较类新闻）
-      console.log('  -> 港媒理财聚合爬虫...');
+      // 港媒理财聚合爬虫（候选发现器 — 只写候选文件，不自动入库）
+      // 2026-11-23 修复：宽主题词(定存/加息/外汇)会抓到大量不提创兴银行的噪音，
+      // 必须人工核验相关性与日期后才能经 import_*.js 入库，故不进 allHits。
+      console.log('  -> 港媒理财聚合爬虫（候选发现器）...');
       try {
         const { crawlFinanceSites } = require('../../scripts/crawler_finance_sites');
         const financeResult = await crawlFinanceSites();
@@ -97,9 +101,15 @@ async function runCloudDailyJob() {
           lang: 'CH',
           tier_hint: h.tier_hint === 'B' ? 'B' : 'C',
           tier_reason: h.tier_reason,
+          discovered_at: new Date().toISOString(),
         }));
-        console.log(`     港媒理财: ${financeHits.length}条命中`);
-        crawlerHits.push(...financeHits);
+        // 只保留候选文件，供人工核验；不 push 到 crawlerHits
+        const candsPath = path.join(__dirname, '..', '..', 'data', 'finance_candidates.json');
+        let prev = [];
+        try { prev = JSON.parse(fs.readFileSync(candsPath, 'utf-8')); } catch (e) { prev = []; }
+        const merged = [...prev, ...financeHits].slice(-500);
+        fs.writeFileSync(candsPath, JSON.stringify(merged, null, 2));
+        console.log(`     港媒理财: 发现 ${financeHits.length} 条候选（未自动入库，待核验）`);
       } catch (e) {
         console.log(`  -> 理财聚合爬虫出错（非致命）: ${e.message}`);
       }

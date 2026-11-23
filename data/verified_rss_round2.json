@@ -1,0 +1,72 @@
+[
+  {
+    "ok": true,
+    "name": "頭條日報-即時",
+    "cat": "hk_news",
+    "url": "https://www.stheadline.com/rss",
+    "bytes": 3000
+  },
+  {
+    "ok": true,
+    "name": "人民網-財經",
+    "cat": "cn_business",
+    "url": "http://www.people.com.cn/rss/finance.xml",
+    "bytes": 3000
+  },
+  {
+    "ok": true,
+    "name": "新華網-財經",
+    "cat": "cn_business",
+    "url": "http://www.xinhuanet.com/politics/news_politics.xml",
+    "bytes": 3000
+  },
+  {
+    "ok": true,
+    "name": "中國新聞網-財經",
+    "cat": "cn_business",
+    "url": "https://www.chinanews.com.cn/rss/finance.xml",
+    "bytes": 3000
+  },
+  {
+    "ok": true,
+    "name": "BBC中文",
+    "cat": "intl",
+    "url": "https://feeds.bbci.co.uk/zhongwen/simp/rss.xml",
+    "bytes": 3000
+  },
+  {
+    "ok": true,
+    "name": "BBC財經",
+    "cat": "intl",
+    "url": "https://feeds.bbci.co.uk/news/business/rss.xml",
+    "bytes": 3000
+  },
+  {
+    "ok": true,
+    "name": "CNBC",
+    "cat": "intl",
+    "url": "https://www.cnbc.com/id/100003114/device/rss/rss.html",
+    "bytes": 3000
+  },
+  {
+    "ok": true,
+    "name": "MarketWatch",
+    "cat": "intl",
+    "url": "https://feeds.content.dowjones.io/public/rss/mw_topstories",
+    "bytes": 3000
+  },
+  {
+    "ok": true,
+    "name": "FT中文網",
+    "cat": "intl",
+    "url": "https://www.ftchinese.com/rss/feed",
+    "bytes": 3000
+  },
+  {
+    "ok": true,
+    "name": "彭博-市場",
+    "cat": "intl",
+    "url": "https://feeds.bloomberg.com/markets/news.rss",
+    "bytes": 3000
+  }
+]
