@@ -1,10 +1,10 @@
 {
   "meta": {
     "version": "2.0",
-    "updated": "2026-11-23",
+    "updated": "2026-11-25",
     "note": "完整媒体源清单 — 源自WiseNews(慧科)导出表3793条 + RSS自动探测 + 手工补充",
     "org": "创兴银行 企业传讯处",
-    "total_sources": 3856,
+    "total_sources": 3865,
     "watch_terms": [
       "创兴银行",
       "創興銀行",
@@ -32,12 +32,13 @@
       "community": "社区媒体"
     },
     "rss_stats": {
-      "total_with_rss": 346,
+      "total_with_rss": 355,
       "from_original": 92,
       "from_old_config": 137,
       "from_probe": 54,
       "verified_20261120": 46,
-      "verified_20261123": 17
+      "verified_20261123": 17,
+      "verified_20261125": 9
     }
   },
   "sources": [
@@ -50246,6 +50247,141 @@
       "no": 3856,
       "verified": "2026-11-23",
       "query": "創興銀行 保安 詐騙 警示"
+    },
+    {
+      "id": "g3001",
+      "name": "GNewsSite-信報-定存",
+      "full": "GNewsSite-信報-定存",
+      "lang": "CH",
+      "cat": "aggregate_search",
+      "cat_name": "站点限定聚合",
+      "rss": "https://news.google.com/rss/search?q=site%3Ahkej.com%20%E5%AE%9A%E5%AD%98%20OR%20%E5%AE%9A%E6%9C%9F%E5%AD%98%E6%AC%BE&hl=zh-HK&gl=HK&ceid=HK:zh-Hant",
+      "site": "",
+      "domain": "news.google.com",
+      "access": "rss",
+      "no": 3857,
+      "verified": "2026-11-25",
+      "query": "site:hkej.com 定存 OR 定期存款"
+    },
+    {
+      "id": "g3002",
+      "name": "GNewsSite-信報-港元",
+      "full": "GNewsSite-信報-港元",
+      "lang": "CH",
+      "cat": "aggregate_search",
+      "cat_name": "站点限定聚合",
+      "rss": "https://news.google.com/rss/search?q=site%3Ahkej.com%20%E6%B8%AF%E5%85%83%20OR%20%E5%AD%98%E6%AC%BE%E5%88%A9%E7%8E%87&hl=zh-HK&gl=HK&ceid=HK:zh-Hant",
+      "site": "",
+      "domain": "news.google.com",
+      "access": "rss",
+      "no": 3858,
+      "verified": "2026-11-25",
+      "query": "site:hkej.com 港元 OR 存款利率"
+    },
+    {
+      "id": "g3003",
+      "name": "GNewsSite-明報-定存",
+      "full": "GNewsSite-明報-定存",
+      "lang": "CH",
+      "cat": "aggregate_search",
+      "cat_name": "站点限定聚合",
+      "rss": "https://news.google.com/rss/search?q=site%3Amingpao.com%20%E5%AE%9A%E5%AD%98%20OR%20%E5%AE%9A%E6%9C%9F&hl=zh-HK&gl=HK&ceid=HK:zh-Hant",
+      "site": "",
+      "domain": "news.google.com",
+      "access": "rss",
+      "no": 3859,
+      "verified": "2026-11-25",
+      "query": "site:mingpao.com 定存 OR 定期"
+    },
+    {
+      "id": "g3004",
+      "name": "GNewsSite-明報-財經",
+      "full": "GNewsSite-明報-財經",
+      "lang": "CH",
+      "cat": "aggregate_search",
+      "cat_name": "站点限定聚合",
+      "rss": "https://news.google.com/rss/search?q=site%3Afinance.mingpao.com%20%E5%AD%98%E6%AC%BE%20OR%20%E6%81%AF%E7%8E%87&hl=zh-HK&gl=HK&ceid=HK:zh-Hant",
+      "site": "",
+      "domain": "news.google.com",
+      "access": "rss",
+      "no": 3860,
+      "verified": "2026-11-25",
+      "query": "site:finance.mingpao.com 存款 OR 息率"
+    },
+    {
+      "id": "g3005",
+      "name": "GNewsSite-星島頭條-定存",
+      "full": "GNewsSite-星島頭條-定存",
+      "lang": "CH",
+      "cat": "aggregate_search",
+      "cat_name": "站点限定聚合",
+      "rss": "https://news.google.com/rss/search?q=site%3Astheadline.com%20%E5%AE%9A%E5%AD%98%20OR%20%E7%BE%8E%E5%85%83&hl=zh-HK&gl=HK&ceid=HK:zh-Hant",
+      "site": "",
+      "domain": "news.google.com",
+      "access": "rss",
+      "no": 3861,
+      "verified": "2026-11-25",
+      "query": "site:stheadline.com 定存 OR 美元"
+    },
+    {
+      "id": "g3006",
+      "name": "GNewsSite-Ulife-匯率",
+      "full": "GNewsSite-Ulife-匯率",
+      "lang": "CH",
+      "cat": "aggregate_search",
+      "cat_name": "站点限定聚合",
+      "rss": "https://news.google.com/rss/search?q=site%3Aulifestyle.com.hk%20%E5%8C%AF%E7%8E%87%20OR%20%E5%85%8C%E6%8F%9B&hl=zh-HK&gl=HK&ceid=HK:zh-Hant",
+      "site": "",
+      "domain": "news.google.com",
+      "access": "rss",
+      "no": 3862,
+      "verified": "2026-11-25",
+      "query": "site:ulifestyle.com.hk 匯率 OR 兌換"
+    },
+    {
+      "id": "g3007",
+      "name": "GNewsSite-Ulife-定存",
+      "full": "GNewsSite-Ulife-定存",
+      "lang": "CH",
+      "cat": "aggregate_search",
+      "cat_name": "站点限定聚合",
+      "rss": "https://news.google.com/rss/search?q=site%3Aulifestyle.com.hk%20%E5%AE%9A%E5%AD%98%20OR%20%E5%AE%9A%E6%9C%9F%E5%AD%98%E6%AC%BE&hl=zh-HK&gl=HK&ceid=HK:zh-Hant",
+      "site": "",
+      "domain": "news.google.com",
+      "access": "rss",
+      "no": 3863,
+      "verified": "2026-11-25",
+      "query": "site:ulifestyle.com.hk 定存 OR 定期存款"
+    },
+    {
+      "id": "g3008",
+      "name": "GNewsSite-HKET-定存",
+      "full": "GNewsSite-HKET-定存",
+      "lang": "CH",
+      "cat": "aggregate_search",
+      "cat_name": "站点限定聚合",
+      "rss": "https://news.google.com/rss/search?q=site%3Ahket.com%20%E5%AE%9A%E5%AD%98%20OR%20%E5%AE%9A%E6%9C%9F%E5%AD%98%E6%AC%BE&hl=zh-HK&gl=HK&ceid=HK:zh-Hant",
+      "site": "",
+      "domain": "news.google.com",
+      "access": "rss",
+      "no": 3864,
+      "verified": "2026-11-25",
+      "query": "site:hket.com 定存 OR 定期存款"
+    },
+    {
+      "id": "g3009",
+      "name": "GNewsSite-HKET-英鎊",
+      "full": "GNewsSite-HKET-英鎊",
+      "lang": "CH",
+      "cat": "aggregate_search",
+      "cat_name": "站点限定聚合",
+      "rss": "https://news.google.com/rss/search?q=site%3Ahket.com%20%E8%8B%B1%E9%8E%8A%20OR%20%E6%97%A5%E5%85%83%20OR%20%E5%A4%96%E5%B9%A3&hl=zh-HK&gl=HK&ceid=HK:zh-Hant",
+      "site": "",
+      "domain": "news.google.com",
+      "access": "rss",
+      "no": 3865,
+      "verified": "2026-11-25",
+      "query": "site:hket.com 英鎊 OR 日元 OR 外幣"
     }
   ]
 }

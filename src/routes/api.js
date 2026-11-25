@@ -307,8 +307,8 @@ router.get('/system/status', (req, res) => {
     last_run_stats: lastRunStats,
     total_news: stats.total_items,
     latest_news_date: stats.latest_date,
-    total_sources: (() => { try { return require('../../config/sources_full_config.json').sources.length; } catch (e) { return 3856; } })(),
-    rss_sources: (() => { try { return require('../../config/sources_full_config.json').sources.filter(s => s.rss).length; } catch (e) { return 346; } })(),
+    total_sources: (() => { try { return require('../../config/sources_full_config.json').sources.length; } catch (e) { return 3865; } })(),
+    rss_sources: (() => { try { return require('../../config/sources_full_config.json').sources.filter(s => s.rss).length; } catch (e) { return 355; } })(),
     paid_subscriptions: paidSubscriptions,
     server_time: new Date().toISOString(),
   });

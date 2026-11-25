@@ -1,0 +1,65 @@
+[
+  {
+    "ok": true,
+    "name": "GNewsSite-信報-定存",
+    "query": "site:hkej.com 定存 OR 定期存款",
+    "url": "https://news.google.com/rss/search?q=site%3Ahkej.com%20%E5%AE%9A%E5%AD%98%20OR%20%E5%AE%9A%E6%9C%9F%E5%AD%98%E6%AC%BE&hl=zh-HK&gl=HK&ceid=HK:zh-Hant",
+    "sample": 1
+  },
+  {
+    "ok": true,
+    "name": "GNewsSite-信報-港元",
+    "query": "site:hkej.com 港元 OR 存款利率",
+    "url": "https://news.google.com/rss/search?q=site%3Ahkej.com%20%E6%B8%AF%E5%85%83%20OR%20%E5%AD%98%E6%AC%BE%E5%88%A9%E7%8E%87&hl=zh-HK&gl=HK&ceid=HK:zh-Hant",
+    "sample": 1
+  },
+  {
+    "ok": true,
+    "name": "GNewsSite-明報-定存",
+    "query": "site:mingpao.com 定存 OR 定期",
+    "url": "https://news.google.com/rss/search?q=site%3Amingpao.com%20%E5%AE%9A%E5%AD%98%20OR%20%E5%AE%9A%E6%9C%9F&hl=zh-HK&gl=HK&ceid=HK:zh-Hant",
+    "sample": 1
+  },
+  {
+    "ok": true,
+    "name": "GNewsSite-明報-財經",
+    "query": "site:finance.mingpao.com 存款 OR 息率",
+    "url": "https://news.google.com/rss/search?q=site%3Afinance.mingpao.com%20%E5%AD%98%E6%AC%BE%20OR%20%E6%81%AF%E7%8E%87&hl=zh-HK&gl=HK&ceid=HK:zh-Hant",
+    "sample": 1
+  },
+  {
+    "ok": true,
+    "name": "GNewsSite-星島頭條-定存",
+    "query": "site:stheadline.com 定存 OR 美元",
+    "url": "https://news.google.com/rss/search?q=site%3Astheadline.com%20%E5%AE%9A%E5%AD%98%20OR%20%E7%BE%8E%E5%85%83&hl=zh-HK&gl=HK&ceid=HK:zh-Hant",
+    "sample": 1
+  },
+  {
+    "ok": true,
+    "name": "GNewsSite-Ulife-匯率",
+    "query": "site:ulifestyle.com.hk 匯率 OR 兌換",
+    "url": "https://news.google.com/rss/search?q=site%3Aulifestyle.com.hk%20%E5%8C%AF%E7%8E%87%20OR%20%E5%85%8C%E6%8F%9B&hl=zh-HK&gl=HK&ceid=HK:zh-Hant",
+    "sample": 1
+  },
+  {
+    "ok": true,
+    "name": "GNewsSite-Ulife-定存",
+    "query": "site:ulifestyle.com.hk 定存 OR 定期存款",
+    "url": "https://news.google.com/rss/search?q=site%3Aulifestyle.com.hk%20%E5%AE%9A%E5%AD%98%20OR%20%E5%AE%9A%E6%9C%9F%E5%AD%98%E6%AC%BE&hl=zh-HK&gl=HK&ceid=HK:zh-Hant",
+    "sample": 1
+  },
+  {
+    "ok": true,
+    "name": "GNewsSite-HKET-定存",
+    "query": "site:hket.com 定存 OR 定期存款",
+    "url": "https://news.google.com/rss/search?q=site%3Ahket.com%20%E5%AE%9A%E5%AD%98%20OR%20%E5%AE%9A%E6%9C%9F%E5%AD%98%E6%AC%BE&hl=zh-HK&gl=HK&ceid=HK:zh-Hant",
+    "sample": 1
+  },
+  {
+    "ok": true,
+    "name": "GNewsSite-HKET-英鎊",
+    "query": "site:hket.com 英鎊 OR 日元 OR 外幣",
+    "url": "https://news.google.com/rss/search?q=site%3Ahket.com%20%E8%8B%B1%E9%8E%8A%20OR%20%E6%97%A5%E5%85%83%20OR%20%E5%A4%96%E5%B9%A3&hl=zh-HK&gl=HK&ceid=HK:zh-Hant",
+    "sample": 1
+  }
+]

@@ -293,16 +293,22 @@ function loadAIResearch() {
   return [];
 }
 
-// ===== 入库闸门（2026-11-23 修复）=====
-// 背景：11/21-11/22 自动采集误将 Google News 历史文章(2013-2025)与宽主题噪音入库。
-// 根因：fetchAllSources 的 daysWindow 参数从未使用 + 宽主题候选(定存/加息/外汇)自动入库。
-// 原则：自动采集只入库「创兴银行为主体 + 监测窗口内 + 非官网稿 + 非同名误报」的真实新闻。
-//       宽主题候选仅作发现器，需人工核验后经 import_*.js 入库，不进自动闸门。
+// ===== 入库闸门（2026-11-25 修正为 Wiser 分层口径）=====
+// 11/23 版本把「标题不含创兴银行」全部拒绝，误挡了 Wiser 收录的定存/汇率比较类
+// （这类文章标题不点名创兴银行，但在正文利率表中列出）。11/25 改为三层：
+//   L1 点名创兴银行 → 直接入库（B/C 按 classify）
+//   L2 宽口径主题（定存/汇率/税贷/按揭/利率比较，香港银行产品语境）→ 作为 C 类候选入库
+//   L3 无关宏观噪音（美股/金价/外围经济等）、历史文章、官网稿、同名八卦 → 拒绝
+// 宽口径候选标注 discovery='wide_topic'、tier_hint='C'，便于汇报时单列"邻近窗口"。
 const MONITOR_START = '2026-10-26';       // 监测起始日
 const CORE_CHB = /(创兴银行|創興銀行|创興銀行|chong\s*hing\s*bank|chong\s*hing|廖創興銀行|廖创兴银行|chbank)/i;
 const OFFICIAL_PAT = /(chbank\.com|创兴银行官网|創興銀行官網|官方微信|官方网站)/i;
 // 同名/八卦误报：廖创兴创办人家属八卦、廖创兴企业(00194)等
 const FP_PAT = /(廖倬竩|曾孙女|曾孫女|結婚|结婚|婚纱|婚紗|怒晒|上圍|八卦|廖創興企業|廖创兴企业|00194|樓盤|楼盘)/;
+// Wiser 宽口径主题：香港银行存贷汇产品比较（利率表点名创兴银行即算命中）
+const WIDE_TOPIC = /(定存|定期存款|定期|存款利率|存息|高息|息率|港元.*息|美元.*息|外幣.*息|澳元.*息|英鎊.*息|日圓.*息|人民幣.*息|匯率|匯價|兌港元|兌美元|找換|稅貸|稅務貸款|按揭|最優惠利率|P按|HIBOR|拆息|銀行.*優惠|利率比較|息率比較|存款優惠|稅貸2026)/i;
+// 纯宏观噪音：与香港银行业务无关的市场/个股新闻（Wiser 也会收录部分，但这类对传讯处无监测价值）
+const MACRO_NOISE = /(美股|納指|道指|標普|納斯達克|金價|金礦|黃金ETF|原油|美債|國債|地產股|英偉達|AI基建|中期選舉|聞泰科技|半導體|A股|滬指|深成指)/i;
 
 function guardHit(item) {
   // 1) 日期闸门：必须在监测窗口内（含未来1天容错），无日期的拒绝
@@ -327,33 +333,49 @@ function guardHit(item) {
   // 3) 同名/八卦误报排除
   if (FP_PAT.test(text)) return { pass: false, reason: 'false_positive' };
 
-  // 4) 创兴银行相关性：标题或摘要必须真的提到创兴银行主体
-  if (!CORE_CHB.test(text)) {
-    return { pass: false, reason: 'no_chb_entity' };
-  }
+  // 3b) 乱码标题排除：Google News 偶发编码错乱（如"擎海I伙创兴银行推按贷优惠最快明日公布销安"）
+  //     特征：罕见生僻字与常见词混杂、语义不通；用可疑字集合粗筛
+  const GARBLE = /(擎海|銷安|销安|伙创|夥創|I伙|I夥|最快明日公布|新浪資源|鎂|[╭╮╰╯])/;
+  if (GARBLE.test(title)) return { pass: false, reason: 'garbled_title' };
 
-  // 5) 沿用既有误报规则
+  // 4) 沿用既有误报规则
   if (isFalsePositive(title, desc)) return { pass: false, reason: 'rule_excluded' };
 
-  return { pass: true };
+  // 5) 分层相关性
+  if (CORE_CHB.test(text)) {
+    return { pass: true, layer: 'direct', tier_hint: item.tier_hint || null };  // L1 直接点名
+  }
+  // L3 宽口径主题但命中纯宏观噪音 → 拒绝（避免美股/金价等无关新闻）
+  if (WIDE_TOPIC.test(text) && !MACRO_NOISE.test(title)) {
+    return { pass: true, layer: 'wide_topic', tier_hint: 'C' };  // L2 宽口径候选
+  }
+  return { pass: false, reason: 'no_chb_no_topic' };
 }
 
 function saveAllHits(rssHits, aiHits) {
   // AI 深度研究数据是人工核验过的可信源，直接放行；自动采集命中必须过闸门
   const autoHits = rssHits;
-  const stats = { total: autoHits.length, pass: 0, rejected: {} };
+  const stats = { total: autoHits.length, pass: 0, direct: 0, wide_topic: 0, rejected: {} };
 
-  const guarded = autoHits.filter(item => {
+  const guarded = [];
+  for (const item of autoHits) {
     const g = guardHit(item);
-    if (g.pass) { stats.pass++; return true; }
-    stats.rejected[g.reason] = (stats.rejected[g.reason] || 0) + 1;
-    return false;
-  });
+    if (g.pass) {
+      stats.pass++;
+      stats[g.layer] = (stats[g.layer] || 0) + 1;
+      // 宽口径候选标为 C 类 + discovery，供汇报时单列"邻近窗口"
+      guarded.push({ ...item, _layer: g.layer, tier_hint: g.tier_hint || item.tier_hint });
+    } else {
+      stats.rejected[g.reason] = (stats.rejected[g.reason] || 0) + 1;
+    }
+  }
 
   // 合并所有命中，添加hash和tier
   const allItems = [...aiHits, ...guarded].map(item => {
     const hash = hashTitle(item.title);
     const { tier, reason } = classify(item);
+    // 宽口径候选强制 C 类
+    const finalTier = item._layer === 'wide_topic' ? 'C' : tier;
     return {
       hash,
       title: item.title,
@@ -365,10 +387,11 @@ function saveAllHits(rssHits, aiHits) {
       lang: item.lang || 'CH',
       pub_date: item.pubDate || item.date || new Date().toISOString(),
       fetch_date: new Date().toISOString(),
-      tier,
-      tier_reason: reason,
+      tier: finalTier,
+      tier_reason: item._layer === 'wide_topic' ? 'Wiser宽口径：银行存贷汇产品比较（邻近窗口）' : reason,
       status: 'active',
       ai_researched: item.tier_hint ? 1 : 0,
+      ...(item._layer === 'wide_topic' ? { discovery: 'wide_topic' } : {}),
     };
   });
 
