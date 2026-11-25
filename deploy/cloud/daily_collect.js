@@ -3,7 +3,7 @@
  * 由 GitHub Actions cron 每天早上8点触发
  * 
  * 流程：
- * 1. RSS 采集（263个源）
+ * 1. RSS 采集（全量配置源）
  * 2. 运行爬虫（匯港通訊 + U Lifestyle）
  * 3. AI 深度研究数据合并
  * 4. 去重分级入库
@@ -44,7 +44,7 @@ async function runCloudDailyJob() {
 
   // ========== 第1步：RSS 采集 ==========
   try {
-    console.log('[1/6] 采集RSS源（263个）...');
+    console.log('[1/6] 采集RSS源（全量配置）...');
     const { results, hits } = await fetchAllSources(7, 20);
     console.log(`  -> 采集完成: ${results.length}个源返回, ${hits.length}条命中`);
 
@@ -202,7 +202,7 @@ async function runCloudDailyJob() {
 }
 
 async function sendEmailReport(report) {
-  const transporter = nodemailer.createTransporter({
+  const transporter = nodemailer.createTransport({
     host: EMAIL_CONFIG.smtp_host,
     port: EMAIL_CONFIG.smtp_port,
     secure: EMAIL_CONFIG.smtp_port === 465,
