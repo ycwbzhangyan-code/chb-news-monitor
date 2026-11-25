@@ -1,7 +1,67 @@
 [
   {
+    "report_date": "2026-11-24",
+    "generated_at": "2026-11-25T05:49:28.158Z",
+    "stats": {
+      "total": 1,
+      "A": 0,
+      "B": 0,
+      "C": 1,
+      "X": 0
+    },
+    "summary": "C类·例行提及 1 条",
+    "tiers": {
+      "B": [],
+      "C": [
+        {
+          "id": "etnet_417959_1125",
+          "hash": "ca29bf9e145b9225",
+          "title": "定期存款 | 華僑銀行推港元定存優惠一個月高達5.5厘，WeLab Bank8個月3.35厘",
+          "link": "https://www.etnet.com.hk/www/tc/news/news-article.php?section=features&category=special&newsid=417959",
+          "description": "Wiser宽口径：正文含\"表列各大銀行定存息率\"，创兴银行列入利率比较表（邻近窗口）（2026-11-25 经 WebFetch 核验原文标题/日期/链接）",
+          "source_id": "etnet_417959",
+          "source_name": "經濟通",
+          "source_cat": "hk_business",
+          "lang": "CH",
+          "pub_date": "2026-11-24",
+          "fetch_date": "2026-11-25T04:33:21.288Z",
+          "tier": "C",
+          "tier_reason": "Wiser宽口径：正文含\"表列各大銀行定存息率\"，创兴银行列入利率比较表（邻近窗口）",
+          "status": "active",
+          "ai_researched": 0,
+          "discovery": "wide_topic_verified",
+          "created_at": "2026-11-25T04:33:21.289Z"
+        }
+      ],
+      "X": []
+    },
+    "by_category": {
+      "hk_business": [
+        {
+          "id": "etnet_417959_1125",
+          "hash": "ca29bf9e145b9225",
+          "title": "定期存款 | 華僑銀行推港元定存優惠一個月高達5.5厘，WeLab Bank8個月3.35厘",
+          "link": "https://www.etnet.com.hk/www/tc/news/news-article.php?section=features&category=special&newsid=417959",
+          "description": "Wiser宽口径：正文含\"表列各大銀行定存息率\"，创兴银行列入利率比较表（邻近窗口）（2026-11-25 经 WebFetch 核验原文标题/日期/链接）",
+          "source_id": "etnet_417959",
+          "source_name": "經濟通",
+          "source_cat": "hk_business",
+          "lang": "CH",
+          "pub_date": "2026-11-24",
+          "fetch_date": "2026-11-25T04:33:21.288Z",
+          "tier": "C",
+          "tier_reason": "Wiser宽口径：正文含\"表列各大銀行定存息率\"，创兴银行列入利率比较表（邻近窗口）",
+          "status": "active",
+          "ai_researched": 0,
+          "discovery": "wide_topic_verified",
+          "created_at": "2026-11-25T04:33:21.289Z"
+        }
+      ]
+    }
+  },
+  {
     "report_date": "2026-11-20",
-    "generated_at": "2026-11-24T07:16:50.370Z",
+    "generated_at": "2026-11-25T05:49:28.170Z",
     "stats": {
       "total": 16,
       "A": 0,
@@ -633,7 +693,7 @@
   },
   {
     "report_date": "2026-11-19",
-    "generated_at": "2026-11-24T07:16:50.380Z",
+    "generated_at": "2026-11-25T05:49:28.172Z",
     "stats": {
       "total": 1,
       "A": 0,
@@ -693,7 +753,7 @@
   },
   {
     "report_date": "2026-11-18",
-    "generated_at": "2026-11-24T07:16:50.382Z",
+    "generated_at": "2026-11-25T05:49:28.175Z",
     "stats": {
       "total": 2,
       "A": 0,
