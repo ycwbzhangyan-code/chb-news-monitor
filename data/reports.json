@@ -1,5 +1,67 @@
 [
   {
+    "report_date": "2026-11-26",
+    "generated_at": "2026-11-27T08:46:00.000Z",
+    "stats": {
+      "total": 1,
+      "A": 0,
+      "B": 0,
+      "C": 1,
+      "X": 0
+    },
+    "summary": "C类·例行提及 1 条",
+    "tiers": {
+      "B": [],
+      "C": [
+        {
+          "id": 1,
+          "hash": "9aebb527ea297df403b637a8fa719fc13b2efe6e",
+          "title": "100萬港元做定期 一年賺$36,000、三年收息逾10萬元 長中短存期大比併",
+          "link": "https://wealth.hket.com/article/4231551/100%E8%90%AC%E6%B8%AF%E5%85%83%E5%81%9A%E5%AE%9A%E6%9C%9F%E3%80%80%E4%B8%80%E5%B9%B4%E8%B3%BA-36,000%E3%80%81%E4%B8%89%E5%B9%B4%E6%94%B6%E6%81%AF%E9%80%BE10%E8%90%AC%E5%85%83%E3%80%80%E9%95%B7%E4%B8%AD%E7%9F%AD%E5%AD%98%E6%9C%9F%E5%A4%A7%E6%AF%94%E4%BD%B5",
+          "description": "广撒网正文核验证据：x Bank 2.8厘 2.9厘 2.8厘 特選客戶新資金 花旗銀行 / / 4.3厘 信用卡客戶升級全新私人客戶 星展銀行 / / 3.3厘 指定客戶新資金 創興銀行 / / 3.25厘 全新客戶完成指定項目 交銀香港 / / 3.2厘 理財客戶網上新資金 中銀香港 / 2.4厘 2.4厘 只限特選客戶 恒生銀行 / 2.4厘 2.4厘 網上新資金 滙豐銀行 / 2.195厘 3.005厘 獎賞錢定存，需新資金 表2︰現有資金年利率（存款額︰100萬元） 銀行 12個月年利率 ",
+          "source_id": "s0160",
+          "source_name": "香港經濟日報·理財",
+          "source_cat": "hk_business",
+          "lang": "CH",
+          "pub_date": "2026-11-26",
+          "fetch_date": "2026-11-27T06:18:19.481Z",
+          "tier": "C",
+          "tier_reason": "广撒网正文核验·正文含创兴·标题未点名（关键词方案会漏）",
+          "body_verified": true,
+          "status": "active",
+          "provenance": "broad_scan",
+          "created_at": "2026-11-27T06:18:19.481Z",
+          "discovery": "ours_manual"
+        }
+      ],
+      "X": []
+    },
+    "by_category": {
+      "hk_business": [
+        {
+          "id": 1,
+          "hash": "9aebb527ea297df403b637a8fa719fc13b2efe6e",
+          "title": "100萬港元做定期 一年賺$36,000、三年收息逾10萬元 長中短存期大比併",
+          "link": "https://wealth.hket.com/article/4231551/100%E8%90%AC%E6%B8%AF%E5%85%83%E5%81%9A%E5%AE%9A%E6%9C%9F%E3%80%80%E4%B8%80%E5%B9%B4%E8%B3%BA-36,000%E3%80%81%E4%B8%89%E5%B9%B4%E6%94%B6%E6%81%AF%E9%80%BE10%E8%90%AC%E5%85%83%E3%80%80%E9%95%B7%E4%B8%AD%E7%9F%AD%E5%AD%98%E6%9C%9F%E5%A4%A7%E6%AF%94%E4%BD%B5",
+          "description": "广撒网正文核验证据：x Bank 2.8厘 2.9厘 2.8厘 特選客戶新資金 花旗銀行 / / 4.3厘 信用卡客戶升級全新私人客戶 星展銀行 / / 3.3厘 指定客戶新資金 創興銀行 / / 3.25厘 全新客戶完成指定項目 交銀香港 / / 3.2厘 理財客戶網上新資金 中銀香港 / 2.4厘 2.4厘 只限特選客戶 恒生銀行 / 2.4厘 2.4厘 網上新資金 滙豐銀行 / 2.195厘 3.005厘 獎賞錢定存，需新資金 表2︰現有資金年利率（存款額︰100萬元） 銀行 12個月年利率 ",
+          "source_id": "s0160",
+          "source_name": "香港經濟日報·理財",
+          "source_cat": "hk_business",
+          "lang": "CH",
+          "pub_date": "2026-11-26",
+          "fetch_date": "2026-11-27T06:18:19.481Z",
+          "tier": "C",
+          "tier_reason": "广撒网正文核验·正文含创兴·标题未点名（关键词方案会漏）",
+          "body_verified": true,
+          "status": "active",
+          "provenance": "broad_scan",
+          "created_at": "2026-11-27T06:18:19.481Z",
+          "discovery": "ours_manual"
+        }
+      ]
+    }
+  },
+  {
     "report_date": "2026-11-25",
     "generated_at": "2026-11-27T05:35:04.391Z",
     "stats": {
