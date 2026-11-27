@@ -520,6 +520,33 @@ body { font-family: var(--ff); background: var(--c-bg); color: var(--c-text); li
   border-bottom: none;
 }
 
+/* ===== 来源/核验状态标签 ===== */
+.news-status-cell { white-space: nowrap; }
+.src-tag {
+  display: inline-block;
+  font-size: 11px;
+  line-height: 1.4;
+  padding: 2px 7px;
+  border-radius: 10px;
+  margin: 1px 2px 1px 0;
+  font-weight: 500;
+}
+.src-tag.verified {
+  background: #e2efda; color: #375623;
+}
+.src-tag.wiser-archive {
+  background: #ddebf7; color: #1f4e79; font-weight: 600;
+}
+.src-tag.wiser-title {
+  background: #fff2cc; color: #8a6100;
+}
+.src-tag.wiser-wide {
+  background: #e7e6e6; color: #595959;
+}
+.src-tag.ours {
+  background: #e2efda; color: #375623;
+}
+
 /* 打印样式 */
 @media print {
   .topbar, .footer, .allnews-toolbar, .sources-pagination,

@@ -443,6 +443,7 @@ async function loadAllNews(page) {
   if (page) allNewsCurrentPage = page;
   const tier = document.getElementById('allnews-tier-filter')?.value || 'all';
   const sort = document.getElementById('allnews-sort')?.value || 'date_desc';
+  const prov = document.getElementById('allnews-prov-filter')?.value || 'all';
 
   try {
     const params = new URLSearchParams({
@@ -450,6 +451,7 @@ async function loadAllNews(page) {
       pageSize: allNewsPageSize,
       sort: sort,
       tier: tier,
+      provenance: prov,
     });
     const resp = await fetch(`/api/news/all?${params}`);
     const data = await resp.json();
@@ -468,12 +470,28 @@ async function loadAllNews(page) {
       const titleHtml = item.link
         ? `<a href="${item.link}" target="_blank" rel="noopener">${escapeHtml(item.title)}</a>`
         : escapeHtml(item.title);
+      let statusHtml;
+      if (item.provenance === 'wiser_archive') {
+        // Wiser 归档：按分层给出核验状态标签
+        const layerMap = {
+          matched_ours: '<span class="src-tag verified">正文已核验含创兴</span>',
+          title_has_chb: '<span class="src-tag wiser-title">Wiser·标题含创兴·未核验</span>',
+          wide_unverified: '<span class="src-tag wiser-wide">Wiser·宽口径·未核验</span>',
+        };
+        statusHtml = `<span class="src-tag wiser-archive">Wiser归档</span> ` +
+          (layerMap[item.wiser_layer] || `<span class="src-tag wiser-wide">${escapeHtml(item.wiser_label || 'Wiser归档')}</span>`);
+      } else {
+        statusHtml = item.body_verified
+          ? '<span class="src-tag verified">正文已核验含创兴</span>'
+          : '<span class="src-tag ours">我方采集</span>';
+      }
       return `<tr>
         <td>${seq}</td>
         <td class="news-date-cell">${item.date_normalized || '--'}</td>
         <td><span class="tier-badge ${tierClass}">${item.tier}</span></td>
         <td class="news-title-cell">${titleHtml}</td>
         <td class="news-source-cell">${escapeHtml(item.source_name)}</td>
+        <td class="news-status-cell">${statusHtml}</td>
       </tr>`;
     }).join('');
 

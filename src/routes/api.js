@@ -150,9 +150,17 @@ router.get('/news/all', (req, res) => {
   const startDate = req.query.start || '';
   const endDate = req.query.end || '';
   const tier = req.query.tier || '';
+  const provenance = req.query.provenance || '';
   const sortBy = req.query.sort || 'date_desc';
 
   let items = store.getAllNews().filter(n => n.status === 'active');
+
+  // 来源筛选：wiser_archive=Wiser归档 / ours=我方采集核验
+  if (provenance === 'wiser_archive') {
+    items = items.filter(n => n.provenance === 'wiser_archive');
+  } else if (provenance === 'ours') {
+    items = items.filter(n => n.provenance !== 'wiser_archive');
+  }
 
   // 日期范围筛选
   if (startDate && endDate) {
@@ -201,6 +209,10 @@ router.get('/news/all', (req, res) => {
       tier: n.tier || 'C',
       tier_reason: n.tier_reason || '',
       lang: n.lang || 'CH',
+      provenance: n.provenance || 'ours',
+      wiser_layer: n.wiser_layer || '',
+      wiser_label: n.wiser_label || '',
+      body_verified: !!n.body_verified,
     })),
   });
 });
@@ -221,11 +233,16 @@ router.get('/news/export', (req, res) => {
     description: (n.description || '').substring(0, 500),
     tier_reason: n.tier_reason || '',
     lang: n.lang || 'CH',
+    provenance: n.provenance || 'ours',
+    source_note: n.provenance === 'wiser_archive'
+      ? ('Wiser专业监测归档·' + (n.wiser_label || n.wiser_layer || ''))
+      : '我方自动采集·正文核验',
+    body_verified: !!n.body_verified,
   }));
 
   if (format === 'csv') {
     // CSV导出
-    const headers = ['序号', '日期', '分级', '标题', '来源', '链接', '分级原因', '语言'];
+    const headers = ['序号', '日期', '分级', '标题', '来源', '链接', '分级原因', '语言', '数据来源', '正文核验'];
     let csv = '\uFEFF' + headers.join(',') + '\n'; // BOM for Excel UTF-8
     for (const item of formatted) {
       const row = [
@@ -237,6 +254,8 @@ router.get('/news/export', (req, res) => {
         '"' + (item.link || '').replace(/"/g, '""') + '"',
         '"' + (item.tier_reason || '').replace(/"/g, '""') + '"',
         item.lang,
+        '"' + (item.source_note || '').replace(/"/g, '""') + '"',
+        item.body_verified ? '已核验含创兴' : '未核验',
       ];
       csv += row.join(',') + '\n';
     }
