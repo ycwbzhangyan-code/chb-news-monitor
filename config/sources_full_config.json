@@ -1,10 +1,10 @@
 {
   "meta": {
     "version": "2.0",
-    "updated": "2026-11-26",
+    "updated": "2026-11-27",
     "note": "完整媒体源清单 — 源自WiseNews(慧科)导出表3793条 + RSS自动探测 + 手工补充",
     "org": "创兴银行 企业传讯处",
-    "total_sources": 4124,
+    "total_sources": 4130,
     "watch_terms": [
       "创兴银行",
       "創興銀行",
@@ -32,20 +32,27 @@
       "community": "社区媒体"
     },
     "rss_stats": {
-      "total_with_rss": 614,
+      "total_with_rss": 620,
       "from_original": 92,
       "from_old_config": 137,
       "from_probe": 54,
       "verified_20261120": 46,
       "verified_20261123": 17,
       "verified_20261125": 9,
-      "verified_wiser_1126": 259
+      "verified_wiser_1126": 259,
+      "verified_no_rss_cover_1127": 6
     },
     "wiser_aligned": {
       "content_list_date": "2026-10-05",
       "wiser_total": 5967,
       "added_sources": 259,
       "note": "对照 Wiser 官方 Content List 补齐；官方RSS 142候选+GNews站点153候选，去重后实际入库见 added_sources"
+    },
+    "no_rss_coverage": {
+      "total_no_rss_original": 3510,
+      "with_valid_domain": 813,
+      "gnews_site_verified": 6,
+      "note": "无RSS媒体用Google News site:限定覆盖；仅Google收录的媒体可覆盖，长尾小站不可达。"
     }
   },
   "sources": [
@@ -54650,6 +54657,108 @@
       "wiser_name": "academy.isf.edu.hk",
       "query": "site:academy.isf.edu.hk (創興銀行 OR 创兴银行 OR 定存 OR 存款利率 OR 樓市 OR 銀行)",
       "verified": "2026-11-26"
+    },
+    {
+      "id": "nr4449",
+      "name": "GN-ipcf.org.tw/Alian963 原住民族廣",
+      "full": "ipcf.org.tw/Alian963 原住民族廣播電台",
+      "lang": "CH",
+      "cat": "tv_radio",
+      "cat_name": "无RSS媒体GNews覆盖",
+      "rss": "https://news.google.com/rss/search?q=site%3Aipcf.org.tw%20%28%E5%89%B5%E8%88%88%E9%8A%80%E8%A1%8C%20OR%20%E5%88%9B%E5%85%B4%E9%93%B6%E8%A1%8C%20OR%20%E5%AE%9A%E5%AD%98%20OR%20%E5%AD%98%E6%AC%BE%E5%88%A9%E7%8E%87%20OR%20%E7%A8%85%E8%B2%B8%20OR%20%E9%8A%80%E8%A1%8C%29&hl=zh-HK&gl=HK&ceid=HK:zh-Hant",
+      "site": "https://ipcf.org.tw",
+      "domain": "ipcf.org.tw",
+      "access": "rss",
+      "no": 4449,
+      "discovery": "no_rss_gnews_cover",
+      "original_id": "s0006",
+      "query": "site:ipcf.org.tw (創興銀行 OR 创兴银行 OR 定存 OR 存款利率 OR 稅貸 OR 銀行)",
+      "verified": "2026-11-27"
+    },
+    {
+      "id": "nr4450",
+      "name": "GN-ikh.tw/0972 高培德｜採訪作品集·高雄",
+      "full": "ikh.tw/0972 高培德｜採訪作品集·高雄",
+      "lang": "CH",
+      "cat": "hk_print",
+      "cat_name": "无RSS媒体GNews覆盖",
+      "rss": "https://news.google.com/rss/search?q=site%3Aikh.tw%20%28%E5%89%B5%E8%88%88%E9%8A%80%E8%A1%8C%20OR%20%E5%88%9B%E5%85%B4%E9%93%B6%E8%A1%8C%20OR%20%E5%AE%9A%E5%AD%98%20OR%20%E5%AD%98%E6%AC%BE%E5%88%A9%E7%8E%87%20OR%20%E7%A8%85%E8%B2%B8%20OR%20%E9%8A%80%E8%A1%8C%29&hl=zh-HK&gl=HK&ceid=HK:zh-Hant",
+      "site": "https://ikh.tw",
+      "domain": "ikh.tw",
+      "access": "rss",
+      "no": 4450,
+      "discovery": "no_rss_gnews_cover",
+      "original_id": "s0012",
+      "query": "site:ikh.tw (創興銀行 OR 创兴银行 OR 定存 OR 存款利率 OR 稅貸 OR 銀行)",
+      "verified": "2026-11-27"
+    },
+    {
+      "id": "nr4451",
+      "name": "GN-popa.hk/co POPA Channel",
+      "full": "popa.hk/co POPA Channel",
+      "lang": "CH",
+      "cat": "hk_print",
+      "cat_name": "无RSS媒体GNews覆盖",
+      "rss": "https://news.google.com/rss/search?q=site%3Apopa.hk%20%28%E5%89%B5%E8%88%88%E9%8A%80%E8%A1%8C%20OR%20%E5%88%9B%E5%85%B4%E9%93%B6%E8%A1%8C%20OR%20%E5%AE%9A%E5%AD%98%20OR%20%E5%AD%98%E6%AC%BE%E5%88%A9%E7%8E%87%20OR%20%E7%A8%85%E8%B2%B8%20OR%20%E9%8A%80%E8%A1%8C%29&hl=zh-HK&gl=HK&ceid=HK:zh-Hant",
+      "site": "https://popa.hk",
+      "domain": "popa.hk",
+      "access": "rss",
+      "no": 4451,
+      "discovery": "no_rss_gnews_cover",
+      "original_id": "s0980",
+      "query": "site:popa.hk (創興銀行 OR 创兴银行 OR 定存 OR 存款利率 OR 稅貸 OR 銀行)",
+      "verified": "2026-11-27"
+    },
+    {
+      "id": "nr4452",
+      "name": "GN-hkirc.hk/zh 香港互聯網交易管理有限公司",
+      "full": "hkirc.hk/zh 香港互聯網交易管理有限公司",
+      "lang": "CH",
+      "cat": "hk_print",
+      "cat_name": "无RSS媒体GNews覆盖",
+      "rss": "https://news.google.com/rss/search?q=site%3Ahkirc.hk%20%28%E5%89%B5%E8%88%88%E9%8A%80%E8%A1%8C%20OR%20%E5%88%9B%E5%85%B4%E9%93%B6%E8%A1%8C%20OR%20%E5%AE%9A%E5%AD%98%20OR%20%E5%AD%98%E6%AC%BE%E5%88%A9%E7%8E%87%20OR%20%E7%A8%85%E8%B2%B8%20OR%20%E9%8A%80%E8%A1%8C%29&hl=zh-HK&gl=HK&ceid=HK:zh-Hant",
+      "site": "https://hkirc.hk",
+      "domain": "hkirc.hk",
+      "access": "rss",
+      "no": 4452,
+      "discovery": "no_rss_gnews_cover",
+      "original_id": "s1105",
+      "query": "site:hkirc.hk (創興銀行 OR 创兴银行 OR 定存 OR 存款利率 OR 稅貸 OR 銀行)",
+      "verified": "2026-11-27"
+    },
+    {
+      "id": "nr4453",
+      "name": "GN-hkstp.org/hk 香港科技園公司",
+      "full": "hkstp.org/hk 香港科技園公司",
+      "lang": "CH",
+      "cat": "hk_print",
+      "cat_name": "无RSS媒体GNews覆盖",
+      "rss": "https://news.google.com/rss/search?q=site%3Ahkstp.org%20%28%E5%89%B5%E8%88%88%E9%8A%80%E8%A1%8C%20OR%20%E5%88%9B%E5%85%B4%E9%93%B6%E8%A1%8C%20OR%20%E5%AE%9A%E5%AD%98%20OR%20%E5%AD%98%E6%AC%BE%E5%88%A9%E7%8E%87%20OR%20%E7%A8%85%E8%B2%B8%20OR%20%E9%8A%80%E8%A1%8C%29&hl=zh-HK&gl=HK&ceid=HK:zh-Hant",
+      "site": "https://hkstp.org",
+      "domain": "hkstp.org",
+      "access": "rss",
+      "no": 4453,
+      "discovery": "no_rss_gnews_cover",
+      "original_id": "s1107",
+      "query": "site:hkstp.org (創興銀行 OR 创兴银行 OR 定存 OR 存款利率 OR 稅貸 OR 銀行)",
+      "verified": "2026-11-27"
+    },
+    {
+      "id": "nr4454",
+      "name": "GN-eac.hk/c 遺產管理委員會",
+      "full": "eac.hk/c 遺產管理委員會",
+      "lang": "CH",
+      "cat": "hk_print",
+      "cat_name": "无RSS媒体GNews覆盖",
+      "rss": "https://news.google.com/rss/search?q=site%3Aeac.hk%20%28%E5%89%B5%E8%88%88%E9%8A%80%E8%A1%8C%20OR%20%E5%88%9B%E5%85%B4%E9%93%B6%E8%A1%8C%20OR%20%E5%AE%9A%E5%AD%98%20OR%20%E5%AD%98%E6%AC%BE%E5%88%A9%E7%8E%87%20OR%20%E7%A8%85%E8%B2%B8%20OR%20%E9%8A%80%E8%A1%8C%29&hl=zh-HK&gl=HK&ceid=HK:zh-Hant",
+      "site": "https://eac.hk",
+      "domain": "eac.hk",
+      "access": "rss",
+      "no": 4454,
+      "discovery": "no_rss_gnews_cover",
+      "original_id": "s1273",
+      "query": "site:eac.hk (創興銀行 OR 创兴银行 OR 定存 OR 存款利率 OR 稅貸 OR 銀行)",
+      "verified": "2026-11-27"
     }
   ]
 }

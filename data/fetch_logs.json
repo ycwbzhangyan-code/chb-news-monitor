@@ -1,198 +1,128 @@
 [
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "s1411",
     "source_name": "Securities 證券時報(數字報)",
     "status": "error",
     "items_fetched": 0,
     "items_matched": 0,
     "error": "timeout",
-    "duration_ms": 15003
+    "duration_ms": 15010
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "s1491",
     "source_name": "Gansu Eco 甘肅經濟日報(數字報)",
     "status": "http_404",
     "items_fetched": 0,
     "items_matched": 0,
     "error": "HTTP 404",
-    "duration_ms": 54
+    "duration_ms": 57
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "s1505",
     "source_name": "The First(E 經濟日報(數字報)",
     "status": "http_404",
     "items_fetched": 0,
     "items_matched": 0,
     "error": "HTTP 404",
-    "duration_ms": 49
+    "duration_ms": 57
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "s1532",
     "source_name": "stcn.com 證券時報網 中國",
     "status": "error",
     "items_fetched": 0,
     "items_matched": 0,
     "error": "timeout",
-    "duration_ms": 15002
+    "duration_ms": 15008
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "s1536",
     "source_name": "jingribao.c 經濟日報",
     "status": "http_404",
     "items_fetched": 0,
     "items_matched": 0,
     "error": "HTTP 404",
-    "duration_ms": 140
+    "duration_ms": 453
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "s1544",
     "source_name": "Yunnan Ec 雲南經濟日報",
     "status": "http_404",
     "items_fetched": 0,
     "items_matched": 0,
     "error": "HTTP 404",
-    "duration_ms": 156
+    "duration_ms": 454
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "s1545",
     "source_name": "ZHENGQU 證券導報",
     "status": "ok",
     "items_fetched": 30,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 90
+    "duration_ms": 134
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "s1553",
     "source_name": "bjnews.com.cn 京報網",
     "status": "ok",
     "items_fetched": 30,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 35
+    "duration_ms": 47
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "s1572",
     "source_name": "China Daily 中國日報中文網",
     "status": "http_404",
     "items_fetched": 0,
     "items_matched": 0,
     "error": "HTTP 404",
-    "duration_ms": 22
+    "duration_ms": 35
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "s1651",
     "source_name": "Xinhua Dai 新华日报",
     "status": "ok",
     "items_fetched": 300,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 186
+    "duration_ms": 269
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "s1744",
     "source_name": "Hebei Ecos 河北經濟日報",
     "status": "http_404",
     "items_fetched": 0,
     "items_matched": 0,
     "error": "HTTP 404",
-    "duration_ms": 87
+    "duration_ms": 82
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "s1945",
     "source_name": "Hebei Ecor 河北經濟日報",
     "status": "http_404",
     "items_fetched": 0,
     "items_matched": 0,
     "error": "HTTP 404",
-    "duration_ms": 86
+    "duration_ms": 117
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "s2014",
     "source_name": "Jkb.com.cr 健康報網",
-    "status": "ok",
-    "items_fetched": 30,
-    "items_matched": 0,
-    "error": null,
-    "duration_ms": 241
-  },
-  {
-    "run_date": "2026-11-27T01:34:46.039Z",
-    "source_id": "s2055",
-    "source_name": "fhl.com.cn 中國樓市在線",
-    "status": "ok",
-    "items_fetched": 30,
-    "items_matched": 0,
-    "error": null,
-    "duration_ms": 36
-  },
-  {
-    "run_date": "2026-11-27T01:34:46.039Z",
-    "source_id": "s2058",
-    "source_name": "Caixin Caixin",
-    "status": "ok",
-    "items_fetched": 0,
-    "items_matched": 0,
-    "error": null,
-    "duration_ms": 860
-  },
-  {
-    "run_date": "2026-11-27T01:34:46.039Z",
-    "source_id": "s2084",
-    "source_name": "a.com.cn 中華廣告網",
-    "status": "ok",
-    "items_fetched": 0,
-    "items_matched": 0,
-    "error": null,
-    "duration_ms": 37
-  },
-  {
-    "run_date": "2026-11-27T01:34:46.039Z",
-    "source_id": "s2098",
-    "source_name": "news5.com.cn V訊網",
-    "status": "ok",
-    "items_fetched": 30,
-    "items_matched": 0,
-    "error": null,
-    "duration_ms": 59
-  },
-  {
-    "run_date": "2026-11-27T01:34:46.039Z",
-    "source_id": "s2124",
-    "source_name": "cnbeta.com.cnbeta 中文革井資訊站",
-    "status": "ok",
-    "items_fetched": 30,
-    "items_matched": 0,
-    "error": null,
-    "duration_ms": 183
-  },
-  {
-    "run_date": "2026-11-27T01:34:46.039Z",
-    "source_id": "s2128",
-    "source_name": "qudong.com 權動中國",
-    "status": "ok",
-    "items_fetched": 28,
-    "items_matched": 0,
-    "error": null,
-    "duration_ms": 10625
-  },
-  {
-    "run_date": "2026-11-27T01:34:46.039Z",
-    "source_id": "s2129",
-    "source_name": "czn.com.cr 中國村商情網",
     "status": "ok",
     "items_fetched": 30,
     "items_matched": 0,
@@ -200,419 +130,189 @@
     "duration_ms": 51
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
+    "source_id": "s2055",
+    "source_name": "fhl.com.cn 中國樓市在線",
+    "status": "ok",
+    "items_fetched": 30,
+    "items_matched": 0,
+    "error": null,
+    "duration_ms": 56
+  },
+  {
+    "run_date": "2026-11-27T02:22:41.458Z",
+    "source_id": "s2058",
+    "source_name": "Caixin Caixin",
+    "status": "ok",
+    "items_fetched": 0,
+    "items_matched": 0,
+    "error": null,
+    "duration_ms": 2071
+  },
+  {
+    "run_date": "2026-11-27T02:22:41.458Z",
+    "source_id": "s2084",
+    "source_name": "a.com.cn 中華廣告網",
+    "status": "ok",
+    "items_fetched": 0,
+    "items_matched": 0,
+    "error": null,
+    "duration_ms": 55
+  },
+  {
+    "run_date": "2026-11-27T02:22:41.458Z",
+    "source_id": "s2098",
+    "source_name": "news5.com.cn V訊網",
+    "status": "ok",
+    "items_fetched": 30,
+    "items_matched": 0,
+    "error": null,
+    "duration_ms": 300
+  },
+  {
+    "run_date": "2026-11-27T02:22:41.458Z",
+    "source_id": "s2124",
+    "source_name": "cnbeta.com.cnbeta 中文革井資訊站",
+    "status": "ok",
+    "items_fetched": 30,
+    "items_matched": 0,
+    "error": null,
+    "duration_ms": 119
+  },
+  {
+    "run_date": "2026-11-27T02:22:41.458Z",
+    "source_id": "s2128",
+    "source_name": "qudong.com 權動中國",
+    "status": "ok",
+    "items_fetched": 34,
+    "items_matched": 0,
+    "error": null,
+    "duration_ms": 954
+  },
+  {
+    "run_date": "2026-11-27T02:22:41.458Z",
+    "source_id": "s2129",
+    "source_name": "czn.com.cr 中國村商情網",
+    "status": "ok",
+    "items_fetched": 30,
+    "items_matched": 0,
+    "error": null,
+    "duration_ms": 80
+  },
+  {
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "s2160",
     "source_name": "sohu.com 搜狐",
     "status": "error",
     "items_fetched": 0,
     "items_matched": 0,
     "error": "request to https://rss.sohu.com/finance failed, reason: getaddrinfo ENOTFOUND rss.sohu.com",
-    "duration_ms": 64
+    "duration_ms": 52
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "s2164",
     "source_name": "chinanews 中新網",
     "status": "ok",
     "items_fetched": 30,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 391
+    "duration_ms": 95
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "s2184",
     "source_name": "china.com.cn 中國網",
     "status": "ok",
     "items_fetched": 30,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 207
+    "duration_ms": 105
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "s2186",
     "source_name": "China Daily 中國日報網－國際",
     "status": "http_404",
     "items_fetched": 0,
     "items_matched": 0,
     "error": "HTTP 404",
-    "duration_ms": 60
+    "duration_ms": 78
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "s2187",
     "source_name": "scol.com.cn 四川在線",
     "status": "ok",
     "items_fetched": 30,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 78
+    "duration_ms": 259
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "s2196",
     "source_name": "Zjol.com.cn 浙江在線",
     "status": "ok",
     "items_fetched": 30,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 71
+    "duration_ms": 112
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "s2210",
     "source_name": "voc.com.cr 華聲在線",
     "status": "ok",
     "items_fetched": 30,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 997
+    "duration_ms": 296
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "s2214",
     "source_name": "99.com.cn 99健康網",
     "status": "ok",
     "items_fetched": 30,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 663
+    "duration_ms": 79
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "s2225",
     "source_name": "123.com.cn 雲掌財經",
     "status": "ok",
     "items_fetched": 30,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 1613
+    "duration_ms": 279
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "s2227",
     "source_name": "weiyangx.com 未央網",
     "status": "ok",
     "items_fetched": 30,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 1982
+    "duration_ms": 2359
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "s2228",
     "source_name": "juejin.im 掘金",
     "status": "ok",
     "items_fetched": 20,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 235
+    "duration_ms": 514
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "s2249",
     "source_name": "Jschina.com.cn 中國江蘇網",
-    "status": "ok",
-    "items_fetched": 30,
-    "items_matched": 0,
-    "error": null,
-    "duration_ms": 1238
-  },
-  {
-    "run_date": "2026-11-27T01:34:46.039Z",
-    "source_id": "s2255",
-    "source_name": "66wz.com 溫州新聞網",
-    "status": "ok",
-    "items_fetched": 200,
-    "items_matched": 0,
-    "error": null,
-    "duration_ms": 1680
-  },
-  {
-    "run_date": "2026-11-27T01:34:46.039Z",
-    "source_id": "s2262",
-    "source_name": "Gxnews.com.cn 廣西新聞網",
-    "status": "ok",
-    "items_fetched": 30,
-    "items_matched": 0,
-    "error": null,
-    "duration_ms": 306
-  },
-  {
-    "run_date": "2026-11-27T01:34:46.039Z",
-    "source_id": "s2263",
-    "source_name": "hangzhou.com.cn 杭州網",
-    "status": "ok",
-    "items_fetched": 30,
-    "items_matched": 0,
-    "error": null,
-    "duration_ms": 1409
-  },
-  {
-    "run_date": "2026-11-27T01:34:46.039Z",
-    "source_id": "s2293",
-    "source_name": "syd.com.cn 沈陽網",
-    "status": "ok",
-    "items_fetched": 30,
-    "items_matched": 0,
-    "error": null,
-    "duration_ms": 1210
-  },
-  {
-    "run_date": "2026-11-27T01:34:46.039Z",
-    "source_id": "s2300",
-    "source_name": "bjzq.com.cn 北京證券網股民天地",
-    "status": "ok",
-    "items_fetched": 30,
-    "items_matched": 0,
-    "error": null,
-    "duration_ms": 358
-  },
-  {
-    "run_date": "2026-11-27T01:34:46.039Z",
-    "source_id": "s2301",
-    "source_name": "caigou.com.cn 中國教育裝備采購網",
-    "status": "ok",
-    "items_fetched": 30,
-    "items_matched": 0,
-    "error": null,
-    "duration_ms": 334
-  },
-  {
-    "run_date": "2026-11-27T01:34:46.039Z",
-    "source_id": "s2311",
-    "source_name": "news.toocle.com 生意寶",
-    "status": "ok",
-    "items_fetched": 0,
-    "items_matched": 0,
-    "error": null,
-    "duration_ms": 1328
-  },
-  {
-    "run_date": "2026-11-27T01:34:46.039Z",
-    "source_id": "s2318",
-    "source_name": "shuichan.com.cn 水產養殖網",
-    "status": "ok",
-    "items_fetched": 30,
-    "items_matched": 0,
-    "error": null,
-    "duration_ms": 1924
-  },
-  {
-    "run_date": "2026-11-27T01:34:46.039Z",
-    "source_id": "s2325",
-    "source_name": "xkb.com.cn 廣東新快網",
-    "status": "ok",
-    "items_fetched": 30,
-    "items_matched": 0,
-    "error": null,
-    "duration_ms": 1996
-  },
-  {
-    "run_date": "2026-11-27T01:34:46.039Z",
-    "source_id": "s2329",
-    "source_name": "shm.com.cn 水母網",
-    "status": "ok",
-    "items_fetched": 30,
-    "items_matched": 0,
-    "error": null,
-    "duration_ms": 798
-  },
-  {
-    "run_date": "2026-11-27T01:34:46.039Z",
-    "source_id": "s2334",
-    "source_name": "senn.com.cn 南方企業新聞網",
-    "status": "ok",
-    "items_fetched": 30,
-    "items_matched": 0,
-    "error": null,
-    "duration_ms": 872
-  },
-  {
-    "run_date": "2026-11-27T01:34:46.039Z",
-    "source_id": "s2343",
-    "source_name": "cfen.com.cn 中國財經報網",
-    "status": "ok",
-    "items_fetched": 30,
-    "items_matched": 0,
-    "error": null,
-    "duration_ms": 967
-  },
-  {
-    "run_date": "2026-11-27T01:34:46.039Z",
-    "source_id": "s2373",
-    "source_name": "rmlt.com.cn 人民論壇網",
-    "status": "ok",
-    "items_fetched": 30,
-    "items_matched": 0,
-    "error": null,
-    "duration_ms": 1078
-  },
-  {
-    "run_date": "2026-11-27T01:34:46.039Z",
-    "source_id": "s2382",
-    "source_name": "xfrb.com.cn 消費日報網",
-    "status": "ok",
-    "items_fetched": 30,
-    "items_matched": 0,
-    "error": null,
-    "duration_ms": 2752
-  },
-  {
-    "run_date": "2026-11-27T01:34:46.039Z",
-    "source_id": "s2401",
-    "source_name": "gstv.com.cn 絲路明珠網",
-    "status": "ok",
-    "items_fetched": 30,
-    "items_matched": 0,
-    "error": null,
-    "duration_ms": 22
-  },
-  {
-    "run_date": "2026-11-27T01:34:46.039Z",
-    "source_id": "s2418",
-    "source_name": "Nen.com.cn 東北新聞網",
-    "status": "ok",
-    "items_fetched": 30,
-    "items_matched": 0,
-    "error": null,
-    "duration_ms": 17
-  },
-  {
-    "run_date": "2026-11-27T01:34:46.039Z",
-    "source_id": "s2437",
-    "source_name": "lyd.com.cn 洛陽網",
-    "status": "ok",
-    "items_fetched": 30,
-    "items_matched": 0,
-    "error": null,
-    "duration_ms": 37
-  },
-  {
-    "run_date": "2026-11-27T01:34:46.039Z",
-    "source_id": "s2447",
-    "source_name": "Sputnik 俄羅斯衛星通訊社",
-    "status": "ok",
-    "items_fetched": 100,
-    "items_matched": 0,
-    "error": null,
-    "duration_ms": 982
-  },
-  {
-    "run_date": "2026-11-27T01:34:46.039Z",
-    "source_id": "s2448",
-    "source_name": "Campaign 中國",
-    "status": "http_403",
-    "items_fetched": 0,
-    "items_matched": 0,
-    "error": "HTTP 403",
-    "duration_ms": 56
-  },
-  {
-    "run_date": "2026-11-27T01:34:46.039Z",
-    "source_id": "s2453",
-    "source_name": "taizhou.com.cn 中國台州網",
-    "status": "ok",
-    "items_fetched": 30,
-    "items_matched": 0,
-    "error": null,
-    "duration_ms": 339
-  },
-  {
-    "run_date": "2026-11-27T01:34:46.039Z",
-    "source_id": "s2464",
-    "source_name": "022china.com 渤海文化",
-    "status": "ok",
-    "items_fetched": 50,
-    "items_matched": 0,
-    "error": null,
-    "duration_ms": 850
-  },
-  {
-    "run_date": "2026-11-27T01:34:46.039Z",
-    "source_id": "s2474",
-    "source_name": "jwb.com.cn 今晚報",
-    "status": "ok",
-    "items_fetched": 30,
-    "items_matched": 0,
-    "error": null,
-    "duration_ms": 166
-  },
-  {
-    "run_date": "2026-11-27T01:34:46.039Z",
-    "source_id": "s2477",
-    "source_name": "lzbs.com.cn 蘭州新聞網",
-    "status": "ok",
-    "items_fetched": 30,
-    "items_matched": 0,
-    "error": null,
-    "duration_ms": 249
-  },
-  {
-    "run_date": "2026-11-27T01:34:46.039Z",
-    "source_id": "s2486",
-    "source_name": "zyrb.com.cn 資陽網",
-    "status": "ok",
-    "items_fetched": 30,
-    "items_matched": 0,
-    "error": null,
-    "duration_ms": 153
-  },
-  {
-    "run_date": "2026-11-27T01:34:46.039Z",
-    "source_id": "s2507",
-    "source_name": "jnbw.com.cn 今報網",
-    "status": "ok",
-    "items_fetched": 30,
-    "items_matched": 0,
-    "error": null,
-    "duration_ms": 242
-  },
-  {
-    "run_date": "2026-11-27T01:34:46.039Z",
-    "source_id": "s2509",
-    "source_name": "rzw.com.cn 日照網",
-    "status": "ok",
-    "items_fetched": 30,
-    "items_matched": 0,
-    "error": null,
-    "duration_ms": 32
-  },
-  {
-    "run_date": "2026-11-27T01:34:46.039Z",
-    "source_id": "s2514",
-    "source_name": "shaoxing.com.cn 紹興網",
-    "status": "ok",
-    "items_fetched": 30,
-    "items_matched": 0,
-    "error": null,
-    "duration_ms": 267
-  },
-  {
-    "run_date": "2026-11-27T01:34:46.039Z",
-    "source_id": "s2525",
-    "source_name": "cnxz.com.cn 中國徐州網",
-    "status": "ok",
-    "items_fetched": 30,
-    "items_matched": 0,
-    "error": null,
-    "duration_ms": 90
-  },
-  {
-    "run_date": "2026-11-27T01:34:46.039Z",
-    "source_id": "s2543",
-    "source_name": "ylxw.com.cn 伊犁新聞網",
-    "status": "ok",
-    "items_fetched": 30,
-    "items_matched": 0,
-    "error": null,
-    "duration_ms": 444
-  },
-  {
-    "run_date": "2026-11-27T01:34:46.039Z",
-    "source_id": "s2559",
-    "source_name": "vos.com.cn 海峽之聲廣播電臺",
     "status": "ok",
     "items_fetched": 30,
     "items_matched": 0,
@@ -620,9 +320,29 @@
     "duration_ms": 219
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
-    "source_id": "s2588",
-    "source_name": "hsrb.com.cn 衡水新聞網",
+    "run_date": "2026-11-27T02:22:41.458Z",
+    "source_id": "s2255",
+    "source_name": "66wz.com 溫州新聞網",
+    "status": "ok",
+    "items_fetched": 200,
+    "items_matched": 0,
+    "error": null,
+    "duration_ms": 1799
+  },
+  {
+    "run_date": "2026-11-27T02:22:41.458Z",
+    "source_id": "s2262",
+    "source_name": "Gxnews.com.cn 廣西新聞網",
+    "status": "ok",
+    "items_fetched": 30,
+    "items_matched": 0,
+    "error": null,
+    "duration_ms": 27
+  },
+  {
+    "run_date": "2026-11-27T02:22:41.458Z",
+    "source_id": "s2263",
+    "source_name": "hangzhou.com.cn 杭州網",
     "status": "ok",
     "items_fetched": 30,
     "items_matched": 0,
@@ -630,9 +350,49 @@
     "duration_ms": 261
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
-    "source_id": "s2591",
-    "source_name": "sqrb.com.cn 商丘網",
+    "run_date": "2026-11-27T02:22:41.458Z",
+    "source_id": "s2293",
+    "source_name": "syd.com.cn 沈陽網",
+    "status": "ok",
+    "items_fetched": 30,
+    "items_matched": 0,
+    "error": null,
+    "duration_ms": 222
+  },
+  {
+    "run_date": "2026-11-27T02:22:41.458Z",
+    "source_id": "s2300",
+    "source_name": "bjzq.com.cn 北京證券網股民天地",
+    "status": "ok",
+    "items_fetched": 30,
+    "items_matched": 0,
+    "error": null,
+    "duration_ms": 79
+  },
+  {
+    "run_date": "2026-11-27T02:22:41.458Z",
+    "source_id": "s2301",
+    "source_name": "caigou.com.cn 中國教育裝備采購網",
+    "status": "ok",
+    "items_fetched": 30,
+    "items_matched": 0,
+    "error": null,
+    "duration_ms": 79
+  },
+  {
+    "run_date": "2026-11-27T02:22:41.458Z",
+    "source_id": "s2311",
+    "source_name": "news.toocle.com 生意寶",
+    "status": "ok",
+    "items_fetched": 0,
+    "items_matched": 0,
+    "error": null,
+    "duration_ms": 507
+  },
+  {
+    "run_date": "2026-11-27T02:22:41.458Z",
+    "source_id": "s2318",
+    "source_name": "shuichan.com.cn 水產養殖網",
     "status": "ok",
     "items_fetched": 30,
     "items_matched": 0,
@@ -640,27 +400,267 @@
     "duration_ms": 132
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
+    "source_id": "s2325",
+    "source_name": "xkb.com.cn 廣東新快網",
+    "status": "ok",
+    "items_fetched": 30,
+    "items_matched": 0,
+    "error": null,
+    "duration_ms": 153
+  },
+  {
+    "run_date": "2026-11-27T02:22:41.458Z",
+    "source_id": "s2329",
+    "source_name": "shm.com.cn 水母網",
+    "status": "ok",
+    "items_fetched": 30,
+    "items_matched": 0,
+    "error": null,
+    "duration_ms": 170
+  },
+  {
+    "run_date": "2026-11-27T02:22:41.458Z",
+    "source_id": "s2334",
+    "source_name": "senn.com.cn 南方企業新聞網",
+    "status": "ok",
+    "items_fetched": 30,
+    "items_matched": 0,
+    "error": null,
+    "duration_ms": 191
+  },
+  {
+    "run_date": "2026-11-27T02:22:41.458Z",
+    "source_id": "s2343",
+    "source_name": "cfen.com.cn 中國財經報網",
+    "status": "ok",
+    "items_fetched": 30,
+    "items_matched": 0,
+    "error": null,
+    "duration_ms": 191
+  },
+  {
+    "run_date": "2026-11-27T02:22:41.458Z",
+    "source_id": "s2373",
+    "source_name": "rmlt.com.cn 人民論壇網",
+    "status": "ok",
+    "items_fetched": 30,
+    "items_matched": 0,
+    "error": null,
+    "duration_ms": 289
+  },
+  {
+    "run_date": "2026-11-27T02:22:41.458Z",
+    "source_id": "s2382",
+    "source_name": "xfrb.com.cn 消費日報網",
+    "status": "ok",
+    "items_fetched": 30,
+    "items_matched": 0,
+    "error": null,
+    "duration_ms": 353
+  },
+  {
+    "run_date": "2026-11-27T02:22:41.458Z",
+    "source_id": "s2401",
+    "source_name": "gstv.com.cn 絲路明珠網",
+    "status": "ok",
+    "items_fetched": 30,
+    "items_matched": 0,
+    "error": null,
+    "duration_ms": 20
+  },
+  {
+    "run_date": "2026-11-27T02:22:41.458Z",
+    "source_id": "s2418",
+    "source_name": "Nen.com.cn 東北新聞網",
+    "status": "ok",
+    "items_fetched": 30,
+    "items_matched": 0,
+    "error": null,
+    "duration_ms": 232
+  },
+  {
+    "run_date": "2026-11-27T02:22:41.458Z",
+    "source_id": "s2437",
+    "source_name": "lyd.com.cn 洛陽網",
+    "status": "ok",
+    "items_fetched": 30,
+    "items_matched": 0,
+    "error": null,
+    "duration_ms": 64
+  },
+  {
+    "run_date": "2026-11-27T02:22:41.458Z",
+    "source_id": "s2447",
+    "source_name": "Sputnik 俄羅斯衛星通訊社",
+    "status": "ok",
+    "items_fetched": 100,
+    "items_matched": 0,
+    "error": null,
+    "duration_ms": 912
+  },
+  {
+    "run_date": "2026-11-27T02:22:41.458Z",
+    "source_id": "s2448",
+    "source_name": "Campaign 中國",
+    "status": "http_403",
+    "items_fetched": 0,
+    "items_matched": 0,
+    "error": "HTTP 403",
+    "duration_ms": 99
+  },
+  {
+    "run_date": "2026-11-27T02:22:41.458Z",
+    "source_id": "s2453",
+    "source_name": "taizhou.com.cn 中國台州網",
+    "status": "ok",
+    "items_fetched": 30,
+    "items_matched": 0,
+    "error": null,
+    "duration_ms": 296
+  },
+  {
+    "run_date": "2026-11-27T02:22:41.458Z",
+    "source_id": "s2464",
+    "source_name": "022china.com 渤海文化",
+    "status": "ok",
+    "items_fetched": 50,
+    "items_matched": 0,
+    "error": null,
+    "duration_ms": 292
+  },
+  {
+    "run_date": "2026-11-27T02:22:41.458Z",
+    "source_id": "s2474",
+    "source_name": "jwb.com.cn 今晚報",
+    "status": "ok",
+    "items_fetched": 30,
+    "items_matched": 0,
+    "error": null,
+    "duration_ms": 177
+  },
+  {
+    "run_date": "2026-11-27T02:22:41.458Z",
+    "source_id": "s2477",
+    "source_name": "lzbs.com.cn 蘭州新聞網",
+    "status": "ok",
+    "items_fetched": 30,
+    "items_matched": 0,
+    "error": null,
+    "duration_ms": 273
+  },
+  {
+    "run_date": "2026-11-27T02:22:41.458Z",
+    "source_id": "s2486",
+    "source_name": "zyrb.com.cn 資陽網",
+    "status": "ok",
+    "items_fetched": 30,
+    "items_matched": 0,
+    "error": null,
+    "duration_ms": 294
+  },
+  {
+    "run_date": "2026-11-27T02:22:41.458Z",
+    "source_id": "s2507",
+    "source_name": "jnbw.com.cn 今報網",
+    "status": "ok",
+    "items_fetched": 30,
+    "items_matched": 0,
+    "error": null,
+    "duration_ms": 319
+  },
+  {
+    "run_date": "2026-11-27T02:22:41.458Z",
+    "source_id": "s2509",
+    "source_name": "rzw.com.cn 日照網",
+    "status": "ok",
+    "items_fetched": 30,
+    "items_matched": 0,
+    "error": null,
+    "duration_ms": 90
+  },
+  {
+    "run_date": "2026-11-27T02:22:41.458Z",
+    "source_id": "s2514",
+    "source_name": "shaoxing.com.cn 紹興網",
+    "status": "ok",
+    "items_fetched": 30,
+    "items_matched": 0,
+    "error": null,
+    "duration_ms": 263
+  },
+  {
+    "run_date": "2026-11-27T02:22:41.458Z",
+    "source_id": "s2525",
+    "source_name": "cnxz.com.cn 中國徐州網",
+    "status": "ok",
+    "items_fetched": 30,
+    "items_matched": 0,
+    "error": null,
+    "duration_ms": 84
+  },
+  {
+    "run_date": "2026-11-27T02:22:41.458Z",
+    "source_id": "s2543",
+    "source_name": "ylxw.com.cn 伊犁新聞網",
+    "status": "ok",
+    "items_fetched": 30,
+    "items_matched": 0,
+    "error": null,
+    "duration_ms": 138
+  },
+  {
+    "run_date": "2026-11-27T02:22:41.458Z",
+    "source_id": "s2559",
+    "source_name": "vos.com.cn 海峽之聲廣播電臺",
+    "status": "ok",
+    "items_fetched": 30,
+    "items_matched": 0,
+    "error": null,
+    "duration_ms": 257
+  },
+  {
+    "run_date": "2026-11-27T02:22:41.458Z",
+    "source_id": "s2588",
+    "source_name": "hsrb.com.cn 衡水新聞網",
+    "status": "ok",
+    "items_fetched": 30,
+    "items_matched": 0,
+    "error": null,
+    "duration_ms": 80
+  },
+  {
+    "run_date": "2026-11-27T02:22:41.458Z",
+    "source_id": "s2591",
+    "source_name": "sqrb.com.cn 商丘網",
+    "status": "ok",
+    "items_fetched": 30,
+    "items_matched": 0,
+    "error": null,
+    "duration_ms": 315
+  },
+  {
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "s2615",
     "source_name": "citure.net 中國城市文化網",
     "status": "ok",
     "items_fetched": 30,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 511
+    "duration_ms": 768
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "s2624",
     "source_name": "gsei.com.cn 甘肅經濟信息網",
     "status": "ok",
     "items_fetched": 30,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 143
+    "duration_ms": 49
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "s2638",
     "source_name": "jrtzb.com.cn 金融投資網",
     "status": "ok",
@@ -670,9 +670,289 @@
     "duration_ms": 51
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "s2640",
     "source_name": "jsw.com.cn 金山網",
+    "status": "ok",
+    "items_fetched": 30,
+    "items_matched": 0,
+    "error": null,
+    "duration_ms": 52
+  },
+  {
+    "run_date": "2026-11-27T02:22:41.458Z",
+    "source_id": "s2680",
+    "source_name": "btzx.com.cn 兵團在線",
+    "status": "ok",
+    "items_fetched": 30,
+    "items_matched": 0,
+    "error": null,
+    "duration_ms": 757
+  },
+  {
+    "run_date": "2026-11-27T02:22:41.458Z",
+    "source_id": "s2693",
+    "source_name": "ksb.com.cn 健康時報網",
+    "status": "ok",
+    "items_fetched": 30,
+    "items_matched": 0,
+    "error": null,
+    "duration_ms": 93
+  },
+  {
+    "run_date": "2026-11-27T02:22:41.458Z",
+    "source_id": "s2818",
+    "source_name": "ngzb.com.cn 南國早報網",
+    "status": "ok",
+    "items_fetched": 30,
+    "items_matched": 0,
+    "error": null,
+    "duration_ms": 353
+  },
+  {
+    "run_date": "2026-11-27T02:22:41.458Z",
+    "source_id": "s2821",
+    "source_name": "qtv.com.cn 青島網路電視台",
+    "status": "ok",
+    "items_fetched": 30,
+    "items_matched": 0,
+    "error": null,
+    "duration_ms": 36
+  },
+  {
+    "run_date": "2026-11-27T02:22:41.458Z",
+    "source_id": "s2822",
+    "source_name": "infoq.cn InfoQ",
+    "status": "ok",
+    "items_fetched": 20,
+    "items_matched": 0,
+    "error": null,
+    "duration_ms": 542
+  },
+  {
+    "run_date": "2026-11-27T02:22:41.458Z",
+    "source_id": "s2829",
+    "source_name": "gscn.com.cn 中國甘肅網",
+    "status": "ok",
+    "items_fetched": 30,
+    "items_matched": 0,
+    "error": null,
+    "duration_ms": 89
+  },
+  {
+    "run_date": "2026-11-27T02:22:41.458Z",
+    "source_id": "s2837",
+    "source_name": "ind.com.cn 北國網",
+    "status": "ok",
+    "items_fetched": 30,
+    "items_matched": 0,
+    "error": null,
+    "duration_ms": 140
+  },
+  {
+    "run_date": "2026-11-27T02:22:41.458Z",
+    "source_id": "s2841",
+    "source_name": "Gog.com.cn 多彩貴州網",
+    "status": "ok",
+    "items_fetched": 30,
+    "items_matched": 0,
+    "error": null,
+    "duration_ms": 260
+  },
+  {
+    "run_date": "2026-11-27T02:22:41.458Z",
+    "source_id": "s2843",
+    "source_name": "msrb.com.cn 眉山網",
+    "status": "ok",
+    "items_fetched": 30,
+    "items_matched": 0,
+    "error": null,
+    "duration_ms": 136
+  },
+  {
+    "run_date": "2026-11-27T02:22:41.458Z",
+    "source_id": "s2865",
+    "source_name": "fstv.com.cn 佛山電視台",
+    "status": "ok",
+    "items_fetched": 30,
+    "items_matched": 0,
+    "error": null,
+    "duration_ms": 55
+  },
+  {
+    "run_date": "2026-11-27T02:22:41.458Z",
+    "source_id": "s2869",
+    "source_name": "1cbcijing.com 第一財經網",
+    "status": "http_404",
+    "items_fetched": 0,
+    "items_matched": 0,
+    "error": "HTTP 404",
+    "duration_ms": 438
+  },
+  {
+    "run_date": "2026-11-27T02:22:41.458Z",
+    "source_id": "s2880",
+    "source_name": "cpnn.com.cn 中國電力新聞網",
+    "status": "ok",
+    "items_fetched": 30,
+    "items_matched": 0,
+    "error": null,
+    "duration_ms": 83
+  },
+  {
+    "run_date": "2026-11-27T02:22:41.458Z",
+    "source_id": "s2885",
+    "source_name": "cbia.com.cn 中國軸承行業網",
+    "status": "ok",
+    "items_fetched": 30,
+    "items_matched": 0,
+    "error": null,
+    "duration_ms": 81
+  },
+  {
+    "run_date": "2026-11-27T02:22:41.458Z",
+    "source_id": "s2903",
+    "source_name": "cfan.com.cn cfan",
+    "status": "ok",
+    "items_fetched": 30,
+    "items_matched": 0,
+    "error": null,
+    "duration_ms": 374
+  },
+  {
+    "run_date": "2026-11-27T02:22:41.458Z",
+    "source_id": "s2913",
+    "source_name": "4hou.com 嘶吼",
+    "status": "ok",
+    "items_fetched": 20,
+    "items_matched": 0,
+    "error": null,
+    "duration_ms": 2187
+  },
+  {
+    "run_date": "2026-11-27T02:22:41.458Z",
+    "source_id": "s2921",
+    "source_name": "cmt.com.cn 醫學論壇網",
+    "status": "ok",
+    "items_fetched": 30,
+    "items_matched": 0,
+    "error": null,
+    "duration_ms": 89
+  },
+  {
+    "run_date": "2026-11-27T02:22:41.458Z",
+    "source_id": "s2932",
+    "source_name": "pharmtec.com.cn 中國醫藥技術經濟網",
+    "status": "ok",
+    "items_fetched": 30,
+    "items_matched": 0,
+    "error": null,
+    "duration_ms": 247
+  },
+  {
+    "run_date": "2026-11-27T02:22:41.458Z",
+    "source_id": "s2936",
+    "source_name": "66law.cn 華律網",
+    "status": "ok",
+    "items_fetched": 0,
+    "items_matched": 0,
+    "error": null,
+    "duration_ms": 649
+  },
+  {
+    "run_date": "2026-11-27T02:22:41.458Z",
+    "source_id": "s2947",
+    "source_name": "photofans.com.cn 佳友在線",
+    "status": "ok",
+    "items_fetched": 30,
+    "items_matched": 0,
+    "error": null,
+    "duration_ms": 54
+  },
+  {
+    "run_date": "2026-11-27T02:22:41.458Z",
+    "source_id": "s2962",
+    "source_name": "lvjie.com.cn 新旅界",
+    "status": "ok",
+    "items_fetched": 30,
+    "items_matched": 0,
+    "error": null,
+    "duration_ms": 170
+  },
+  {
+    "run_date": "2026-11-27T02:22:41.458Z",
+    "source_id": "s2971",
+    "source_name": "jpnxcn.com 精品女性",
+    "status": "ok",
+    "items_fetched": 30,
+    "items_matched": 0,
+    "error": null,
+    "duration_ms": 599
+  },
+  {
+    "run_date": "2026-11-27T02:22:41.458Z",
+    "source_id": "s2972",
+    "source_name": "noblesse.com 望",
+    "status": "ok",
+    "items_fetched": 10,
+    "items_matched": 0,
+    "error": null,
+    "duration_ms": 1250
+  },
+  {
+    "run_date": "2026-11-27T02:22:41.458Z",
+    "source_id": "s2976",
+    "source_name": "luxe.co 華麗志",
+    "status": "ok",
+    "items_fetched": 10,
+    "items_matched": 0,
+    "error": null,
+    "duration_ms": 798
+  },
+  {
+    "run_date": "2026-11-27T02:22:41.458Z",
+    "source_id": "s2981",
+    "source_name": "iranshao.com 愛燃燒",
+    "status": "ok",
+    "items_fetched": 10,
+    "items_matched": 0,
+    "error": null,
+    "duration_ms": 638
+  },
+  {
+    "run_date": "2026-11-27T02:22:41.458Z",
+    "source_id": "s3001",
+    "source_name": "ilady.com.cn iLady365",
+    "status": "ok",
+    "items_fetched": 30,
+    "items_matched": 0,
+    "error": null,
+    "duration_ms": 202
+  },
+  {
+    "run_date": "2026-11-27T02:22:41.458Z",
+    "source_id": "s3030",
+    "source_name": "Xinhuanet 新華網",
+    "status": "ok",
+    "items_fetched": 300,
+    "items_matched": 0,
+    "error": null,
+    "duration_ms": 366
+  },
+  {
+    "run_date": "2026-11-27T02:22:41.458Z",
+    "source_id": "s3031",
+    "source_name": "Xinhua Daily 新華每日電訊",
+    "status": "ok",
+    "items_fetched": 300,
+    "items_matched": 0,
+    "error": null,
+    "duration_ms": 275
+  },
+  {
+    "run_date": "2026-11-27T02:22:41.458Z",
+    "source_id": "s3036",
+    "source_name": "wind.com.cn Wind",
     "status": "ok",
     "items_fetched": 30,
     "items_matched": 0,
@@ -680,79 +960,19 @@
     "duration_ms": 45
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
-    "source_id": "s2680",
-    "source_name": "btzx.com.cn 兵團在線",
-    "status": "ok",
-    "items_fetched": 30,
+    "run_date": "2026-11-27T02:22:41.458Z",
+    "source_id": "s3039",
+    "source_name": "CBNweekly 第一財經周刊",
+    "status": "http_404",
+    "items_fetched": 0,
     "items_matched": 0,
-    "error": null,
-    "duration_ms": 18
+    "error": "HTTP 404",
+    "duration_ms": 349
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
-    "source_id": "s2693",
-    "source_name": "ksb.com.cn 健康時報網",
-    "status": "ok",
-    "items_fetched": 30,
-    "items_matched": 0,
-    "error": null,
-    "duration_ms": 160
-  },
-  {
-    "run_date": "2026-11-27T01:34:46.039Z",
-    "source_id": "s2818",
-    "source_name": "ngzb.com.cn 南國早報網",
-    "status": "ok",
-    "items_fetched": 30,
-    "items_matched": 0,
-    "error": null,
-    "duration_ms": 142
-  },
-  {
-    "run_date": "2026-11-27T01:34:46.039Z",
-    "source_id": "s2821",
-    "source_name": "qtv.com.cn 青島網路電視台",
-    "status": "ok",
-    "items_fetched": 30,
-    "items_matched": 0,
-    "error": null,
-    "duration_ms": 241
-  },
-  {
-    "run_date": "2026-11-27T01:34:46.039Z",
-    "source_id": "s2822",
-    "source_name": "infoq.cn InfoQ",
-    "status": "ok",
-    "items_fetched": 20,
-    "items_matched": 0,
-    "error": null,
-    "duration_ms": 517
-  },
-  {
-    "run_date": "2026-11-27T01:34:46.039Z",
-    "source_id": "s2829",
-    "source_name": "gscn.com.cn 中國甘肅網",
-    "status": "ok",
-    "items_fetched": 30,
-    "items_matched": 0,
-    "error": null,
-    "duration_ms": 85
-  },
-  {
-    "run_date": "2026-11-27T01:34:46.039Z",
-    "source_id": "s2837",
-    "source_name": "ind.com.cn 北國網",
-    "status": "ok",
-    "items_fetched": 30,
-    "items_matched": 0,
-    "error": null,
-    "duration_ms": 41
-  },
-  {
-    "run_date": "2026-11-27T01:34:46.039Z",
-    "source_id": "s2841",
-    "source_name": "Gog.com.cn 多彩貴州網",
+    "run_date": "2026-11-27T02:22:41.458Z",
+    "source_id": "s3065",
+    "source_name": "pceva.com.cn PCEVA",
     "status": "ok",
     "items_fetched": 30,
     "items_matched": 0,
@@ -760,309 +980,59 @@
     "duration_ms": 29
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
-    "source_id": "s2843",
-    "source_name": "msrb.com.cn 眉山網",
-    "status": "ok",
-    "items_fetched": 30,
-    "items_matched": 0,
-    "error": null,
-    "duration_ms": 72
-  },
-  {
-    "run_date": "2026-11-27T01:34:46.039Z",
-    "source_id": "s2865",
-    "source_name": "fstv.com.cn 佛山電視台",
-    "status": "ok",
-    "items_fetched": 30,
-    "items_matched": 0,
-    "error": null,
-    "duration_ms": 135
-  },
-  {
-    "run_date": "2026-11-27T01:34:46.039Z",
-    "source_id": "s2869",
-    "source_name": "1cbcijing.com 第一財經網",
-    "status": "http_404",
-    "items_fetched": 0,
-    "items_matched": 0,
-    "error": "HTTP 404",
-    "duration_ms": 1627
-  },
-  {
-    "run_date": "2026-11-27T01:34:46.039Z",
-    "source_id": "s2880",
-    "source_name": "cpnn.com.cn 中國電力新聞網",
-    "status": "ok",
-    "items_fetched": 30,
-    "items_matched": 0,
-    "error": null,
-    "duration_ms": 528
-  },
-  {
-    "run_date": "2026-11-27T01:34:46.039Z",
-    "source_id": "s2885",
-    "source_name": "cbia.com.cn 中國軸承行業網",
-    "status": "ok",
-    "items_fetched": 30,
-    "items_matched": 0,
-    "error": null,
-    "duration_ms": 80
-  },
-  {
-    "run_date": "2026-11-27T01:34:46.039Z",
-    "source_id": "s2903",
-    "source_name": "cfan.com.cn cfan",
-    "status": "ok",
-    "items_fetched": 30,
-    "items_matched": 0,
-    "error": null,
-    "duration_ms": 34
-  },
-  {
-    "run_date": "2026-11-27T01:34:46.039Z",
-    "source_id": "s2913",
-    "source_name": "4hou.com 嘶吼",
-    "status": "ok",
-    "items_fetched": 20,
-    "items_matched": 0,
-    "error": null,
-    "duration_ms": 2754
-  },
-  {
-    "run_date": "2026-11-27T01:34:46.039Z",
-    "source_id": "s2921",
-    "source_name": "cmt.com.cn 醫學論壇網",
-    "status": "ok",
-    "items_fetched": 30,
-    "items_matched": 0,
-    "error": null,
-    "duration_ms": 138
-  },
-  {
-    "run_date": "2026-11-27T01:34:46.039Z",
-    "source_id": "s2932",
-    "source_name": "pharmtec.com.cn 中國醫藥技術經濟網",
-    "status": "ok",
-    "items_fetched": 30,
-    "items_matched": 0,
-    "error": null,
-    "duration_ms": 69
-  },
-  {
-    "run_date": "2026-11-27T01:34:46.039Z",
-    "source_id": "s2936",
-    "source_name": "66law.cn 華律網",
-    "status": "ok",
-    "items_fetched": 0,
-    "items_matched": 0,
-    "error": null,
-    "duration_ms": 803
-  },
-  {
-    "run_date": "2026-11-27T01:34:46.039Z",
-    "source_id": "s2947",
-    "source_name": "photofans.com.cn 佳友在線",
-    "status": "ok",
-    "items_fetched": 30,
-    "items_matched": 0,
-    "error": null,
-    "duration_ms": 49
-  },
-  {
-    "run_date": "2026-11-27T01:34:46.039Z",
-    "source_id": "s2962",
-    "source_name": "lvjie.com.cn 新旅界",
-    "status": "ok",
-    "items_fetched": 30,
-    "items_matched": 0,
-    "error": null,
-    "duration_ms": 31
-  },
-  {
-    "run_date": "2026-11-27T01:34:46.039Z",
-    "source_id": "s2971",
-    "source_name": "jpnxcn.com 精品女性",
-    "status": "ok",
-    "items_fetched": 30,
-    "items_matched": 0,
-    "error": null,
-    "duration_ms": 514
-  },
-  {
-    "run_date": "2026-11-27T01:34:46.039Z",
-    "source_id": "s2972",
-    "source_name": "noblesse.com 望",
-    "status": "ok",
-    "items_fetched": 10,
-    "items_matched": 0,
-    "error": null,
-    "duration_ms": 1173
-  },
-  {
-    "run_date": "2026-11-27T01:34:46.039Z",
-    "source_id": "s2976",
-    "source_name": "luxe.co 華麗志",
-    "status": "ok",
-    "items_fetched": 10,
-    "items_matched": 0,
-    "error": null,
-    "duration_ms": 551
-  },
-  {
-    "run_date": "2026-11-27T01:34:46.039Z",
-    "source_id": "s2981",
-    "source_name": "iranshao.com 愛燃燒",
-    "status": "ok",
-    "items_fetched": 10,
-    "items_matched": 0,
-    "error": null,
-    "duration_ms": 418
-  },
-  {
-    "run_date": "2026-11-27T01:34:46.039Z",
-    "source_id": "s3001",
-    "source_name": "ilady.com.cn iLady365",
-    "status": "ok",
-    "items_fetched": 30,
-    "items_matched": 0,
-    "error": null,
-    "duration_ms": 281
-  },
-  {
-    "run_date": "2026-11-27T01:34:46.039Z",
-    "source_id": "s3030",
-    "source_name": "Xinhuanet 新華網",
-    "status": "ok",
-    "items_fetched": 300,
-    "items_matched": 0,
-    "error": null,
-    "duration_ms": 262
-  },
-  {
-    "run_date": "2026-11-27T01:34:46.039Z",
-    "source_id": "s3031",
-    "source_name": "Xinhua Daily 新華每日電訊",
-    "status": "ok",
-    "items_fetched": 300,
-    "items_matched": 0,
-    "error": null,
-    "duration_ms": 208
-  },
-  {
-    "run_date": "2026-11-27T01:34:46.039Z",
-    "source_id": "s3036",
-    "source_name": "wind.com.cn Wind",
-    "status": "ok",
-    "items_fetched": 30,
-    "items_matched": 0,
-    "error": null,
-    "duration_ms": 43
-  },
-  {
-    "run_date": "2026-11-27T01:34:46.039Z",
-    "source_id": "s3039",
-    "source_name": "CBNweekly 第一財經周刊",
-    "status": "http_404",
-    "items_fetched": 0,
-    "items_matched": 0,
-    "error": "HTTP 404",
-    "duration_ms": 346
-  },
-  {
-    "run_date": "2026-11-27T01:34:46.039Z",
-    "source_id": "s3065",
-    "source_name": "pceva.com.cn PCEVA",
-    "status": "ok",
-    "items_fetched": 30,
-    "items_matched": 0,
-    "error": null,
-    "duration_ms": 31
-  },
-  {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "s3071",
     "source_name": "pd1.cn 咚咚腫瘤科",
     "status": "ok",
     "items_fetched": 10,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 8354
+    "duration_ms": 7417
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "s3076",
     "source_name": "HYPEBEAST HYPEBEAST",
     "status": "ok",
     "items_fetched": 19,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 250
+    "duration_ms": 648
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "s3077",
     "source_name": "Vogue 時尚網",
     "status": "ok",
     "items_fetched": 30,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 65
+    "duration_ms": 165
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "s3079",
     "source_name": "ellechina.com ELLE網",
     "status": "ok",
     "items_fetched": 50,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 61
+    "duration_ms": 380
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "s3086",
     "source_name": "esquire.com 時尚先生網",
     "status": "ok",
     "items_fetched": 50,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 362
+    "duration_ms": 667
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "s3087",
     "source_name": "cosmopolitan.com 時尚COSMOPOLITAN",
-    "status": "ok",
-    "items_fetched": 50,
-    "items_matched": 0,
-    "error": null,
-    "duration_ms": 355
-  },
-  {
-    "run_date": "2026-11-27T01:34:46.039Z",
-    "source_id": "s3088",
-    "source_name": "adstyle.com 安邸AD",
-    "status": "http_404",
-    "items_fetched": 0,
-    "items_matched": 0,
-    "error": "HTTP 404",
-    "duration_ms": 1178
-  },
-  {
-    "run_date": "2026-11-27T01:34:46.039Z",
-    "source_id": "s3090",
-    "source_name": "ELLE Men ELLEMEN睿士",
-    "status": "ok",
-    "items_fetched": 50,
-    "items_matched": 0,
-    "error": null,
-    "duration_ms": 67
-  },
-  {
-    "run_date": "2026-11-27T01:34:46.039Z",
-    "source_id": "s3091",
-    "source_name": "marieclaire.com 嘉人網",
     "status": "ok",
     "items_fetched": 50,
     "items_matched": 0,
@@ -1070,89 +1040,219 @@
     "duration_ms": 625
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
+    "source_id": "s3088",
+    "source_name": "adstyle.com 安邸AD",
+    "status": "http_404",
+    "items_fetched": 0,
+    "items_matched": 0,
+    "error": "HTTP 404",
+    "duration_ms": 1372
+  },
+  {
+    "run_date": "2026-11-27T02:22:41.458Z",
+    "source_id": "s3090",
+    "source_name": "ELLE Men ELLEMEN睿士",
+    "status": "ok",
+    "items_fetched": 50,
+    "items_matched": 0,
+    "error": null,
+    "duration_ms": 375
+  },
+  {
+    "run_date": "2026-11-27T02:22:41.458Z",
+    "source_id": "s3091",
+    "source_name": "marieclaire.com 嘉人網",
+    "status": "ok",
+    "items_fetched": 50,
+    "items_matched": 0,
+    "error": null,
+    "duration_ms": 923
+  },
+  {
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "s3104",
     "source_name": "icbc.com.cn 中國工商銀行",
     "status": "ok",
     "items_fetched": 30,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 60
+    "duration_ms": 44
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "s3105",
     "source_name": "glsc.com.cn 國聯證券",
     "status": "ok",
     "items_fetched": 30,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 225
+    "duration_ms": 52
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "s3108",
     "source_name": "gf.com.cn 廣發證券",
     "status": "ok",
     "items_fetched": 30,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 155
+    "duration_ms": 57
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "s3109",
     "source_name": "guosen.com.cn 國信證券",
     "status": "ok",
     "items_fetched": 30,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 76
+    "duration_ms": 306
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "s3110",
     "source_name": "swsc.com.cn 西南證券",
     "status": "ok",
     "items_fetched": 30,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 69
+    "duration_ms": 508
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "s3113",
     "source_name": "china.jdpower.com 君迪",
     "status": "ok",
     "items_fetched": 0,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 1363
+    "duration_ms": 1392
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "s3114",
     "source_name": "fjrx.com.cn 福建省農商銀行",
     "status": "ok",
     "items_fetched": 30,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 116
+    "duration_ms": 112
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "s3115",
     "source_name": "gzcb.com.cn 廣州銀行",
     "status": "ok",
     "items_fetched": 30,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 64
+    "duration_ms": 105
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "s3117",
     "source_name": "njcb.com.cn 南京銀行",
+    "status": "ok",
+    "items_fetched": 30,
+    "items_matched": 0,
+    "error": null,
+    "duration_ms": 319
+  },
+  {
+    "run_date": "2026-11-27T02:22:41.458Z",
+    "source_id": "s3119",
+    "source_name": "bankofbeijing.com.cn 北京銀行",
+    "status": "ok",
+    "items_fetched": 30,
+    "items_matched": 0,
+    "error": null,
+    "duration_ms": 240
+  },
+  {
+    "run_date": "2026-11-27T02:22:41.458Z",
+    "source_id": "s3120",
+    "source_name": "gyzq.com.cn 國元證券",
+    "status": "ok",
+    "items_fetched": 30,
+    "items_matched": 0,
+    "error": null,
+    "duration_ms": 387
+  },
+  {
+    "run_date": "2026-11-27T02:22:41.458Z",
+    "source_id": "s3125",
+    "source_name": "xyzq.com.cn 興業證券",
+    "status": "ok",
+    "items_fetched": 30,
+    "items_matched": 0,
+    "error": null,
+    "duration_ms": 230
+  },
+  {
+    "run_date": "2026-11-27T02:22:41.458Z",
+    "source_id": "s3127",
+    "source_name": "hx168.com.cn 華西證券",
+    "status": "ok",
+    "items_fetched": 30,
+    "items_matched": 0,
+    "error": null,
+    "duration_ms": 129
+  },
+  {
+    "run_date": "2026-11-27T02:22:41.458Z",
+    "source_id": "s3128",
+    "source_name": "chinaclear.com.cn 中國結算",
+    "status": "ok",
+    "items_fetched": 30,
+    "items_matched": 0,
+    "error": null,
+    "duration_ms": 125
+  },
+  {
+    "run_date": "2026-11-27T02:22:41.458Z",
+    "source_id": "s3132",
+    "source_name": "crhjt.com.cn 恆泰證券",
+    "status": "ok",
+    "items_fetched": 30,
+    "items_matched": 0,
+    "error": null,
+    "duration_ms": 272
+  },
+  {
+    "run_date": "2026-11-27T02:22:41.458Z",
+    "source_id": "s3133",
+    "source_name": "dfzq.com.cn 東方證券",
+    "status": "ok",
+    "items_fetched": 30,
+    "items_matched": 0,
+    "error": null,
+    "duration_ms": 151
+  },
+  {
+    "run_date": "2026-11-27T02:22:41.458Z",
+    "source_id": "s3140",
+    "source_name": "bocd.com.cn 成都銀行",
+    "status": "ok",
+    "items_fetched": 30,
+    "items_matched": 0,
+    "error": null,
+    "duration_ms": 261
+  },
+  {
+    "run_date": "2026-11-27T02:22:41.458Z",
+    "source_id": "s3151",
+    "source_name": "xib.com.cn 廈門國際銀行",
+    "status": "ok",
+    "items_fetched": 30,
+    "items_matched": 0,
+    "error": null,
+    "duration_ms": 427
+  },
+  {
+    "run_date": "2026-11-27T02:22:41.458Z",
+    "source_id": "s3154",
+    "source_name": "cbhb.com.cn 渤海銀行",
     "status": "ok",
     "items_fetched": 30,
     "items_matched": 0,
@@ -1160,227 +1260,127 @@
     "duration_ms": 367
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
-    "source_id": "s3119",
-    "source_name": "bankofbeijing.com.cn 北京銀行",
-    "status": "ok",
-    "items_fetched": 30,
-    "items_matched": 0,
-    "error": null,
-    "duration_ms": 307
-  },
-  {
-    "run_date": "2026-11-27T01:34:46.039Z",
-    "source_id": "s3120",
-    "source_name": "gyzq.com.cn 國元證券",
-    "status": "ok",
-    "items_fetched": 30,
-    "items_matched": 0,
-    "error": null,
-    "duration_ms": 121
-  },
-  {
-    "run_date": "2026-11-27T01:34:46.039Z",
-    "source_id": "s3125",
-    "source_name": "xyzq.com.cn 興業證券",
-    "status": "ok",
-    "items_fetched": 30,
-    "items_matched": 0,
-    "error": null,
-    "duration_ms": 359
-  },
-  {
-    "run_date": "2026-11-27T01:34:46.039Z",
-    "source_id": "s3127",
-    "source_name": "hx168.com.cn 華西證券",
-    "status": "ok",
-    "items_fetched": 30,
-    "items_matched": 0,
-    "error": null,
-    "duration_ms": 313
-  },
-  {
-    "run_date": "2026-11-27T01:34:46.039Z",
-    "source_id": "s3128",
-    "source_name": "chinaclear.com.cn 中國結算",
-    "status": "ok",
-    "items_fetched": 30,
-    "items_matched": 0,
-    "error": null,
-    "duration_ms": 369
-  },
-  {
-    "run_date": "2026-11-27T01:34:46.039Z",
-    "source_id": "s3132",
-    "source_name": "crhjt.com.cn 恆泰證券",
-    "status": "ok",
-    "items_fetched": 30,
-    "items_matched": 0,
-    "error": null,
-    "duration_ms": 177
-  },
-  {
-    "run_date": "2026-11-27T01:34:46.039Z",
-    "source_id": "s3133",
-    "source_name": "dfzq.com.cn 東方證券",
-    "status": "ok",
-    "items_fetched": 30,
-    "items_matched": 0,
-    "error": null,
-    "duration_ms": 160
-  },
-  {
-    "run_date": "2026-11-27T01:34:46.039Z",
-    "source_id": "s3140",
-    "source_name": "bocd.com.cn 成都銀行",
-    "status": "ok",
-    "items_fetched": 30,
-    "items_matched": 0,
-    "error": null,
-    "duration_ms": 91
-  },
-  {
-    "run_date": "2026-11-27T01:34:46.039Z",
-    "source_id": "s3151",
-    "source_name": "xib.com.cn 廈門國際銀行",
-    "status": "ok",
-    "items_fetched": 30,
-    "items_matched": 0,
-    "error": null,
-    "duration_ms": 229
-  },
-  {
-    "run_date": "2026-11-27T01:34:46.039Z",
-    "source_id": "s3154",
-    "source_name": "cbhb.com.cn 渤海銀行",
-    "status": "ok",
-    "items_fetched": 30,
-    "items_matched": 0,
-    "error": null,
-    "duration_ms": 232
-  },
-  {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "s3155",
     "source_name": "nbcb.com.cn 寧波銀行",
     "status": "ok",
     "items_fetched": 30,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 13
+    "duration_ms": 161
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "s3157",
     "source_name": "ghzq.com.cn 國海證券",
     "status": "ok",
     "items_fetched": 30,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 23
+    "duration_ms": 30
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "s3158",
     "source_name": "bcg.com.cn 波士頓咨詢公司",
     "status": "ok",
     "items_fetched": 30,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 329
+    "duration_ms": 274
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "s3159",
     "source_name": "jxnxs.com.cn 宜春農商銀行",
     "status": "ok",
     "items_fetched": 30,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 256
+    "duration_ms": 263
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "s3162",
     "source_name": "mszq.com.cn 民生證券",
     "status": "ok",
     "items_fetched": 30,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 67
+    "duration_ms": 324
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "s3168",
     "source_name": "adbc.com.cn 中國農業發展銀行",
     "status": "ok",
     "items_fetched": 30,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 71
+    "duration_ms": 297
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "s3176",
     "source_name": "gzs.com.cn 中信證券華南股份有限公司",
     "status": "ok",
     "items_fetched": 30,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 378
+    "duration_ms": 87
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "s3177",
     "source_name": "longone.com.cn 東海證券",
     "status": "ok",
     "items_fetched": 30,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 150
+    "duration_ms": 83
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "s3178",
     "source_name": "njzq.com.cn 南京證券",
     "status": "ok",
     "items_fetched": 30,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 128
+    "duration_ms": 172
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "s3181",
     "source_name": "ydsc.com.cn 英大證券",
     "status": "ok",
     "items_fetched": 30,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 59
+    "duration_ms": 467
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "s3183",
     "source_name": "dzbc.com.cn",
     "status": "ok",
     "items_fetched": 30,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 254
+    "duration_ms": 251
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "s3184",
     "source_name": "cytb.com.cn",
     "status": "ok",
     "items_fetched": 30,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 43
+    "duration_ms": 332
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "s3185",
     "source_name": "cdb.com.cn",
     "status": "ok",
@@ -1390,209 +1390,79 @@
     "duration_ms": 254
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "s3186",
     "source_name": "gsbank.com.cn",
     "status": "ok",
     "items_fetched": 30,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 177
+    "duration_ms": 83
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "s3188",
     "source_name": "ibank.com",
     "status": "ok",
     "items_fetched": 4,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 1586
+    "duration_ms": 1996
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "s3190",
     "source_name": "hsbank.com.cn 湖北省城市信用社联合社",
     "status": "ok",
     "items_fetched": 30,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 330
+    "duration_ms": 79
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "s3191",
     "source_name": "bank.com.cn",
     "status": "ok",
     "items_fetched": 30,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 251
+    "duration_ms": 145
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "s3192",
     "source_name": "bank.com.cn",
     "status": "ok",
     "items_fetched": 30,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 249
+    "duration_ms": 137
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "s3193",
     "source_name": "czbank.com.cn",
     "status": "ok",
     "items_fetched": 30,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 166
+    "duration_ms": 140
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "s3194",
     "source_name": "qhbank.com.cn",
     "status": "ok",
     "items_fetched": 30,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 52
+    "duration_ms": 233
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "s3195",
     "source_name": "tsbank.com.cn",
-    "status": "ok",
-    "items_fetched": 30,
-    "items_matched": 0,
-    "error": null,
-    "duration_ms": 261
-  },
-  {
-    "run_date": "2026-11-27T01:34:46.039Z",
-    "source_id": "s3196",
-    "source_name": "com.cn",
-    "status": "ok",
-    "items_fetched": 30,
-    "items_matched": 0,
-    "error": null,
-    "duration_ms": 17
-  },
-  {
-    "run_date": "2026-11-27T01:34:46.039Z",
-    "source_id": "s3197",
-    "source_name": "com.cn",
-    "status": "ok",
-    "items_fetched": 30,
-    "items_matched": 0,
-    "error": null,
-    "duration_ms": 263
-  },
-  {
-    "run_date": "2026-11-27T01:34:46.039Z",
-    "source_id": "s3198",
-    "source_name": "wb.com.cn",
-    "status": "ok",
-    "items_fetched": 30,
-    "items_matched": 0,
-    "error": null,
-    "duration_ms": 39
-  },
-  {
-    "run_date": "2026-11-27T01:34:46.039Z",
-    "source_id": "s3199",
-    "source_name": "com.cn",
-    "status": "ok",
-    "items_fetched": 30,
-    "items_matched": 0,
-    "error": null,
-    "duration_ms": 157
-  },
-  {
-    "run_date": "2026-11-27T01:34:46.039Z",
-    "source_id": "s3200",
-    "source_name": "icbc.com.cn",
-    "status": "ok",
-    "items_fetched": 30,
-    "items_matched": 0,
-    "error": null,
-    "duration_ms": 162
-  },
-  {
-    "run_date": "2026-11-27T01:34:46.039Z",
-    "source_id": "s3201",
-    "source_name": "ecbank.com.cn",
-    "status": "ok",
-    "items_fetched": 30,
-    "items_matched": 0,
-    "error": null,
-    "duration_ms": 159
-  },
-  {
-    "run_date": "2026-11-27T01:34:46.039Z",
-    "source_id": "s3202",
-    "source_name": "zb.com.cn",
-    "status": "ok",
-    "items_fetched": 30,
-    "items_matched": 0,
-    "error": null,
-    "duration_ms": 171
-  },
-  {
-    "run_date": "2026-11-27T01:34:46.039Z",
-    "source_id": "s3205",
-    "source_name": "83~b.com.cn",
-    "status": "ok",
-    "items_fetched": 30,
-    "items_matched": 0,
-    "error": null,
-    "duration_ms": 257
-  },
-  {
-    "run_date": "2026-11-27T01:34:46.039Z",
-    "source_id": "s3206",
-    "source_name": "czbank.com.cn",
-    "status": "ok",
-    "items_fetched": 30,
-    "items_matched": 0,
-    "error": null,
-    "duration_ms": 32
-  },
-  {
-    "run_date": "2026-11-27T01:34:46.039Z",
-    "source_id": "s3209",
-    "source_name": "bsb.com.cn",
-    "status": "ok",
-    "items_fetched": 30,
-    "items_matched": 0,
-    "error": null,
-    "duration_ms": 109
-  },
-  {
-    "run_date": "2026-11-27T01:34:46.039Z",
-    "source_id": "s3213",
-    "source_name": "lyx.com.cn",
-    "status": "ok",
-    "items_fetched": 30,
-    "items_matched": 0,
-    "error": null,
-    "duration_ms": 257
-  },
-  {
-    "run_date": "2026-11-27T01:34:46.039Z",
-    "source_id": "s3275",
-    "source_name": "y2.com.cn",
-    "status": "ok",
-    "items_fetched": 30,
-    "items_matched": 0,
-    "error": null,
-    "duration_ms": 381
-  },
-  {
-    "run_date": "2026-11-27T01:34:46.039Z",
-    "source_id": "s3304",
-    "source_name": "zte.com.cn ZTE",
     "status": "ok",
     "items_fetched": 30,
     "items_matched": 0,
@@ -1600,1619 +1470,2219 @@
     "duration_ms": 65
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
+    "source_id": "s3196",
+    "source_name": "com.cn",
+    "status": "ok",
+    "items_fetched": 30,
+    "items_matched": 0,
+    "error": null,
+    "duration_ms": 276
+  },
+  {
+    "run_date": "2026-11-27T02:22:41.458Z",
+    "source_id": "s3197",
+    "source_name": "com.cn",
+    "status": "ok",
+    "items_fetched": 30,
+    "items_matched": 0,
+    "error": null,
+    "duration_ms": 22
+  },
+  {
+    "run_date": "2026-11-27T02:22:41.458Z",
+    "source_id": "s3198",
+    "source_name": "wb.com.cn",
+    "status": "ok",
+    "items_fetched": 30,
+    "items_matched": 0,
+    "error": null,
+    "duration_ms": 98
+  },
+  {
+    "run_date": "2026-11-27T02:22:41.458Z",
+    "source_id": "s3199",
+    "source_name": "com.cn",
+    "status": "ok",
+    "items_fetched": 30,
+    "items_matched": 0,
+    "error": null,
+    "duration_ms": 191
+  },
+  {
+    "run_date": "2026-11-27T02:22:41.458Z",
+    "source_id": "s3200",
+    "source_name": "icbc.com.cn",
+    "status": "ok",
+    "items_fetched": 30,
+    "items_matched": 0,
+    "error": null,
+    "duration_ms": 186
+  },
+  {
+    "run_date": "2026-11-27T02:22:41.458Z",
+    "source_id": "s3201",
+    "source_name": "ecbank.com.cn",
+    "status": "ok",
+    "items_fetched": 30,
+    "items_matched": 0,
+    "error": null,
+    "duration_ms": 302
+  },
+  {
+    "run_date": "2026-11-27T02:22:41.458Z",
+    "source_id": "s3202",
+    "source_name": "zb.com.cn",
+    "status": "ok",
+    "items_fetched": 30,
+    "items_matched": 0,
+    "error": null,
+    "duration_ms": 96
+  },
+  {
+    "run_date": "2026-11-27T02:22:41.458Z",
+    "source_id": "s3205",
+    "source_name": "83~b.com.cn",
+    "status": "ok",
+    "items_fetched": 30,
+    "items_matched": 0,
+    "error": null,
+    "duration_ms": 145
+  },
+  {
+    "run_date": "2026-11-27T02:22:41.458Z",
+    "source_id": "s3206",
+    "source_name": "czbank.com.cn",
+    "status": "ok",
+    "items_fetched": 30,
+    "items_matched": 0,
+    "error": null,
+    "duration_ms": 56
+  },
+  {
+    "run_date": "2026-11-27T02:22:41.458Z",
+    "source_id": "s3209",
+    "source_name": "bsb.com.cn",
+    "status": "ok",
+    "items_fetched": 30,
+    "items_matched": 0,
+    "error": null,
+    "duration_ms": 537
+  },
+  {
+    "run_date": "2026-11-27T02:22:41.458Z",
+    "source_id": "s3213",
+    "source_name": "lyx.com.cn",
+    "status": "ok",
+    "items_fetched": 30,
+    "items_matched": 0,
+    "error": null,
+    "duration_ms": 79
+  },
+  {
+    "run_date": "2026-11-27T02:22:41.458Z",
+    "source_id": "s3275",
+    "source_name": "y2.com.cn",
+    "status": "ok",
+    "items_fetched": 30,
+    "items_matched": 0,
+    "error": null,
+    "duration_ms": 138
+  },
+  {
+    "run_date": "2026-11-27T02:22:41.458Z",
+    "source_id": "s3304",
+    "source_name": "zte.com.cn ZTE",
+    "status": "ok",
+    "items_fetched": 30,
+    "items_matched": 0,
+    "error": null,
+    "duration_ms": 49
+  },
+  {
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "s3321",
     "source_name": "sz9.com.cn",
     "status": "ok",
     "items_fetched": 30,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 66
+    "duration_ms": 299
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "s3349",
     "source_name": "C",
     "status": "ok",
-    "items_fetched": 30,
+    "items_fetched": 31,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 323
+    "duration_ms": 77
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "s3366",
     "source_name": "0",
     "status": "http_404",
     "items_fetched": 0,
     "items_matched": 0,
     "error": "HTTP 404",
-    "duration_ms": 124
+    "duration_ms": 188
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "s3385",
     "source_name": "a",
     "status": "http_404",
     "items_fetched": 0,
     "items_matched": 0,
     "error": "HTTP 404",
-    "duration_ms": 82
+    "duration_ms": 1709
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "s3483",
     "source_name": "01",
     "status": "http_404",
     "items_fetched": 0,
     "items_matched": 0,
     "error": "HTTP 404",
-    "duration_ms": 169
+    "duration_ms": 185
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "s3690",
     "source_name": "1",
     "status": "http_404",
     "items_fetched": 0,
     "items_matched": 0,
     "error": "HTTP 404",
-    "duration_ms": 178
+    "duration_ms": 176
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "s3729",
     "source_name": "01",
     "status": "http_404",
     "items_fetched": 0,
     "items_matched": 0,
     "error": "HTTP 404",
-    "duration_ms": 461
+    "duration_ms": 113
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "s3778",
     "source_name": "cs.com.cn _]zon8.cn",
     "status": "ok",
     "items_fetched": 30,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 252
+    "duration_ms": 110
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "s3791",
     "source_name": "sina.com.cn 新浪网",
     "status": "ok",
     "items_fetched": 0,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 25
+    "duration_ms": 49
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "x0001",
     "source_name": "明報·財經",
     "status": "ok",
     "items_fetched": 33,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 42
+    "duration_ms": 377
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "x0002",
     "source_name": "星島頭條·RSS",
     "status": "ok",
     "items_fetched": 100,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 63
+    "duration_ms": 189
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "x0003",
     "source_name": "人民網·財經",
     "status": "ok",
     "items_fetched": 100,
     "items_matched": 1,
     "error": null,
-    "duration_ms": 144
+    "duration_ms": 268
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "x0004",
     "source_name": "人民網·時政",
     "status": "ok",
     "items_fetched": 100,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 209
+    "duration_ms": 166
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "x0005",
     "source_name": "新華網·財經",
     "status": "ok",
     "items_fetched": 300,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 229
+    "duration_ms": 253
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "x0006",
     "source_name": "BBC中文",
     "status": "ok",
     "items_fetched": 42,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 534
+    "duration_ms": 416
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "x0007",
     "source_name": "BBC Business",
     "status": "ok",
     "items_fetched": 52,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 92
+    "duration_ms": 53
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "x0008",
     "source_name": "CNBC",
     "status": "ok",
     "items_fetched": 30,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 307
+    "duration_ms": 273
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "x0009",
     "source_name": "MarketWatch",
-    "status": "ok",
-    "items_fetched": 10,
+    "status": "http_400",
+    "items_fetched": 0,
     "items_matched": 0,
-    "error": null,
-    "duration_ms": 1208
+    "error": "HTTP 400",
+    "duration_ms": 488
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "x0010",
     "source_name": "FT中文网",
     "status": "ok",
     "items_fetched": 20,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 209
+    "duration_ms": 266
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "x0011",
     "source_name": "彭博·中文",
     "status": "ok",
     "items_fetched": 20,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 931
+    "duration_ms": 878
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "x0012",
     "source_name": "WSJ",
     "status": "ok",
     "items_fetched": 20,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 687
+    "duration_ms": 717
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "x0013",
     "source_name": "CNN Business",
     "status": "ok",
     "items_fetched": 1,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 1439
+    "duration_ms": 450
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "x0014",
     "source_name": "Google News·CHB",
     "status": "ok",
-    "items_fetched": 23,
+    "items_fetched": 48,
     "items_matched": 12,
     "error": null,
-    "duration_ms": 522
+    "duration_ms": 436
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "x0015",
     "source_name": "Google News·創興銀行",
     "status": "ok",
     "items_fetched": 100,
     "items_matched": 97,
     "error": null,
-    "duration_ms": 823
+    "duration_ms": 768
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "x0016",
     "source_name": "Google News·定存香港",
     "status": "ok",
-    "items_fetched": 100,
-    "items_matched": 86,
+    "items_fetched": 70,
+    "items_matched": 63,
     "error": null,
-    "duration_ms": 817
+    "duration_ms": 755
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "x0017",
     "source_name": "GNews-創興銀行繁中",
     "status": "ok",
     "items_fetched": 100,
     "items_matched": 97,
     "error": null,
-    "duration_ms": 840
+    "duration_ms": 788
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "x0018",
     "source_name": "GNews-创兴银行简中",
     "status": "ok",
     "items_fetched": 32,
     "items_matched": 29,
     "error": null,
-    "duration_ms": 248
+    "duration_ms": 301
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "x0019",
     "source_name": "GNews-ChongHingBank",
     "status": "ok",
-    "items_fetched": 33,
-    "items_matched": 12,
+    "items_fetched": 23,
+    "items_matched": 11,
     "error": null,
-    "duration_ms": 243
+    "duration_ms": 316
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "x0020",
     "source_name": "GNews-廖創興",
     "status": "ok",
-    "items_fetched": 61,
-    "items_matched": 33,
+    "items_fetched": 39,
+    "items_matched": 29,
     "error": null,
-    "duration_ms": 368
+    "duration_ms": 322
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "x0021",
     "source_name": "GNews-創興銀行定存",
     "status": "ok",
-    "items_fetched": 86,
-    "items_matched": 83,
+    "items_fetched": 39,
+    "items_matched": 38,
     "error": null,
-    "duration_ms": 472
+    "duration_ms": 406
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "x0022",
     "source_name": "GNews-創興銀行定期",
     "status": "ok",
-    "items_fetched": 83,
-    "items_matched": 80,
+    "items_fetched": 85,
+    "items_matched": 82,
     "error": null,
-    "duration_ms": 624
+    "duration_ms": 575
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "x0023",
     "source_name": "GNews-創興银行利率",
     "status": "ok",
-    "items_fetched": 37,
-    "items_matched": 37,
+    "items_fetched": 77,
+    "items_matched": 76,
     "error": null,
-    "duration_ms": 403
+    "duration_ms": 602
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "x0024",
     "source_name": "GNews-創興銀行港元",
     "status": "ok",
-    "items_fetched": 75,
-    "items_matched": 73,
+    "items_fetched": 31,
+    "items_matched": 31,
     "error": null,
-    "duration_ms": 771
+    "duration_ms": 455
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "x0025",
     "source_name": "GNews-創興銀行美元",
     "status": "ok",
-    "items_fetched": 66,
-    "items_matched": 56,
+    "items_fetched": 64,
+    "items_matched": 54,
     "error": null,
-    "duration_ms": 454
+    "duration_ms": 481
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "x0026",
     "source_name": "GNews-創興銀行按揭",
     "status": "ok",
-    "items_fetched": 53,
-    "items_matched": 50,
+    "items_fetched": 33,
+    "items_matched": 33,
     "error": null,
-    "duration_ms": 376
+    "duration_ms": 388
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "x0027",
     "source_name": "GNews-創興銀行理財",
     "status": "ok",
-    "items_fetched": 70,
-    "items_matched": 54,
+    "items_fetched": 71,
+    "items_matched": 55,
     "error": null,
-    "duration_ms": 424
+    "duration_ms": 496
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "x0028",
     "source_name": "GNews-創興銀行評級",
     "status": "ok",
-    "items_fetched": 7,
-    "items_matched": 3,
+    "items_fetched": 13,
+    "items_matched": 6,
     "error": null,
-    "duration_ms": 372
+    "duration_ms": 483
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "x0029",
     "source_name": "GNews-創興銀行越秀",
     "status": "ok",
     "items_fetched": 35,
     "items_matched": 25,
     "error": null,
-    "duration_ms": 402
+    "duration_ms": 776
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "x0030",
     "source_name": "GNews-CHB-HK",
     "status": "ok",
     "items_fetched": 4,
     "items_matched": 1,
     "error": null,
-    "duration_ms": 301
+    "duration_ms": 268
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "x0031",
     "source_name": "GNews-ChongHing定存",
     "status": "ok",
     "items_fetched": 5,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 244
+    "duration_ms": 251
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "x0032",
     "source_name": "GNews-香港定存",
     "status": "ok",
-    "items_fetched": 100,
-    "items_matched": 94,
+    "items_fetched": 67,
+    "items_matched": 65,
     "error": null,
-    "duration_ms": 557
+    "duration_ms": 465
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "x0033",
     "source_name": "GNews-港元定期比較",
     "status": "ok",
     "items_fetched": 100,
     "items_matched": 93,
     "error": null,
-    "duration_ms": 550
+    "duration_ms": 572
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "x0034",
     "source_name": "GNews-美元定存香港",
     "status": "ok",
-    "items_fetched": 51,
-    "items_matched": 49,
+    "items_fetched": 52,
+    "items_matched": 50,
     "error": null,
-    "duration_ms": 359
+    "duration_ms": 583
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "x0035",
     "source_name": "GNews-稅貸",
     "status": "ok",
-    "items_fetched": 53,
-    "items_matched": 53,
+    "items_fetched": 100,
+    "items_matched": 95,
     "error": null,
-    "duration_ms": 404
+    "duration_ms": 636
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "x0036",
     "source_name": "GNews-香港加息",
     "status": "ok",
-    "items_fetched": 100,
-    "items_matched": 85,
+    "items_fetched": 55,
+    "items_matched": 43,
     "error": null,
-    "duration_ms": 656
+    "duration_ms": 432
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "x0037",
     "source_name": "GNews-越秀集團",
     "status": "ok",
-    "items_fetched": 35,
+    "items_fetched": 34,
     "items_matched": 2,
     "error": null,
-    "duration_ms": 366
+    "duration_ms": 402
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "x0038",
     "source_name": "GNews-香港人壽",
     "status": "ok",
-    "items_fetched": 100,
+    "items_fetched": 35,
     "items_matched": 1,
     "error": null,
-    "duration_ms": 484
+    "duration_ms": 353
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "x0039",
     "source_name": "GNews-創興證券",
     "status": "ok",
-    "items_fetched": 19,
+    "items_fetched": 20,
     "items_matched": 6,
     "error": null,
-    "duration_ms": 348
+    "duration_ms": 388
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "x0040",
     "source_name": "GNews-創興保險",
     "status": "ok",
     "items_fetched": 26,
-    "items_matched": 6,
+    "items_matched": 4,
     "error": null,
-    "duration_ms": 304
+    "duration_ms": 377
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "x0041",
     "source_name": "GNews-横琴創興",
     "status": "ok",
-    "items_fetched": 4,
+    "items_fetched": 6,
     "items_matched": 1,
     "error": null,
-    "duration_ms": 212
+    "duration_ms": 242
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "x0042",
     "source_name": "GNews-深圳創興",
     "status": "ok",
     "items_fetched": 35,
-    "items_matched": 16,
+    "items_matched": 15,
     "error": null,
-    "duration_ms": 251
+    "duration_ms": 307
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "x0043",
     "source_name": "GNews-广州創興",
     "status": "ok",
-    "items_fetched": 14,
-    "items_matched": 13,
+    "items_fetched": 45,
+    "items_matched": 18,
     "error": null,
-    "duration_ms": 207
+    "duration_ms": 314
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "x0044",
     "source_name": "GNews-創興銀行債券",
     "status": "ok",
-    "items_fetched": 74,
-    "items_matched": 40,
+    "items_fetched": 31,
+    "items_matched": 16,
     "error": null,
-    "duration_ms": 453
+    "duration_ms": 373
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "x0045",
     "source_name": "GNews-創興銀行訴訟",
     "status": "ok",
     "items_fetched": 5,
     "items_matched": 2,
     "error": null,
-    "duration_ms": 324
+    "duration_ms": 317
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "x0046",
     "source_name": "GNews-創興銀行收購",
     "status": "ok",
-    "items_fetched": 43,
-    "items_matched": 11,
+    "items_fetched": 20,
+    "items_matched": 8,
     "error": null,
-    "duration_ms": 319
+    "duration_ms": 368
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "r2001",
     "source_name": "中國新聞網-財經",
     "status": "ok",
     "items_fetched": 30,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 291
+    "duration_ms": 140
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "r2002",
     "source_name": "MarketWatch",
     "status": "ok",
     "items_fetched": 10,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 143
+    "duration_ms": 678
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "g2003",
     "source_name": "GNews-創興銀行派息",
     "status": "ok",
     "items_fetched": 14,
     "items_matched": 5,
     "error": null,
-    "duration_ms": 297
+    "duration_ms": 238
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "g2004",
     "source_name": "GNews-創興銀行業績",
     "status": "ok",
-    "items_fetched": 11,
-    "items_matched": 7,
+    "items_fetched": 15,
+    "items_matched": 9,
     "error": null,
-    "duration_ms": 309
+    "duration_ms": 233
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "g2005",
     "source_name": "GNews-創興銀行人事",
     "status": "ok",
     "items_fetched": 2,
     "items_matched": 1,
     "error": null,
-    "duration_ms": 223
+    "duration_ms": 203
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "g2006",
     "source_name": "GNews-創興銀行分行",
     "status": "ok",
-    "items_fetched": 13,
-    "items_matched": 8,
+    "items_fetched": 16,
+    "items_matched": 9,
     "error": null,
-    "duration_ms": 216
+    "duration_ms": 221
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "g2007",
     "source_name": "GNews-創興銀行數字銀行",
     "status": "ok",
-    "items_fetched": 65,
-    "items_matched": 49,
+    "items_fetched": 64,
+    "items_matched": 48,
     "error": null,
-    "duration_ms": 406
+    "duration_ms": 365
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "g2008",
     "source_name": "GNews-創興銀行信用卡",
     "status": "ok",
     "items_fetched": 34,
-    "items_matched": 25,
+    "items_matched": 26,
     "error": null,
-    "duration_ms": 296
+    "duration_ms": 270
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "g2009",
     "source_name": "GNews-創興銀行中小企",
     "status": "ok",
     "items_fetched": 9,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 212
+    "duration_ms": 242
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "g2010",
     "source_name": "GNews-創興銀行人民幣",
     "status": "ok",
     "items_fetched": 13,
     "items_matched": 13,
     "error": null,
-    "duration_ms": 267
+    "duration_ms": 260
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "g2011",
     "source_name": "GNews-廖創興銀行",
     "status": "ok",
     "items_fetched": 60,
     "items_matched": 47,
     "error": null,
-    "duration_ms": 314
+    "duration_ms": 323
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "g2012",
     "source_name": "GNews-ChongHing定存利率",
     "status": "ok",
     "items_fetched": 2,
     "items_matched": 2,
     "error": null,
-    "duration_ms": 230
+    "duration_ms": 280
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "g2013",
     "source_name": "GNews-創興銀行獎項",
     "status": "ok",
-    "items_fetched": 3,
+    "items_fetched": 2,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 268
+    "duration_ms": 305
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "g2014",
     "source_name": "GNews-越秀地產創興",
     "status": "ok",
-    "items_fetched": 13,
+    "items_fetched": 9,
     "items_matched": 6,
     "error": null,
-    "duration_ms": 207
+    "duration_ms": 267
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "g2015",
     "source_name": "GNews-創興銀行跨境理財",
     "status": "ok",
-    "items_fetched": 26,
+    "items_fetched": 25,
     "items_matched": 1,
     "error": null,
-    "duration_ms": 315
+    "duration_ms": 386
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "g2016",
     "source_name": "GNews-創興銀行債券發行",
     "status": "ok",
-    "items_fetched": 22,
-    "items_matched": 5,
+    "items_fetched": 45,
+    "items_matched": 12,
     "error": null,
-    "duration_ms": 240
+    "duration_ms": 639
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "g2017",
     "source_name": "GNews-創興銀行保安",
     "status": "ok",
     "items_fetched": 1,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 198
+    "duration_ms": 195
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "g3001",
     "source_name": "GNewsSite-信報-定存",
     "status": "ok",
     "items_fetched": 100,
-    "items_matched": 3,
+    "items_matched": 27,
     "error": null,
-    "duration_ms": 433
+    "duration_ms": 417
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "g3002",
     "source_name": "GNewsSite-信報-港元",
     "status": "ok",
     "items_fetched": 100,
-    "items_matched": 28,
+    "items_matched": 9,
     "error": null,
-    "duration_ms": 367
+    "duration_ms": 850
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "g3003",
     "source_name": "GNewsSite-明報-定存",
     "status": "ok",
     "items_fetched": 100,
     "items_matched": 11,
     "error": null,
-    "duration_ms": 460
+    "duration_ms": 875
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "g3004",
     "source_name": "GNewsSite-明報-財經",
     "status": "ok",
     "items_fetched": 100,
     "items_matched": 5,
     "error": null,
-    "duration_ms": 401
+    "duration_ms": 680
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "g3005",
     "source_name": "GNewsSite-星島頭條-定存",
     "status": "ok",
     "items_fetched": 100,
     "items_matched": 6,
     "error": null,
-    "duration_ms": 360
+    "duration_ms": 667
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "g3006",
     "source_name": "GNewsSite-Ulife-匯率",
     "status": "ok",
     "items_fetched": 100,
     "items_matched": 9,
     "error": null,
-    "duration_ms": 646
+    "duration_ms": 434
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "g3007",
     "source_name": "GNewsSite-Ulife-定存",
     "status": "ok",
     "items_fetched": 100,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 442
+    "duration_ms": 654
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "g3008",
     "source_name": "GNewsSite-HKET-定存",
     "status": "ok",
     "items_fetched": 100,
-    "items_matched": 22,
+    "items_matched": 14,
     "error": null,
-    "duration_ms": 759
+    "duration_ms": 858
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "g3009",
     "source_name": "GNewsSite-HKET-英鎊",
     "status": "ok",
     "items_fetched": 100,
-    "items_matched": 31,
+    "items_matched": 36,
     "error": null,
-    "duration_ms": 702
+    "duration_ms": 838
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4190",
     "source_name": "Wiser-hongkongmaritimehub.com",
     "status": "ok",
     "items_fetched": 10,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 618
+    "duration_ms": 1791
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4191",
     "source_name": "Wiser-vmagazine.hk",
     "status": "ok",
     "items_fetched": 10,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 1203
+    "duration_ms": 1280
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4192",
     "source_name": "Wiser-flyformiles.hk",
     "status": "ok",
     "items_fetched": 10,
     "items_matched": 1,
     "error": null,
-    "duration_ms": 911
+    "duration_ms": 1324
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4193",
     "source_name": "Wiser-dimsumdaily.hk",
     "status": "ok",
     "items_fetched": 6,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 1446
+    "duration_ms": 1275
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4194",
     "source_name": "Wiser-bschool.cuhk.edu.hk",
-    "status": "http_500",
-    "items_fetched": 0,
+    "status": "ok",
+    "items_fetched": 10,
     "items_matched": 0,
-    "error": "HTTP 500",
-    "duration_ms": 49
+    "error": null,
+    "duration_ms": 4919
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4195",
     "source_name": "Wiser-jetsotoday.com",
     "status": "ok",
     "items_fetched": 100,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 259
+    "duration_ms": 583
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4196",
     "source_name": "Wiser-car1.hk",
     "status": "ok",
     "items_fetched": 30,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 328
+    "duration_ms": 527
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4197",
     "source_name": "Wiser-unwire.pro",
     "status": "ok",
     "items_fetched": 10,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 126
+    "duration_ms": 644
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4198",
     "source_name": "Wiser-She.com",
     "status": "ok",
     "items_fetched": 20,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 210
+    "duration_ms": 473
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4199",
     "source_name": "Wiser-afoodieworld.com",
     "status": "ok",
     "items_fetched": 10,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 2647
+    "duration_ms": 2207
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4200",
     "source_name": "Wiser-Style-Wish.com",
     "status": "ok",
     "items_fetched": 6,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 683
+    "duration_ms": 736
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4201",
     "source_name": "Wiser-fochk.org",
     "status": "ok",
     "items_fetched": 10,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 1459
+    "duration_ms": 2427
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4202",
     "source_name": "Wiser-yd-new.com",
     "status": "ok",
     "items_fetched": 10,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 1392
+    "duration_ms": 1703
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4203",
     "source_name": "Wiser-hashtags.hk",
     "status": "ok",
     "items_fetched": 10,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 759
+    "duration_ms": 864
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4204",
     "source_name": "Wiser-hkinsu.com",
     "status": "ok",
     "items_fetched": 1,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 2742
+    "duration_ms": 1623
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4205",
     "source_name": "Wiser-invest360.net",
     "status": "ok",
     "items_fetched": 10,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 4364
+    "duration_ms": 4135
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4206",
     "source_name": "Wiser-hkmoneyclub.com",
     "status": "ok",
     "items_fetched": 16,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 1506
+    "duration_ms": 1501
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4207",
     "source_name": "Wiser-bossmindmedia.com/",
     "status": "ok",
     "items_fetched": 10,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 2036
+    "duration_ms": 2234
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4208",
     "source_name": "Wiser-aseantrend.com",
     "status": "ok",
     "items_fetched": 12,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 749
+    "duration_ms": 911
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4209",
     "source_name": "Wiser-asiafinancial.com",
     "status": "ok",
     "items_fetched": 10,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 2706
+    "duration_ms": 2068
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4210",
     "source_name": "Wiser-lioncitylife.com",
     "status": "ok",
     "items_fetched": 12,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 655
+    "duration_ms": 846
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4211",
     "source_name": "Wiser-reinasia.com",
     "status": "ok",
     "items_fetched": 10,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 1020
+    "duration_ms": 1248
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4212",
     "source_name": "Wiser-homebloggerhk.com",
     "status": "ok",
     "items_fetched": 0,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 3106
+    "duration_ms": 2840
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4213",
     "source_name": "Wiser-hongkong-invest.com",
     "status": "ok",
     "items_fetched": 10,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 166
+    "duration_ms": 1477
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4214",
     "source_name": "Wiser-points852.com",
     "status": "ok",
     "items_fetched": 10,
     "items_matched": 1,
     "error": null,
-    "duration_ms": 173
+    "duration_ms": 2592
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4215",
     "source_name": "Wiser-motifxhk.hkdi.edu.hk",
     "status": "ok",
     "items_fetched": 0,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 410
+    "duration_ms": 277
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4216",
     "source_name": "Wiser-homejournal.com/en",
     "status": "ok",
     "items_fetched": 15,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 933
+    "duration_ms": 773
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4217",
     "source_name": "Wiser-acoo.hk",
     "status": "ok",
     "items_fetched": 10,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 1368
+    "duration_ms": 1750
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4218",
     "source_name": "Wiser-wetoasthk.com",
     "status": "ok",
     "items_fetched": 10,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 658
+    "duration_ms": 737
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4219",
     "source_name": "Wiser-asbaa.org",
     "status": "ok",
     "items_fetched": 10,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 993
+    "duration_ms": 1007
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4220",
     "source_name": "Wiser-hktoycar.com",
     "status": "ok",
     "items_fetched": 10,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 381
+    "duration_ms": 598
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4221",
     "source_name": "Wiser-businessdigest.io",
     "status": "ok",
     "items_fetched": 20,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 1160
+    "duration_ms": 1640
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4222",
     "source_name": "Wiser-pr1media.net",
     "status": "ok",
     "items_fetched": 10,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 1648
+    "duration_ms": 721
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4223",
     "source_name": "Wiser-siamnews.net",
     "status": "ok",
     "items_fetched": 10,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 130
+    "duration_ms": 281
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4224",
     "source_name": "Wiser-hkpswta.com",
     "status": "ok",
     "items_fetched": 10,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 1605
+    "duration_ms": 1413
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4225",
     "source_name": "Wiser-taghobby.com",
     "status": "ok",
     "items_fetched": 10,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 12778
+    "duration_ms": 832
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4226",
     "source_name": "Wiser-mythfocus.com",
     "status": "ok",
     "items_fetched": 10,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 805
+    "duration_ms": 887
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4227",
     "source_name": "Wiser-hkubs.hku.hk",
     "status": "ok",
     "items_fetched": 50,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 3629
+    "duration_ms": 4052
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4228",
     "source_name": "Wiser-onethinghk.com",
     "status": "ok",
     "items_fetched": 10,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 732
+    "duration_ms": 1139
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4229",
     "source_name": "Wiser-capcl.edu.hk",
     "status": "ok",
     "items_fetched": 10,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 1900
+    "duration_ms": 2207
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4230",
     "source_name": "Wiser-good2share.app",
     "status": "ok",
     "items_fetched": 10,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 614
+    "duration_ms": 716
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4231",
     "source_name": "Wiser-biz-innovator.com",
     "status": "ok",
     "items_fetched": 10,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 807
+    "duration_ms": 943
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4232",
     "source_name": "Wiser-chinapulse.com",
     "status": "ok",
     "items_fetched": 30,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 4060
+    "duration_ms": 2679
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4233",
     "source_name": "Wiser-hkfeature.com/",
     "status": "ok",
     "items_fetched": 15,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 1767
+    "duration_ms": 2037
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4234",
     "source_name": "Wiser-ombudsman.hk",
     "status": "ok",
     "items_fetched": 10,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 830
+    "duration_ms": 783
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4235",
     "source_name": "Wiser-examiner.org.hk",
-    "status": "error",
-    "items_fetched": 0,
+    "status": "ok",
+    "items_fetched": 10,
     "items_matched": 0,
-    "error": "timeout",
-    "duration_ms": 15010
+    "error": null,
+    "duration_ms": 891
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4236",
     "source_name": "Wiser-hkmo33.com",
     "status": "ok",
     "items_fetched": 12,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 369
+    "duration_ms": 392
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4237",
     "source_name": "Wiser-asiaexcite.com",
     "status": "ok",
     "items_fetched": 12,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 1198
+    "duration_ms": 669
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4238",
     "source_name": "Wiser-chinausfocus.com",
     "status": "ok",
     "items_fetched": 50,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 160
+    "duration_ms": 309
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4239",
     "source_name": "Wiser-cihs.edu.hk",
     "status": "ok",
     "items_fetched": 50,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 1062
+    "duration_ms": 1533
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4240",
     "source_name": "Wiser-dirhongkong.com",
     "status": "ok",
     "items_fetched": 12,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 819
+    "duration_ms": 870
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4241",
     "source_name": "Wiser-esgn.asia",
     "status": "ok",
     "items_fetched": 10,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 2810
+    "duration_ms": 3239
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4242",
     "source_name": "Wiser-hkchacha.com",
     "status": "ok",
     "items_fetched": 12,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 1556
+    "duration_ms": 1019
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4243",
     "source_name": "Wiser-hkcrunch.com",
     "status": "ok",
     "items_fetched": 12,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 1425
+    "duration_ms": 1190
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4244",
     "source_name": "Wiser-hkesgawards.com",
     "status": "ok",
     "items_fetched": 10,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 3198
+    "duration_ms": 2579
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4245",
     "source_name": "Wiser-hongkongpr.com",
     "status": "ok",
     "items_fetched": 12,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 908
+    "duration_ms": 1106
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4246",
     "source_name": "Wiser-netdace.com",
     "status": "ok",
     "items_fetched": 12,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 794
+    "duration_ms": 901
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4247",
     "source_name": "Wiser-seachronicle.com",
     "status": "ok",
     "items_fetched": 12,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 589
+    "duration_ms": 676
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4248",
     "source_name": "Wiser-singdaopr.com",
     "status": "ok",
     "items_fetched": 12,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 771
+    "duration_ms": 663
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4249",
     "source_name": "Wiser-sunwebhk.com",
     "status": "error",
     "items_fetched": 0,
     "items_matched": 0,
     "error": "request to https://sunwebhk.com/rss.xml failed, reason: certificate has expired",
-    "duration_ms": 50
+    "duration_ms": 150
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4250",
     "source_name": "Wiser-tihongkong.com",
     "status": "ok",
     "items_fetched": 12,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 795
+    "duration_ms": 832
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4251",
     "source_name": "Wiser-thechasernews.co.uk/",
-    "status": "ok",
-    "items_fetched": 10,
+    "status": "http_429",
+    "items_fetched": 0,
     "items_matched": 0,
-    "error": null,
-    "duration_ms": 3832
+    "error": "HTTP 429",
+    "duration_ms": 1065
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4252",
     "source_name": "Wiser-thecollectivehk.com",
     "status": "ok",
     "items_fetched": 10,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 843
+    "duration_ms": 1063
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4253",
     "source_name": "Wiser-fsica.org.hk",
     "status": "ok",
     "items_fetched": 10,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 4925
+    "duration_ms": 6887
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4254",
     "source_name": "Wiser-techwhale.net",
     "status": "ok",
     "items_fetched": 8,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 973
+    "duration_ms": 1837
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4255",
     "source_name": "Wiser-jumpstartmag.com",
     "status": "ok",
     "items_fetched": 9,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 592
+    "duration_ms": 954
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4256",
     "source_name": "Wiser-wepro180.com",
     "status": "ok",
     "items_fetched": 10,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 707
+    "duration_ms": 863
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4257",
     "source_name": "Wiser-greenqueen.com.hk",
     "status": "ok",
     "items_fetched": 20,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 1435
+    "duration_ms": 1429
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4258",
     "source_name": "Wiser-medicalinspire.com/web",
     "status": "ok",
     "items_fetched": 8,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 2709
+    "duration_ms": 15025
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4259",
     "source_name": "Wiser-thewitnesshk.com",
     "status": "ok",
     "items_fetched": 10,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 1743
+    "duration_ms": 1266
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4260",
     "source_name": "Wiser-hkcourtnews.com",
     "status": "ok",
     "items_fetched": 12,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 1145
+    "duration_ms": 840
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4261",
     "source_name": "Wiser-oln-law.com",
     "status": "ok",
     "items_fetched": 20,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 333
+    "duration_ms": 597
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4262",
     "source_name": "Wiser-news.post76.hk",
     "status": "ok",
     "items_fetched": 50,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 670
+    "duration_ms": 917
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4263",
     "source_name": "Wiser-heatalk.com",
     "status": "ok",
     "items_fetched": 40,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 633
+    "duration_ms": 906
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4264",
     "source_name": "Wiser-hongkonglei.com",
     "status": "ok",
     "items_fetched": 6,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 952
+    "duration_ms": 995
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4265",
     "source_name": "Wiser-fridayclubmag.com",
     "status": "ok",
     "items_fetched": 10,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 449
+    "duration_ms": 661
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4266",
     "source_name": "Wiser-gqhongkong.com",
     "status": "ok",
     "items_fetched": 11,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 1619
+    "duration_ms": 1698
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4267",
     "source_name": "Wiser-classique.life",
     "status": "ok",
     "items_fetched": 12,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 912
+    "duration_ms": 978
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4268",
     "source_name": "Wiser-lifetimestuff.com",
     "status": "ok",
     "items_fetched": 10,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 1060
+    "duration_ms": 4344
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4269",
     "source_name": "Wiser-nipponsensor.net",
     "status": "ok",
     "items_fetched": 10,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 1169
+    "duration_ms": 1347
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4270",
     "source_name": "Wiser-woltimes.com",
+    "status": "ok",
+    "items_fetched": 10,
+    "items_matched": 0,
+    "error": null,
+    "duration_ms": 773
+  },
+  {
+    "run_date": "2026-11-27T02:22:41.458Z",
+    "source_id": "w4271",
+    "source_name": "Wiser-ztylezman.com",
+    "status": "ok",
+    "items_fetched": 20,
+    "items_matched": 0,
+    "error": null,
+    "duration_ms": 556
+  },
+  {
+    "run_date": "2026-11-27T02:22:41.458Z",
+    "source_id": "w4272",
+    "source_name": "Wiser-thefemin.com/hk",
+    "status": "ok",
+    "items_fetched": 12,
+    "items_matched": 0,
+    "error": null,
+    "duration_ms": 958
+  },
+  {
+    "run_date": "2026-11-27T02:22:41.458Z",
+    "source_id": "w4273",
+    "source_name": "Wiser-hkinsider.com.hk",
+    "status": "ok",
+    "items_fetched": 10,
+    "items_matched": 0,
+    "error": null,
+    "duration_ms": 3637
+  },
+  {
+    "run_date": "2026-11-27T02:22:41.458Z",
+    "source_id": "w4274",
+    "source_name": "Wiser-shesters.com",
+    "status": "ok",
+    "items_fetched": 10,
+    "items_matched": 0,
+    "error": null,
+    "duration_ms": 2505
+  },
+  {
+    "run_date": "2026-11-27T02:22:41.458Z",
+    "source_id": "w4275",
+    "source_name": "Wiser-hauntavengers.com",
+    "status": "ok",
+    "items_fetched": 10,
+    "items_matched": 0,
+    "error": null,
+    "duration_ms": 269
+  },
+  {
+    "run_date": "2026-11-27T02:22:41.458Z",
+    "source_id": "w4276",
+    "source_name": "Wiser-anotherwatchmagazine.com",
+    "status": "error",
+    "items_fetched": 0,
+    "items_matched": 0,
+    "error": "request to https://anotherwatchmagazine.com/rss failed, reason: Hostname/IP does not match certificate's altnames: Host: anotherwatchmagazine.com. is not in the cert's altnames: DNS:www.juicyconcepts.",
+    "duration_ms": 146
+  },
+  {
+    "run_date": "2026-11-27T02:22:41.458Z",
+    "source_id": "w4277",
+    "source_name": "Wiser-konggokhk.com",
+    "status": "ok",
+    "items_fetched": 100,
+    "items_matched": 1,
+    "error": null,
+    "duration_ms": 461
+  },
+  {
+    "run_date": "2026-11-27T02:22:41.458Z",
+    "source_id": "w4278",
+    "source_name": "Wiser-stadiumbusinessasia.com",
+    "status": "ok",
+    "items_fetched": 10,
+    "items_matched": 0,
+    "error": null,
+    "duration_ms": 1215
+  },
+  {
+    "run_date": "2026-11-27T02:22:41.458Z",
+    "source_id": "w4279",
+    "source_name": "Wiser-jetsostation.com",
+    "status": "ok",
+    "items_fetched": 10,
+    "items_matched": 0,
+    "error": null,
+    "duration_ms": 996
+  },
+  {
+    "run_date": "2026-11-27T02:22:41.458Z",
+    "source_id": "w4280",
+    "source_name": "Wiser-ritzyhongkong.com",
+    "status": "ok",
+    "items_fetched": 10,
+    "items_matched": 0,
+    "error": null,
+    "duration_ms": 3575
+  },
+  {
+    "run_date": "2026-11-27T02:22:41.458Z",
+    "source_id": "w4281",
+    "source_name": "Wiser-personalaudio.hk",
+    "status": "ok",
+    "items_fetched": 10,
+    "items_matched": 0,
+    "error": null,
+    "duration_ms": 1262
+  },
+  {
+    "run_date": "2026-11-27T02:22:41.458Z",
+    "source_id": "w4282",
+    "source_name": "Wiser-health.gig.hk",
+    "status": "ok",
+    "items_fetched": 10,
+    "items_matched": 0,
+    "error": null,
+    "duration_ms": 2517
+  },
+  {
+    "run_date": "2026-11-27T02:22:41.458Z",
+    "source_id": "w4283",
+    "source_name": "Wiser-apostlesmedia.com",
+    "status": "ok",
+    "items_fetched": 10,
+    "items_matched": 0,
+    "error": null,
+    "duration_ms": 2955
+  },
+  {
+    "run_date": "2026-11-27T02:22:41.458Z",
+    "source_id": "w4284",
+    "source_name": "Wiser-clb.org.hk/zh-hans#zh-hant",
+    "status": "ok",
+    "items_fetched": 30,
+    "items_matched": 0,
+    "error": null,
+    "duration_ms": 1242
+  },
+  {
+    "run_date": "2026-11-27T02:22:41.458Z",
+    "source_id": "w4285",
+    "source_name": "Wiser-smartcardmacao.com",
+    "status": "ok",
+    "items_fetched": 403,
+    "items_matched": 10,
+    "error": null,
+    "duration_ms": 2460
+  },
+  {
+    "run_date": "2026-11-27T02:22:41.458Z",
+    "source_id": "w4286",
+    "source_name": "Wiser-businessintelligence.mo",
+    "status": "ok",
+    "items_fetched": 10,
+    "items_matched": 0,
+    "error": null,
+    "duration_ms": 221
+  },
+  {
+    "run_date": "2026-11-27T02:22:41.458Z",
+    "source_id": "w4287",
+    "source_name": "Wiser-macaushimbun.com",
+    "status": "ok",
+    "items_fetched": 10,
+    "items_matched": 0,
+    "error": null,
+    "duration_ms": 786
+  },
+  {
+    "run_date": "2026-11-27T02:22:41.458Z",
+    "source_id": "w4288",
+    "source_name": "Wiser-macaonews.org",
+    "status": "ok",
+    "items_fetched": 100,
+    "items_matched": 0,
+    "error": null,
+    "duration_ms": 436
+  },
+  {
+    "run_date": "2026-11-27T02:22:41.458Z",
+    "source_id": "w4289",
+    "source_name": "Wiser-pontofinal-macau.com",
+    "status": "ok",
+    "items_fetched": 10,
+    "items_matched": 0,
+    "error": null,
+    "duration_ms": 1251
+  },
+  {
+    "run_date": "2026-11-27T02:22:41.458Z",
+    "source_id": "w4290",
+    "source_name": "Wiser-weblz.com.cn",
+    "status": "ok",
+    "items_fetched": 30,
+    "items_matched": 0,
+    "error": null,
+    "duration_ms": 679
+  },
+  {
+    "run_date": "2026-11-27T02:22:41.458Z",
+    "source_id": "w4291",
+    "source_name": "Wiser-xdf.cn",
+    "status": "ok",
+    "items_fetched": 195,
+    "items_matched": 0,
+    "error": null,
+    "duration_ms": 1125
+  },
+  {
+    "run_date": "2026-11-27T02:22:41.458Z",
+    "source_id": "w4292",
+    "source_name": "Wiser-eol.cn",
+    "status": "ok",
+    "items_fetched": 130,
+    "items_matched": 0,
+    "error": null,
+    "duration_ms": 770
+  },
+  {
+    "run_date": "2026-11-27T02:22:41.458Z",
+    "source_id": "w4293",
+    "source_name": "Wiser-chinaacc.com",
+    "status": "ok",
+    "items_fetched": 0,
+    "items_matched": 0,
+    "error": null,
+    "duration_ms": 755
+  },
+  {
+    "run_date": "2026-11-27T02:22:41.458Z",
+    "source_id": "w4294",
+    "source_name": "Wiser-chinaicnet.com.cn",
+    "status": "ok",
+    "items_fetched": 30,
+    "items_matched": 0,
+    "error": null,
+    "duration_ms": 719
+  },
+  {
+    "run_date": "2026-11-27T02:22:41.458Z",
+    "source_id": "w4295",
+    "source_name": "Wiser-https://jisilu.cn",
+    "status": "ok",
+    "items_fetched": 20,
+    "items_matched": 0,
+    "error": null,
+    "duration_ms": 1139
+  },
+  {
+    "run_date": "2026-11-27T02:22:41.458Z",
+    "source_id": "w4296",
+    "source_name": "Wiser-geekpark.net",
+    "status": "ok",
+    "items_fetched": 30,
+    "items_matched": 0,
+    "error": null,
+    "duration_ms": 10559
+  },
+  {
+    "run_date": "2026-11-27T02:22:41.458Z",
+    "source_id": "w4297",
+    "source_name": "Wiser-toplicai.cn",
+    "status": "ok",
+    "items_fetched": 30,
+    "items_matched": 0,
+    "error": null,
+    "duration_ms": 593
+  },
+  {
+    "run_date": "2026-11-27T02:22:41.458Z",
+    "source_id": "w4298",
+    "source_name": "Wiser-chinavalue.net",
+    "status": "ok",
+    "items_fetched": 0,
+    "items_matched": 0,
+    "error": null,
+    "duration_ms": 565
+  },
+  {
+    "run_date": "2026-11-27T02:22:41.458Z",
+    "source_id": "w4299",
+    "source_name": "Wiser-blog.enjoymovie.net",
+    "status": "ok",
+    "items_fetched": 10,
+    "items_matched": 0,
+    "error": null,
+    "duration_ms": 832
+  },
+  {
+    "run_date": "2026-11-27T02:22:41.458Z",
+    "source_id": "w4300",
+    "source_name": "Wiser-yswong2709.blogspot.hk",
+    "status": "ok",
+    "items_fetched": 0,
+    "items_matched": 0,
+    "error": null,
+    "duration_ms": 1424
+  },
+  {
+    "run_date": "2026-11-27T02:22:41.458Z",
+    "source_id": "w4301",
+    "source_name": "Wiser-francis-lui.blogspot.hk",
+    "status": "ok",
+    "items_fetched": 0,
+    "items_matched": 0,
+    "error": null,
+    "duration_ms": 1125
+  },
+  {
+    "run_date": "2026-11-27T02:22:41.458Z",
+    "source_id": "w4302",
+    "source_name": "Wiser-blog.carjaswong.com",
+    "status": "ok",
+    "items_fetched": 10,
+    "items_matched": 0,
+    "error": null,
+    "duration_ms": 1234
+  },
+  {
+    "run_date": "2026-11-27T02:22:41.458Z",
+    "source_id": "w4303",
+    "source_name": "Wiser-lovelovelings.blogspot.hk",
+    "status": "ok",
+    "items_fetched": 0,
+    "items_matched": 0,
+    "error": null,
+    "duration_ms": 1432
+  },
+  {
+    "run_date": "2026-11-27T02:22:41.458Z",
+    "source_id": "w4304",
+    "source_name": "Wiser-uwants.com",
+    "status": "ok",
+    "items_fetched": 30,
+    "items_matched": 0,
+    "error": null,
+    "duration_ms": 492
+  },
+  {
+    "run_date": "2026-11-27T02:22:41.458Z",
+    "source_id": "w4305",
+    "source_name": "Wiser-www.vjmedia.com.hk",
+    "status": "ok",
+    "items_fetched": 30,
+    "items_matched": 0,
+    "error": null,
+    "duration_ms": 778
+  },
+  {
+    "run_date": "2026-11-27T02:22:41.458Z",
+    "source_id": "w4306",
+    "source_name": "Wiser-sammy.hk",
+    "status": "ok",
+    "items_fetched": 8,
+    "items_matched": 0,
+    "error": null,
+    "duration_ms": 850
+  },
+  {
+    "run_date": "2026-11-27T02:22:41.458Z",
+    "source_id": "w4307",
+    "source_name": "Wiser-chinanewsdailyonline.blogspo",
+    "status": "ok",
+    "items_fetched": 0,
+    "items_matched": 0,
+    "error": null,
+    "duration_ms": 1617
+  },
+  {
+    "run_date": "2026-11-27T02:22:41.458Z",
+    "source_id": "w4308",
+    "source_name": "Wiser-bbg1668.blogspot.hk",
+    "status": "ok",
+    "items_fetched": 0,
+    "items_matched": 0,
+    "error": null,
+    "duration_ms": 1661
+  },
+  {
+    "run_date": "2026-11-27T02:22:41.458Z",
+    "source_id": "w4309",
+    "source_name": "Wiser-kenshin.hk",
+    "status": "ok",
+    "items_fetched": 15,
+    "items_matched": 0,
+    "error": null,
+    "duration_ms": 700
+  },
+  {
+    "run_date": "2026-11-27T02:22:41.458Z",
+    "source_id": "w4310",
+    "source_name": "Wiser-hkfilmblog.com",
+    "status": "ok",
+    "items_fetched": 10,
+    "items_matched": 0,
+    "error": null,
+    "duration_ms": 1638
+  },
+  {
+    "run_date": "2026-11-27T02:22:41.458Z",
+    "source_id": "w4311",
+    "source_name": "Wiser-foodiephilip.com",
+    "status": "ok",
+    "items_fetched": 10,
+    "items_matched": 0,
+    "error": null,
+    "duration_ms": 538
+  },
+  {
+    "run_date": "2026-11-27T02:22:41.458Z",
+    "source_id": "w4312",
+    "source_name": "Wiser-kkoko0620.blogspot.hk",
+    "status": "ok",
+    "items_fetched": 0,
+    "items_matched": 0,
+    "error": null,
+    "duration_ms": 1550
+  },
+  {
+    "run_date": "2026-11-27T02:22:41.458Z",
+    "source_id": "w4313",
+    "source_name": "Wiser-sweetheartkitchen.com",
+    "status": "ok",
+    "items_fetched": 20,
+    "items_matched": 0,
+    "error": null,
+    "duration_ms": 1001
+  },
+  {
+    "run_date": "2026-11-27T02:22:41.458Z",
+    "source_id": "w4314",
+    "source_name": "Wiser-gourmetyan.blogspot.hk",
+    "status": "ok",
+    "items_fetched": 0,
+    "items_matched": 0,
+    "error": null,
+    "duration_ms": 1936
+  },
+  {
+    "run_date": "2026-11-27T02:22:41.458Z",
+    "source_id": "w4315",
+    "source_name": "Wiser-ja20121111.blogspot.hk",
+    "status": "ok",
+    "items_fetched": 0,
+    "items_matched": 0,
+    "error": null,
+    "duration_ms": 1407
+  },
+  {
+    "run_date": "2026-11-27T02:22:41.458Z",
+    "source_id": "w4316",
+    "source_name": "Wiser-blog.pinkoi.com/hk",
+    "status": "ok",
+    "items_fetched": 10,
+    "items_matched": 0,
+    "error": null,
+    "duration_ms": 854
+  },
+  {
+    "run_date": "2026-11-27T02:22:41.458Z",
+    "source_id": "w4317",
+    "source_name": "Wiser-www.stoneip.info",
     "status": "ok",
     "items_fetched": 10,
     "items_matched": 0,
@@ -3220,1783 +3690,1313 @@
     "duration_ms": 820
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
-    "source_id": "w4271",
-    "source_name": "Wiser-ztylezman.com",
-    "status": "ok",
-    "items_fetched": 20,
-    "items_matched": 0,
-    "error": null,
-    "duration_ms": 355
-  },
-  {
-    "run_date": "2026-11-27T01:34:46.039Z",
-    "source_id": "w4272",
-    "source_name": "Wiser-thefemin.com/hk",
-    "status": "ok",
-    "items_fetched": 12,
-    "items_matched": 0,
-    "error": null,
-    "duration_ms": 700
-  },
-  {
-    "run_date": "2026-11-27T01:34:46.039Z",
-    "source_id": "w4273",
-    "source_name": "Wiser-hkinsider.com.hk",
-    "status": "ok",
-    "items_fetched": 10,
-    "items_matched": 0,
-    "error": null,
-    "duration_ms": 4516
-  },
-  {
-    "run_date": "2026-11-27T01:34:46.039Z",
-    "source_id": "w4274",
-    "source_name": "Wiser-shesters.com",
-    "status": "ok",
-    "items_fetched": 10,
-    "items_matched": 0,
-    "error": null,
-    "duration_ms": 2090
-  },
-  {
-    "run_date": "2026-11-27T01:34:46.039Z",
-    "source_id": "w4275",
-    "source_name": "Wiser-hauntavengers.com",
-    "status": "ok",
-    "items_fetched": 10,
-    "items_matched": 0,
-    "error": null,
-    "duration_ms": 208
-  },
-  {
-    "run_date": "2026-11-27T01:34:46.039Z",
-    "source_id": "w4276",
-    "source_name": "Wiser-anotherwatchmagazine.com",
-    "status": "error",
-    "items_fetched": 0,
-    "items_matched": 0,
-    "error": "request to https://anotherwatchmagazine.com/rss failed, reason: Hostname/IP does not match certificate's altnames: Host: anotherwatchmagazine.com. is not in the cert's altnames: DNS:www.juicyconcepts.",
-    "duration_ms": 135
-  },
-  {
-    "run_date": "2026-11-27T01:34:46.039Z",
-    "source_id": "w4277",
-    "source_name": "Wiser-konggokhk.com",
-    "status": "ok",
-    "items_fetched": 100,
-    "items_matched": 1,
-    "error": null,
-    "duration_ms": 414
-  },
-  {
-    "run_date": "2026-11-27T01:34:46.039Z",
-    "source_id": "w4278",
-    "source_name": "Wiser-stadiumbusinessasia.com",
-    "status": "ok",
-    "items_fetched": 10,
-    "items_matched": 0,
-    "error": null,
-    "duration_ms": 631
-  },
-  {
-    "run_date": "2026-11-27T01:34:46.039Z",
-    "source_id": "w4279",
-    "source_name": "Wiser-jetsostation.com",
-    "status": "ok",
-    "items_fetched": 10,
-    "items_matched": 0,
-    "error": null,
-    "duration_ms": 406
-  },
-  {
-    "run_date": "2026-11-27T01:34:46.039Z",
-    "source_id": "w4280",
-    "source_name": "Wiser-ritzyhongkong.com",
-    "status": "ok",
-    "items_fetched": 10,
-    "items_matched": 0,
-    "error": null,
-    "duration_ms": 3511
-  },
-  {
-    "run_date": "2026-11-27T01:34:46.039Z",
-    "source_id": "w4281",
-    "source_name": "Wiser-personalaudio.hk",
-    "status": "ok",
-    "items_fetched": 10,
-    "items_matched": 0,
-    "error": null,
-    "duration_ms": 1430
-  },
-  {
-    "run_date": "2026-11-27T01:34:46.039Z",
-    "source_id": "w4282",
-    "source_name": "Wiser-health.gig.hk",
-    "status": "ok",
-    "items_fetched": 10,
-    "items_matched": 0,
-    "error": null,
-    "duration_ms": 3707
-  },
-  {
-    "run_date": "2026-11-27T01:34:46.039Z",
-    "source_id": "w4283",
-    "source_name": "Wiser-apostlesmedia.com",
-    "status": "ok",
-    "items_fetched": 10,
-    "items_matched": 0,
-    "error": null,
-    "duration_ms": 2947
-  },
-  {
-    "run_date": "2026-11-27T01:34:46.039Z",
-    "source_id": "w4284",
-    "source_name": "Wiser-clb.org.hk/zh-hans#zh-hant",
-    "status": "ok",
-    "items_fetched": 30,
-    "items_matched": 0,
-    "error": null,
-    "duration_ms": 1647
-  },
-  {
-    "run_date": "2026-11-27T01:34:46.039Z",
-    "source_id": "w4285",
-    "source_name": "Wiser-smartcardmacao.com",
-    "status": "ok",
-    "items_fetched": 403,
-    "items_matched": 10,
-    "error": null,
-    "duration_ms": 3018
-  },
-  {
-    "run_date": "2026-11-27T01:34:46.039Z",
-    "source_id": "w4286",
-    "source_name": "Wiser-businessintelligence.mo",
-    "status": "ok",
-    "items_fetched": 10,
-    "items_matched": 0,
-    "error": null,
-    "duration_ms": 247
-  },
-  {
-    "run_date": "2026-11-27T01:34:46.039Z",
-    "source_id": "w4287",
-    "source_name": "Wiser-macaushimbun.com",
-    "status": "ok",
-    "items_fetched": 10,
-    "items_matched": 0,
-    "error": null,
-    "duration_ms": 774
-  },
-  {
-    "run_date": "2026-11-27T01:34:46.039Z",
-    "source_id": "w4288",
-    "source_name": "Wiser-macaonews.org",
-    "status": "ok",
-    "items_fetched": 100,
-    "items_matched": 0,
-    "error": null,
-    "duration_ms": 321
-  },
-  {
-    "run_date": "2026-11-27T01:34:46.039Z",
-    "source_id": "w4289",
-    "source_name": "Wiser-pontofinal-macau.com",
-    "status": "ok",
-    "items_fetched": 10,
-    "items_matched": 0,
-    "error": null,
-    "duration_ms": 1369
-  },
-  {
-    "run_date": "2026-11-27T01:34:46.039Z",
-    "source_id": "w4290",
-    "source_name": "Wiser-weblz.com.cn",
-    "status": "ok",
-    "items_fetched": 30,
-    "items_matched": 0,
-    "error": null,
-    "duration_ms": 610
-  },
-  {
-    "run_date": "2026-11-27T01:34:46.039Z",
-    "source_id": "w4291",
-    "source_name": "Wiser-xdf.cn",
-    "status": "ok",
-    "items_fetched": 195,
-    "items_matched": 0,
-    "error": null,
-    "duration_ms": 1233
-  },
-  {
-    "run_date": "2026-11-27T01:34:46.039Z",
-    "source_id": "w4292",
-    "source_name": "Wiser-eol.cn",
-    "status": "ok",
-    "items_fetched": 130,
-    "items_matched": 0,
-    "error": null,
-    "duration_ms": 562
-  },
-  {
-    "run_date": "2026-11-27T01:34:46.039Z",
-    "source_id": "w4293",
-    "source_name": "Wiser-chinaacc.com",
-    "status": "ok",
-    "items_fetched": 0,
-    "items_matched": 0,
-    "error": null,
-    "duration_ms": 1748
-  },
-  {
-    "run_date": "2026-11-27T01:34:46.039Z",
-    "source_id": "w4294",
-    "source_name": "Wiser-chinaicnet.com.cn",
-    "status": "ok",
-    "items_fetched": 30,
-    "items_matched": 0,
-    "error": null,
-    "duration_ms": 695
-  },
-  {
-    "run_date": "2026-11-27T01:34:46.039Z",
-    "source_id": "w4295",
-    "source_name": "Wiser-https://jisilu.cn",
-    "status": "ok",
-    "items_fetched": 20,
-    "items_matched": 0,
-    "error": null,
-    "duration_ms": 792
-  },
-  {
-    "run_date": "2026-11-27T01:34:46.039Z",
-    "source_id": "w4296",
-    "source_name": "Wiser-geekpark.net",
-    "status": "ok",
-    "items_fetched": 30,
-    "items_matched": 0,
-    "error": null,
-    "duration_ms": 1992
-  },
-  {
-    "run_date": "2026-11-27T01:34:46.039Z",
-    "source_id": "w4297",
-    "source_name": "Wiser-toplicai.cn",
-    "status": "ok",
-    "items_fetched": 30,
-    "items_matched": 0,
-    "error": null,
-    "duration_ms": 513
-  },
-  {
-    "run_date": "2026-11-27T01:34:46.039Z",
-    "source_id": "w4298",
-    "source_name": "Wiser-chinavalue.net",
-    "status": "ok",
-    "items_fetched": 0,
-    "items_matched": 0,
-    "error": null,
-    "duration_ms": 408
-  },
-  {
-    "run_date": "2026-11-27T01:34:46.039Z",
-    "source_id": "w4299",
-    "source_name": "Wiser-blog.enjoymovie.net",
-    "status": "ok",
-    "items_fetched": 10,
-    "items_matched": 0,
-    "error": null,
-    "duration_ms": 660
-  },
-  {
-    "run_date": "2026-11-27T01:34:46.039Z",
-    "source_id": "w4300",
-    "source_name": "Wiser-yswong2709.blogspot.hk",
-    "status": "ok",
-    "items_fetched": 0,
-    "items_matched": 0,
-    "error": null,
-    "duration_ms": 361
-  },
-  {
-    "run_date": "2026-11-27T01:34:46.039Z",
-    "source_id": "w4301",
-    "source_name": "Wiser-francis-lui.blogspot.hk",
-    "status": "ok",
-    "items_fetched": 0,
-    "items_matched": 0,
-    "error": null,
-    "duration_ms": 1411
-  },
-  {
-    "run_date": "2026-11-27T01:34:46.039Z",
-    "source_id": "w4302",
-    "source_name": "Wiser-blog.carjaswong.com",
-    "status": "ok",
-    "items_fetched": 10,
-    "items_matched": 0,
-    "error": null,
-    "duration_ms": 666
-  },
-  {
-    "run_date": "2026-11-27T01:34:46.039Z",
-    "source_id": "w4303",
-    "source_name": "Wiser-lovelovelings.blogspot.hk",
-    "status": "ok",
-    "items_fetched": 0,
-    "items_matched": 0,
-    "error": null,
-    "duration_ms": 1268
-  },
-  {
-    "run_date": "2026-11-27T01:34:46.039Z",
-    "source_id": "w4304",
-    "source_name": "Wiser-uwants.com",
-    "status": "ok",
-    "items_fetched": 30,
-    "items_matched": 0,
-    "error": null,
-    "duration_ms": 235
-  },
-  {
-    "run_date": "2026-11-27T01:34:46.039Z",
-    "source_id": "w4305",
-    "source_name": "Wiser-www.vjmedia.com.hk",
-    "status": "ok",
-    "items_fetched": 30,
-    "items_matched": 0,
-    "error": null,
-    "duration_ms": 1013
-  },
-  {
-    "run_date": "2026-11-27T01:34:46.039Z",
-    "source_id": "w4306",
-    "source_name": "Wiser-sammy.hk",
-    "status": "ok",
-    "items_fetched": 8,
-    "items_matched": 0,
-    "error": null,
-    "duration_ms": 670
-  },
-  {
-    "run_date": "2026-11-27T01:34:46.039Z",
-    "source_id": "w4307",
-    "source_name": "Wiser-chinanewsdailyonline.blogspo",
-    "status": "ok",
-    "items_fetched": 0,
-    "items_matched": 0,
-    "error": null,
-    "duration_ms": 1495
-  },
-  {
-    "run_date": "2026-11-27T01:34:46.039Z",
-    "source_id": "w4308",
-    "source_name": "Wiser-bbg1668.blogspot.hk",
-    "status": "ok",
-    "items_fetched": 0,
-    "items_matched": 0,
-    "error": null,
-    "duration_ms": 1294
-  },
-  {
-    "run_date": "2026-11-27T01:34:46.039Z",
-    "source_id": "w4309",
-    "source_name": "Wiser-kenshin.hk",
-    "status": "ok",
-    "items_fetched": 15,
-    "items_matched": 0,
-    "error": null,
-    "duration_ms": 1059
-  },
-  {
-    "run_date": "2026-11-27T01:34:46.039Z",
-    "source_id": "w4310",
-    "source_name": "Wiser-hkfilmblog.com",
-    "status": "ok",
-    "items_fetched": 10,
-    "items_matched": 0,
-    "error": null,
-    "duration_ms": 1474
-  },
-  {
-    "run_date": "2026-11-27T01:34:46.039Z",
-    "source_id": "w4311",
-    "source_name": "Wiser-foodiephilip.com",
-    "status": "ok",
-    "items_fetched": 10,
-    "items_matched": 0,
-    "error": null,
-    "duration_ms": 373
-  },
-  {
-    "run_date": "2026-11-27T01:34:46.039Z",
-    "source_id": "w4312",
-    "source_name": "Wiser-kkoko0620.blogspot.hk",
-    "status": "ok",
-    "items_fetched": 0,
-    "items_matched": 0,
-    "error": null,
-    "duration_ms": 1572
-  },
-  {
-    "run_date": "2026-11-27T01:34:46.039Z",
-    "source_id": "w4313",
-    "source_name": "Wiser-sweetheartkitchen.com",
-    "status": "ok",
-    "items_fetched": 20,
-    "items_matched": 0,
-    "error": null,
-    "duration_ms": 709
-  },
-  {
-    "run_date": "2026-11-27T01:34:46.039Z",
-    "source_id": "w4314",
-    "source_name": "Wiser-gourmetyan.blogspot.hk",
-    "status": "ok",
-    "items_fetched": 0,
-    "items_matched": 0,
-    "error": null,
-    "duration_ms": 1708
-  },
-  {
-    "run_date": "2026-11-27T01:34:46.039Z",
-    "source_id": "w4315",
-    "source_name": "Wiser-ja20121111.blogspot.hk",
-    "status": "ok",
-    "items_fetched": 0,
-    "items_matched": 0,
-    "error": null,
-    "duration_ms": 330
-  },
-  {
-    "run_date": "2026-11-27T01:34:46.039Z",
-    "source_id": "w4316",
-    "source_name": "Wiser-blog.pinkoi.com/hk",
-    "status": "ok",
-    "items_fetched": 10,
-    "items_matched": 0,
-    "error": null,
-    "duration_ms": 674
-  },
-  {
-    "run_date": "2026-11-27T01:34:46.039Z",
-    "source_id": "w4317",
-    "source_name": "Wiser-www.stoneip.info",
-    "status": "ok",
-    "items_fetched": 10,
-    "items_matched": 0,
-    "error": null,
-    "duration_ms": 876
-  },
-  {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4318",
     "source_name": "Wiser-aandmdiary.com",
     "status": "ok",
     "items_fetched": 10,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 924
+    "duration_ms": 1277
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4319",
     "source_name": "Wiser-huileehui.blogspot.hk",
     "status": "ok",
     "items_fetched": 0,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 1235
+    "duration_ms": 1251
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4320",
     "source_name": "Wiser-bonniechu.blogspot.hk",
     "status": "ok",
     "items_fetched": 0,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 1630
+    "duration_ms": 1467
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4321",
     "source_name": "Wiser-katerinalin.blogspot.hk",
     "status": "ok",
     "items_fetched": 0,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 454
+    "duration_ms": 1562
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4322",
     "source_name": "Wiser-june-leung.blogspot.hk",
     "status": "ok",
     "items_fetched": 0,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 1274
+    "duration_ms": 1616
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4323",
     "source_name": "Wiser-yuking1314.blogspot.hk",
     "status": "ok",
     "items_fetched": 0,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 1436
+    "duration_ms": 1537
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4324",
     "source_name": "Wiser-oceanictime.blogspot.tw",
     "status": "ok",
     "items_fetched": 0,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 1478
+    "duration_ms": 417
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4325",
     "source_name": "Wiser-lifemag.cyberctm.com/zh_TW/",
     "status": "ok",
     "items_fetched": 1207,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 2400
+    "duration_ms": 2489
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4326",
     "source_name": "Wiser-blog.netlab.360.com",
-    "status": "ok",
-    "items_fetched": 15,
+    "status": "error",
+    "items_fetched": 0,
     "items_matched": 0,
-    "error": null,
-    "duration_ms": 3741
+    "error": "timeout",
+    "duration_ms": 15003
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4327",
     "source_name": "Wiser-swothouse.com",
     "status": "ok",
     "items_fetched": 30,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 751
+    "duration_ms": 793
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4328",
     "source_name": "Wiser-xjjbbs.com",
     "status": "ok",
     "items_fetched": 50,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 661
+    "duration_ms": 796
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4329",
     "source_name": "Wiser-chengshiluntan.com",
     "status": "ok",
     "items_fetched": 30,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 781
+    "duration_ms": 894
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4330",
     "source_name": "Wiser-wjnin.cn/forum.php",
     "status": "ok",
     "items_fetched": 30,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 784
+    "duration_ms": 1060
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4331",
     "source_name": "Wiser-feng.com",
     "status": "ok",
     "items_fetched": 0,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 806
+    "duration_ms": 1026
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4332",
     "source_name": "WG-Recruit.com.hk",
     "status": "ok",
-    "items_fetched": 53,
+    "items_fetched": 100,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 467
+    "duration_ms": 722
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4333",
     "source_name": "WG-prc-magazine.com",
     "status": "ok",
     "items_fetched": 6,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 349
+    "duration_ms": 754
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4334",
     "source_name": "WG-fortuneinsight.com",
     "status": "ok",
-    "items_fetched": 100,
-    "items_matched": 3,
+    "items_fetched": 61,
+    "items_matched": 0,
     "error": null,
-    "duration_ms": 654
+    "duration_ms": 604
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4335",
     "source_name": "WG-review33.com",
     "status": "ok",
     "items_fetched": 100,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 408
+    "duration_ms": 481
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4336",
     "source_name": "WG-hkgpao.com",
     "status": "ok",
-    "items_fetched": 66,
+    "items_fetched": 59,
     "items_matched": 1,
     "error": null,
-    "duration_ms": 302
+    "duration_ms": 293
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4337",
     "source_name": "WG-LiteNews.HK",
     "status": "ok",
-    "items_fetched": 100,
-    "items_matched": 4,
+    "items_fetched": 78,
+    "items_matched": 3,
     "error": null,
-    "duration_ms": 542
+    "duration_ms": 396
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4338",
     "source_name": "WG-speakout.hk",
     "status": "ok",
     "items_fetched": 65,
     "items_matched": 4,
     "error": null,
-    "duration_ms": 359
+    "duration_ms": 353
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4339",
     "source_name": "WG-jobmarket.com.hk",
     "status": "ok",
-    "items_fetched": 57,
+    "items_fetched": 47,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 287
+    "duration_ms": 419
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4340",
     "source_name": "WG-hongkongdisneyland.com",
     "status": "ok",
     "items_fetched": 35,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 259
+    "duration_ms": 304
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4341",
     "source_name": "WG-Plem.com",
     "status": "ok",
     "items_fetched": 8,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 218
+    "duration_ms": 250
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4342",
     "source_name": "WG-weshare.hk",
     "status": "ok",
     "items_fetched": 2,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 227
+    "duration_ms": 271
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4343",
     "source_name": "WG-ezone.hk",
     "status": "ok",
     "items_fetched": 100,
-    "items_matched": 11,
+    "items_matched": 12,
     "error": null,
-    "duration_ms": 511
+    "duration_ms": 517
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4344",
     "source_name": "WG-Elle.com.hk",
     "status": "ok",
-    "items_fetched": 100,
+    "items_fetched": 67,
     "items_matched": 1,
     "error": null,
-    "duration_ms": 582
+    "duration_ms": 321
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4345",
     "source_name": "WG-MRRM.com.hk",
     "status": "ok",
     "items_fetched": 25,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 261
+    "duration_ms": 315
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4346",
     "source_name": "WG-topbeautyhk.com",
     "status": "ok",
-    "items_fetched": 100,
+    "items_fetched": 60,
     "items_matched": 1,
     "error": null,
-    "duration_ms": 464
+    "duration_ms": 332
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4347",
     "source_name": "WG-chronomen.com",
     "status": "ok",
     "items_fetched": 1,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 251
+    "duration_ms": 243
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4348",
     "source_name": "WG-cmport.com.hk",
     "status": "ok",
     "items_fetched": 12,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 223
+    "duration_ms": 345
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4349",
     "source_name": "WG-ird.gov.hk/eng/welcome.htm",
     "status": "ok",
     "items_fetched": 100,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 603
+    "duration_ms": 666
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4350",
     "source_name": "WG-investhk.gov.hk/zh-hk/inde",
     "status": "ok",
-    "items_fetched": 51,
-    "items_matched": 1,
+    "items_fetched": 100,
+    "items_matched": 0,
     "error": null,
-    "duration_ms": 267
+    "duration_ms": 478
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4351",
     "source_name": "WG-fstb.gov.hk/tc/",
     "status": "ok",
     "items_fetched": 100,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 467
+    "duration_ms": 452
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4352",
     "source_name": "WG-td.gov.hk/en/home/index.ht",
     "status": "ok",
     "items_fetched": 100,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 401
+    "duration_ms": 629
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4353",
     "source_name": "WG-cedb.gov.hk/about/index.ht",
     "status": "ok",
     "items_fetched": 44,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 469
+    "duration_ms": 261
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4354",
     "source_name": "WG-housingauthority.gov.hk/tc",
     "status": "ok",
-    "items_fetched": 42,
-    "items_matched": 8,
+    "items_fetched": 100,
+    "items_matched": 9,
     "error": null,
-    "duration_ms": 294
+    "duration_ms": 492
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4355",
     "source_name": "WG-rvd.gov.hk/en/index.html",
     "status": "ok",
     "items_fetched": 61,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 503
+    "duration_ms": 285
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4356",
     "source_name": "WG-landreg.gov.hk/en/home/ind",
     "status": "ok",
     "items_fetched": 100,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 322
+    "duration_ms": 347
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4357",
     "source_name": "WG-pland.gov.hk/pland_en/inde",
     "status": "ok",
     "items_fetched": 13,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 263
+    "duration_ms": 208
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4358",
     "source_name": "WG-News.gov.hk",
     "status": "ok",
-    "items_fetched": 100,
-    "items_matched": 4,
+    "items_fetched": 56,
+    "items_matched": 0,
     "error": null,
-    "duration_ms": 457
+    "duration_ms": 297
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4359",
     "source_name": "WG-icac.org.hk/tc/home/index.",
     "status": "ok",
-    "items_fetched": 100,
-    "items_matched": 6,
+    "items_fetched": 61,
+    "items_matched": 5,
     "error": null,
-    "duration_ms": 449
+    "duration_ms": 267
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4360",
     "source_name": "WG-ipd.gov.hk/chi/home.htm",
     "status": "ok",
     "items_fetched": 100,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 440
+    "duration_ms": 419
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4361",
     "source_name": "WG-dh.gov.hk/eindex.html",
     "status": "ok",
     "items_fetched": 15,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 192
+    "duration_ms": 211
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4362",
     "source_name": "WG-doj.gov.hk",
     "status": "ok",
     "items_fetched": 100,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 289
+    "duration_ms": 338
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4363",
     "source_name": "WG-hongkongpost.hk/chi/index.",
     "status": "ok",
     "items_fetched": 57,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 254
+    "duration_ms": 249
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4364",
     "source_name": "WG-csd.gov.hk/english/home/ho",
     "status": "ok",
     "items_fetched": 10,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 193
+    "duration_ms": 212
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4365",
     "source_name": "WG-Youth.gov.hk",
     "status": "ok",
     "items_fetched": 12,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 196
+    "duration_ms": 185
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4366",
     "source_name": "WG-reo.gov.hk/ch/about/ceo_ms",
     "status": "ok",
     "items_fetched": 29,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 261
+    "duration_ms": 253
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4367",
     "source_name": "WG-sb.gov.hk/eng/about/welcom",
     "status": "ok",
     "items_fetched": 22,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 180
+    "duration_ms": 221
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4368",
     "source_name": "WG-admwing.gov.hk/chi/home/ho",
     "status": "ok",
     "items_fetched": 34,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 190
+    "duration_ms": 229
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4369",
     "source_name": "WG-wwf.org.hk/en/",
-    "status": "ok",
-    "items_fetched": 52,
-    "items_matched": 0,
-    "error": null,
-    "duration_ms": 236
-  },
-  {
-    "run_date": "2026-11-27T01:34:46.039Z",
-    "source_id": "w4370",
-    "source_name": "WG-hkbcf.org/index.php?lang=c",
     "status": "ok",
     "items_fetched": 51,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 265
+    "duration_ms": 263
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
+    "source_id": "w4370",
+    "source_name": "WG-hkbcf.org/index.php?lang=c",
+    "status": "ok",
+    "items_fetched": 74,
+    "items_matched": 0,
+    "error": null,
+    "duration_ms": 293
+  },
+  {
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4371",
     "source_name": "WG-unicef.org.hk/en",
     "status": "ok",
     "items_fetched": 35,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 259
+    "duration_ms": 243
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4372",
     "source_name": "WG-salvationarmy.org.hk/hk",
     "status": "ok",
     "items_fetched": 53,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 241
+    "duration_ms": 258
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4373",
     "source_name": "WG-oxfam.org.hk/tc/default.as",
     "status": "ok",
-    "items_fetched": 46,
+    "items_fetched": 100,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 231
+    "duration_ms": 485
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4374",
     "source_name": "WG-silentmajority.hk",
     "status": "ok",
     "items_fetched": 44,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 219
+    "duration_ms": 236
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4375",
     "source_name": "WG-28car.com",
     "status": "ok",
-    "items_fetched": 28,
+    "items_fetched": 78,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 203
+    "duration_ms": 266
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4376",
     "source_name": "WG-DCFever.com",
     "status": "ok",
-    "items_fetched": 58,
-    "items_matched": 0,
-    "error": null,
-    "duration_ms": 243
-  },
-  {
-    "run_date": "2026-11-27T01:34:46.039Z",
-    "source_id": "w4377",
-    "source_name": "WG-MeetHK.com",
-    "status": "ok",
-    "items_fetched": 46,
+    "items_fetched": 57,
     "items_matched": 0,
     "error": null,
     "duration_ms": 280
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
+    "source_id": "w4377",
+    "source_name": "WG-MeetHK.com",
+    "status": "ok",
+    "items_fetched": 45,
+    "items_matched": 0,
+    "error": null,
+    "duration_ms": 196
+  },
+  {
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4378",
     "source_name": "WG-csopasset.com/tc/home",
     "status": "ok",
     "items_fetched": 36,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 229
+    "duration_ms": 270
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4379",
     "source_name": "WG-wuchatprop.com.hk",
     "status": "ok",
-    "items_fetched": 100,
-    "items_matched": 24,
+    "items_fetched": 62,
+    "items_matched": 14,
     "error": null,
-    "duration_ms": 504
+    "duration_ms": 301
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4380",
     "source_name": "WG-edr.hk",
     "status": "ok",
     "items_fetched": 59,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 217
+    "duration_ms": 289
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4381",
     "source_name": "WG-pm-news.hk",
     "status": "ok",
     "items_fetched": 100,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 341
+    "duration_ms": 345
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4382",
     "source_name": "WG-hkcitizenmedia.com",
     "status": "ok",
     "items_fetched": 5,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 209
+    "duration_ms": 464
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4383",
     "source_name": "WG-homemory.hk",
+    "status": "ok",
+    "items_fetched": 75,
+    "items_matched": 0,
+    "error": null,
+    "duration_ms": 296
+  },
+  {
+    "run_date": "2026-11-27T02:22:41.458Z",
+    "source_id": "w4384",
+    "source_name": "WG-art-mate.net",
     "status": "ok",
     "items_fetched": 74,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 294
+    "duration_ms": 356
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
-    "source_id": "w4384",
-    "source_name": "WG-art-mate.net",
-    "status": "ok",
-    "items_fetched": 100,
-    "items_matched": 0,
-    "error": null,
-    "duration_ms": 430
-  },
-  {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4385",
     "source_name": "WG-jewellerynet.com/sc/home",
     "status": "ok",
     "items_fetched": 7,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 179
+    "duration_ms": 162
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4386",
     "source_name": "WG-hk.investing.com",
     "status": "ok",
     "items_fetched": 100,
-    "items_matched": 6,
+    "items_matched": 7,
     "error": null,
-    "duration_ms": 451
+    "duration_ms": 493
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4387",
     "source_name": "WG-luabobo.com",
     "status": "ok",
     "items_fetched": 1,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 185
+    "duration_ms": 197
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4388",
     "source_name": "WG-hktop100rc.org/zh-cn",
     "status": "ok",
-    "items_fetched": 60,
+    "items_fetched": 100,
     "items_matched": 1,
     "error": null,
-    "duration_ms": 248
+    "duration_ms": 313
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4389",
     "source_name": "WG-syfe.com/hk/magazine/zh-ha",
     "status": "ok",
     "items_fetched": 60,
     "items_matched": 9,
     "error": null,
-    "duration_ms": 257
+    "duration_ms": 324
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4390",
     "source_name": "WG-tastymoney.hk",
     "status": "ok",
-    "items_fetched": 96,
+    "items_fetched": 100,
     "items_matched": 1,
     "error": null,
-    "duration_ms": 369
+    "duration_ms": 421
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4391",
     "source_name": "WG-hkmc.com.hk/eng",
     "status": "ok",
-    "items_fetched": 100,
-    "items_matched": 50,
+    "items_fetched": 60,
+    "items_matched": 32,
     "error": null,
-    "duration_ms": 323
+    "duration_ms": 253
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4392",
     "source_name": "WG-hkira.com/en/global/index.",
     "status": "ok",
     "items_fetched": 8,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 179
+    "duration_ms": 173
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4393",
     "source_name": "WG-stockfisher.com.hk/news",
     "status": "ok",
     "items_fetched": 100,
     "items_matched": 24,
     "error": null,
-    "duration_ms": 442
+    "duration_ms": 437
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4394",
     "source_name": "WG-zombit.info",
     "status": "ok",
-    "items_fetched": 67,
-    "items_matched": 0,
+    "items_fetched": 100,
+    "items_matched": 1,
     "error": null,
-    "duration_ms": 261
+    "duration_ms": 451
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4395",
     "source_name": "WG-dbpower.com.hk/en",
     "status": "ok",
-    "items_fetched": 13,
+    "items_fetched": 34,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 213
+    "duration_ms": 324
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4396",
     "source_name": "WG-quanzheng.com.hk",
     "status": "ok",
     "items_fetched": 17,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 193
+    "duration_ms": 220
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4397",
     "source_name": "WG-88iv.com/en/new.html",
     "status": "ok",
     "items_fetched": 13,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 202
+    "duration_ms": 182
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4398",
     "source_name": "WG-01icon.hk",
     "status": "ok",
     "items_fetched": 1,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 194
+    "duration_ms": 221
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4399",
     "source_name": "WG-gumhk.com/en-HK",
     "status": "ok",
     "items_fetched": 16,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 185
+    "duration_ms": 198
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4400",
     "source_name": "WG-finance730.com.hk",
     "status": "ok",
-    "items_fetched": 73,
-    "items_matched": 14,
+    "items_fetched": 100,
+    "items_matched": 22,
     "error": null,
-    "duration_ms": 316
+    "duration_ms": 399
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4401",
     "source_name": "WG-hkwisdom.net",
     "status": "ok",
     "items_fetched": 36,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 220
+    "duration_ms": 264
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4402",
     "source_name": "WG-hkadc.org.hk/tc",
     "status": "ok",
     "items_fetched": 44,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 209
+    "duration_ms": 258
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4403",
     "source_name": "WG-artomity.art",
     "status": "ok",
     "items_fetched": 7,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 199
+    "duration_ms": 262
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4404",
     "source_name": "WG-theculturist.hk",
     "status": "ok",
     "items_fetched": 100,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 411
+    "duration_ms": 355
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4405",
     "source_name": "WG-oocl.com/eng/Pages/default",
     "status": "ok",
     "items_fetched": 25,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 216
+    "duration_ms": 194
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4406",
     "source_name": "WG-flamingwheels.online/index",
     "status": "ok",
-    "items_fetched": 93,
-    "items_matched": 4,
+    "items_fetched": 100,
+    "items_matched": 5,
     "error": null,
-    "duration_ms": 300
+    "duration_ms": 444
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4407",
     "source_name": "WG-bbd.com.hk",
     "status": "ok",
-    "items_fetched": 57,
+    "items_fetched": 100,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 309
+    "duration_ms": 370
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4408",
     "source_name": "WG-sgs.com/zh-hk",
     "status": "ok",
     "items_fetched": 26,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 195
+    "duration_ms": 208
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4409",
     "source_name": "WG-research.hktdc.com/en",
     "status": "ok",
-    "items_fetched": 60,
-    "items_matched": 0,
+    "items_fetched": 100,
+    "items_matched": 2,
     "error": null,
-    "duration_ms": 255
+    "duration_ms": 499
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4410",
     "source_name": "WG-smartcity.org.hk/index.php",
     "status": "ok",
     "items_fetched": 1,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 227
+    "duration_ms": 196
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4411",
     "source_name": "WG-businessfocus.io",
     "status": "ok",
     "items_fetched": 100,
-    "items_matched": 28,
+    "items_matched": 19,
     "error": null,
-    "duration_ms": 389
+    "duration_ms": 517
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4412",
     "source_name": "WG-bd.gov.hk/chineseT/index.h",
     "status": "ok",
     "items_fetched": 35,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 319
+    "duration_ms": 429
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4413",
     "source_name": "WG-gba.cic.hk/en-hk/newslette",
     "status": "ok",
     "items_fetched": 1,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 176
+    "duration_ms": 200
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4414",
     "source_name": "WG-thehksa.com",
     "status": "ok",
     "items_fetched": 2,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 172
+    "duration_ms": 195
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4415",
     "source_name": "WG-hkis.org.hk/en/index.html",
     "status": "ok",
     "items_fetched": 54,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 326
+    "duration_ms": 263
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4416",
     "source_name": "WG-yaulee.com",
     "status": "ok",
     "items_fetched": 13,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 172
+    "duration_ms": 203
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4417",
     "source_name": "WG-bastillepost.com/global",
     "status": "ok",
     "items_fetched": 100,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 438
+    "duration_ms": 499
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4418",
     "source_name": "WG-mytvsuper.com/tc/scoopplus",
     "status": "ok",
-    "items_fetched": 90,
+    "items_fetched": 92,
     "items_matched": 32,
     "error": null,
-    "duration_ms": 355
+    "duration_ms": 363
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4419",
     "source_name": "WG-tkww.hk",
     "status": "ok",
     "items_fetched": 100,
-    "items_matched": 10,
+    "items_matched": 11,
     "error": null,
-    "duration_ms": 342
+    "duration_ms": 383
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4420",
     "source_name": "WG-eventbrite.hk",
     "status": "ok",
-    "items_fetched": 19,
+    "items_fetched": 18,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 209
+    "duration_ms": 215
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4421",
     "source_name": "WG-eczone.com.hk",
     "status": "ok",
     "items_fetched": 51,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 236
+    "duration_ms": 314
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4422",
     "source_name": "WG-harbourcity.com.hk/en",
     "status": "ok",
-    "items_fetched": 55,
+    "items_fetched": 54,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 276
+    "duration_ms": 398
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4423",
     "source_name": "WG-breezy.today/hk",
     "status": "ok",
     "items_fetched": 60,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 261
+    "duration_ms": 277
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4424",
     "source_name": "WG-guandian.hk",
     "status": "ok",
-    "items_fetched": 100,
-    "items_matched": 3,
+    "items_fetched": 77,
+    "items_matched": 2,
     "error": null,
-    "duration_ms": 424
+    "duration_ms": 322
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4425",
     "source_name": "WG-lad.gov.hk/chi/home/home.h",
     "status": "ok",
     "items_fetched": 55,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 256
+    "duration_ms": 220
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4426",
     "source_name": "WG-cdeto.gov.hk/tc/home/index",
     "status": "ok",
     "items_fetched": 16,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 210
+    "duration_ms": 268
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4427",
     "source_name": "WG-cstb.gov.hk/tc",
     "status": "ok",
     "items_fetched": 75,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 271
+    "duration_ms": 371
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4428",
     "source_name": "WG-digitalpolicy.gov.hk/tc",
     "status": "ok",
-    "items_fetched": 63,
+    "items_fetched": 58,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 295
+    "duration_ms": 264
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4429",
     "source_name": "WG-elderlycommission.gov.hk/t",
     "status": "ok",
     "items_fetched": 5,
     "items_matched": 1,
     "error": null,
-    "duration_ms": 179
+    "duration_ms": 209
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4430",
     "source_name": "WG-erb.org/tc/home",
     "status": "ok",
     "items_fetched": 85,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 329
+    "duration_ms": 390
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4431",
     "source_name": "WG-gdeto.gov.hk/tc",
     "status": "ok",
-    "items_fetched": 33,
+    "items_fetched": 32,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 203
+    "duration_ms": 237
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4432",
     "source_name": "WG-hkcitycreation.com",
     "status": "ok",
     "items_fetched": 6,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 194
+    "duration_ms": 188
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4433",
     "source_name": "WG-jsscs.gov.hk/ch/home",
     "status": "ok",
-    "items_fetched": 34,
+    "items_fetched": 33,
     "items_matched": 0,
     "error": null,
     "duration_ms": 229
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4434",
     "source_name": "WG-livesmarthk.com",
     "status": "ok",
     "items_fetched": 2,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 174
+    "duration_ms": 238
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4435",
     "source_name": "WG-meeeep.com/index.asp",
     "status": "ok",
     "items_fetched": 6,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 254
+    "duration_ms": 270
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4436",
     "source_name": "WG-sheto.gov.hk/tc/home/index",
     "status": "ok",
     "items_fetched": 23,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 206
+    "duration_ms": 203
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4437",
     "source_name": "WG-thevoicehk.com",
     "status": "ok",
     "items_fetched": 26,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 204
+    "duration_ms": 201
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4438",
     "source_name": "WG-tpb.gov.hk/tc/index.html",
     "status": "ok",
-    "items_fetched": 53,
+    "items_fetched": 91,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 242
+    "duration_ms": 499
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4439",
     "source_name": "WG-westk.hk/tc/home",
     "status": "ok",
-    "items_fetched": 100,
+    "items_fetched": 60,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 414
+    "duration_ms": 312
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4440",
     "source_name": "WG-wheto.gov.hk/tc",
     "status": "ok",
-    "items_fetched": 92,
+    "items_fetched": 55,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 285
+    "duration_ms": 294
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4441",
     "source_name": "WG-headline4hk.com",
     "status": "ok",
     "items_fetched": 56,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 290
+    "duration_ms": 265
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4442",
     "source_name": "WG-alibabacloud.com/en?_p_lc=",
     "status": "ok",
     "items_fetched": 57,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 234
+    "duration_ms": 272
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4443",
     "source_name": "WG-mpgba.com",
     "status": "ok",
-    "items_fetched": 100,
+    "items_fetched": 52,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 407
+    "duration_ms": 307
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4444",
     "source_name": "WG-thekwun.com",
     "status": "ok",
     "items_fetched": 28,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 200
+    "duration_ms": 226
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4445",
     "source_name": "WG-parkbin.hk",
     "status": "ok",
-    "items_fetched": 42,
+    "items_fetched": 44,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 250
+    "duration_ms": 289
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4446",
     "source_name": "WG-kongsolo.com",
     "status": "ok",
-    "items_fetched": 56,
+    "items_fetched": 100,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 221
+    "duration_ms": 417
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4447",
     "source_name": "WG-upbeatmediahk.com",
     "status": "ok",
     "items_fetched": 100,
     "items_matched": 1,
     "error": null,
-    "duration_ms": 333
+    "duration_ms": 356
   },
   {
-    "run_date": "2026-11-27T01:34:46.039Z",
+    "run_date": "2026-11-27T02:22:41.458Z",
     "source_id": "w4448",
     "source_name": "WG-academy.isf.edu.hk",
     "status": "ok",
     "items_fetched": 12,
     "items_matched": 0,
     "error": null,
-    "duration_ms": 172
+    "duration_ms": 203
   }
 ]

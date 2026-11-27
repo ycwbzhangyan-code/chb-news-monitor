@@ -69,9 +69,11 @@
     "fetch_date": "2026-11-13T01:09:45.256Z",
     "tier": "C",
     "tier_reason": "AI深度研判",
-    "status": "active",
+    "status": "excluded_false_monitoring",
     "ai_researched": 1,
-    "created_at": "2026-11-13T01:09:45.257Z"
+    "created_at": "2026-11-13T01:09:45.257Z",
+    "exclusion_reason": "重复/错误条目",
+    "excluded_at": "2026-11-27T02:18:16.932Z"
   },
   {
     "id": 5,
@@ -87,9 +89,11 @@
     "fetch_date": "2026-11-13T01:09:45.256Z",
     "tier": "C",
     "tier_reason": "AI深度研判",
-    "status": "active",
+    "status": "excluded_false_monitoring",
     "ai_researched": 1,
-    "created_at": "2026-11-13T01:09:45.257Z"
+    "created_at": "2026-11-13T01:09:45.257Z",
+    "exclusion_reason": "链接不可达/需登录",
+    "excluded_at": "2026-11-27T02:18:16.934Z"
   },
   {
     "id": 6,
@@ -141,9 +145,11 @@
     "fetch_date": "2026-11-13T01:09:45.256Z",
     "tier": "C",
     "tier_reason": "AI深度研判",
-    "status": "active",
+    "status": "excluded_false_monitoring",
     "ai_researched": 1,
-    "created_at": "2026-11-13T01:09:45.257Z"
+    "created_at": "2026-11-13T01:09:45.257Z",
+    "exclusion_reason": "链接不可达/需登录",
+    "excluded_at": "2026-11-27T02:18:16.934Z"
   },
   {
     "id": 9,
@@ -233,9 +239,11 @@
     "fetch_date": "2026-11-13T01:09:45.256Z",
     "tier": "C",
     "tier_reason": "AI深度研判",
-    "status": "active",
+    "status": "excluded_official_or_nonmedia",
     "ai_researched": 1,
-    "created_at": "2026-11-13T01:09:45.257Z"
+    "created_at": "2026-11-13T01:09:45.257Z",
+    "exclusion_reason": "官网稿/招聘/监管公示，非媒体新闻（长期规则）",
+    "excluded_at": "2026-11-27T00:00:00Z"
   },
   {
     "hash": "abb7a8b8ac441eac3f2e3a79e96d2071c1d8773e",
@@ -287,10 +295,12 @@
     "fetch_date": "2026-11-13T06:46:22.729Z",
     "tier": "C",
     "tier_reason": "AI深度搜索",
-    "status": "active",
+    "status": "excluded_false_monitoring",
     "ai_researched": 1,
     "id": 17,
-    "created_at": "2026-11-13T06:46:22.729Z"
+    "created_at": "2026-11-13T06:46:22.729Z",
+    "exclusion_reason": "正文无创兴(仅标题)",
+    "excluded_at": "2026-11-27T02:18:16.934Z"
   },
   {
     "hash": "511ebff02c7af452658af7db7f80699c94cd1adc",
@@ -305,10 +315,12 @@
     "fetch_date": "2026-11-13T06:46:22.729Z",
     "tier": "B",
     "tier_reason": "AI深度搜索",
-    "status": "active",
+    "status": "excluded_false_monitoring",
     "ai_researched": 1,
     "id": 18,
-    "created_at": "2026-11-13T06:46:22.729Z"
+    "created_at": "2026-11-13T06:46:22.729Z",
+    "exclusion_reason": "正文无创兴",
+    "excluded_at": "2026-11-27T02:18:16.934Z"
   },
   {
     "hash": "4825744266268ff44f09b2c259a7a1a93a202a2d",
@@ -323,10 +335,12 @@
     "fetch_date": "2026-11-13T06:46:22.729Z",
     "tier": "C",
     "tier_reason": "AI深度搜索",
-    "status": "active",
+    "status": "excluded_false_monitoring",
     "ai_researched": 1,
     "id": 19,
-    "created_at": "2026-11-13T06:46:22.729Z"
+    "created_at": "2026-11-13T06:46:22.729Z",
+    "exclusion_reason": "原文不可达,无法核验正文",
+    "excluded_at": "2026-11-27T02:18:16.934Z"
   },
   {
     "hash": "ca38f8b8d59d2a483e2bbd31c161239c0495c65b",
@@ -341,10 +355,12 @@
     "fetch_date": "2026-11-13T06:46:22.729Z",
     "tier": "C",
     "tier_reason": "AI深度搜索",
-    "status": "active",
+    "status": "excluded_false_monitoring",
     "ai_researched": 1,
     "id": 20,
-    "created_at": "2026-11-13T06:46:22.729Z"
+    "created_at": "2026-11-13T06:46:22.729Z",
+    "exclusion_reason": "正文无创兴",
+    "excluded_at": "2026-11-27T02:18:16.934Z"
   },
   {
     "hash": "364b6885d3c3da4df30e2e29acbaffdefd3f3bd3",
@@ -377,10 +393,12 @@
     "fetch_date": "2026-11-13T06:46:22.729Z",
     "tier": "C",
     "tier_reason": "AI深度搜索",
-    "status": "active",
+    "status": "excluded_false_monitoring",
     "ai_researched": 1,
     "id": 22,
-    "created_at": "2026-11-13T06:46:22.729Z"
+    "created_at": "2026-11-13T06:46:22.729Z",
+    "exclusion_reason": "正文无创兴(仅标题)",
+    "excluded_at": "2026-11-27T02:18:16.934Z"
   },
   {
     "hash": "5d4e9826054f0e9e17358a13c22079ecb066c8cb",
@@ -395,10 +413,12 @@
     "fetch_date": "2026-11-13T06:46:22.729Z",
     "tier": "C",
     "tier_reason": "AI深度搜索",
-    "status": "active",
+    "status": "excluded_false_monitoring",
     "ai_researched": 1,
     "id": 23,
-    "created_at": "2026-11-13T06:46:22.729Z"
+    "created_at": "2026-11-13T06:46:22.729Z",
+    "exclusion_reason": "链接不可达/需登录",
+    "excluded_at": "2026-11-27T02:18:16.934Z"
   },
   {
     "hash": "350d42ef1b2c115ecbe06a17343c19e4be06816c",
@@ -413,10 +433,12 @@
     "fetch_date": "2026-11-13T06:46:22.729Z",
     "tier": "C",
     "tier_reason": "AI深度搜索",
-    "status": "active",
+    "status": "excluded_false_monitoring",
     "ai_researched": 1,
     "id": 24,
-    "created_at": "2026-11-13T06:46:22.729Z"
+    "created_at": "2026-11-13T06:46:22.729Z",
+    "exclusion_reason": "链接不可达/需登录",
+    "excluded_at": "2026-11-27T02:18:16.934Z"
   },
   {
     "hash": "95727a1b30ae7080c4a51bcf97f063d4af6ebedf",
@@ -431,10 +453,12 @@
     "fetch_date": "2026-11-13T06:46:22.729Z",
     "tier": "C",
     "tier_reason": "AI深度搜索",
-    "status": "active",
+    "status": "excluded_official_or_nonmedia",
     "ai_researched": 1,
     "id": 25,
-    "created_at": "2026-11-13T06:46:22.729Z"
+    "created_at": "2026-11-13T06:46:22.729Z",
+    "exclusion_reason": "官网稿/招聘/监管公示，非媒体新闻（长期规则）",
+    "excluded_at": "2026-11-27T00:00:00Z"
   },
   {
     "id": "wn_580",
@@ -446,9 +470,11 @@
     "pub_date": "2026-11-05",
     "tier": "B",
     "tier_reason": "ESG/公益活動",
-    "status": "active",
+    "status": "excluded_false_monitoring",
     "fingerprint": "wn_580_hash",
-    "collected_at": "2026-11-16T01:41:32.299Z"
+    "collected_at": "2026-11-16T01:41:32.299Z",
+    "exclusion_reason": "链接为媒体首页",
+    "excluded_at": "2026-11-27T02:18:16.934Z"
   },
   {
     "id": "wn_581",
@@ -460,9 +486,11 @@
     "pub_date": "2026-11-05",
     "tier": "B",
     "tier_reason": "母公司評級動態",
-    "status": "active",
+    "status": "excluded_false_monitoring",
     "fingerprint": "wn_581_hash",
-    "collected_at": "2026-11-16T01:41:32.301Z"
+    "collected_at": "2026-11-16T01:41:32.301Z",
+    "exclusion_reason": "链接为媒体首页",
+    "excluded_at": "2026-11-27T02:18:16.934Z"
   },
   {
     "id": "wn_582",
@@ -488,9 +516,11 @@
     "pub_date": "2026-11-06",
     "tier": "B",
     "tier_reason": "定存產品比較",
-    "status": "active",
+    "status": "excluded_false_monitoring",
     "fingerprint": "wn_583_hash",
-    "collected_at": "2026-11-16T01:41:32.301Z"
+    "collected_at": "2026-11-16T01:41:32.301Z",
+    "exclusion_reason": "链接为媒体首页",
+    "excluded_at": "2026-11-27T02:18:16.934Z"
   },
   {
     "id": "wn_584",
@@ -502,9 +532,11 @@
     "pub_date": "2026-11-06",
     "tier": "B",
     "tier_reason": "定存比較",
-    "status": "active",
+    "status": "excluded_false_monitoring",
     "fingerprint": "wn_584_hash",
-    "collected_at": "2026-11-16T01:41:32.301Z"
+    "collected_at": "2026-11-16T01:41:32.301Z",
+    "exclusion_reason": "链接为媒体首页",
+    "excluded_at": "2026-11-27T02:18:16.934Z"
   },
   {
     "id": "wn_586",
@@ -516,9 +548,11 @@
     "pub_date": "2026-11-07",
     "tier": "B",
     "tier_reason": "定存比較",
-    "status": "active",
+    "status": "excluded_false_monitoring",
     "fingerprint": "wn_586_hash",
-    "collected_at": "2026-11-16T01:41:32.301Z"
+    "collected_at": "2026-11-16T01:41:32.301Z",
+    "exclusion_reason": "链接为媒体首页",
+    "excluded_at": "2026-11-27T02:18:16.934Z"
   },
   {
     "id": "wn_587",
@@ -530,9 +564,11 @@
     "pub_date": "2026-11-07",
     "tier": "C",
     "tier_reason": "匯率比較中提及",
-    "status": "active",
+    "status": "excluded_false_monitoring",
     "fingerprint": "wn_587_hash",
-    "collected_at": "2026-11-16T01:41:32.301Z"
+    "collected_at": "2026-11-16T01:41:32.301Z",
+    "exclusion_reason": "链接为媒体首页",
+    "excluded_at": "2026-11-27T02:18:16.934Z"
   },
   {
     "id": "wn_588",
@@ -544,9 +580,11 @@
     "pub_date": "2026-11-08",
     "tier": "B",
     "tier_reason": "定存比較",
-    "status": "active",
+    "status": "excluded_false_monitoring",
     "fingerprint": "wn_588_hash",
-    "collected_at": "2026-11-16T01:41:32.301Z"
+    "collected_at": "2026-11-16T01:41:32.301Z",
+    "exclusion_reason": "链接为媒体首页",
+    "excluded_at": "2026-11-27T02:18:16.934Z"
   },
   {
     "id": "wn_589",
@@ -558,9 +596,11 @@
     "pub_date": "2026-11-10",
     "tier": "B",
     "tier_reason": "定存比較",
-    "status": "active",
+    "status": "excluded_false_monitoring",
     "fingerprint": "wn_589_hash",
-    "collected_at": "2026-11-16T01:41:32.301Z"
+    "collected_at": "2026-11-16T01:41:32.301Z",
+    "exclusion_reason": "链接为媒体首页",
+    "excluded_at": "2026-11-27T02:18:16.934Z"
   },
   {
     "id": "wn_590",
@@ -572,9 +612,11 @@
     "pub_date": "2026-11-10",
     "tier": "C",
     "tier_reason": "匯率比較中提及",
-    "status": "active",
+    "status": "excluded_false_monitoring",
     "fingerprint": "wn_590_hash",
-    "collected_at": "2026-11-16T01:41:32.301Z"
+    "collected_at": "2026-11-16T01:41:32.301Z",
+    "exclusion_reason": "链接为媒体首页",
+    "excluded_at": "2026-11-27T02:18:16.934Z"
   },
   {
     "id": "wn_591",
@@ -586,9 +628,11 @@
     "pub_date": "2026-11-11",
     "tier": "B",
     "tier_reason": "貸款產品比較",
-    "status": "active",
+    "status": "excluded_false_monitoring",
     "fingerprint": "wn_591_hash",
-    "collected_at": "2026-11-16T01:41:32.301Z"
+    "collected_at": "2026-11-16T01:41:32.301Z",
+    "exclusion_reason": "链接为媒体首页",
+    "excluded_at": "2026-11-27T02:18:16.934Z"
   },
   {
     "id": "wn_592",
@@ -600,9 +644,11 @@
     "pub_date": "2026-11-11",
     "tier": "B",
     "tier_reason": "定存比較",
-    "status": "active",
+    "status": "excluded_false_monitoring",
     "fingerprint": "wn_592_hash",
-    "collected_at": "2026-11-16T01:41:32.301Z"
+    "collected_at": "2026-11-16T01:41:32.301Z",
+    "exclusion_reason": "链接为媒体首页",
+    "excluded_at": "2026-11-27T02:18:16.934Z"
   },
   {
     "id": "wn_595",
@@ -614,9 +660,11 @@
     "pub_date": "2026-11-11",
     "tier": "B",
     "tier_reason": "定存優惠比較",
-    "status": "active",
+    "status": "excluded_false_monitoring",
     "fingerprint": "wn_595_hash",
-    "collected_at": "2026-11-16T01:41:32.301Z"
+    "collected_at": "2026-11-16T01:41:32.301Z",
+    "exclusion_reason": "链接为媒体首页",
+    "excluded_at": "2026-11-27T02:18:16.934Z"
   },
   {
     "id": "wn_597",
@@ -628,9 +676,11 @@
     "pub_date": "2026-11-11",
     "tier": "B",
     "tier_reason": "定存產品",
-    "status": "active",
+    "status": "excluded_false_monitoring",
     "fingerprint": "wn_597_hash",
-    "collected_at": "2026-11-16T01:41:32.301Z"
+    "collected_at": "2026-11-16T01:41:32.301Z",
+    "exclusion_reason": "链接为媒体首页",
+    "excluded_at": "2026-11-27T02:18:16.934Z"
   },
   {
     "id": "wn_599",
@@ -642,9 +692,11 @@
     "pub_date": "2026-11-12",
     "tier": "B",
     "tier_reason": "定存比較",
-    "status": "active",
+    "status": "excluded_false_monitoring",
     "fingerprint": "wn_599_hash",
-    "collected_at": "2026-11-16T01:41:32.301Z"
+    "collected_at": "2026-11-16T01:41:32.301Z",
+    "exclusion_reason": "链接为媒体首页",
+    "excluded_at": "2026-11-27T02:18:16.934Z"
   },
   {
     "id": 40,
@@ -715,10 +767,12 @@
     "fetch_date": "2026-11-20T06:53:11.640Z",
     "tier": "C",
     "tier_reason": "定存利率市场比较（对标Wiser收录口径）",
-    "status": "active",
+    "status": "excluded_false_monitoring",
     "ai_researched": 0,
     "created_at": "2026-11-20T06:53:11.640Z",
-    "wiser_benchmark": true
+    "wiser_benchmark": true,
+    "exclusion_reason": "正文无创兴",
+    "excluded_at": "2026-11-27T02:18:16.934Z"
   },
   {
     "id": "fin_ab7874dd",
@@ -734,10 +788,12 @@
     "fetch_date": "2026-11-20T06:53:11.640Z",
     "tier": "C",
     "tier_reason": "定存利率市场比较（对标Wiser收录口径）",
-    "status": "active",
+    "status": "excluded_false_monitoring",
     "ai_researched": 0,
     "created_at": "2026-11-20T06:53:11.640Z",
-    "wiser_benchmark": true
+    "wiser_benchmark": true,
+    "exclusion_reason": "正文无创兴",
+    "excluded_at": "2026-11-27T02:18:16.934Z"
   },
   {
     "id": "fin_61ed5955",
@@ -792,10 +848,12 @@
     "fetch_date": "2026-11-20T06:53:11.640Z",
     "tier": "C",
     "tier_reason": "定存利率市场比较（对标Wiser收录口径）",
-    "status": "active",
+    "status": "excluded_false_monitoring",
     "ai_researched": 0,
     "created_at": "2026-11-20T06:53:11.640Z",
-    "wiser_benchmark": true
+    "wiser_benchmark": true,
+    "exclusion_reason": "正文无创兴",
+    "excluded_at": "2026-11-27T02:18:16.934Z"
   },
   {
     "id": "fin_24ad7d62",
@@ -811,10 +869,12 @@
     "fetch_date": "2026-11-20T06:53:11.640Z",
     "tier": "C",
     "tier_reason": "定存利率市场比较（对标Wiser收录口径）",
-    "status": "active",
+    "status": "excluded_false_monitoring",
     "ai_researched": 0,
     "created_at": "2026-11-20T06:53:11.640Z",
-    "wiser_benchmark": true
+    "wiser_benchmark": true,
+    "exclusion_reason": "正文无创兴",
+    "excluded_at": "2026-11-27T02:18:16.934Z"
   },
   {
     "id": "fin_0d8963d5",
@@ -830,10 +890,12 @@
     "fetch_date": "2026-11-20T06:53:11.640Z",
     "tier": "C",
     "tier_reason": "定存利率市场比较（对标Wiser收录口径）",
-    "status": "active",
+    "status": "excluded_false_monitoring",
     "ai_researched": 0,
     "created_at": "2026-11-20T06:53:11.640Z",
-    "wiser_benchmark": true
+    "wiser_benchmark": true,
+    "exclusion_reason": "正文无创兴",
+    "excluded_at": "2026-11-27T02:18:16.934Z"
   },
   {
     "id": "fin_ebec5340",
@@ -869,10 +931,12 @@
     "fetch_date": "2026-11-20T06:53:11.640Z",
     "tier": "C",
     "tier_reason": "定存利率市场比较（对标Wiser收录口径）",
-    "status": "active",
+    "status": "excluded_false_monitoring",
     "ai_researched": 0,
     "created_at": "2026-11-20T06:53:11.640Z",
-    "wiser_benchmark": true
+    "wiser_benchmark": true,
+    "exclusion_reason": "正文无创兴",
+    "excluded_at": "2026-11-27T02:18:16.934Z"
   },
   {
     "id": "fin_94ba112c",
@@ -888,10 +952,12 @@
     "fetch_date": "2026-11-20T06:53:11.640Z",
     "tier": "C",
     "tier_reason": "定存利率市场比较（对标Wiser收录口径）",
-    "status": "active",
+    "status": "excluded_false_monitoring",
     "ai_researched": 0,
     "created_at": "2026-11-20T06:53:11.640Z",
-    "wiser_benchmark": true
+    "wiser_benchmark": true,
+    "exclusion_reason": "正文无创兴",
+    "excluded_at": "2026-11-27T02:18:16.934Z"
   },
   {
     "id": "fin_77068612",
@@ -926,10 +992,12 @@
     "fetch_date": "2026-11-20T06:53:11.640Z",
     "tier": "C",
     "tier_reason": "定存利率市场比较（对标Wiser收录口径）",
-    "status": "active",
+    "status": "excluded_false_monitoring",
     "ai_researched": 0,
     "created_at": "2026-11-20T06:53:11.640Z",
-    "wiser_benchmark": true
+    "wiser_benchmark": true,
+    "exclusion_reason": "正文无创兴",
+    "excluded_at": "2026-11-27T02:18:16.934Z"
   },
   {
     "id": "fin_08d91933",
@@ -945,10 +1013,12 @@
     "fetch_date": "2026-11-20T06:53:11.640Z",
     "tier": "C",
     "tier_reason": "定存利率市场比较（对标Wiser收录口径）",
-    "status": "active",
+    "status": "excluded_false_monitoring",
     "ai_researched": 0,
     "created_at": "2026-11-20T06:53:11.640Z",
-    "wiser_benchmark": true
+    "wiser_benchmark": true,
+    "exclusion_reason": "正文无创兴",
+    "excluded_at": "2026-11-27T02:18:16.934Z"
   },
   {
     "id": "fin_28863048",
@@ -964,10 +1034,12 @@
     "fetch_date": "2026-11-20T06:53:11.640Z",
     "tier": "C",
     "tier_reason": "定存利率市场比较（对标Wiser收录口径）",
-    "status": "active",
+    "status": "excluded_false_monitoring",
     "ai_researched": 0,
     "created_at": "2026-11-20T06:53:11.640Z",
-    "wiser_benchmark": true
+    "wiser_benchmark": true,
+    "exclusion_reason": "正文无创兴",
+    "excluded_at": "2026-11-27T02:18:16.934Z"
   },
   {
     "id": "fin_0f9fc854",
@@ -983,10 +1055,12 @@
     "fetch_date": "2026-11-20T06:53:11.640Z",
     "tier": "C",
     "tier_reason": "定存利率市场比较（对标Wiser收录口径）",
-    "status": "active",
+    "status": "excluded_false_monitoring",
     "ai_researched": 0,
     "created_at": "2026-11-20T06:53:11.640Z",
-    "wiser_benchmark": true
+    "wiser_benchmark": true,
+    "exclusion_reason": "正文无创兴",
+    "excluded_at": "2026-11-27T02:18:16.934Z"
   },
   {
     "id": "fin_2d424abe",
@@ -1002,10 +1076,12 @@
     "fetch_date": "2026-11-20T06:53:11.640Z",
     "tier": "C",
     "tier_reason": "定存利率市场比较（对标Wiser收录口径）",
-    "status": "active",
+    "status": "excluded_false_monitoring",
     "ai_researched": 0,
     "created_at": "2026-11-20T06:53:11.640Z",
-    "wiser_benchmark": true
+    "wiser_benchmark": true,
+    "exclusion_reason": "正文无创兴",
+    "excluded_at": "2026-11-27T02:18:16.934Z"
   },
   {
     "id": "fin_e230018a",
@@ -1021,10 +1097,12 @@
     "fetch_date": "2026-11-20T06:53:11.640Z",
     "tier": "C",
     "tier_reason": "定存利率市场比较（对标Wiser收录口径）",
-    "status": "active",
+    "status": "excluded_false_monitoring",
     "ai_researched": 0,
     "created_at": "2026-11-20T06:53:11.640Z",
-    "wiser_benchmark": true
+    "wiser_benchmark": true,
+    "exclusion_reason": "正文无创兴",
+    "excluded_at": "2026-11-27T02:18:16.934Z"
   },
   {
     "id": "etnet_414869",
@@ -1040,11 +1118,13 @@
     "fetch_date": "2026-11-20T06:55:41.619Z",
     "tier": "C",
     "tier_reason": "定存利率市场比较（对标Wiser收录口径）",
-    "status": "active",
+    "status": "excluded_false_monitoring",
     "ai_researched": 0,
     "created_at": "2026-11-20T06:55:41.620Z",
     "wiser_benchmark": true,
-    "verified": true
+    "verified": true,
+    "exclusion_reason": "正文无创兴",
+    "excluded_at": "2026-11-27T02:18:16.934Z"
   },
   {
     "id": "etnet_415052",
@@ -1060,11 +1140,13 @@
     "fetch_date": "2026-11-20T06:55:41.621Z",
     "tier": "C",
     "tier_reason": "定存利率市场比较（对标Wiser收录口径）",
-    "status": "active",
+    "status": "excluded_false_monitoring",
     "ai_researched": 0,
     "created_at": "2026-11-20T06:55:41.621Z",
     "wiser_benchmark": true,
-    "verified": true
+    "verified": true,
+    "exclusion_reason": "正文无创兴",
+    "excluded_at": "2026-11-27T02:18:16.934Z"
   },
   {
     "id": "etnet_415251",
@@ -1080,11 +1162,13 @@
     "fetch_date": "2026-11-20T06:55:41.621Z",
     "tier": "C",
     "tier_reason": "定存利率市场比较（对标Wiser收录口径）",
-    "status": "active",
+    "status": "excluded_false_monitoring",
     "ai_researched": 0,
     "created_at": "2026-11-20T06:55:41.621Z",
     "wiser_benchmark": true,
-    "verified": true
+    "verified": true,
+    "exclusion_reason": "正文无创兴",
+    "excluded_at": "2026-11-27T02:18:16.934Z"
   },
   {
     "id": "etnet_415784",
@@ -1100,11 +1184,13 @@
     "fetch_date": "2026-11-20T06:55:41.622Z",
     "tier": "C",
     "tier_reason": "定存利率市场比较（对标Wiser收录口径）",
-    "status": "active",
+    "status": "excluded_false_monitoring",
     "ai_researched": 0,
     "created_at": "2026-11-20T06:55:41.622Z",
     "wiser_benchmark": true,
-    "verified": true
+    "verified": true,
+    "exclusion_reason": "正文无创兴",
+    "excluded_at": "2026-11-27T02:18:16.934Z"
   },
   {
     "id": "etnet_416342",
@@ -1120,11 +1206,13 @@
     "fetch_date": "2026-11-20T06:55:41.622Z",
     "tier": "C",
     "tier_reason": "定存利率市场比较（对标Wiser收录口径）",
-    "status": "active",
+    "status": "excluded_false_monitoring",
     "ai_researched": 0,
     "created_at": "2026-11-20T06:55:41.622Z",
     "wiser_benchmark": true,
-    "verified": true
+    "verified": true,
+    "exclusion_reason": "正文无创兴",
+    "excluded_at": "2026-11-27T02:18:16.934Z"
   },
   {
     "id": "etnet_416689",
@@ -1140,11 +1228,13 @@
     "fetch_date": "2026-11-20T06:55:41.622Z",
     "tier": "C",
     "tier_reason": "定存利率市场比较（对标Wiser收录口径）",
-    "status": "active",
+    "status": "excluded_false_monitoring",
     "ai_researched": 0,
     "created_at": "2026-11-20T06:55:41.622Z",
     "wiser_benchmark": true,
-    "verified": true
+    "verified": true,
+    "exclusion_reason": "正文无创兴",
+    "excluded_at": "2026-11-27T02:18:16.934Z"
   },
   {
     "id": "etnet_416889",
@@ -1160,11 +1250,13 @@
     "fetch_date": "2026-11-20T06:55:41.622Z",
     "tier": "C",
     "tier_reason": "定存利率市场比较（对标Wiser收录口径）",
-    "status": "active",
+    "status": "excluded_false_monitoring",
     "ai_researched": 0,
     "created_at": "2026-11-20T06:55:41.622Z",
     "wiser_benchmark": true,
-    "verified": true
+    "verified": true,
+    "exclusion_reason": "正文无创兴",
+    "excluded_at": "2026-11-27T02:18:16.934Z"
   },
   {
     "id": "etnet_413979",
@@ -1180,11 +1272,13 @@
     "fetch_date": "2026-11-20T06:59:21.187Z",
     "tier": "C",
     "tier_reason": "定存利率市场比较（对标Wiser口径）",
-    "status": "active",
+    "status": "excluded_false_monitoring",
     "ai_researched": 0,
     "created_at": "2026-11-20T06:59:21.189Z",
     "wiser_benchmark": true,
-    "verified": true
+    "verified": true,
+    "exclusion_reason": "正文无创兴",
+    "excluded_at": "2026-11-27T02:18:16.934Z"
   },
   {
     "id": "etnet_416266",
@@ -1200,11 +1294,13 @@
     "fetch_date": "2026-11-20T06:59:21.190Z",
     "tier": "C",
     "tier_reason": "利率走势分析（对标Wiser口径）",
-    "status": "active",
+    "status": "excluded_false_monitoring",
     "ai_researched": 0,
     "created_at": "2026-11-20T06:59:21.190Z",
     "wiser_benchmark": true,
-    "verified": true
+    "verified": true,
+    "exclusion_reason": "正文无创兴",
+    "excluded_at": "2026-11-27T02:18:16.934Z"
   },
   {
     "id": "etnet_417232",
@@ -1220,11 +1316,13 @@
     "fetch_date": "2026-11-20T06:59:21.190Z",
     "tier": "C",
     "tier_reason": "利率市场动态（对标Wiser口径）",
-    "status": "active",
+    "status": "excluded_false_monitoring",
     "ai_researched": 0,
     "created_at": "2026-11-20T06:59:21.190Z",
     "wiser_benchmark": true,
-    "verified": true
+    "verified": true,
+    "exclusion_reason": "正文无创兴",
+    "excluded_at": "2026-11-27T02:18:16.934Z"
   },
   {
     "id": "etnet_414840",
@@ -1240,10 +1338,12 @@
     "fetch_date": "2026-11-20T07:01:14.063Z",
     "tier": "C",
     "tier_reason": "利率市场动态（对标Wiser收录口径）",
-    "status": "active",
+    "status": "excluded_false_monitoring",
     "ai_researched": 0,
     "created_at": "2026-11-20T07:01:14.064Z",
-    "wiser_benchmark": true
+    "wiser_benchmark": true,
+    "exclusion_reason": "正文无创兴",
+    "excluded_at": "2026-11-27T02:18:16.934Z"
   },
   {
     "id": "etnet_414851",
@@ -1259,10 +1359,12 @@
     "fetch_date": "2026-11-20T07:01:14.066Z",
     "tier": "C",
     "tier_reason": "利率市场动态（对标Wiser收录口径）",
-    "status": "active",
+    "status": "excluded_false_monitoring",
     "ai_researched": 0,
     "created_at": "2026-11-20T07:01:14.066Z",
-    "wiser_benchmark": true
+    "wiser_benchmark": true,
+    "exclusion_reason": "正文无创兴",
+    "excluded_at": "2026-11-27T02:18:16.934Z"
   },
   {
     "id": "etnet_415616",
@@ -1278,10 +1380,12 @@
     "fetch_date": "2026-11-20T07:01:14.066Z",
     "tier": "C",
     "tier_reason": "利率市场动态（对标Wiser收录口径）",
-    "status": "active",
+    "status": "excluded_false_monitoring",
     "ai_researched": 0,
     "created_at": "2026-11-20T07:01:14.066Z",
-    "wiser_benchmark": true
+    "wiser_benchmark": true,
+    "exclusion_reason": "正文无创兴",
+    "excluded_at": "2026-11-27T02:18:16.934Z"
   },
   {
     "id": "etnet_416258",
@@ -1297,10 +1401,12 @@
     "fetch_date": "2026-11-20T07:01:14.066Z",
     "tier": "C",
     "tier_reason": "利率市场动态（对标Wiser收录口径）",
-    "status": "active",
+    "status": "excluded_false_monitoring",
     "ai_researched": 0,
     "created_at": "2026-11-20T07:01:14.066Z",
-    "wiser_benchmark": true
+    "wiser_benchmark": true,
+    "exclusion_reason": "正文无创兴",
+    "excluded_at": "2026-11-27T02:18:16.934Z"
   },
   {
     "id": "etnet_416286",
@@ -1316,10 +1422,12 @@
     "fetch_date": "2026-11-20T07:01:14.066Z",
     "tier": "C",
     "tier_reason": "利率市场动态（对标Wiser收录口径）",
-    "status": "active",
+    "status": "excluded_false_monitoring",
     "ai_researched": 0,
     "created_at": "2026-11-20T07:01:14.066Z",
-    "wiser_benchmark": true
+    "wiser_benchmark": true,
+    "exclusion_reason": "正文无创兴",
+    "excluded_at": "2026-11-27T02:18:16.934Z"
   },
   {
     "id": "etnet_416797",
@@ -1335,10 +1443,12 @@
     "fetch_date": "2026-11-20T07:01:14.066Z",
     "tier": "C",
     "tier_reason": "利率市场动态（对标Wiser收录口径）",
-    "status": "active",
+    "status": "excluded_false_monitoring",
     "ai_researched": 0,
     "created_at": "2026-11-20T07:01:14.066Z",
-    "wiser_benchmark": true
+    "wiser_benchmark": true,
+    "exclusion_reason": "正文无创兴",
+    "excluded_at": "2026-11-27T02:18:16.934Z"
   },
   {
     "id": "etnet_417380",
@@ -1354,10 +1464,12 @@
     "fetch_date": "2026-11-20T07:01:14.066Z",
     "tier": "C",
     "tier_reason": "利率市场动态（对标Wiser收录口径）",
-    "status": "active",
+    "status": "excluded_false_monitoring",
     "ai_researched": 0,
     "created_at": "2026-11-20T07:01:14.066Z",
-    "wiser_benchmark": true
+    "wiser_benchmark": true,
+    "exclusion_reason": "正文无创兴",
+    "excluded_at": "2026-11-27T02:18:16.934Z"
   },
   {
     "id": "etnet_416326",
@@ -1373,11 +1485,13 @@
     "fetch_date": "2026-11-20T07:23:21.917Z",
     "tier": "C",
     "tier_reason": "利率/金融环境动态（对标Wiser收录口径）",
-    "status": "active",
+    "status": "excluded_false_monitoring",
     "ai_researched": 0,
     "created_at": "2026-11-20T07:23:21.918Z",
     "wiser_benchmark": true,
-    "verified": true
+    "verified": true,
+    "exclusion_reason": "正文无创兴",
+    "excluded_at": "2026-11-27T02:18:16.934Z"
   },
   {
     "id": "etnet_415201",
@@ -1393,11 +1507,13 @@
     "fetch_date": "2026-11-20T07:23:21.919Z",
     "tier": "C",
     "tier_reason": "利率/金融环境动态（对标Wiser收录口径）",
-    "status": "active",
+    "status": "excluded_false_monitoring",
     "ai_researched": 0,
     "created_at": "2026-11-20T07:23:21.919Z",
     "wiser_benchmark": true,
-    "verified": true
+    "verified": true,
+    "exclusion_reason": "正文无创兴",
+    "excluded_at": "2026-11-27T02:18:16.934Z"
   },
   {
     "id": "etnet_414663",
@@ -1413,11 +1529,13 @@
     "fetch_date": "2026-11-20T07:23:21.919Z",
     "tier": "C",
     "tier_reason": "利率/金融环境动态（对标Wiser收录口径）",
-    "status": "active",
+    "status": "excluded_false_monitoring",
     "ai_researched": 0,
     "created_at": "2026-11-20T07:23:21.919Z",
     "wiser_benchmark": true,
-    "verified": true
+    "verified": true,
+    "exclusion_reason": "正文无创兴",
+    "excluded_at": "2026-11-27T02:18:16.934Z"
   },
   {
     "id": "etnet_414634",
@@ -1433,11 +1551,13 @@
     "fetch_date": "2026-11-20T07:23:21.919Z",
     "tier": "C",
     "tier_reason": "利率/金融环境动态（对标Wiser收录口径）",
-    "status": "active",
+    "status": "excluded_false_monitoring",
     "ai_researched": 0,
     "created_at": "2026-11-20T07:23:21.919Z",
     "wiser_benchmark": true,
-    "verified": true
+    "verified": true,
+    "exclusion_reason": "正文无创兴",
+    "excluded_at": "2026-11-27T02:18:16.934Z"
   },
   {
     "id": "etnet_20261110245",
@@ -1453,11 +1573,13 @@
     "fetch_date": "2026-11-20T07:35:41.092Z",
     "tier": "C",
     "tier_reason": "利率市场动态（对标Wiser收录口径）",
-    "status": "active",
+    "status": "excluded_false_monitoring",
     "ai_researched": 0,
     "created_at": "2026-11-20T07:35:41.093Z",
     "wiser_benchmark": true,
-    "verified": true
+    "verified": true,
+    "exclusion_reason": "正文无创兴",
+    "excluded_at": "2026-11-27T02:18:16.934Z"
   },
   {
     "id": "etnet_20261112622",
@@ -1473,11 +1595,13 @@
     "fetch_date": "2026-11-20T07:35:41.094Z",
     "tier": "C",
     "tier_reason": "利率市场动态（对标Wiser收录口径）",
-    "status": "active",
+    "status": "excluded_false_monitoring",
     "ai_researched": 0,
     "created_at": "2026-11-20T07:35:41.094Z",
     "wiser_benchmark": true,
-    "verified": true
+    "verified": true,
+    "exclusion_reason": "正文无创兴",
+    "excluded_at": "2026-11-27T02:18:16.934Z"
   },
   {
     "id": "etnet_20261029526",
@@ -1493,11 +1617,13 @@
     "fetch_date": "2026-11-20T07:35:41.094Z",
     "tier": "C",
     "tier_reason": "利率市场动态（对标Wiser收录口径）",
-    "status": "active",
+    "status": "excluded_false_monitoring",
     "ai_researched": 0,
     "created_at": "2026-11-20T07:35:41.094Z",
     "wiser_benchmark": true,
-    "verified": true
+    "verified": true,
+    "exclusion_reason": "正文无创兴",
+    "excluded_at": "2026-11-27T02:18:16.934Z"
   },
   {
     "id": "gnews_1795162461115_0",
@@ -1514,7 +1640,9 @@
     "tier": "C",
     "tier_reason": "对标Wiser宽口径",
     "discovery": "Google News RSS 聚合发现，原媒体 UHK 港生活（Wiser 覆盖同类来源）",
-    "status": "active"
+    "status": "excluded_false_monitoring",
+    "exclusion_reason": "链接为媒体首页",
+    "excluded_at": "2026-11-27T02:18:16.934Z"
   },
   {
     "id": "gnews_1795162461120_1",
@@ -1531,7 +1659,9 @@
     "tier": "C",
     "tier_reason": "对标Wiser宽口径",
     "discovery": "Google News RSS 聚合发现；Wiser 编号611 同题佐证",
-    "status": "active"
+    "status": "excluded_false_monitoring",
+    "exclusion_reason": "链接为媒体首页",
+    "excluded_at": "2026-11-27T02:18:16.934Z"
   },
   {
     "id": "etnet_417959_1125",
@@ -1547,10 +1677,12 @@
     "fetch_date": "2026-11-25T04:33:21.288Z",
     "tier": "C",
     "tier_reason": "Wiser宽口径：正文含\"表列各大銀行定存息率\"，创兴银行列入利率比较表（邻近窗口）",
-    "status": "active",
+    "status": "excluded_false_monitoring",
     "ai_researched": 0,
     "discovery": "wide_topic_verified",
-    "created_at": "2026-11-25T04:33:21.289Z"
+    "created_at": "2026-11-25T04:33:21.289Z",
+    "exclusion_reason": "正文无创兴",
+    "excluded_at": "2026-11-27T02:18:16.934Z"
   },
   {
     "id": 87,
@@ -1566,9 +1698,11 @@
     "fetch_date": "2026-11-25T05:49:28.147Z",
     "tier": "B",
     "tier_reason": "AI深度研判",
-    "status": "active",
+    "status": "excluded_official_or_nonmedia",
     "ai_researched": 1,
-    "created_at": "2026-11-25T05:49:28.150Z"
+    "created_at": "2026-11-25T05:49:28.150Z",
+    "exclusion_reason": "官网稿/招聘/监管公示，非媒体新闻（长期规则）",
+    "excluded_at": "2026-11-27T00:00:00Z"
   },
   {
     "id": 88,
@@ -1584,9 +1718,11 @@
     "fetch_date": "2026-11-25T05:49:28.147Z",
     "tier": "B",
     "tier_reason": "AI深度研判",
-    "status": "active",
+    "status": "excluded_official_or_nonmedia",
     "ai_researched": 1,
-    "created_at": "2026-11-25T05:49:28.150Z"
+    "created_at": "2026-11-25T05:49:28.150Z",
+    "exclusion_reason": "官网稿/招聘/监管公示，非媒体新闻（长期规则）",
+    "excluded_at": "2026-11-27T00:00:00Z"
   },
   {
     "id": 89,
@@ -1602,9 +1738,11 @@
     "fetch_date": "2026-11-25T05:49:28.148Z",
     "tier": "C",
     "tier_reason": "AI深度研判",
-    "status": "active",
+    "status": "excluded_official_or_nonmedia",
     "ai_researched": 1,
-    "created_at": "2026-11-25T05:49:28.150Z"
+    "created_at": "2026-11-25T05:49:28.150Z",
+    "exclusion_reason": "官网稿/招聘/监管公示，非媒体新闻（长期规则）",
+    "excluded_at": "2026-11-27T00:00:00Z"
   },
   {
     "id": 90,
@@ -1620,9 +1758,11 @@
     "fetch_date": "2026-11-25T05:49:28.148Z",
     "tier": "B",
     "tier_reason": "AI深度研判",
-    "status": "active",
+    "status": "excluded_official_or_nonmedia",
     "ai_researched": 1,
-    "created_at": "2026-11-25T05:49:28.150Z"
+    "created_at": "2026-11-25T05:49:28.150Z",
+    "exclusion_reason": "官网稿/招聘/监管公示，非媒体新闻（长期规则）",
+    "excluded_at": "2026-11-27T00:00:00Z"
   },
   {
     "id": "stheadline_3623151_1127",
@@ -1661,5 +1801,25 @@
     "ai_researched": 0,
     "discovery": "wide_topic_verified",
     "created_at": "2026-11-27T02:11:19.805Z"
+  },
+  {
+    "id": 93,
+    "hash": "3748e54c48730fef265479fd36b22e77f64d9780",
+    "title": "創興銀行港元定存最高10厘！2026年11月最新定期利率",
+    "link": "https://wealth.hket.com/article/4186443/chbank-hkd-time-deposit-rate-offer",
+    "description": "创兴银行出粮户口1个月10%总年利率（5,000-20,000港元，登记出粮并每月入账≥1万港元，优惠至2026-12-31）；全新客户3个月最高3.25%（50万-1000万港元）、3.15%（2万-50万以下）；1个月最高2.65%/2.6%；云利率3个月3.1%。指定项目包括启动数码银行服务、申请创兴信用卡、开立投资账户完成风险评估、外币兑换累计≥HK$1,000、开立智安存账户。",
+    "source_id": "s008",
+    "source_name": "香港經濟日報·理財",
+    "source_cat": "hk_business",
+    "lang": "CH",
+    "pub_date": "2026-11-09T00:00:00+08:00",
+    "fetch_date": "2026-11-27T02:22:30.132Z",
+    "tier": "C",
+    "tier_reason": "AI深度研判",
+    "status": "excluded_unreachable_link",
+    "ai_researched": 1,
+    "created_at": "2026-11-27T02:22:30.135Z",
+    "exclusion_reason": "原文404，无法点开看到创兴（2026-11-27核验）",
+    "excluded_at": "2026-11-27T00:00:00Z"
   }
 ]

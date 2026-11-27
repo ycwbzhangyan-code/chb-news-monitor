@@ -1,0 +1,632 @@
+[
+  {
+    "id": "s0006",
+    "name": "ipcf.org.tw/Alian963 原住民族廣播電台",
+    "domain": "ipcf.org.tw",
+    "cat": "tv_radio",
+    "ok": true,
+    "url": "https://news.google.com/rss/search?q=site%3Aipcf.org.tw%20%28%E5%89%B5%E8%88%88%E9%8A%80%E8%A1%8C%20OR%20%E5%88%9B%E5%85%B4%E9%93%B6%E8%A1%8C%20OR%20%E5%AE%9A%E5%AD%98%20OR%20%E5%AD%98%E6%AC%BE%E5%88%A9%E7%8E%87%20OR%20%E7%A8%85%E8%B2%B8%20OR%20%E9%8A%80%E8%A1%8C%29&hl=zh-HK&gl=HK&ceid=HK:zh-Hant",
+    "query": "site:ipcf.org.tw (創興銀行 OR 创兴银行 OR 定存 OR 存款利率 OR 稅貸 OR 銀行)",
+    "items": 4
+  },
+  {
+    "id": "s0012",
+    "name": "ikh.tw/0972 高培德｜採訪作品集·高雄",
+    "domain": "ikh.tw",
+    "cat": "hk_print",
+    "ok": true,
+    "url": "https://news.google.com/rss/search?q=site%3Aikh.tw%20%28%E5%89%B5%E8%88%88%E9%8A%80%E8%A1%8C%20OR%20%E5%88%9B%E5%85%B4%E9%93%B6%E8%A1%8C%20OR%20%E5%AE%9A%E5%AD%98%20OR%20%E5%AD%98%E6%AC%BE%E5%88%A9%E7%8E%87%20OR%20%E7%A8%85%E8%B2%B8%20OR%20%E9%8A%80%E8%A1%8C%29&hl=zh-HK&gl=HK&ceid=HK:zh-Hant",
+    "query": "site:ikh.tw (創興銀行 OR 创兴银行 OR 定存 OR 存款利率 OR 稅貸 OR 銀行)",
+    "items": 4
+  },
+  {
+    "id": "s0185",
+    "name": "kkp.org.hk 公教報網",
+    "domain": "kkp.org.hk",
+    "cat": "hk_print",
+    "ok": true,
+    "url": "https://news.google.com/rss/search?q=site%3Akkp.org.hk%20%28%E5%89%B5%E8%88%88%E9%8A%80%E8%A1%8C%20OR%20%E5%88%9B%E5%85%B4%E9%93%B6%E8%A1%8C%20OR%20%E5%AE%9A%E5%AD%98%20OR%20%E5%AD%98%E6%AC%BE%E5%88%A9%E7%8E%87%20OR%20%E7%A8%85%E8%B2%B8%20OR%20%E9%8A%80%E8%A1%8C%29&hl=zh-HK&gl=HK&ceid=HK:zh-Hant",
+    "query": "site:kkp.org.hk (創興銀行 OR 创兴银行 OR 定存 OR 存款利率 OR 稅貸 OR 銀行)",
+    "items": 5
+  },
+  {
+    "id": "s0189",
+    "name": "hsbc.com. 匯豐",
+    "domain": "hsbc.com",
+    "cat": "hk_print",
+    "ok": true,
+    "url": "https://news.google.com/rss/search?q=site%3Ahsbc.com%20%28%E5%89%B5%E8%88%88%E9%8A%80%E8%A1%8C%20OR%20%E5%88%9B%E5%85%B4%E9%93%B6%E8%A1%8C%20OR%20%E5%AE%9A%E5%AD%98%20OR%20%E5%AD%98%E6%AC%BE%E5%88%A9%E7%8E%87%20OR%20%E7%A8%85%E8%B2%B8%20OR%20%E9%8A%80%E8%A1%8C%29&hl=zh-HK&gl=HK&ceid=HK:zh-Hant",
+    "query": "site:hsbc.com (創興銀行 OR 创兴银行 OR 定存 OR 存款利率 OR 稅貸 OR 銀行)",
+    "items": 3
+  },
+  {
+    "id": "s0259",
+    "name": "pwchk.com pwc",
+    "domain": "pwchk.com",
+    "cat": "hk_print",
+    "ok": true,
+    "url": "https://news.google.com/rss/search?q=site%3Apwchk.com%20%28%E5%89%B5%E8%88%88%E9%8A%80%E8%A1%8C%20OR%20%E5%88%9B%E5%85%B4%E9%93%B6%E8%A1%8C%20OR%20%E5%AE%9A%E5%AD%98%20OR%20%E5%AD%98%E6%AC%BE%E5%88%A9%E7%8E%87%20OR%20%E7%A8%85%E8%B2%B8%20OR%20%E9%8A%80%E8%A1%8C%29&hl=zh-HK&gl=HK&ceid=HK:zh-Hant",
+    "query": "site:pwchk.com (創興銀行 OR 创兴银行 OR 定存 OR 存款利率 OR 稅貸 OR 銀行)",
+    "items": 4
+  },
+  {
+    "id": "s0283",
+    "name": "tatlerasia.c tatlerasia.com",
+    "domain": "tatlerasia.com",
+    "cat": "hk_en",
+    "ok": true,
+    "url": "https://news.google.com/rss/search?q=site%3Atatlerasia.com%20%28%E5%89%B5%E8%88%88%E9%8A%80%E8%A1%8C%20OR%20%E5%88%9B%E5%85%B4%E9%93%B6%E8%A1%8C%20OR%20%E5%AE%9A%E5%AD%98%20OR%20%E5%AD%98%E6%AC%BE%E5%88%A9%E7%8E%87%20OR%20%E7%A8%85%E8%B2%B8%20OR%20%E9%8A%80%E8%A1%8C%29&hl=zh-HK&gl=HK&ceid=HK:zh-Hant",
+    "query": "site:tatlerasia.com (創興銀行 OR 创兴银行 OR 定存 OR 存款利率 OR 稅貸 OR 銀行)",
+    "items": 3
+  },
+  {
+    "id": "s0443",
+    "name": "hktdc.com 香港貿易發展局",
+    "domain": "hktdc.com",
+    "cat": "hk_en",
+    "ok": true,
+    "url": "https://news.google.com/rss/search?q=site%3Ahktdc.com%20%28%E5%89%B5%E8%88%88%E9%8A%80%E8%A1%8C%20OR%20%E5%88%9B%E5%85%B4%E9%93%B6%E8%A1%8C%20OR%20%E5%AE%9A%E5%AD%98%20OR%20%E5%AD%98%E6%AC%BE%E5%88%A9%E7%8E%87%20OR%20%E7%A8%85%E8%B2%B8%20OR%20%E9%8A%80%E8%A1%8C%29&hl=zh-HK&gl=HK&ceid=HK:zh-Hant",
+    "query": "site:hktdc.com (創興銀行 OR 创兴银行 OR 定存 OR 存款利率 OR 稅貸 OR 銀行)",
+    "items": 4
+  },
+  {
+    "id": "s0529",
+    "name": "foe.org.hk 地球之友英文版",
+    "domain": "foe.org.hk",
+    "cat": "hk_en",
+    "ok": true,
+    "url": "https://news.google.com/rss/search?q=site%3Afoe.org.hk%20%28%E5%89%B5%E8%88%88%E9%8A%80%E8%A1%8C%20OR%20%E5%88%9B%E5%85%B4%E9%93%B6%E8%A1%8C%20OR%20%E5%AE%9A%E5%AD%98%20OR%20%E5%AD%98%E6%AC%BE%E5%88%A9%E7%8E%87%20OR%20%E7%A8%85%E8%B2%B8%20OR%20%E9%8A%80%E8%A1%8C%29&hl=zh-HK&gl=HK&ceid=HK:zh-Hant",
+    "query": "site:foe.org.hk (創興銀行 OR 创兴银行 OR 定存 OR 存款利率 OR 稅貸 OR 銀行)",
+    "items": 4
+  },
+  {
+    "id": "s0575",
+    "name": "HongKongC HONGKONGCARD.COM",
+    "domain": "hongkongcard.com",
+    "cat": "hk_print",
+    "ok": true,
+    "url": "https://news.google.com/rss/search?q=site%3Ahongkongcard.com%20%28%E5%89%B5%E8%88%88%E9%8A%80%E8%A1%8C%20OR%20%E5%88%9B%E5%85%B4%E9%93%B6%E8%A1%8C%20OR%20%E5%AE%9A%E5%AD%98%20OR%20%E5%AD%98%E6%AC%BE%E5%88%A9%E7%8E%87%20OR%20%E7%A8%85%E8%B2%B8%20OR%20%E9%8A%80%E8%A1%8C%29&hl=zh-HK&gl=HK&ceid=HK:zh-Hant",
+    "query": "site:hongkongcard.com (創興銀行 OR 创兴银行 OR 定存 OR 存款利率 OR 稅貸 OR 銀行)",
+    "items": 4
+  },
+  {
+    "id": "s0593",
+    "name": "jobsDB.com jobsDB",
+    "domain": "jobsdb.com",
+    "cat": "hk_print",
+    "ok": true,
+    "url": "https://news.google.com/rss/search?q=site%3Ajobsdb.com%20%28%E5%89%B5%E8%88%88%E9%8A%80%E8%A1%8C%20OR%20%E5%88%9B%E5%85%B4%E9%93%B6%E8%A1%8C%20OR%20%E5%AE%9A%E5%AD%98%20OR%20%E5%AD%98%E6%AC%BE%E5%88%A9%E7%8E%87%20OR%20%E7%A8%85%E8%B2%B8%20OR%20%E9%8A%80%E8%A1%8C%29&hl=zh-HK&gl=HK&ceid=HK:zh-Hant",
+    "query": "site:jobsdb.com (創興銀行 OR 创兴银行 OR 定存 OR 存款利率 OR 稅貸 OR 銀行)",
+    "items": 3
+  },
+  {
+    "id": "s0608",
+    "name": "28hse.com 28hse.com",
+    "domain": "28hse.com",
+    "cat": "hk_print",
+    "ok": true,
+    "url": "https://news.google.com/rss/search?q=site%3A28hse.com%20%28%E5%89%B5%E8%88%88%E9%8A%80%E8%A1%8C%20OR%20%E5%88%9B%E5%85%B4%E9%93%B6%E8%A1%8C%20OR%20%E5%AE%9A%E5%AD%98%20OR%20%E5%AD%98%E6%AC%BE%E5%88%A9%E7%8E%87%20OR%20%E7%A8%85%E8%B2%B8%20OR%20%E9%8A%80%E8%A1%8C%29&hl=zh-HK&gl=HK&ceid=HK:zh-Hant",
+    "query": "site:28hse.com (創興銀行 OR 创兴银行 OR 定存 OR 存款利率 OR 稅貸 OR 銀行)",
+    "items": 4
+  },
+  {
+    "id": "s0612",
+    "name": "Building hk Building.hk",
+    "domain": "building.hk",
+    "cat": "hk_en",
+    "ok": true,
+    "url": "https://news.google.com/rss/search?q=site%3Abuilding.hk%20%28%E5%89%B5%E8%88%88%E9%8A%80%E8%A1%8C%20OR%20%E5%88%9B%E5%85%B4%E9%93%B6%E8%A1%8C%20OR%20%E5%AE%9A%E5%AD%98%20OR%20%E5%AD%98%E6%AC%BE%E5%88%A9%E7%8E%87%20OR%20%E7%A8%85%E8%B2%B8%20OR%20%E9%8A%80%E8%A1%8C%29&hl=zh-HK&gl=HK&ceid=HK:zh-Hant",
+    "query": "site:building.hk (創興銀行 OR 创兴银行 OR 定存 OR 存款利率 OR 稅貸 OR 銀行)",
+    "items": 2
+  },
+  {
+    "id": "s0669",
+    "name": "kmb.hk 九巴",
+    "domain": "kmb.hk",
+    "cat": "hk_print",
+    "ok": true,
+    "url": "https://news.google.com/rss/search?q=site%3Akmb.hk%20%28%E5%89%B5%E8%88%88%E9%8A%80%E8%A1%8C%20OR%20%E5%88%9B%E5%85%B4%E9%93%B6%E8%A1%8C%20OR%20%E5%AE%9A%E5%AD%98%20OR%20%E5%AD%98%E6%AC%BE%E5%88%A9%E7%8E%87%20OR%20%E7%A8%85%E8%B2%B8%20OR%20%E9%8A%80%E8%A1%8C%29&hl=zh-HK&gl=HK&ceid=HK:zh-Hant",
+    "query": "site:kmb.hk (創興銀行 OR 创兴银行 OR 定存 OR 存款利率 OR 稅貸 OR 銀行)",
+    "items": 5
+  },
+  {
+    "id": "s0761",
+    "name": "taobao.com 淘寶網",
+    "domain": "taobao.com",
+    "cat": "hk_print",
+    "ok": true,
+    "url": "https://news.google.com/rss/search?q=site%3Ataobao.com%20%28%E5%89%B5%E8%88%88%E9%8A%80%E8%A1%8C%20OR%20%E5%88%9B%E5%85%B4%E9%93%B6%E8%A1%8C%20OR%20%E5%AE%9A%E5%AD%98%20OR%20%E5%AD%98%E6%AC%BE%E5%88%A9%E7%8E%87%20OR%20%E7%A8%85%E8%B2%B8%20OR%20%E9%8A%80%E8%A1%8C%29&hl=zh-HK&gl=HK&ceid=HK:zh-Hant",
+    "query": "site:taobao.com (創興銀行 OR 创兴银行 OR 定存 OR 存款利率 OR 稅貸 OR 銀行)",
+    "items": 4
+  },
+  {
+    "id": "s0835",
+    "name": "hkqaa.org 香港品質保證局",
+    "domain": "hkqaa.org",
+    "cat": "hk_print",
+    "ok": true,
+    "url": "https://news.google.com/rss/search?q=site%3Ahkqaa.org%20%28%E5%89%B5%E8%88%88%E9%8A%80%E8%A1%8C%20OR%20%E5%88%9B%E5%85%B4%E9%93%B6%E8%A1%8C%20OR%20%E5%AE%9A%E5%AD%98%20OR%20%E5%AD%98%E6%AC%BE%E5%88%A9%E7%8E%87%20OR%20%E7%A8%85%E8%B2%B8%20OR%20%E9%8A%80%E8%A1%8C%29&hl=zh-HK&gl=HK&ceid=HK:zh-Hant",
+    "query": "site:hkqaa.org (創興銀行 OR 创兴银行 OR 定存 OR 存款利率 OR 稅貸 OR 銀行)",
+    "items": 4
+  },
+  {
+    "id": "s0850",
+    "name": "hkbea.com 香港建設",
+    "domain": "hkbea.com",
+    "cat": "hk_print",
+    "ok": true,
+    "url": "https://news.google.com/rss/search?q=site%3Ahkbea.com%20%28%E5%89%B5%E8%88%88%E9%8A%80%E8%A1%8C%20OR%20%E5%88%9B%E5%85%B4%E9%93%B6%E8%A1%8C%20OR%20%E5%AE%9A%E5%AD%98%20OR%20%E5%AD%98%E6%AC%BE%E5%88%A9%E7%8E%87%20OR%20%E7%A8%85%E8%B2%B8%20OR%20%E9%8A%80%E8%A1%8C%29&hl=zh-HK&gl=HK&ceid=HK:zh-Hant",
+    "query": "site:hkbea.com (創興銀行 OR 创兴银行 OR 定存 OR 存款利率 OR 稅貸 OR 銀行)",
+    "items": 4
+  },
+  {
+    "id": "s0876",
+    "name": "kpmg.com 畢馬威",
+    "domain": "kpmg.com",
+    "cat": "hk_en",
+    "ok": true,
+    "url": "https://news.google.com/rss/search?q=site%3Akpmg.com%20%28%E5%89%B5%E8%88%88%E9%8A%80%E8%A1%8C%20OR%20%E5%88%9B%E5%85%B4%E9%93%B6%E8%A1%8C%20OR%20%E5%AE%9A%E5%AD%98%20OR%20%E5%AD%98%E6%AC%BE%E5%88%A9%E7%8E%87%20OR%20%E7%A8%85%E8%B2%B8%20OR%20%E9%8A%80%E8%A1%8C%29&hl=zh-HK&gl=HK&ceid=HK:zh-Hant",
+    "query": "site:kpmg.com (創興銀行 OR 创兴银行 OR 定存 OR 存款利率 OR 稅貸 OR 銀行)",
+    "items": 4
+  },
+  {
+    "id": "s0915",
+    "name": "hoy.tv HOY TV",
+    "domain": "hoy.tv",
+    "cat": "hk_print",
+    "ok": true,
+    "url": "https://news.google.com/rss/search?q=site%3Ahoy.tv%20%28%E5%89%B5%E8%88%88%E9%8A%80%E8%A1%8C%20OR%20%E5%88%9B%E5%85%B4%E9%93%B6%E8%A1%8C%20OR%20%E5%AE%9A%E5%AD%98%20OR%20%E5%AD%98%E6%AC%BE%E5%88%A9%E7%8E%87%20OR%20%E7%A8%85%E8%B2%B8%20OR%20%E9%8A%80%E8%A1%8C%29&hl=zh-HK&gl=HK&ceid=HK:zh-Hant",
+    "query": "site:hoy.tv (創興銀行 OR 创兴银行 OR 定存 OR 存款利率 OR 稅貸 OR 銀行)",
+    "items": 5
+  },
+  {
+    "id": "s0921",
+    "name": "52hrtt.com 明周",
+    "domain": "52hrtt.com",
+    "cat": "hk_print",
+    "ok": true,
+    "url": "https://news.google.com/rss/search?q=site%3A52hrtt.com%20%28%E5%89%B5%E8%88%88%E9%8A%80%E8%A1%8C%20OR%20%E5%88%9B%E5%85%B4%E9%93%B6%E8%A1%8C%20OR%20%E5%AE%9A%E5%AD%98%20OR%20%E5%AD%98%E6%AC%BE%E5%88%A9%E7%8E%87%20OR%20%E7%A8%85%E8%B2%B8%20OR%20%E9%8A%80%E8%A1%8C%29&hl=zh-HK&gl=HK&ceid=HK:zh-Hant",
+    "query": "site:52hrtt.com (創興銀行 OR 创兴银行 OR 定存 OR 存款利率 OR 稅貸 OR 銀行)",
+    "items": 4
+  },
+  {
+    "id": "s0964",
+    "name": "ura.org.hk Urban Renewal Authority",
+    "domain": "ura.org.hk",
+    "cat": "hk_en",
+    "ok": true,
+    "url": "https://news.google.com/rss/search?q=site%3Aura.org.hk%20%28%E5%89%B5%E8%88%88%E9%8A%80%E8%A1%8C%20OR%20%E5%88%9B%E5%85%B4%E9%93%B6%E8%A1%8C%20OR%20%E5%AE%9A%E5%AD%98%20OR%20%E5%AD%98%E6%AC%BE%E5%88%A9%E7%8E%87%20OR%20%E7%A8%85%E8%B2%B8%20OR%20%E9%8A%80%E8%A1%8C%29&hl=zh-HK&gl=HK&ceid=HK:zh-Hant",
+    "query": "site:ura.org.hk (創興銀行 OR 创兴银行 OR 定存 OR 存款利率 OR 稅貸 OR 銀行)",
+    "items": 4
+  },
+  {
+    "id": "s0980",
+    "name": "popa.hk/co POPA Channel",
+    "domain": "popa.hk",
+    "cat": "hk_print",
+    "ok": true,
+    "url": "https://news.google.com/rss/search?q=site%3Apopa.hk%20%28%E5%89%B5%E8%88%88%E9%8A%80%E8%A1%8C%20OR%20%E5%88%9B%E5%85%B4%E9%93%B6%E8%A1%8C%20OR%20%E5%AE%9A%E5%AD%98%20OR%20%E5%AD%98%E6%AC%BE%E5%88%A9%E7%8E%87%20OR%20%E7%A8%85%E8%B2%B8%20OR%20%E9%8A%80%E8%A1%8C%29&hl=zh-HK&gl=HK&ceid=HK:zh-Hant",
+    "query": "site:popa.hk (創興銀行 OR 创兴银行 OR 定存 OR 存款利率 OR 稅貸 OR 銀行)",
+    "items": 2
+  },
+  {
+    "id": "s1101",
+    "name": "ifma.org.hk International Facility Management Association",
+    "domain": "ifma.org.hk",
+    "cat": "hk_en",
+    "ok": true,
+    "url": "https://news.google.com/rss/search?q=site%3Aifma.org.hk%20%28%E5%89%B5%E8%88%88%E9%8A%80%E8%A1%8C%20OR%20%E5%88%9B%E5%85%B4%E9%93%B6%E8%A1%8C%20OR%20%E5%AE%9A%E5%AD%98%20OR%20%E5%AD%98%E6%AC%BE%E5%88%A9%E7%8E%87%20OR%20%E7%A8%85%E8%B2%B8%20OR%20%E9%8A%80%E8%A1%8C%29&hl=zh-HK&gl=HK&ceid=HK:zh-Hant",
+    "query": "site:ifma.org.hk (創興銀行 OR 创兴银行 OR 定存 OR 存款利率 OR 稅貸 OR 銀行)",
+    "items": 4
+  },
+  {
+    "id": "s1105",
+    "name": "hkirc.hk/zh 香港互聯網交易管理有限公司",
+    "domain": "hkirc.hk",
+    "cat": "hk_print",
+    "ok": true,
+    "url": "https://news.google.com/rss/search?q=site%3Ahkirc.hk%20%28%E5%89%B5%E8%88%88%E9%8A%80%E8%A1%8C%20OR%20%E5%88%9B%E5%85%B4%E9%93%B6%E8%A1%8C%20OR%20%E5%AE%9A%E5%AD%98%20OR%20%E5%AD%98%E6%AC%BE%E5%88%A9%E7%8E%87%20OR%20%E7%A8%85%E8%B2%B8%20OR%20%E9%8A%80%E8%A1%8C%29&hl=zh-HK&gl=HK&ceid=HK:zh-Hant",
+    "query": "site:hkirc.hk (創興銀行 OR 创兴银行 OR 定存 OR 存款利率 OR 稅貸 OR 銀行)",
+    "items": 4
+  },
+  {
+    "id": "s1107",
+    "name": "hkstp.org/hk 香港科技園公司",
+    "domain": "hkstp.org",
+    "cat": "hk_print",
+    "ok": true,
+    "url": "https://news.google.com/rss/search?q=site%3Ahkstp.org%20%28%E5%89%B5%E8%88%88%E9%8A%80%E8%A1%8C%20OR%20%E5%88%9B%E5%85%B4%E9%93%B6%E8%A1%8C%20OR%20%E5%AE%9A%E5%AD%98%20OR%20%E5%AD%98%E6%AC%BE%E5%88%A9%E7%8E%87%20OR%20%E7%A8%85%E8%B2%B8%20OR%20%E9%8A%80%E8%A1%8C%29&hl=zh-HK&gl=HK&ceid=HK:zh-Hant",
+    "query": "site:hkstp.org (創興銀行 OR 创兴银行 OR 定存 OR 存款利率 OR 稅貸 OR 銀行)",
+    "items": 2
+  },
+  {
+    "id": "s1108",
+    "name": "18hall.com 逸樓堂",
+    "domain": "18hall.com",
+    "cat": "hk_print",
+    "ok": true,
+    "url": "https://news.google.com/rss/search?q=site%3A18hall.com%20%28%E5%89%B5%E8%88%88%E9%8A%80%E8%A1%8C%20OR%20%E5%88%9B%E5%85%B4%E9%93%B6%E8%A1%8C%20OR%20%E5%AE%9A%E5%AD%98%20OR%20%E5%AD%98%E6%AC%BE%E5%88%A9%E7%8E%87%20OR%20%E7%A8%85%E8%B2%B8%20OR%20%E9%8A%80%E8%A1%8C%29&hl=zh-HK&gl=HK&ceid=HK:zh-Hant",
+    "query": "site:18hall.com (創興銀行 OR 创兴银行 OR 定存 OR 存款利率 OR 稅貸 OR 銀行)",
+    "items": 4
+  },
+  {
+    "id": "s1132",
+    "name": "hkah.org.hk 香港浸會醫院—司徒拔道",
+    "domain": "hkah.org.hk",
+    "cat": "hk_print",
+    "ok": true,
+    "url": "https://news.google.com/rss/search?q=site%3Ahkah.org.hk%20%28%E5%89%B5%E8%88%88%E9%8A%80%E8%A1%8C%20OR%20%E5%88%9B%E5%85%B4%E9%93%B6%E8%A1%8C%20OR%20%E5%AE%9A%E5%AD%98%20OR%20%E5%AD%98%E6%AC%BE%E5%88%A9%E7%8E%87%20OR%20%E7%A8%85%E8%B2%B8%20OR%20%E9%8A%80%E8%A1%8C%29&hl=zh-HK&gl=HK&ceid=HK:zh-Hant",
+    "query": "site:hkah.org.hk (創興銀行 OR 创兴银行 OR 定存 OR 存款利率 OR 稅貸 OR 銀行)",
+    "items": 3
+  },
+  {
+    "id": "s1133",
+    "name": "hkbh.org.hk 香港浸信醫院",
+    "domain": "hkbh.org.hk",
+    "cat": "hk_print",
+    "ok": true,
+    "url": "https://news.google.com/rss/search?q=site%3Ahkbh.org.hk%20%28%E5%89%B5%E8%88%88%E9%8A%80%E8%A1%8C%20OR%20%E5%88%9B%E5%85%B4%E9%93%B6%E8%A1%8C%20OR%20%E5%AE%9A%E5%AD%98%20OR%20%E5%AD%98%E6%AC%BE%E5%88%A9%E7%8E%87%20OR%20%E7%A8%85%E8%B2%B8%20OR%20%E9%8A%80%E8%A1%8C%29&hl=zh-HK&gl=HK&ceid=HK:zh-Hant",
+    "query": "site:hkbh.org.hk (創興銀行 OR 创兴银行 OR 定存 OR 存款利率 OR 稅貸 OR 銀行)",
+    "items": 3
+  },
+  {
+    "id": "s1136",
+    "name": "pbh.hk 寶血醫院",
+    "domain": "pbh.hk",
+    "cat": "hk_print",
+    "ok": true,
+    "url": "https://news.google.com/rss/search?q=site%3Apbh.hk%20%28%E5%89%B5%E8%88%88%E9%8A%80%E8%A1%8C%20OR%20%E5%88%9B%E5%85%B4%E9%93%B6%E8%A1%8C%20OR%20%E5%AE%9A%E5%AD%98%20OR%20%E5%AD%98%E6%AC%BE%E5%88%A9%E7%8E%87%20OR%20%E7%A8%85%E8%B2%B8%20OR%20%E9%8A%80%E8%A1%8C%29&hl=zh-HK&gl=HK&ceid=HK:zh-Hant",
+    "query": "site:pbh.hk (創興銀行 OR 创兴银行 OR 定存 OR 存款利率 OR 稅貸 OR 銀行)",
+    "items": 4
+  },
+  {
+    "id": "s1138",
+    "name": "stpaul.org.hk 聖保祿醫院",
+    "domain": "stpaul.org.hk",
+    "cat": "hk_print",
+    "ok": true,
+    "url": "https://news.google.com/rss/search?q=site%3Astpaul.org.hk%20%28%E5%89%B5%E8%88%88%E9%8A%80%E8%A1%8C%20OR%20%E5%88%9B%E5%85%B4%E9%93%B6%E8%A1%8C%20OR%20%E5%AE%9A%E5%AD%98%20OR%20%E5%AD%98%E6%AC%BE%E5%88%A9%E7%8E%87%20OR%20%E7%A8%85%E8%B2%B8%20OR%20%E9%8A%80%E8%A1%8C%29&hl=zh-HK&gl=HK&ceid=HK:zh-Hant",
+    "query": "site:stpaul.org.hk (創興銀行 OR 创兴银行 OR 定存 OR 存款利率 OR 稅貸 OR 銀行)",
+    "items": 4
+  },
+  {
+    "id": "s1143",
+    "name": "pcpd.org.hk 香港個人資料私隱專員公署",
+    "domain": "pcpd.org.hk",
+    "cat": "hk_en",
+    "ok": true,
+    "url": "https://news.google.com/rss/search?q=site%3Apcpd.org.hk%20%28%E5%89%B5%E8%88%88%E9%8A%80%E8%A1%8C%20OR%20%E5%88%9B%E5%85%B4%E9%93%B6%E8%A1%8C%20OR%20%E5%AE%9A%E5%AD%98%20OR%20%E5%AD%98%E6%AC%BE%E5%88%A9%E7%8E%87%20OR%20%E7%A8%85%E8%B2%B8%20OR%20%E9%8A%80%E8%A1%8C%29&hl=zh-HK&gl=HK&ceid=HK:zh-Hant",
+    "query": "site:pcpd.org.hk (創興銀行 OR 创兴银行 OR 定存 OR 存款利率 OR 稅貸 OR 銀行)",
+    "items": 4
+  },
+  {
+    "id": "s1150",
+    "name": "eoc.org.hk 平等機會委員會",
+    "domain": "eoc.org.hk",
+    "cat": "hk_print",
+    "ok": true,
+    "url": "https://news.google.com/rss/search?q=site%3Aeoc.org.hk%20%28%E5%89%B5%E8%88%88%E9%8A%80%E8%A1%8C%20OR%20%E5%88%9B%E5%85%B4%E9%93%B6%E8%A1%8C%20OR%20%E5%AE%9A%E5%AD%98%20OR%20%E5%AD%98%E6%AC%BE%E5%88%A9%E7%8E%87%20OR%20%E7%A8%85%E8%B2%B8%20OR%20%E9%8A%80%E8%A1%8C%29&hl=zh-HK&gl=HK&ceid=HK:zh-Hant",
+    "query": "site:eoc.org.hk (創興銀行 OR 创兴银行 OR 定存 OR 存款利率 OR 稅貸 OR 銀行)",
+    "items": 4
+  },
+  {
+    "id": "s1168",
+    "name": "cosmart.hk cosmart",
+    "domain": "cosmart.hk",
+    "cat": "hk_print",
+    "ok": true,
+    "url": "https://news.google.com/rss/search?q=site%3Acosmart.hk%20%28%E5%89%B5%E8%88%88%E9%8A%80%E8%A1%8C%20OR%20%E5%88%9B%E5%85%B4%E9%93%B6%E8%A1%8C%20OR%20%E5%AE%9A%E5%AD%98%20OR%20%E5%AD%98%E6%AC%BE%E5%88%A9%E7%8E%87%20OR%20%E7%A8%85%E8%B2%B8%20OR%20%E9%8A%80%E8%A1%8C%29&hl=zh-HK&gl=HK&ceid=HK:zh-Hant",
+    "query": "site:cosmart.hk (創興銀行 OR 创兴银行 OR 定存 OR 存款利率 OR 稅貸 OR 銀行)",
+    "items": 4
+  },
+  {
+    "id": "s1176",
+    "name": "sorra.net SORRA",
+    "domain": "sorra.net",
+    "cat": "hk_print",
+    "ok": true,
+    "url": "https://news.google.com/rss/search?q=site%3Asorra.net%20%28%E5%89%B5%E8%88%88%E9%8A%80%E8%A1%8C%20OR%20%E5%88%9B%E5%85%B4%E9%93%B6%E8%A1%8C%20OR%20%E5%AE%9A%E5%AD%98%20OR%20%E5%AD%98%E6%AC%BE%E5%88%A9%E7%8E%87%20OR%20%E7%A8%85%E8%B2%B8%20OR%20%E9%8A%80%E8%A1%8C%29&hl=zh-HK&gl=HK&ceid=HK:zh-Hant",
+    "query": "site:sorra.net (創興銀行 OR 创兴银行 OR 定存 OR 存款利率 OR 稅貸 OR 銀行)",
+    "items": 4
+  },
+  {
+    "id": "s1178",
+    "name": "ugo-hk.com U GO",
+    "domain": "ugo-hk.com",
+    "cat": "hk_print",
+    "ok": true,
+    "url": "https://news.google.com/rss/search?q=site%3Augo-hk.com%20%28%E5%89%B5%E8%88%88%E9%8A%80%E8%A1%8C%20OR%20%E5%88%9B%E5%85%B4%E9%93%B6%E8%A1%8C%20OR%20%E5%AE%9A%E5%AD%98%20OR%20%E5%AD%98%E6%AC%BE%E5%88%A9%E7%8E%87%20OR%20%E7%A8%85%E8%B2%B8%20OR%20%E9%8A%80%E8%A1%8C%29&hl=zh-HK&gl=HK&ceid=HK:zh-Hant",
+    "query": "site:ugo-hk.com (創興銀行 OR 创兴银行 OR 定存 OR 存款利率 OR 稅貸 OR 銀行)",
+    "items": 3
+  },
+  {
+    "id": "s1269",
+    "name": "carers.hk 照顧者資訊網",
+    "domain": "carers.hk",
+    "cat": "hk_print",
+    "ok": true,
+    "url": "https://news.google.com/rss/search?q=site%3Acarers.hk%20%28%E5%89%B5%E8%88%88%E9%8A%80%E8%A1%8C%20OR%20%E5%88%9B%E5%85%B4%E9%93%B6%E8%A1%8C%20OR%20%E5%AE%9A%E5%AD%98%20OR%20%E5%AD%98%E6%AC%BE%E5%88%A9%E7%8E%87%20OR%20%E7%A8%85%E8%B2%B8%20OR%20%E9%8A%80%E8%A1%8C%29&hl=zh-HK&gl=HK&ceid=HK:zh-Hant",
+    "query": "site:carers.hk (創興銀行 OR 创兴银行 OR 定存 OR 存款利率 OR 稅貸 OR 銀行)",
+    "items": 5
+  },
+  {
+    "id": "s1273",
+    "name": "eac.hk/c 遺產管理委員會",
+    "domain": "eac.hk",
+    "cat": "hk_print",
+    "ok": true,
+    "url": "https://news.google.com/rss/search?q=site%3Aeac.hk%20%28%E5%89%B5%E8%88%88%E9%8A%80%E8%A1%8C%20OR%20%E5%88%9B%E5%85%B4%E9%93%B6%E8%A1%8C%20OR%20%E5%AE%9A%E5%AD%98%20OR%20%E5%AD%98%E6%AC%BE%E5%88%A9%E7%8E%87%20OR%20%E7%A8%85%E8%B2%B8%20OR%20%E9%8A%80%E8%A1%8C%29&hl=zh-HK&gl=HK&ceid=HK:zh-Hant",
+    "query": "site:eac.hk (創興銀行 OR 创兴银行 OR 定存 OR 存款利率 OR 稅貸 OR 銀行)",
+    "items": 4
+  },
+  {
+    "id": "s1282",
+    "name": "Exmoo.com Exmoo.com",
+    "domain": "exmoo.com",
+    "cat": "hk_print",
+    "ok": true,
+    "url": "https://news.google.com/rss/search?q=site%3Aexmoo.com%20%28%E5%89%B5%E8%88%88%E9%8A%80%E8%A1%8C%20OR%20%E5%88%9B%E5%85%B4%E9%93%B6%E8%A1%8C%20OR%20%E5%AE%9A%E5%AD%98%20OR%20%E5%AD%98%E6%AC%BE%E5%88%A9%E7%8E%87%20OR%20%E7%A8%85%E8%B2%B8%20OR%20%E9%8A%80%E8%A1%8C%29&hl=zh-HK&gl=HK&ceid=HK:zh-Hant",
+    "query": "site:exmoo.com (創興銀行 OR 创兴银行 OR 定存 OR 存款利率 OR 稅貸 OR 銀行)",
+    "items": 5
+  },
+  {
+    "id": "s1297",
+    "name": "jobscall.me 澳門好工作",
+    "domain": "jobscall.me",
+    "cat": "hk_print",
+    "ok": true,
+    "url": "https://news.google.com/rss/search?q=site%3Ajobscall.me%20%28%E5%89%B5%E8%88%88%E9%8A%80%E8%A1%8C%20OR%20%E5%88%9B%E5%85%B4%E9%93%B6%E8%A1%8C%20OR%20%E5%AE%9A%E5%AD%98%20OR%20%E5%AD%98%E6%AC%BE%E5%88%A9%E7%8E%87%20OR%20%E7%A8%85%E8%B2%B8%20OR%20%E9%8A%80%E8%A1%8C%29&hl=zh-HK&gl=HK&ceid=HK:zh-Hant",
+    "query": "site:jobscall.me (創興銀行 OR 创兴银行 OR 定存 OR 存款利率 OR 稅貸 OR 銀行)",
+    "items": 4
+  },
+  {
+    "id": "s1355",
+    "name": "sonpou.net 訊報網",
+    "domain": "sonpou.net",
+    "cat": "hk_print",
+    "ok": true,
+    "url": "https://news.google.com/rss/search?q=site%3Asonpou.net%20%28%E5%89%B5%E8%88%88%E9%8A%80%E8%A1%8C%20OR%20%E5%88%9B%E5%85%B4%E9%93%B6%E8%A1%8C%20OR%20%E5%AE%9A%E5%AD%98%20OR%20%E5%AD%98%E6%AC%BE%E5%88%A9%E7%8E%87%20OR%20%E7%A8%85%E8%B2%B8%20OR%20%E9%8A%80%E8%A1%8C%29&hl=zh-HK&gl=HK&ceid=HK:zh-Hant",
+    "query": "site:sonpou.net (創興銀行 OR 创兴银行 OR 定存 OR 存款利率 OR 稅貸 OR 銀行)",
+    "items": 5
+  },
+  {
+    "id": "s1357",
+    "name": "am-zm.com 澳門專報",
+    "domain": "am-zm.com",
+    "cat": "hk_print",
+    "ok": true,
+    "url": "https://news.google.com/rss/search?q=site%3Aam-zm.com%20%28%E5%89%B5%E8%88%88%E9%8A%80%E8%A1%8C%20OR%20%E5%88%9B%E5%85%B4%E9%93%B6%E8%A1%8C%20OR%20%E5%AE%9A%E5%AD%98%20OR%20%E5%AD%98%E6%AC%BE%E5%88%A9%E7%8E%87%20OR%20%E7%A8%85%E8%B2%B8%20OR%20%E9%8A%80%E8%A1%8C%29&hl=zh-HK&gl=HK&ceid=HK:zh-Hant",
+    "query": "site:am-zm.com (創興銀行 OR 创兴银行 OR 定存 OR 存款利率 OR 稅貸 OR 銀行)",
+    "items": 4
+  },
+  {
+    "id": "s2064",
+    "name": "iruis.com 睿商",
+    "domain": "iruis.com",
+    "cat": "hk_print",
+    "ok": true,
+    "url": "https://news.google.com/rss/search?q=site%3Airuis.com%20%28%E5%89%B5%E8%88%88%E9%8A%80%E8%A1%8C%20OR%20%E5%88%9B%E5%85%B4%E9%93%B6%E8%A1%8C%20OR%20%E5%AE%9A%E5%AD%98%20OR%20%E5%AD%98%E6%AC%BE%E5%88%A9%E7%8E%87%20OR%20%E7%A8%85%E8%B2%B8%20OR%20%E9%8A%80%E8%A1%8C%29&hl=zh-HK&gl=HK&ceid=HK:zh-Hant",
+    "query": "site:iruis.com (創興銀行 OR 创兴银行 OR 定存 OR 存款利率 OR 稅貸 OR 銀行)",
+    "items": 3
+  },
+  {
+    "id": "s2116",
+    "name": "cn-info.net 文傳資訊",
+    "domain": "cn-info.net",
+    "cat": "hk_print",
+    "ok": true,
+    "url": "https://news.google.com/rss/search?q=site%3Acn-info.net%20%28%E5%89%B5%E8%88%88%E9%8A%80%E8%A1%8C%20OR%20%E5%88%9B%E5%85%B4%E9%93%B6%E8%A1%8C%20OR%20%E5%AE%9A%E5%AD%98%20OR%20%E5%AD%98%E6%AC%BE%E5%88%A9%E7%8E%87%20OR%20%E7%A8%85%E8%B2%B8%20OR%20%E9%8A%80%E8%A1%8C%29&hl=zh-HK&gl=HK&ceid=HK:zh-Hant",
+    "query": "site:cn-info.net (創興銀行 OR 创兴银行 OR 定存 OR 存款利率 OR 稅貸 OR 銀行)",
+    "items": 1
+  },
+  {
+    "id": "s2165",
+    "name": "18183.com 18183.com",
+    "domain": "18183.com",
+    "cat": "hk_print",
+    "ok": true,
+    "url": "https://news.google.com/rss/search?q=site%3A18183.com%20%28%E5%89%B5%E8%88%88%E9%8A%80%E8%A1%8C%20OR%20%E5%88%9B%E5%85%B4%E9%93%B6%E8%A1%8C%20OR%20%E5%AE%9A%E5%AD%98%20OR%20%E5%AD%98%E6%AC%BE%E5%88%A9%E7%8E%87%20OR%20%E7%A8%85%E8%B2%B8%20OR%20%E9%8A%80%E8%A1%8C%29&hl=zh-HK&gl=HK&ceid=HK:zh-Hant",
+    "query": "site:18183.com (創興銀行 OR 创兴银行 OR 定存 OR 存款利率 OR 稅貸 OR 銀行)",
+    "items": 5
+  },
+  {
+    "id": "s2169",
+    "name": "zhihu.com 知乎",
+    "domain": "zhihu.com",
+    "cat": "hk_print",
+    "ok": true,
+    "url": "https://news.google.com/rss/search?q=site%3Azhihu.com%20%28%E5%89%B5%E8%88%88%E9%8A%80%E8%A1%8C%20OR%20%E5%88%9B%E5%85%B4%E9%93%B6%E8%A1%8C%20OR%20%E5%AE%9A%E5%AD%98%20OR%20%E5%AD%98%E6%AC%BE%E5%88%A9%E7%8E%87%20OR%20%E7%A8%85%E8%B2%B8%20OR%20%E9%8A%80%E8%A1%8C%29&hl=zh-HK&gl=HK&ceid=HK:zh-Hant",
+    "query": "site:zhihu.com (創興銀行 OR 创兴银行 OR 定存 OR 存款利率 OR 稅貸 OR 銀行)",
+    "items": 4
+  },
+  {
+    "id": "s2188",
+    "name": "southcn.com 南方網",
+    "domain": "southcn.com",
+    "cat": "hk_print",
+    "ok": true,
+    "url": "https://news.google.com/rss/search?q=site%3Asouthcn.com%20%28%E5%89%B5%E8%88%88%E9%8A%80%E8%A1%8C%20OR%20%E5%88%9B%E5%85%B4%E9%93%B6%E8%A1%8C%20OR%20%E5%AE%9A%E5%AD%98%20OR%20%E5%AD%98%E6%AC%BE%E5%88%A9%E7%8E%87%20OR%20%E7%A8%85%E8%B2%B8%20OR%20%E9%8A%80%E8%A1%8C%29&hl=zh-HK&gl=HK&ceid=HK:zh-Hant",
+    "query": "site:southcn.com (創興銀行 OR 创兴银行 OR 定存 OR 存款利率 OR 稅貸 OR 銀行)",
+    "items": 3
+  },
+  {
+    "id": "s2267",
+    "name": "sun0769.com 東莞陽光網",
+    "domain": "sun0769.com",
+    "cat": "hk_print",
+    "ok": true,
+    "url": "https://news.google.com/rss/search?q=site%3Asun0769.com%20%28%E5%89%B5%E8%88%88%E9%8A%80%E8%A1%8C%20OR%20%E5%88%9B%E5%85%B4%E9%93%B6%E8%A1%8C%20OR%20%E5%AE%9A%E5%AD%98%20OR%20%E5%AD%98%E6%AC%BE%E5%88%A9%E7%8E%87%20OR%20%E7%A8%85%E8%B2%B8%20OR%20%E9%8A%80%E8%A1%8C%29&hl=zh-HK&gl=HK&ceid=HK:zh-Hant",
+    "query": "site:sun0769.com (創興銀行 OR 创兴银行 OR 定存 OR 存款利率 OR 稅貸 OR 銀行)",
+    "items": 1
+  },
+  {
+    "id": "s2395",
+    "name": "newsgd Newsgd.com",
+    "domain": "newsgd.com",
+    "cat": "hk_business",
+    "ok": true,
+    "url": "https://news.google.com/rss/search?q=site%3Anewsgd.com%20%28%E5%89%B5%E8%88%88%E9%8A%80%E8%A1%8C%20OR%20%E5%88%9B%E5%85%B4%E9%93%B6%E8%A1%8C%20OR%20%E5%AE%9A%E5%AD%98%20OR%20%E5%AD%98%E6%AC%BE%E5%88%A9%E7%8E%87%20OR%20%E7%A8%85%E8%B2%B8%20OR%20%E9%8A%80%E8%A1%8C%29&hl=zh-HK&gl=HK&ceid=HK:zh-Hant",
+    "query": "site:newsgd.com (創興銀行 OR 创兴银行 OR 定存 OR 存款利率 OR 稅貸 OR 銀行)",
+    "items": 1
+  },
+  {
+    "id": "s2416",
+    "name": "Fjsen.com 東南網",
+    "domain": "fjsen.com",
+    "cat": "hk_print",
+    "ok": true,
+    "url": "https://news.google.com/rss/search?q=site%3Afjsen.com%20%28%E5%89%B5%E8%88%88%E9%8A%80%E8%A1%8C%20OR%20%E5%88%9B%E5%85%B4%E9%93%B6%E8%A1%8C%20OR%20%E5%AE%9A%E5%AD%98%20OR%20%E5%AD%98%E6%AC%BE%E5%88%A9%E7%8E%87%20OR%20%E7%A8%85%E8%B2%B8%20OR%20%E9%8A%80%E8%A1%8C%29&hl=zh-HK&gl=HK&ceid=HK:zh-Hant",
+    "query": "site:fjsen.com (創興銀行 OR 创兴银行 OR 定存 OR 存款利率 OR 稅貸 OR 銀行)",
+    "items": 4
+  },
+  {
+    "id": "s2608",
+    "name": "chinanews.com 中國新聞網",
+    "domain": "chinanews.com",
+    "cat": "hk_business",
+    "ok": true,
+    "url": "https://news.google.com/rss/search?q=site%3Achinanews.com%20%28%E5%89%B5%E8%88%88%E9%8A%80%E8%A1%8C%20OR%20%E5%88%9B%E5%85%B4%E9%93%B6%E8%A1%8C%20OR%20%E5%AE%9A%E5%AD%98%20OR%20%E5%AD%98%E6%AC%BE%E5%88%A9%E7%8E%87%20OR%20%E7%A8%85%E8%B2%B8%20OR%20%E9%8A%80%E8%A1%8C%29&hl=zh-HK&gl=HK&ceid=HK:zh-Hant",
+    "query": "site:chinanews.com (創興銀行 OR 创兴银行 OR 定存 OR 存款利率 OR 稅貸 OR 銀行)",
+    "items": 2
+  },
+  {
+    "id": "s2689",
+    "name": "hkstv.tv HKS",
+    "domain": "hkstv.tv",
+    "cat": "hk_print",
+    "ok": true,
+    "url": "https://news.google.com/rss/search?q=site%3Ahkstv.tv%20%28%E5%89%B5%E8%88%88%E9%8A%80%E8%A1%8C%20OR%20%E5%88%9B%E5%85%B4%E9%93%B6%E8%A1%8C%20OR%20%E5%AE%9A%E5%AD%98%20OR%20%E5%AD%98%E6%AC%BE%E5%88%A9%E7%8E%87%20OR%20%E7%A8%85%E8%B2%B8%20OR%20%E9%8A%80%E8%A1%8C%29&hl=zh-HK&gl=HK&ceid=HK:zh-Hant",
+    "query": "site:hkstv.tv (創興銀行 OR 创兴银行 OR 定存 OR 存款利率 OR 稅貸 OR 銀行)",
+    "items": 4
+  },
+  {
+    "id": "s2941",
+    "name": "a9vg.com A9VG電玩部落",
+    "domain": "a9vg.com",
+    "cat": "hk_print",
+    "ok": true,
+    "url": "https://news.google.com/rss/search?q=site%3Aa9vg.com%20%28%E5%89%B5%E8%88%88%E9%8A%80%E8%A1%8C%20OR%20%E5%88%9B%E5%85%B4%E9%93%B6%E8%A1%8C%20OR%20%E5%AE%9A%E5%AD%98%20OR%20%E5%AD%98%E6%AC%BE%E5%88%A9%E7%8E%87%20OR%20%E7%A8%85%E8%B2%B8%20OR%20%E9%8A%80%E8%A1%8C%29&hl=zh-HK&gl=HK&ceid=HK:zh-Hant",
+    "query": "site:a9vg.com (創興銀行 OR 创兴银行 OR 定存 OR 存款利率 OR 稅貸 OR 銀行)",
+    "items": 2
+  },
+  {
+    "id": "s2944",
+    "name": "xbiao.com 腕錶之家",
+    "domain": "xbiao.com",
+    "cat": "hk_print",
+    "ok": true,
+    "url": "https://news.google.com/rss/search?q=site%3Axbiao.com%20%28%E5%89%B5%E8%88%88%E9%8A%80%E8%A1%8C%20OR%20%E5%88%9B%E5%85%B4%E9%93%B6%E8%A1%8C%20OR%20%E5%AE%9A%E5%AD%98%20OR%20%E5%AD%98%E6%AC%BE%E5%88%A9%E7%8E%87%20OR%20%E7%A8%85%E8%B2%B8%20OR%20%E9%8A%80%E8%A1%8C%29&hl=zh-HK&gl=HK&ceid=HK:zh-Hant",
+    "query": "site:xbiao.com (創興銀行 OR 创兴银行 OR 定存 OR 存款利率 OR 稅貸 OR 銀行)",
+    "items": 2
+  },
+  {
+    "id": "s3102",
+    "name": "cmbchina.com 招商銀行",
+    "domain": "cmbchina.com",
+    "cat": "hk_business",
+    "ok": true,
+    "url": "https://news.google.com/rss/search?q=site%3Acmbchina.com%20%28%E5%89%B5%E8%88%88%E9%8A%80%E8%A1%8C%20OR%20%E5%88%9B%E5%85%B4%E9%93%B6%E8%A1%8C%20OR%20%E5%AE%9A%E5%AD%98%20OR%20%E5%AD%98%E6%AC%BE%E5%88%A9%E7%8E%87%20OR%20%E7%A8%85%E8%B2%B8%20OR%20%E9%8A%80%E8%A1%8C%29&hl=zh-HK&gl=HK&ceid=HK:zh-Hant",
+    "query": "site:cmbchina.com (創興銀行 OR 创兴银行 OR 定存 OR 存款利率 OR 稅貸 OR 銀行)",
+    "items": 4
+  },
+  {
+    "id": "s3103",
+    "name": "ccb.com 中國建設銀行",
+    "domain": "ccb.com",
+    "cat": "hk_business",
+    "ok": true,
+    "url": "https://news.google.com/rss/search?q=site%3Accb.com%20%28%E5%89%B5%E8%88%88%E9%8A%80%E8%A1%8C%20OR%20%E5%88%9B%E5%85%B4%E9%93%B6%E8%A1%8C%20OR%20%E5%AE%9A%E5%AD%98%20OR%20%E5%AD%98%E6%AC%BE%E5%88%A9%E7%8E%87%20OR%20%E7%A8%85%E8%B2%B8%20OR%20%E9%8A%80%E8%A1%8C%29&hl=zh-HK&gl=HK&ceid=HK:zh-Hant",
+    "query": "site:ccb.com (創興銀行 OR 创兴银行 OR 定存 OR 存款利率 OR 稅貸 OR 銀行)",
+    "items": 4
+  },
+  {
+    "id": "s3141",
+    "name": "czbank.com 浙商銀行",
+    "domain": "czbank.com",
+    "cat": "hk_business",
+    "ok": true,
+    "url": "https://news.google.com/rss/search?q=site%3Aczbank.com%20%28%E5%89%B5%E8%88%88%E9%8A%80%E8%A1%8C%20OR%20%E5%88%9B%E5%85%B4%E9%93%B6%E8%A1%8C%20OR%20%E5%AE%9A%E5%AD%98%20OR%20%E5%AD%98%E6%AC%BE%E5%88%A9%E7%8E%87%20OR%20%E7%A8%85%E8%B2%B8%20OR%20%E9%8A%80%E8%A1%8C%29&hl=zh-HK&gl=HK&ceid=HK:zh-Hant",
+    "query": "site:czbank.com (創興銀行 OR 创兴银行 OR 定存 OR 存款利率 OR 稅貸 OR 銀行)",
+    "items": 4
+  },
+  {
+    "id": "s3167",
+    "name": "cifco.net 網上中期",
+    "domain": "cifco.net",
+    "cat": "hk_print",
+    "ok": true,
+    "url": "https://news.google.com/rss/search?q=site%3Acifco.net%20%28%E5%89%B5%E8%88%88%E9%8A%80%E8%A1%8C%20OR%20%E5%88%9B%E5%85%B4%E9%93%B6%E8%A1%8C%20OR%20%E5%AE%9A%E5%AD%98%20OR%20%E5%AD%98%E6%AC%BE%E5%88%A9%E7%8E%87%20OR%20%E7%A8%85%E8%B2%B8%20OR%20%E9%8A%80%E8%A1%8C%29&hl=zh-HK&gl=HK&ceid=HK:zh-Hant",
+    "query": "site:cifco.net (創興銀行 OR 创兴银行 OR 定存 OR 存款利率 OR 稅貸 OR 銀行)",
+    "items": 3
+  },
+  {
+    "id": "s3253",
+    "name": "ceair.com 史囤火方筑空",
+    "domain": "ceair.com",
+    "cat": "hk_print",
+    "ok": true,
+    "url": "https://news.google.com/rss/search?q=site%3Aceair.com%20%28%E5%89%B5%E8%88%88%E9%8A%80%E8%A1%8C%20OR%20%E5%88%9B%E5%85%B4%E9%93%B6%E8%A1%8C%20OR%20%E5%AE%9A%E5%AD%98%20OR%20%E5%AD%98%E6%AC%BE%E5%88%A9%E7%8E%87%20OR%20%E7%A8%85%E8%B2%B8%20OR%20%E9%8A%80%E8%A1%8C%29&hl=zh-HK&gl=HK&ceid=HK:zh-Hant",
+    "query": "site:ceair.com (創興銀行 OR 创兴银行 OR 定存 OR 存款利率 OR 稅貸 OR 銀行)",
+    "items": 4
+  },
+  {
+    "id": "s3303",
+    "name": "huawei.com HUAWEI",
+    "domain": "huawei.com",
+    "cat": "hk_print",
+    "ok": true,
+    "url": "https://news.google.com/rss/search?q=site%3Ahuawei.com%20%28%E5%89%B5%E8%88%88%E9%8A%80%E8%A1%8C%20OR%20%E5%88%9B%E5%85%B4%E9%93%B6%E8%A1%8C%20OR%20%E5%AE%9A%E5%AD%98%20OR%20%E5%AD%98%E6%AC%BE%E5%88%A9%E7%8E%87%20OR%20%E7%A8%85%E8%B2%B8%20OR%20%E9%8A%80%E8%A1%8C%29&hl=zh-HK&gl=HK&ceid=HK:zh-Hant",
+    "query": "site:huawei.com (創興銀行 OR 创兴银行 OR 定存 OR 存款利率 OR 稅貸 OR 銀行)",
+    "items": 3
+  },
+  {
+    "id": "s3305",
+    "name": "tcl.com TCL官网",
+    "domain": "tcl.com",
+    "cat": "hk_print",
+    "ok": true,
+    "url": "https://news.google.com/rss/search?q=site%3Atcl.com%20%28%E5%89%B5%E8%88%88%E9%8A%80%E8%A1%8C%20OR%20%E5%88%9B%E5%85%B4%E9%93%B6%E8%A1%8C%20OR%20%E5%AE%9A%E5%AD%98%20OR%20%E5%AD%98%E6%AC%BE%E5%88%A9%E7%8E%87%20OR%20%E7%A8%85%E8%B2%B8%20OR%20%E9%8A%80%E8%A1%8C%29&hl=zh-HK&gl=HK&ceid=HK:zh-Hant",
+    "query": "site:tcl.com (創興銀行 OR 创兴银行 OR 定存 OR 存款利率 OR 稅貸 OR 銀行)",
+    "items": 3
+  },
+  {
+    "id": "s3306",
+    "name": "ch.com 吞毬航空",
+    "domain": "ch.com",
+    "cat": "hk_print",
+    "ok": true,
+    "url": "https://news.google.com/rss/search?q=site%3Ach.com%20%28%E5%89%B5%E8%88%88%E9%8A%80%E8%A1%8C%20OR%20%E5%88%9B%E5%85%B4%E9%93%B6%E8%A1%8C%20OR%20%E5%AE%9A%E5%AD%98%20OR%20%E5%AD%98%E6%AC%BE%E5%88%A9%E7%8E%87%20OR%20%E7%A8%85%E8%B2%B8%20OR%20%E9%8A%80%E8%A1%8C%29&hl=zh-HK&gl=HK&ceid=HK:zh-Hant",
+    "query": "site:ch.com (創興銀行 OR 创兴银行 OR 定存 OR 存款利率 OR 稅貸 OR 銀行)",
+    "items": 4
+  },
+  {
+    "id": "s3307",
+    "name": "sinopec.com 中石化",
+    "domain": "sinopec.com",
+    "cat": "hk_print",
+    "ok": true,
+    "url": "https://news.google.com/rss/search?q=site%3Asinopec.com%20%28%E5%89%B5%E8%88%88%E9%8A%80%E8%A1%8C%20OR%20%E5%88%9B%E5%85%B4%E9%93%B6%E8%A1%8C%20OR%20%E5%AE%9A%E5%AD%98%20OR%20%E5%AD%98%E6%AC%BE%E5%88%A9%E7%8E%87%20OR%20%E7%A8%85%E8%B2%B8%20OR%20%E9%8A%80%E8%A1%8C%29&hl=zh-HK&gl=HK&ceid=HK:zh-Hant",
+    "query": "site:sinopec.com (創興銀行 OR 创兴银行 OR 定存 OR 存款利率 OR 稅貸 OR 銀行)",
+    "items": 4
+  },
+  {
+    "id": "s3311",
+    "name": "chalco.com 中國鋁業",
+    "domain": "chalco.com",
+    "cat": "hk_print",
+    "ok": true,
+    "url": "https://news.google.com/rss/search?q=site%3Achalco.com%20%28%E5%89%B5%E8%88%88%E9%8A%80%E8%A1%8C%20OR%20%E5%88%9B%E5%85%B4%E9%93%B6%E8%A1%8C%20OR%20%E5%AE%9A%E5%AD%98%20OR%20%E5%AD%98%E6%AC%BE%E5%88%A9%E7%8E%87%20OR%20%E7%A8%85%E8%B2%B8%20OR%20%E9%8A%80%E8%A1%8C%29&hl=zh-HK&gl=HK&ceid=HK:zh-Hant",
+    "query": "site:chalco.com (創興銀行 OR 创兴银行 OR 定存 OR 存款利率 OR 稅貸 OR 銀行)",
+    "items": 2
+  },
+  {
+    "id": "s3330",
+    "name": "ul.com",
+    "domain": "ul.com",
+    "cat": "hk_print",
+    "ok": true,
+    "url": "https://news.google.com/rss/search?q=site%3Aul.com%20%28%E5%89%B5%E8%88%88%E9%8A%80%E8%A1%8C%20OR%20%E5%88%9B%E5%85%B4%E9%93%B6%E8%A1%8C%20OR%20%E5%AE%9A%E5%AD%98%20OR%20%E5%AD%98%E6%AC%BE%E5%88%A9%E7%8E%87%20OR%20%E7%A8%85%E8%B2%B8%20OR%20%E9%8A%80%E8%A1%8C%29&hl=zh-HK&gl=HK&ceid=HK:zh-Hant",
+    "query": "site:ul.com (創興銀行 OR 创兴银行 OR 定存 OR 存款利率 OR 稅貸 OR 銀行)",
+    "items": 4
+  }
+]

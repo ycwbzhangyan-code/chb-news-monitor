@@ -364,79 +364,83 @@ function guardHit(item) {
 }
 
 function saveAllHits(rssHits, aiHits) {
-  // AI 深度研究数据是人工核验过的可信源，直接放行；自动采集命中必须过闸门
+  // 2026-11-27 硬规则：新闻库每条点开正文必须含「创兴银行」字样，否则是伪监测。
+  // RSS/GNews 摘要不含正文，无法在采集阶段自动判定，故：
+  //   - AI 深度研究数据（人工核验过）→ 直接入库
+  //   - 自动采集命中（direct + wide）→ 全部写入 pending_articles.json 待核验池
+  //     由 verify_and_import.js 抓原文正文核验，含创兴才入库。
   const autoHits = rssHits;
-  const stats = { total: autoHits.length, pass: 0, direct: 0, wide_topic: 0, rejected: {} };
+  const stats = { total: autoHits.length, pass: 0, direct: 0, wide_topic: 0, rejected: {}, pending: 0 };
 
-  const guarded = [];
-  const wideCandidates = [];  // 2026-11-27: 宽口径候选（正文含创兴须核验）单列，不自动入库
+  const pending = [];
   for (const item of autoHits) {
     const g = guardHit(item);
     if (g.pass) {
       stats.pass++;
       stats[g.layer] = (stats[g.layer] || 0) + 1;
-      if (g.layer === 'wide_topic') {
-        // Wiser 口径：标题不点名创兴、但正文利率表点名才算。RSS/GNews 摘要不含正文，
-        // 无法自动判定，故写入候选池待核验，避免误收（2026-11-21/22 污染教训）。
-        wideCandidates.push({
-          title: item.title,
-          link: item.link || '',
-          desc: item.desc || '',
-          source_name: item.source_name || '',
-          pub_date: item.pubDate || item.date || '',
-          discovered_at: new Date().toISOString(),
-          status: 'pending_verification',
-        });
-      } else {
-        guarded.push({ ...item, _layer: g.layer, tier_hint: g.tier_hint || item.tier_hint });
-      }
+      pending.push({
+        title: item.title,
+        link: item.link || '',
+        desc: item.desc || '',
+        source_name: item.source_name || '',
+        source_id: item.source_id || '',
+        source_cat: item.source_cat || item.cat || '',
+        lang: item.lang || 'CH',
+        pub_date: item.pubDate || item.date || '',
+        layer: g.layer,
+        discovered_at: new Date().toISOString(),
+        status: 'pending_verification',
+      });
     } else {
       stats.rejected[g.reason] = (stats.rejected[g.reason] || 0) + 1;
     }
   }
-  // 持久化宽口径候选池（与现有库分离，保留最近 800 条）
-  if (wideCandidates.length) {
+  // 持久化待核验池（与新闻库分离，保留最近 1200 条）
+  if (pending.length) {
     try {
-      const candsPath = path.join(__dirname, '..', '..', 'data', 'wide_topic_candidates.json');
+      const pendingPath = path.join(__dirname, '..', '..', 'data', 'pending_articles.json');
       let prev = [];
-      if (fs.existsSync(candsPath)) {
-        try { prev = JSON.parse(fs.readFileSync(candsPath, 'utf-8')); } catch (e) { prev = []; }
+      if (fs.existsSync(pendingPath)) {
+        try { prev = JSON.parse(fs.readFileSync(pendingPath, 'utf-8')); } catch (e) { prev = []; }
       }
-      const existingTitles = new Set(prev.map(x => store.normalizeTitle(x.title)));
-      const fresh = wideCandidates.filter(x => !existingTitles.has(store.normalizeTitle(x.title)));
-      const merged = [...prev, ...fresh].slice(-800);
-      fs.writeFileSync(candsPath, JSON.stringify(merged, null, 2));
-      stats.wide_candidates_new = fresh.length;
-    } catch (e) { stats.wide_candidates_error = e.message; }
+      const existing = new Set(prev.map(x => store.normalizeTitle(x.title)));
+      const fresh = pending.filter(x => !existing.has(store.normalizeTitle(x.title)));
+      fs.writeFileSync(pendingPath, JSON.stringify([...prev, ...fresh].slice(-1200), null, 2));
+      stats.pending = fresh.length;
+    } catch (e) { stats.pending_error = e.message; }
   }
 
-  // 合并所有命中，添加hash和tier
-  const allItems = [...aiHits, ...guarded].map(item => {
-    const hash = hashTitle(item.title);
-    const { tier, reason } = classify(item);
-    // 宽口径候选强制 C 类
-    const finalTier = item._layer === 'wide_topic' ? 'C' : tier;
-    return {
-      hash,
-      title: item.title,
-      link: item.link || '',
-      description: item.desc || '',
-      source_id: item.source_id || '',
-      source_name: item.source_name || '',
-      source_cat: item.source_cat || item.cat || '',
-      lang: item.lang || 'CH',
-      pub_date: item.pubDate || item.date || new Date().toISOString(),
-      fetch_date: new Date().toISOString(),
-      tier: finalTier,
-      tier_reason: item._layer === 'wide_topic' ? 'Wiser宽口径：银行存贷汇产品比较（邻近窗口）' : reason,
-      status: 'active',
-      ai_researched: item.tier_hint ? 1 : 0,
-      ...(item._layer === 'wide_topic' ? { discovery: 'wide_topic' } : {}),
-    };
-  });
+  // 2026-11-27: AI 研究数据同样加入待核验池（早期 ai_research.json 混有官网稿/404链接，
+  // 并非全部人工核验过），统一由 verify_and_import.js 抓正文核验后再入库。
+  if (aiHits && aiHits.length) {
+    try {
+      const pendingPath = path.join(__dirname, '..', '..', 'data', 'pending_articles.json');
+      let cur = [];
+      if (fs.existsSync(pendingPath)) {
+        try { cur = JSON.parse(fs.readFileSync(pendingPath, 'utf-8')); } catch (e) { cur = []; }
+      }
+      const existing = new Set(cur.map(x => store.normalizeTitle(x.title)));
+      const freshAi = aiHits.filter(x => !existing.has(store.normalizeTitle(x.title))).map(item => ({
+        title: item.title,
+        link: item.link || '',
+        desc: item.desc || '',
+        source_name: item.source_name || '',
+        source_id: item.source_id || '',
+        source_cat: item.source_cat || item.cat || '',
+        lang: item.lang || 'CH',
+        pub_date: item.pubDate || item.date || '',
+        layer: 'direct',
+        ai_researched: 1,
+        discovered_at: new Date().toISOString(),
+        status: 'pending_verification',
+      }));
+      fs.writeFileSync(pendingPath, JSON.stringify([...cur, ...freshAi].slice(-1200), null, 2));
+      stats.ai_pending = freshAi.length;
+    } catch (e) { stats.ai_pending_error = e.message; }
+  }
 
-  const result = store.addNews(allItems);
-  result.guard = stats;
+  // 所有条目（含AI）统一走正文核验，不再有直接入库通道
+  const result = { newCount: 0, dupCount: 0, guard: stats };
   return result;
 }
 

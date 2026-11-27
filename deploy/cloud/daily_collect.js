@@ -150,8 +150,19 @@ async function runCloudDailyJob() {
     console.log('[4/6] 去重分级入库...');
     const allHits = [...hits, ...crawlerHits];
     const saveResult = saveAllHits(allHits, aiFormatted);
-    console.log(`  -> 新增${saveResult.newCount}条, 重复${saveResult.dupCount}条`);
-    totalNewNews = saveResult.newCount;
+    console.log(`  -> 待核验${saveResult.guard?.pending || 0}条(自动采集), 新增${saveResult.newCount}条(AI核验), 重复${saveResult.dupCount}条`);
+
+    // 2026-11-27 硬闸门：自动采集条目必须抓原文正文核验含创兴银行才入库
+    console.log('  -> 正文核验入库（必须含创兴银行字样）...');
+    try {
+      const { execFileSync } = require('child_process');
+      const vout = execFileSync(process.execPath, [path.join(__dirname, '..', '..', 'scripts', 'verify_and_import.js')], { encoding: 'utf-8', timeout: 240000 });
+      const vm = vout.match(/正文含创兴入库 (\d+) 条/);
+      if (vm) { const verifiedCount = parseInt(vm[1]); totalNewNews += verifiedCount; }
+      console.log(`     正文核验通过入库: ${vm ? vm[1] : '见日志'} 条`);
+    } catch (e) {
+      console.log(`  -> 正文核验出错（非致命）: ${e.message}`);
+    }
 
     // 记录采集日志
     try { store.addFetchLogs(results); } catch(e) { console.log(`  -> 日志记录失败（非致命）: ${e.message}`); }
