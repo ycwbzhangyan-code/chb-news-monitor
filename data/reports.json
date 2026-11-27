@@ -1,7 +1,67 @@
 [
   {
+    "report_date": "2026-11-25",
+    "generated_at": "2026-11-27T01:35:20.016Z",
+    "stats": {
+      "total": 1,
+      "A": 0,
+      "B": 0,
+      "C": 1,
+      "X": 0
+    },
+    "summary": "C类·例行提及 1 条",
+    "tiers": {
+      "B": [],
+      "C": [
+        {
+          "id": "stheadline_3623151_1127",
+          "hash": "698a940483c29685",
+          "title": "定存攻略｜美元定期存款大比拼 经济数据公布前夕多间银行加息",
+          "link": "https://www.stheadline.com/zh-hans/investment/3623151/定存攻略美元定期存款大比拼-经济数据公布前夕多间银行加息",
+          "description": "Wiser宽口径：正文含「创兴银行云利率定存1万至600万美元3个月有4.15厘」，创兴列入美元定存利率比较表（邻近窗口）（2026-11-27 经 WebFetch 核验原文标题/发布时间/URL/正文）",
+          "source_id": "stheadline_3623151",
+          "source_name": "星島頭條",
+          "source_cat": "hk_business",
+          "lang": "CH",
+          "pub_date": "2026-11-25",
+          "fetch_date": "2026-11-27T01:31:54.886Z",
+          "tier": "C",
+          "tier_reason": "Wiser宽口径：正文含「创兴银行云利率定存1万至600万美元3个月有4.15厘」，创兴列入美元定存利率比较表（邻近窗口）",
+          "status": "active",
+          "ai_researched": 0,
+          "discovery": "wide_topic_verified",
+          "created_at": "2026-11-27T01:31:54.887Z"
+        }
+      ],
+      "X": []
+    },
+    "by_category": {
+      "hk_business": [
+        {
+          "id": "stheadline_3623151_1127",
+          "hash": "698a940483c29685",
+          "title": "定存攻略｜美元定期存款大比拼 经济数据公布前夕多间银行加息",
+          "link": "https://www.stheadline.com/zh-hans/investment/3623151/定存攻略美元定期存款大比拼-经济数据公布前夕多间银行加息",
+          "description": "Wiser宽口径：正文含「创兴银行云利率定存1万至600万美元3个月有4.15厘」，创兴列入美元定存利率比较表（邻近窗口）（2026-11-27 经 WebFetch 核验原文标题/发布时间/URL/正文）",
+          "source_id": "stheadline_3623151",
+          "source_name": "星島頭條",
+          "source_cat": "hk_business",
+          "lang": "CH",
+          "pub_date": "2026-11-25",
+          "fetch_date": "2026-11-27T01:31:54.886Z",
+          "tier": "C",
+          "tier_reason": "Wiser宽口径：正文含「创兴银行云利率定存1万至600万美元3个月有4.15厘」，创兴列入美元定存利率比较表（邻近窗口）",
+          "status": "active",
+          "ai_researched": 0,
+          "discovery": "wide_topic_verified",
+          "created_at": "2026-11-27T01:31:54.887Z"
+        }
+      ]
+    }
+  },
+  {
     "report_date": "2026-11-24",
-    "generated_at": "2026-11-26T05:40:23.725Z",
+    "generated_at": "2026-11-27T01:34:46.124Z",
     "stats": {
       "total": 1,
       "A": 0,
@@ -61,7 +121,7 @@
   },
   {
     "report_date": "2026-11-20",
-    "generated_at": "2026-11-26T05:40:23.736Z",
+    "generated_at": "2026-11-27T01:34:46.138Z",
     "stats": {
       "total": 16,
       "A": 0,

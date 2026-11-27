@@ -60,6 +60,15 @@ const TIER_B_KEYWORDS = [
   '加息', '儲局', '富融', '眾安', '建行',
 ];
 
+// 2026-11-27 结构性漏检修复：
+// Wiser 宽口径新闻（如星岛 11/25「定存攻略｜美元定期存款大比拼」，标题不点名创兴，
+// 但正文利率表点名「创兴银行云利率定存4.15厘」）在第1步就被 matchKeywords 漏掉，
+// 导致下游已修好的 guardHit 宽口径闸门根本收不到。这里让「宽口径主题标题」也进入候选，
+// 由 guardHit 做最终判定（WIDE_TOPIC + 排除宏观噪音/历史/官网稿）。
+const WIDE_TOPIC_TITLE = /(定存|定期存款|存款利率|存息|高息|息率|美元定存|港元定存|外幣定存|匯率|兌換|找換|稅貸|稅務貸款|按揭|最優惠利率|P按|HIBOR|拆息|利率比較|息率比較|存款優惠|加息|減息|減息|降息)/i;
+// 必须与香港/银行语境共现，避免抓成纯宏观（美股/金价）新闻
+const HK_BANK_CONTEXT = /(銀行|银行|港元|hk|香港|港銀|港银|定存|存款|稅貸|税贷|按揭|P按|HIBOR|拆息|理財|理财|ballot)/i;
+
 function matchKeywords(title, desc) {
   const text = (title + ' ' + (desc || '')).toLowerCase();
   for (const term of WATCH_TERMS) {
@@ -71,6 +80,8 @@ function matchKeywords(title, desc) {
     const regex = new RegExp('(^|[^a-z])' + lower.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + '([^a-z]|$)', 'i');
     if (regex.test(text)) return true;
   }
+  // 宽口径候选：标题含银行存贷汇主题词且带香港/银行语境 → 放行到 guardHit 终判
+  if (WIDE_TOPIC_TITLE.test(title) && HK_BANK_CONTEXT.test(title + ' ' + (desc || ''))) return true;
   return false;
 }
 
@@ -358,16 +369,45 @@ function saveAllHits(rssHits, aiHits) {
   const stats = { total: autoHits.length, pass: 0, direct: 0, wide_topic: 0, rejected: {} };
 
   const guarded = [];
+  const wideCandidates = [];  // 2026-11-27: 宽口径候选（正文含创兴须核验）单列，不自动入库
   for (const item of autoHits) {
     const g = guardHit(item);
     if (g.pass) {
       stats.pass++;
       stats[g.layer] = (stats[g.layer] || 0) + 1;
-      // 宽口径候选标为 C 类 + discovery，供汇报时单列"邻近窗口"
-      guarded.push({ ...item, _layer: g.layer, tier_hint: g.tier_hint || item.tier_hint });
+      if (g.layer === 'wide_topic') {
+        // Wiser 口径：标题不点名创兴、但正文利率表点名才算。RSS/GNews 摘要不含正文，
+        // 无法自动判定，故写入候选池待核验，避免误收（2026-11-21/22 污染教训）。
+        wideCandidates.push({
+          title: item.title,
+          link: item.link || '',
+          desc: item.desc || '',
+          source_name: item.source_name || '',
+          pub_date: item.pubDate || item.date || '',
+          discovered_at: new Date().toISOString(),
+          status: 'pending_verification',
+        });
+      } else {
+        guarded.push({ ...item, _layer: g.layer, tier_hint: g.tier_hint || item.tier_hint });
+      }
     } else {
       stats.rejected[g.reason] = (stats.rejected[g.reason] || 0) + 1;
     }
+  }
+  // 持久化宽口径候选池（与现有库分离，保留最近 800 条）
+  if (wideCandidates.length) {
+    try {
+      const candsPath = path.join(__dirname, '..', '..', 'data', 'wide_topic_candidates.json');
+      let prev = [];
+      if (fs.existsSync(candsPath)) {
+        try { prev = JSON.parse(fs.readFileSync(candsPath, 'utf-8')); } catch (e) { prev = []; }
+      }
+      const existingTitles = new Set(prev.map(x => store.normalizeTitle(x.title)));
+      const fresh = wideCandidates.filter(x => !existingTitles.has(store.normalizeTitle(x.title)));
+      const merged = [...prev, ...fresh].slice(-800);
+      fs.writeFileSync(candsPath, JSON.stringify(merged, null, 2));
+      stats.wide_candidates_new = fresh.length;
+    } catch (e) { stats.wide_candidates_error = e.message; }
   }
 
   // 合并所有命中，添加hash和tier
