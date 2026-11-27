@@ -43,7 +43,7 @@ jobs:
         run: |
           git config --global user.name "CHB Monitor Bot"
           git config --global user.email "chb-monitor-bot@chonghing.uk"
-          git add data/news_items.json data/reports.json data/fetch_logs.json data/source_status.json 2>/dev/null || true
+          git add data/news_items.json data/reports.json data/fetch_logs.json data/source_status.json data/run_health.json 2>/dev/null || true
           if git diff --staged --quiet 2>/dev/null; then
             echo "No data changes to commit"
           else

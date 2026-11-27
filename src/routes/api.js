@@ -307,6 +307,13 @@ router.get('/system/status', (req, res) => {
 
   const stats = store.getStats();
 
+  // P0-3：运行健康度（区分「成功但无命中」与「采集失败」）
+  let runHealth = null;
+  try {
+    const hp = path.join(__dirname, '..', '..', 'data', 'run_health.json');
+    if (fs.existsSync(hp)) runHealth = JSON.parse(fs.readFileSync(hp, 'utf-8'));
+  } catch (e) { /* ignore */ }
+
   // 付费订阅生效倒计时（经济日报、信报）
   let paidSubscriptions = [];
   try {
@@ -326,6 +333,7 @@ router.get('/system/status', (req, res) => {
   res.json({
     last_collection: lastRun,
     last_run_stats: lastRunStats,
+    run_health: runHealth,
     total_news: stats.total_items,
     latest_news_date: stats.latest_date,
     total_sources: (() => { try { return require('../../config/sources_full_config.json').sources.length; } catch (e) { return 3865; } })(),

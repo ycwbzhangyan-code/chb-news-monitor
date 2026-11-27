@@ -41,11 +41,30 @@ async function runCloudDailyJob() {
   const startTime = Date.now();
   let totalNewNews = 0;
   let reportSaved = false;
+  // P0-3：运行健康度——区分「采集成功但无命中」与「采集失败/部分失败」
+  const runHealth = {
+    run_at: new Date().toISOString(),
+    steps: [],
+    status: 'ok',           // ok | ok_no_hits | partial_failure | failed
+    failed_steps: [],
+    note: '',
+  };
+  function recordStep(name, ok, detail) {
+    runHealth.steps.push({ name, ok, detail: detail || '' });
+    if (!ok) runHealth.failed_steps.push(name);
+  }
 
   // ========== 第1步：RSS 采集 ==========
+  let rssOk = false, rssFetched = 0, rssMatched = 0;
   try {
     console.log('[1/6] 采集RSS源（全量配置）...');
     const { results, hits } = await fetchAllSources(7, 20);
+    rssOk = true;
+    rssFetched = hits.length;
+    rssMatched = results.reduce((s, r) => s + (r.items_matched || 0), 0);
+    const okSources = results.filter(r => r.status === 'ok').length;
+    const badSources = results.filter(r => r.status !== 'ok' && r.status !== 'no_rss').length;
+    recordStep('rss_fetch', badSources < results.length * 0.5, `${okSources}/${results.length}源正常，${badSources}源失败，命中${hits.length}`);
     console.log(`  -> 采集完成: ${results.length}个源返回, ${hits.length}条命中`);
 
     // ========== 第2步：运行爬虫 ==========
@@ -125,8 +144,10 @@ async function runCloudDailyJob() {
         console.log(`  -> 中国金融商报网爬虫出错（非致命）: ${e.message}`);
       }
       
+      recordStep('site_crawlers', true, `匯港通訊${hkcdHits.length}条/U Lifestyle${ulifeHits.length}条`);
       crawlerHits = [...hkcdHits, ...ulifeHits, ...crawlerHits];
     } catch (e) {
+      recordStep('site_crawlers', false, e.message);
       console.log(`  -> 爬虫运行出错（非致命）: ${e.message}`);
     }
 
@@ -159,8 +180,10 @@ async function runCloudDailyJob() {
       const vout = execFileSync(process.execPath, [path.join(__dirname, '..', '..', 'scripts', 'verify_and_import.js')], { encoding: 'utf-8', timeout: 240000 });
       const vm = vout.match(/正文含创兴入库 (\d+) 条/);
       if (vm) { const verifiedCount = parseInt(vm[1]); totalNewNews += verifiedCount; }
+      recordStep('body_verification', true, vm ? `入库${vm[1]}条` : '见日志');
       console.log(`     正文核验通过入库: ${vm ? vm[1] : '见日志'} 条`);
     } catch (e) {
+      recordStep('body_verification', false, e.message);
       console.log(`  -> 正文核验出错（非致命）: ${e.message}`);
     }
 
@@ -173,9 +196,12 @@ async function runCloudDailyJob() {
         [path.join(__dirname, '..', '..', 'scripts', 'broad_scan.js'), '--days', '7', '--max', '20'],
         { encoding: 'utf-8', timeout: 480000 });
       const bm = bout.match(/入库新增: (\d+) 条/);
+      const um = bout.match(/归档回填升级: (\d+) 条/);
       if (bm) { const bc = parseInt(bm[1]); totalNewNews += bc; }
+      recordStep('broad_scan', true, `新增${bm ? bm[1] : '?'}条/回填${um ? um[1] : '0'}条`);
       console.log(`     广撒网自主发现入库: ${bm ? bm[1] : '见日志'} 条`);
     } catch (e) {
+      recordStep('broad_scan', false, e.message);
       console.log(`  -> 广撒网扫描出错（非致命）: ${e.message}`);
     }
 
@@ -186,11 +212,17 @@ async function runCloudDailyJob() {
     console.log('[5/6] 生成每日报告...');
     const report = getReportForDate(todayStr);
     if (report && report.stats.total > 0) {
+      report.run_health = runHealth;
       saveDailyReport(report);
       reportSaved = true;
       console.log(`  -> 报告已生成: ${report.stats.total}条 (B:${report.stats.B} C:${report.stats.C})`);
+    } else if (['failed', 'partial_failure'].includes(runHealth.status)) {
+      console.log(`  -> 采集存在失败环节（${runHealth.status}），报告未生成；不是"今日无新闻"`);
     } else {
-      console.log(`  -> 今日无新闻，未生成报告`);
+      // 采集成功但无命中：生成一份 0 条报告并附运行健康，明确区分"成功无命中"
+      report.run_health = runHealth;
+      saveDailyReport(report);
+      console.log(`  -> 采集正常但今日无命中，已生成0条报告并标注运行健康`);
     }
 
     // 同时更新最近7天的报告（补充遗漏）
@@ -204,9 +236,33 @@ async function runCloudDailyJob() {
       }
     }
   } catch (e) {
+    recordStep('collection_pipeline', false, e.message);
     console.error(`[ERROR] 采集步骤失败:`, e.message);
     console.error(e.stack);
     // 不退出，继续尝试邮件和提交
+  }
+
+  // P0-3：汇总运行健康状态
+  {
+    const critical = ['rss_fetch', 'body_verification', 'broad_scan', 'collection_pipeline'];
+    const criticalFailed = runHealth.failed_steps.filter(s => critical.includes(s));
+    if (!runHealth.steps.length || criticalFailed.includes('collection_pipeline')) {
+      runHealth.status = 'failed';
+      runHealth.note = '采集主流程异常，今日结果不可信';
+    } else if (criticalFailed.length) {
+      runHealth.status = 'partial_failure';
+      runHealth.note = '部分采集环节失败：' + criticalFailed.join('、');
+    } else if (totalNewNews === 0) {
+      runHealth.status = 'ok_no_hits';
+      runHealth.note = '各采集环节正常完成，今日未发现正文含创兴银行的新闻';
+    } else {
+      runHealth.status = 'ok';
+      runHealth.note = '采集正常，今日新增 ' + totalNewNews + ' 条';
+    }
+    const hp = path.join(__dirname, '..', '..', 'data', 'run_health.json');
+    try { fs.writeFileSync(hp, JSON.stringify(runHealth, null, 2), 'utf-8'); }
+    catch (e) { console.log(`  -> 运行健康记录写入失败: ${e.message}`); }
+    console.log(`[运行健康] ${runHealth.status}: ${runHealth.note}`);
   }
 
   // ========== 第6步：邮件推送 ==========

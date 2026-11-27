@@ -401,6 +401,19 @@ body { font-family: var(--ff); background: var(--c-bg); color: var(--c-text); li
 .status-checking {
   font-size: 12px; color: var(--c-muted);
 }
+/* P0-3：采集失败/部分失败状态横幅，与"成功无命中"区分 */
+.system-status:has(.status-icon.warn) {
+  background: linear-gradient(135deg, #fffbeb 0%, #fef3c7 100%);
+  border-color: #fcd34d; border-left-color: #f59e0b;
+}
+.system-status:has(.status-icon.error) {
+  background: linear-gradient(135deg, #fef2f2 0%, #fee2e2 100%);
+  border-color: #fecaca; border-left-color: #dc2626;
+}
+.status-icon.warn { background: #f59e0b; }
+.status-icon.error { background: #dc2626; }
+.status-title.warn { color: #b45309; }
+.status-title.error { color: #b91c1c; }
 
 /* ===== 全部新闻视图 ===== */
 .allnews-toolbar {

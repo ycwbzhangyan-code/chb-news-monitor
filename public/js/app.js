@@ -168,21 +168,38 @@ async function loadSystemStatus() {
     }
 
     const s = data.last_run_stats || {};
+    const h = data.run_health || {};
     const paid = (data.paid_subscriptions || []).map(p => {
       if (p.active) return `${p.name} 已生效`;
       return `${p.name} ${p.days_until_active} 天后生效`;
     }).join(' · ');
 
+    // P0-3：根据运行健康状态显示不同横幅，不把采集失败显示成"今日无新闻"
+    const HEALTH = {
+      ok:                { icon: '✓', title: '系统运行正常 · 每日自动采集中', cls: '' },
+      ok_no_hits:        { icon: '✓', title: '采集正常完成 · 今日无命中', cls: '' },
+      partial_failure:   { icon: '!', title: '部分采集环节失败 · 请检查', cls: 'warn' },
+      failed:            { icon: '✕', title: '采集失败 · 今日结果不可信', cls: 'error' },
+    };
+    const hinfo = HEALTH[h.status] || HEALTH[(!s.fetched && lastRun) ? 'failed' : 'ok'];
+    let detail = `最近采集：${runTimeStr}（香港时间） · 扫描 ${s.fetched || 0} 条资讯 · 覆盖 ${s.sources || 0} 个媒体源`;
+    if (h.status === 'ok_no_hits') {
+      detail += ' · <strong>采集环节均正常，确认今日无正文含创兴的新闻</strong>';
+    } else if (h.status === 'partial_failure' || h.status === 'failed') {
+      detail += ` · <strong>${h.note || '存在失败环节'}</strong>`;
+      const failed = (h.failed_steps || []).join('、');
+      if (failed) detail += `（失败环节：${failed}）`;
+    } else if (s.matched === 0) {
+      detail += ' · 本轮暂无创兴银行相关新闻';
+    } else {
+      detail += ` · 命中 ${s.matched} 条`;
+    }
+
     el.innerHTML = `
-      <div class="status-icon">✓</div>
+      <div class="status-icon ${hinfo.cls}">${hinfo.icon}</div>
       <div class="status-content">
-        <div class="status-title">系统运行正常 · 每日自动采集中</div>
-        <div class="status-detail">
-          最近采集：${runTimeStr}（香港时间） · 
-          扫描 ${s.fetched || 0} 条资讯 · 
-          覆盖 ${s.sources || 0} 个媒体源
-          ${s.matched === 0 ? ' · <strong>本轮暂无创兴银行相关新闻</strong>' : ` · 命中 ${s.matched} 条`}
-        </div>
+        <div class="status-title ${hinfo.cls}">${hinfo.title}</div>
+        <div class="status-detail">${detail}</div>
         ${paid ? `<div class="status-detail" style="margin-top:4px">付费订阅：${paid}</div>` : ''}
       </div>
     `;
