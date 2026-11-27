@@ -25,6 +25,7 @@
         <a href="#" class="nav-link" data-view="allnews">全部新闻</a>
         <a href="#" class="nav-link" data-view="stats">数据统计</a>
         <a href="#" class="nav-link" data-view="sources">媒体源</a>
+        <a href="#" class="nav-link" data-view="wiser">Wiser对标</a>
         <a href="#" class="nav-link" data-view="search">搜索</a>
       </nav>
       <div class="topbar-right">
@@ -163,6 +164,32 @@
         </table>
       </div>
       <div class="sources-pagination" id="allnews-pagination"></div>
+    </div>
+
+    <!-- Wiser 对标视图 -->
+    <div id="view-wiser" class="view">
+      <h2 class="view-title">Wiser 2026 全年对标 <span id="wiser-total-badge" class="sources-total-badge"></span></h2>
+      <div class="wiser-note" style="background:#fff8e6;border:1px solid #ffe0a3;color:#8a6100;padding:12px 16px;border-radius:6px;margin-bottom:16px;line-height:1.7;font-size:13px;">
+        <strong>分层说明：</strong>此区为 Wiser 2026 全年 630 条监测记录的全量归档，做到一条不漏。Wiser 记录表无原文 URL 与正文，因此仅"正文已核验含创兴"的条目计入正式监测；其余仅作对标参考，<strong>不计入我方监测成果</strong>，也不混入正式新闻。
+      </div>
+      <div class="stats-overview" id="wiser-overview"><div class="loading">加载中...</div></div>
+      <div class="wiser-filter" style="margin:16px 0;">
+        <select id="wiser-layer" onchange="loadWiser(1)">
+          <option value="">全部分层</option>
+          <option value="matched_ours">正文已核验·正式监测</option>
+          <option value="title_has_chb">标题含创兴·待核验</option>
+          <option value="wide_unverified">Wiser宽口径·未核验</option>
+        </select>
+        <input type="text" id="wiser-q" placeholder="搜索标题/媒体" onkeydown="if(event.key==='Enter')loadWiser(1)" style="margin-left:8px;padding:7px 10px;border:1px solid #ddd;border-radius:4px;">
+        <button onclick="loadWiser(1)" style="padding:7px 14px;margin-left:8px;">搜索</button>
+      </div>
+      <div class="allnews-table-wrap">
+        <table class="allnews-table" id="wiser-table">
+          <thead><tr><th>日期</th><th>媒体来源</th><th>标题</th><th>分层标注</th></tr></thead>
+          <tbody id="wiser-tbody"><tr><td colspan="4">加载中...</td></tr></tbody>
+        </table>
+      </div>
+      <div class="sources-pagination" id="wiser-pagination"></div>
     </div>
 
     <!-- 数据统计视图 -->

@@ -334,4 +334,53 @@ router.get('/stats/daily', (req, res) => {
   });
 });
 
+// ===== Wiser 2026 全年对标档案（分层标注，不混入正式新闻库）=====
+// 2026-11-27 用户确认：全量补录 630 条；正文含创兴才算正式监测，其余单独标注为对标区
+router.get('/wiser/stats', (req, res) => {
+  try {
+    const p = path.join(__dirname, '..', '..', 'data', 'wiser_clippings_2026.json');
+    if (!fs.existsSync(p)) return res.json({ total: 0 });
+    const d = JSON.parse(fs.readFileSync(p, 'utf-8'));
+    const byLayer = {};
+    const byMonth = {};
+    const bySource = {};
+    for (const x of d) {
+      byLayer[x.layer] = (byLayer[x.layer] || 0) + 1;
+      const m = String(x.date).slice(0, 7);
+      byMonth[m] = (byMonth[m] || 0) + 1;
+      bySource[x.source] = (bySource[x.source] || 0) + 1;
+    }
+    const topSources = Object.entries(bySource).sort((a, b) => b[1] - a[1]).slice(0, 15).map(([k, v]) => ({ source: k, count: v }));
+    const sortedDates = d.map(x => x.date).filter(Boolean).sort();
+    res.json({
+      total: d.length,
+      date_range: { from: sortedDates.length ? sortedDates[0] : '', to: sortedDates.length ? sortedDates[sortedDates.length - 1] : '' },
+      by_layer: byLayer,
+      official_verified: byLayer.matched_ours || 0,
+      reference_only: (byLayer.title_has_chb || 0) + (byLayer.wide_unverified || 0),
+      by_month: byMonth,
+      top_sources: topSources,
+      note: 'Wiser记录表无URL/正文；仅正文核验含创兴的计入正式监测，其余为对标参考，不算我方监测成果',
+    });
+  } catch (e) { res.status(500).json({ error: e.message }); }
+});
+
+router.get('/wiser/list', (req, res) => {
+  try {
+    const p = path.join(__dirname, '..', '..', 'data', 'wiser_clippings_2026.json');
+    if (!fs.existsSync(p)) return res.json({ items: [], total: 0 });
+    let d = JSON.parse(fs.readFileSync(p, 'utf-8'));
+    const layer = req.query.layer || '';
+    const source = req.query.source || '';
+    const q = req.query.q || '';
+    if (layer) d = d.filter(x => x.layer === layer);
+    if (source) d = d.filter(x => x.source === source);
+    if (q) { const k = q.toLowerCase(); d = d.filter(x => x.title.toLowerCase().includes(k) || x.source.toLowerCase().includes(k)); }
+    const total = d.length;
+    const page = parseInt(req.query.page) || 1;
+    const pageSize = Math.min(parseInt(req.query.pageSize) || 50, 200);
+    res.json({ total, page, pageSize, items: d.slice((page - 1) * pageSize, page * pageSize) });
+  } catch (e) { res.status(500).json({ error: e.message }); }
+});
+
 module.exports = router;

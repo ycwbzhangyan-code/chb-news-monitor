@@ -13,8 +13,59 @@ document.querySelectorAll('.nav-link').forEach(link => {
     if (view === 'sources') loadSources();
     if (view === 'allnews') loadAllNews(1);
     if (view === 'stats') loadStats();
+    if (view === 'wiser') loadWiser(1);
   });
 });
+
+// ===== Wiser 2026 对标 =====
+async function loadWiserStats() {
+  try {
+    const resp = await fetch('/api/wiser/stats');
+    const d = await resp.json();
+    const el = document.getElementById('wiser-overview');
+    if (!el) return;
+    if (!d.total) { el.innerHTML = '<div class="loading">暂无 Wiser 对标数据</div>'; return; }
+    const pct = d.total ? Math.round(d.official_verified / d.total * 100) : 0;
+    el.innerHTML = `
+      <div class="kpi-row">
+        <div class="kpi-card kpi-total"><div class="kpi-label">Wiser 全年记录</div><div class="kpi-value">${d.total}</div></div>
+        <div class="kpi-card kpi-b"><div class="kpi-label">正文已核验·正式监测</div><div class="kpi-value">${d.official_verified}</div></div>
+        <div class="kpi-card kpi-c"><div class="kpi-label">对标参考·未核验</div><div class="kpi-value">${d.reference_only}</div></div>
+      </div>
+      <div style="color:#666;font-size:13px;margin-top:10px;">记录范围：${d.date_range.from} 至 ${d.date_range.to} ｜ 来源 ${Object.keys(d.by_month||{}).length} 个月 ｜ 正文核验覆盖率 ${pct}%</div>`;
+    const badge = document.getElementById('wiser-total-badge');
+    if (badge) badge.textContent = `${d.total} 条`;
+  } catch (e) { console.error('Wiser stats error', e); }
+}
+
+async function loadWiser(page) {
+  await loadWiserStats();
+  try {
+    const layer = document.getElementById('wiser-layer')?.value || '';
+    const q = document.getElementById('wiser-q')?.value || '';
+    const params = new URLSearchParams({ page, pageSize: 50 });
+    if (layer) params.set('layer', layer);
+    if (q) params.set('q', q);
+    const resp = await fetch('/api/wiser/list?' + params.toString());
+    const d = await resp.json();
+    const tbody = document.getElementById('wiser-tbody');
+    if (!tbody) return;
+    if (!d.items || !d.items.length) { tbody.innerHTML = '<tr><td colspan="4" style="text-align:center;">无匹配记录</td></tr>'; return; }
+    const labelClass = { matched_ours: 'kpi-b', title_has_chb: 'kpi-c', wide_unverified: '' };
+    tbody.innerHTML = d.items.map(x => `
+      <tr>
+        <td>${x.date}</td>
+        <td>${escapeHtml(x.source)}</td>
+        <td title="${escapeHtml(x.title)}">${escapeHtml(x.title.length > 70 ? x.title.slice(0, 70) + '…' : x.title)}</td>
+        <td style="font-size:12px;">${escapeHtml(x.label)}</td>
+      </tr>`).join('');
+    const pages = Math.ceil(d.total / d.pageSize);
+    const pag = document.getElementById('wiser-pagination');
+    if (pag) pag.innerHTML = `共 ${d.total} 条 / ${pages} 页 ｜ 当前第 ${d.page} 页` +
+      (d.page > 1 ? ` <button onclick="loadWiser(${d.page - 1})">上一页</button>` : '') +
+      (d.page < pages ? ` <button onclick="loadWiser(${d.page + 1})">下一页</button>` : '');
+  } catch (e) { console.error('Wiser list error', e); }
+}
 
 // 格式化日期
 function formatDate(dateStr) {
