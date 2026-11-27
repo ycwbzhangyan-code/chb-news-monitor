@@ -753,15 +753,15 @@
   },
   {
     "report_date": "2026-11-19",
-    "generated_at": "2026-11-26T05:40:23.739Z",
+    "generated_at": "2026-11-27T02:11:19.903Z",
     "stats": {
-      "total": 1,
+      "total": 2,
       "A": 0,
       "B": 0,
-      "C": 1,
+      "C": 2,
       "X": 0
     },
-    "summary": "C类·例行提及 1 条",
+    "summary": "C类·例行提及 2 条",
     "tiers": {
       "B": [],
       "C": [
@@ -775,7 +775,7 @@
           "source_name": "經濟通",
           "source_cat": "hk_business",
           "lang": "CH",
-          "pub_date": "2026-11-19T12:00:00+08:00",
+          "pub_date": "2026-11-19",
           "fetch_date": "2026-11-20T07:01:14.066Z",
           "tier": "C",
           "tier_reason": "利率市场动态（对标Wiser收录口径）",
@@ -783,6 +783,25 @@
           "ai_researched": 0,
           "created_at": "2026-11-20T07:01:14.066Z",
           "wiser_benchmark": true
+        },
+        {
+          "id": "prcfe_116537_1127",
+          "hash": "e37f2d6781fdc2ad",
+          "title": "功率半导体龙头闻泰科技亮相央视 “APEC 财经之夜”： 开放合作赋能 AI 与新能源，筑牢全球能源基座",
+          "link": "http://china.prcfe.com/global/2026/1119/116537.html",
+          "description": "Wiser宽口径：正文「客户资金...与大众银行(香港)、创兴银行等持牌银行合作」点名创兴银行（非新闻主体，邻近窗口）（2026-11-27 经 curl 抓取原文核验标题/时间/URL/正文；该源为crawl_only无RSS故此前漏检）",
+          "source_id": "s2613",
+          "source_name": "中国金融商报网",
+          "source_cat": "hk_print",
+          "lang": "CH",
+          "pub_date": "2026-11-19",
+          "fetch_date": "2026-11-27T02:11:19.803Z",
+          "tier": "C",
+          "tier_reason": "Wiser宽口径：正文「客户资金...与大众银行(香港)、创兴银行等持牌银行合作」点名创兴银行（非新闻主体，邻近窗口）",
+          "status": "active",
+          "ai_researched": 0,
+          "discovery": "wide_topic_verified",
+          "created_at": "2026-11-27T02:11:19.805Z"
         }
       ],
       "X": []
@@ -799,7 +818,7 @@
           "source_name": "經濟通",
           "source_cat": "hk_business",
           "lang": "CH",
-          "pub_date": "2026-11-19T12:00:00+08:00",
+          "pub_date": "2026-11-19",
           "fetch_date": "2026-11-20T07:01:14.066Z",
           "tier": "C",
           "tier_reason": "利率市场动态（对标Wiser收录口径）",
@@ -807,6 +826,27 @@
           "ai_researched": 0,
           "created_at": "2026-11-20T07:01:14.066Z",
           "wiser_benchmark": true
+        }
+      ],
+      "hk_print": [
+        {
+          "id": "prcfe_116537_1127",
+          "hash": "e37f2d6781fdc2ad",
+          "title": "功率半导体龙头闻泰科技亮相央视 “APEC 财经之夜”： 开放合作赋能 AI 与新能源，筑牢全球能源基座",
+          "link": "http://china.prcfe.com/global/2026/1119/116537.html",
+          "description": "Wiser宽口径：正文「客户资金...与大众银行(香港)、创兴银行等持牌银行合作」点名创兴银行（非新闻主体，邻近窗口）（2026-11-27 经 curl 抓取原文核验标题/时间/URL/正文；该源为crawl_only无RSS故此前漏检）",
+          "source_id": "s2613",
+          "source_name": "中国金融商报网",
+          "source_cat": "hk_print",
+          "lang": "CH",
+          "pub_date": "2026-11-19",
+          "fetch_date": "2026-11-27T02:11:19.803Z",
+          "tier": "C",
+          "tier_reason": "Wiser宽口径：正文「客户资金...与大众银行(香港)、创兴银行等持牌银行合作」点名创兴银行（非新闻主体，邻近窗口）",
+          "status": "active",
+          "ai_researched": 0,
+          "discovery": "wide_topic_verified",
+          "created_at": "2026-11-27T02:11:19.805Z"
         }
       ]
     }

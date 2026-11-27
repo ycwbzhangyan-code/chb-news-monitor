@@ -113,6 +113,17 @@ async function runCloudDailyJob() {
       } catch (e) {
         console.log(`  -> 理财聚合爬虫出错（非致命）: ${e.message}`);
       }
+
+      // 中国金融商报网爬虫（候选发现器 — 2026-11-27 新增）
+      // 该源无RSS(crawl_only)，用户指出 11/19 文章正文点名创兴被漏检。
+      console.log('  -> 中国金融商报网爬虫（候选发现器）...');
+      try {
+        const { crawlPRCFE } = require('../../scripts/crawler_prcfe');
+        const prcfeResult = await crawlPRCFE();
+        console.log(`     中国金融商报网: 扫描 ${prcfeResult.scanned} 篇，发现 ${prcfeResult.added} 条候选（待核验）`);
+      } catch (e) {
+        console.log(`  -> 中国金融商报网爬虫出错（非致命）: ${e.message}`);
+      }
       
       crawlerHits = [...hkcdHits, ...ulifeHits, ...crawlerHits];
     } catch (e) {
