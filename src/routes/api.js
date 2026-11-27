@@ -225,26 +225,43 @@ router.get('/news/export', (req, res) => {
   let items = store.getAllNews().filter(n => n.status === 'active');
   items.sort((a, b) => (b.pub_date || '').localeCompare(a.pub_date || ''));
 
-  const formatted = items.map((n, i) => ({
-    seq: i + 1,
-    date: store.normalizeDate(n.pub_date),
-    tier: n.tier || 'C',
-    title: n.title,
-    source: n.source_name || '',
-    link: n.link || '',
-    description: (n.description || '').substring(0, 500),
-    tier_reason: n.tier_reason || '',
-    lang: n.lang || 'CH',
-    provenance: n.provenance || 'ours',
-    source_note: n.provenance === 'wiser_archive'
-      ? ('Wiser专业监测归档·' + (n.wiser_label || n.wiser_layer || ''))
-      : '我方自动采集·正文核验',
-    body_verified: !!n.body_verified,
-  }));
+  const formatted = items.map((n, i) => {
+    // P2-6：导出口径按真实标记，不把未核验标成"正文核验"
+    const prov = n.provenance || 'ours';
+    let source_note;
+    if (prov === 'wiser_archive') {
+      // wiser_label 是导入时的历史文案（含"正文已核验含创兴"），无链接时不可信，
+      // 用 wiser_layer 客观分层替代，避免导出误导为已核验。
+      source_note = 'Wiser历史归档·' + (n.wiser_layer || '未分层');
+      if (n.link_status === 'unverifiable_no_link') source_note += '·无原文链接不可独立核验';
+    } else if (prov === 'broad_scan') {
+      source_note = '自主发现·广撒网正文核验' + (n.body_scope ? '·' + n.body_scope : '');
+    } else {
+      source_note = n.body_verified
+        ? '自主采集·正文已核验' + (n.discovery ? '·' + n.discovery : '')
+        : '自主采集·待正文核验' + (n.verification_status ? '·' + n.verification_status : '');
+    }
+    return {
+      seq: i + 1,
+      date: store.normalizeDate(n.pub_date),
+      tier: n.tier || 'C',
+      title: n.title,
+      source: n.source_name || '',
+      link: n.link || '',
+      description: (n.description || '').substring(0, 500),
+      tier_reason: n.tier_reason || '',
+      lang: n.lang || 'CH',
+      provenance: prov,
+      source_note,
+      body_verified: !!n.body_verified,
+      body_scope: n.body_scope || '',
+      verification_status: n.verification_status || '',
+    };
+  });
 
   if (format === 'csv') {
     // CSV导出
-    const headers = ['序号', '日期', '分级', '标题', '来源', '链接', '分级原因', '语言', '数据来源', '正文核验'];
+    const headers = ['序号', '日期', '分级', '标题', '来源', '链接', '分级原因', '语言', '数据来源', '来源标记', '正文核验', '正文范围', '核验状态'];
     let csv = '\uFEFF' + headers.join(',') + '\n'; // BOM for Excel UTF-8
     for (const item of formatted) {
       const row = [
@@ -256,8 +273,11 @@ router.get('/news/export', (req, res) => {
         '"' + (item.link || '').replace(/"/g, '""') + '"',
         '"' + (item.tier_reason || '').replace(/"/g, '""') + '"',
         item.lang,
+        '"' + (item.provenance || '') + '"',
         '"' + (item.source_note || '').replace(/"/g, '""') + '"',
         item.body_verified ? '已核验含创兴' : '未核验',
+        '"' + (item.body_scope || '') + '"',
+        '"' + (item.verification_status || '') + '"',
       ];
       csv += row.join(',') + '\n';
     }
