@@ -155,11 +155,13 @@ router.get('/news/all', (req, res) => {
 
   let items = store.getAllNews().filter(n => n.status === 'active');
 
-  // 来源筛选：wiser_archive=Wiser归档 / ours=我方采集核验
+  // 来源筛选：wiser_archive=Wiser归档 / broad_scan=广撒网自主发现 / ours=其他我方采集
   if (provenance === 'wiser_archive') {
     items = items.filter(n => n.provenance === 'wiser_archive');
+  } else if (provenance === 'broad_scan') {
+    items = items.filter(n => n.provenance === 'broad_scan');
   } else if (provenance === 'ours') {
-    items = items.filter(n => n.provenance !== 'wiser_archive');
+    items = items.filter(n => n.provenance !== 'wiser_archive' && n.provenance !== 'broad_scan');
   }
 
   // 日期范围筛选

@@ -164,6 +164,21 @@ async function runCloudDailyJob() {
       console.log(`  -> 正文核验出错（非致命）: ${e.message}`);
     }
 
+    // 2026-11-27 广撒网发现能力：从高价值媒体 sitemap 批量取文章 URL，
+    // 不靠标题关键词，逐篇抓正文核验含创兴才入库（发现"标题不点名创兴"的漏检新闻）
+    console.log('  -> 广撒网正文核验（高价值媒体，发现标题不点名创兴的新闻）...');
+    try {
+      const { execFileSync } = require('child_process');
+      const bout = execFileSync(process.execPath,
+        [path.join(__dirname, '..', '..', 'scripts', 'broad_scan.js'), '--days', '7', '--max', '20'],
+        { encoding: 'utf-8', timeout: 480000 });
+      const bm = bout.match(/入库新增: (\d+) 条/);
+      if (bm) { const bc = parseInt(bm[1]); totalNewNews += bc; }
+      console.log(`     广撒网自主发现入库: ${bm ? bm[1] : '见日志'} 条`);
+    } catch (e) {
+      console.log(`  -> 广撒网扫描出错（非致命）: ${e.message}`);
+    }
+
     // 记录采集日志
     try { store.addFetchLogs(results); } catch(e) { console.log(`  -> 日志记录失败（非致命）: ${e.message}`); }
 

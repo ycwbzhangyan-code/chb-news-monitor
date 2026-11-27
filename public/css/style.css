@@ -546,6 +546,9 @@ body { font-family: var(--ff); background: var(--c-bg); color: var(--c-text); li
 .src-tag.ours {
   background: #e2efda; color: #375623;
 }
+.src-tag.broadscan {
+  background: #c0dd97; color: #27500a; font-weight: 600;
+}
 
 /* 打印样式 */
 @media print {

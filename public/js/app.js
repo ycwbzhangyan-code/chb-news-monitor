@@ -531,7 +531,10 @@ async function loadAllNews(page) {
         ? `<a href="${item.link}" target="_blank" rel="noopener">${escapeHtml(item.title)}</a>`
         : escapeHtml(item.title);
       let statusHtml;
-      if (item.provenance === 'wiser_archive') {
+      if (item.provenance === 'broad_scan') {
+        statusHtml = '<span class="src-tag broadscan">广撒网自主发现</span> ' +
+          '<span class="src-tag verified">正文已核验含创兴</span>';
+      } else if (item.provenance === 'wiser_archive') {
         // Wiser 归档：按分层给出核验状态标签
         const layerMap = {
           matched_ours: '<span class="src-tag verified">正文已核验含创兴</span>',
