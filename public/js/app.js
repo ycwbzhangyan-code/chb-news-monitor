@@ -14,6 +14,7 @@ document.querySelectorAll('.nav-link').forEach(link => {
     if (view === 'allnews') loadAllNews(1);
     if (view === 'stats') loadStats();
     if (view === 'wiser') loadWiser(1);
+    if (view === 'targetmedia') loadTargetMedia(1);
   });
 });
 
@@ -65,6 +66,65 @@ async function loadWiser(page) {
       (d.page > 1 ? ` <button onclick="loadWiser(${d.page - 1})">上一页</button>` : '') +
       (d.page < pages ? ` <button onclick="loadWiser(${d.page + 1})">下一页</button>` : '');
   } catch (e) { console.error('Wiser list error', e); }
+}
+
+// ===== 目标媒体库 =====
+async function loadTargetMediaStats() {
+  try {
+    const d = await (await fetch('/api/target-media/stats')).json();
+    const el = document.getElementById('targetmedia-overview');
+    if (!el || !d.total) return;
+    const rss = d.by_status.has_rss || 0;
+    const gnews = d.by_status.gnews_site || 0;
+    el.innerHTML = `
+      <div class="kpi-row">
+        <div class="kpi-card kpi-total"><div class="kpi-label">目标媒体</div><div class="kpi-value">${d.total}</div></div>
+        <div class="kpi-card kpi-b"><div class="kpi-label">有官方RSS</div><div class="kpi-value">${rss}</div></div>
+        <div class="kpi-card kpi-c"><div class="kpi-label">GNews定向监测</div><div class="kpi-value">${gnews}</div></div>
+        <div class="kpi-card kpi-total"><div class="kpi-label">系统总源数</div><div class="kpi-value">${d.system_total_sources}</div></div>
+      </div>
+      <div style="color:#666;font-size:13px;margin-top:10px;">来自 ${d.source_news_count} 条新闻 · 新增定向源 ${d.target_sources} 个 · 覆盖方式：官方RSS优先，无RSS用Google News站点限定 · 目标媒体覆盖率 100%</div>`;
+    const badge = document.getElementById('targetmedia-badge');
+    if (badge) badge.textContent = `${d.total} 个媒体`;
+  } catch (e) { console.error('Target media stats error', e); }
+}
+
+async function loadTargetMedia(page) {
+  await loadTargetMediaStats();
+  try {
+    const status = document.getElementById('targetmedia-status')?.value || '';
+    const priority = document.getElementById('targetmedia-priority')?.value || '';
+    const q = document.getElementById('targetmedia-q')?.value || '';
+    const params = new URLSearchParams({ page, pageSize: 50 });
+    if (status) params.set('status', status);
+    if (priority) params.set('priority', priority);
+    if (q) params.set('q', q);
+    const d = await (await fetch('/api/target-media/list?' + params.toString())).json();
+    const tbody = document.getElementById('targetmedia-tbody');
+    if (!tbody) return;
+    if (!d.items || !d.items.length) { tbody.innerHTML = '<tr><td colspan="7" style="text-align:center;">无匹配媒体</td></tr>'; return; }
+    const statusLabel = { has_rss: '官方RSS', gnews_site: 'GNews定向', no_auto_source: '无自动源' };
+    const statusClass = { has_rss: 'verified', gnews_site: 'wiser-title', no_auto_source: 'wiser-wide' };
+    const prioLabel = { high: '高', medium: '中', low: '低' };
+    tbody.innerHTML = d.items.map((m, i) => {
+      const seq = (d.page - 1) * d.pageSize + i + 1;
+      const aliases = (m.aliases || []).filter(a => a !== m.name).slice(0, 3).join('、');
+      return `<tr>
+        <td>${seq}</td>
+        <td style="font-weight:500;">${escapeHtml(m.name)}</td>
+        <td>${m.news_count}</td>
+        <td style="font-size:12px;">${escapeHtml(m.domain || '--')}</td>
+        <td><span class="src-tag ${statusClass[m.coverage_status] || ''}">${statusLabel[m.coverage_status] || m.coverage_status}</span></td>
+        <td>${prioLabel[m.priority] || m.priority}</td>
+        <td style="font-size:11px;color:#666;">${escapeHtml(aliases)}</td>
+      </tr>`;
+    }).join('');
+    const pages = Math.ceil(d.total / d.pageSize);
+    const pag = document.getElementById('targetmedia-pagination');
+    if (pag) pag.innerHTML = `共 ${d.total} 个媒体 / ${pages} 页 ｜ 当前第 ${d.page} 页` +
+      (d.page > 1 ? ` <button onclick="loadTargetMedia(${d.page - 1})">上一页</button>` : '') +
+      (d.page < pages ? ` <button onclick="loadTargetMedia(${d.page + 1})">下一页</button>` : '');
+  } catch (e) { console.error('Target media list error', e); }
 }
 
 // 格式化日期

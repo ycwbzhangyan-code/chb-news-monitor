@@ -402,4 +402,59 @@ router.get('/wiser/list', (req, res) => {
   } catch (e) { res.status(500).json({ error: e.message }); }
 });
 
+// ===== 目标媒体库（627条新闻涉及的媒体，全部纳入监测对象）=====
+router.get('/target-media/stats', (req, res) => {
+  try {
+    const p = path.join(__dirname, '..', '..', 'data', 'target_media_library.json');
+    if (!fs.existsSync(p)) return res.json({ total: 0 });
+    const d = JSON.parse(fs.readFileSync(p, 'utf-8'));
+    const byStatus = {};
+    const byPriority = {};
+    for (const m of d.media) {
+      byStatus[m.coverage_status] = (byStatus[m.coverage_status] || 0) + 1;
+      byPriority[m.priority] = (byPriority[m.priority] || 0) + 1;
+    }
+    const cfgPath = path.join(__dirname, '..', '..', 'config', 'sources_full_config.json');
+    let totalSources = 0, targetSources = 0;
+    if (fs.existsSync(cfgPath)) {
+      const cfg = JSON.parse(fs.readFileSync(cfgPath, 'utf-8'));
+      totalSources = cfg.sources.length;
+      targetSources = cfg.sources.filter(s => String(s.id).startsWith('tmedia')).length;
+    }
+    res.json({
+      total: d.media.length,
+      source_news_count: d.meta.source_news_count,
+      target_sources: d.meta.target_sources,
+      by_status: byStatus,
+      by_priority: byPriority,
+      system_total_sources: totalSources,
+      system_target_sources: targetSources,
+      generated: d.meta.created,
+      note: '目标媒体库来自627条新闻的媒体来源，全部建立定向监测源（GNews site:限定），保证覆盖面',
+    });
+  } catch (e) { res.status(500).json({ error: e.message }); }
+});
+
+router.get('/target-media/list', (req, res) => {
+  try {
+    const p = path.join(__dirname, '..', '..', 'data', 'target_media_library.json');
+    if (!fs.existsSync(p)) return res.json({ items: [], total: 0 });
+    const d = JSON.parse(fs.readFileSync(p, 'utf-8'));
+    let items = d.media;
+    const status = req.query.status || '';
+    const priority = req.query.priority || '';
+    const q = req.query.q || '';
+    if (status) items = items.filter(m => m.coverage_status === status);
+    if (priority) items = items.filter(m => m.priority === priority);
+    if (q) {
+      const k = q.toLowerCase();
+      items = items.filter(m => m.name.toLowerCase().includes(k) || (m.aliases || []).some(a => a.toLowerCase().includes(k)) || (m.domain || '').toLowerCase().includes(k));
+    }
+    const total = items.length;
+    const page = parseInt(req.query.page) || 1;
+    const pageSize = Math.min(parseInt(req.query.pageSize) || 50, 200);
+    res.json({ total, page, pageSize, items: items.slice((page - 1) * pageSize, page * pageSize) });
+  } catch (e) { res.status(500).json({ error: e.message }); }
+});
+
 module.exports = router;

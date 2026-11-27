@@ -26,6 +26,7 @@
         <a href="#" class="nav-link" data-view="stats">数据统计</a>
         <a href="#" class="nav-link" data-view="sources">媒体源</a>
         <a href="#" class="nav-link" data-view="wiser">Wiser对标</a>
+        <a href="#" class="nav-link" data-view="targetmedia">目标媒体库</a>
         <a href="#" class="nav-link" data-view="search">搜索</a>
       </nav>
       <div class="topbar-right">
@@ -195,6 +196,38 @@
         </table>
       </div>
       <div class="sources-pagination" id="wiser-pagination"></div>
+    </div>
+
+    <!-- 目标媒体库视图 -->
+    <div id="view-targetmedia" class="view">
+      <h2 class="view-title">目标媒体库 <span id="targetmedia-badge" class="sources-total-badge"></span></h2>
+      <div style="background:#e2efda;border:1px solid #a9d08e;color:#375623;padding:12px 16px;border-radius:6px;margin-bottom:16px;line-height:1.7;font-size:13px;">
+        <strong>覆盖说明：</strong>本库从监测到的 627 条新闻中提取全部媒体来源，别名归一后形成目标监测对象。每个目标媒体均已建立 GNews site: 定向监测源（有官方 RSS 的优先用 RSS），确保 Wiser 报道过创兴的媒体我们都在监测，覆盖面一条不漏。
+      </div>
+      <div class="stats-overview" id="targetmedia-overview"><div class="loading">加载中...</div></div>
+      <div class="wiser-filter" style="margin:16px 0;">
+        <select id="targetmedia-status" onchange="loadTargetMedia(1)">
+          <option value="">全部覆盖状态</option>
+          <option value="has_rss">有官方RSS</option>
+          <option value="gnews_site">GNews定向监测</option>
+          <option value="no_auto_source">无自动源</option>
+        </select>
+        <select id="targetmedia-priority" onchange="loadTargetMedia(1)" style="margin-left:8px;">
+          <option value="">全部优先级</option>
+          <option value="high">高优先级(≥5条)</option>
+          <option value="medium">中优先级(2-4条)</option>
+          <option value="low">低优先级(1条)</option>
+        </select>
+        <input type="text" id="targetmedia-q" placeholder="搜索媒体名/域名" onkeydown="if(event.key==='Enter')loadTargetMedia(1)" style="margin-left:8px;padding:7px 10px;border:1px solid #ddd;border-radius:4px;">
+        <button onclick="loadTargetMedia(1)" style="padding:7px 14px;margin-left:8px;">搜索</button>
+      </div>
+      <div class="allnews-table-wrap">
+        <table class="allnews-table" id="targetmedia-table">
+          <thead><tr><th>#</th><th>目标媒体</th><th>命中条数</th><th>域名</th><th>覆盖方式</th><th>优先级</th><th>别名</th></tr></thead>
+          <tbody id="targetmedia-tbody"><tr><td colspan="7">加载中...</td></tr></tbody>
+        </table>
+      </div>
+      <div class="sources-pagination" id="targetmedia-pagination"></div>
     </div>
 
     <!-- 数据统计视图 -->

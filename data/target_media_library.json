@@ -1,0 +1,1855 @@
+{
+  "meta": {
+    "version": "2.0",
+    "created": "2026-11-27T14:04:07.209277",
+    "purpose": "目标媒体监测库：Wiser 2026 报道过创兴的媒体，全部纳入自主监测对象",
+    "source_news_count": 627,
+    "target_media_count": 76,
+    "target_sources": 72,
+    "note": "由 627 条新闻的媒体来源提取、别名归一生成；每个目标媒体建立 GNews site: 定向监测源"
+  },
+  "media": [
+    {
+      "name": "香港經濟日報",
+      "news_count": 267,
+      "aliases": [
+        "香港經濟日報",
+        "香港經濟日報·理財",
+        "香港經濟日報網"
+      ],
+      "domain": "hket.com",
+      "topic": "創興銀行 OR 定存 OR 存款利率",
+      "category": "hk_business",
+      "provenance": [
+        "ours",
+        "wiser"
+      ],
+      "matched_existing_sources": [
+        {
+          "id": "s0573",
+          "name": "hket.com 香港經濟日報",
+          "rss": true
+        },
+        {
+          "id": "s0164",
+          "name": "HKET 香港經濟日報網",
+          "rss": true
+        },
+        {
+          "id": "s0627",
+          "name": "HKET 香港經濟日報",
+          "rss": true
+        }
+      ],
+      "existing_with_rss": 3,
+      "target_source_id": "tmedia_9c5b8a",
+      "coverage_status": "has_rss",
+      "priority": "high"
+    },
+    {
+      "name": "信報",
+      "news_count": 43,
+      "aliases": [
+        "信報(即時新聞)",
+        "信報網",
+        "信報財經新聞",
+        "信報財經新聞網",
+        "信報財經網"
+      ],
+      "domain": "hkej.com",
+      "topic": "創興銀行 OR 定存 OR 存款利率",
+      "category": "hk_business",
+      "provenance": [
+        "wiser"
+      ],
+      "matched_existing_sources": [
+        {
+          "id": "s0151",
+          "name": "EJ Insight 信報(即時新聞)",
+          "rss": false
+        },
+        {
+          "id": "s0389",
+          "name": "The Trus 信報財經新聞",
+          "rss": true
+        }
+      ],
+      "existing_with_rss": 1,
+      "target_source_id": "tmedia_b455bb",
+      "coverage_status": "has_rss",
+      "priority": "high"
+    },
+    {
+      "name": "U Lifestyle",
+      "news_count": 42,
+      "aliases": [
+        "U Lifestyle",
+        "U Lifestyle·理財",
+        "Ulifestyle"
+      ],
+      "domain": "ulifestyle.com.hk",
+      "topic": "創興銀行 OR 定存 OR 定期存款",
+      "category": "hk_lifestyle",
+      "provenance": [
+        "ours",
+        "wiser"
+      ],
+      "matched_existing_sources": [],
+      "existing_with_rss": 0,
+      "target_source_id": "tmedia_e607af",
+      "coverage_status": "gnews_site",
+      "priority": "high"
+    },
+    {
+      "name": "明報",
+      "news_count": 42,
+      "aliases": [
+        "明報",
+        "明報新聞網",
+        "明報網站",
+        "明報財經網"
+      ],
+      "domain": "mingpao.com",
+      "topic": "創興銀行 OR 定存 OR 定期存款",
+      "category": "hk_business",
+      "provenance": [
+        "wiser"
+      ],
+      "matched_existing_sources": [
+        {
+          "id": "x0001",
+          "name": "明報·財經",
+          "rss": true
+        },
+        {
+          "id": "s0153",
+          "name": "mpfinance. 明報財經網",
+          "rss": true
+        },
+        {
+          "id": "s0162",
+          "name": "Ming Pao 明報網站",
+          "rss": true
+        }
+      ],
+      "existing_with_rss": 3,
+      "target_source_id": "tmedia_e1cf4f",
+      "coverage_status": "has_rss",
+      "priority": "high"
+    },
+    {
+      "name": "星島",
+      "news_count": 33,
+      "aliases": [
+        "星島日報",
+        "星島日報網",
+        "星島頭條",
+        "星島頭條網",
+        "頭條日報"
+      ],
+      "domain": "stheadline.com",
+      "topic": "創興銀行 OR 定存 OR 存款",
+      "category": "hk_business",
+      "provenance": [
+        "ours",
+        "wiser"
+      ],
+      "matched_existing_sources": [
+        {
+          "id": "x0002",
+          "name": "星島頭條·RSS",
+          "rss": true
+        },
+        {
+          "id": "s0165",
+          "name": "Sing Tao 星島頭條網",
+          "rss": false
+        },
+        {
+          "id": "g3005",
+          "name": "GNewsSite-星島頭條-定存",
+          "rss": true
+        }
+      ],
+      "existing_with_rss": 2,
+      "target_source_id": "tmedia_53410b",
+      "coverage_status": "has_rss",
+      "priority": "high"
+    },
+    {
+      "name": "港生活",
+      "news_count": 21,
+      "aliases": [
+        "港生活"
+      ],
+      "domain": "hkulifestyle.com",
+      "topic": "創興銀行 OR 定存",
+      "category": "hk_lifestyle",
+      "provenance": [
+        "wiser"
+      ],
+      "matched_existing_sources": [],
+      "existing_with_rss": 0,
+      "target_source_id": "tmedia_2b6383",
+      "coverage_status": "gnews_site",
+      "priority": "high"
+    },
+    {
+      "name": "eZone",
+      "news_count": 16,
+      "aliases": [
+        "e-zone",
+        "eZone",
+        "ezone"
+      ],
+      "domain": "ezone.hk",
+      "topic": "創興銀行 OR 定存 OR 匯率",
+      "category": "hk_tech",
+      "provenance": [
+        "wiser"
+      ],
+      "matched_existing_sources": [
+        {
+          "id": "w4343",
+          "name": "WG-ezone.hk",
+          "rss": true
+        },
+        {
+          "id": "s0342",
+          "name": "ezone hk e-zone",
+          "rss": false
+        }
+      ],
+      "existing_with_rss": 1,
+      "target_source_id": "tmedia_02d592",
+      "coverage_status": "has_rss",
+      "priority": "high"
+    },
+    {
+      "name": "香港01",
+      "news_count": 15,
+      "aliases": [
+        "HK01",
+        "香港01"
+      ],
+      "domain": "hk01.com",
+      "topic": "創興銀行 OR 定存",
+      "category": "hk_business",
+      "provenance": [
+        "wiser"
+      ],
+      "matched_existing_sources": [
+        {
+          "id": "s0222",
+          "name": "HK01 香港01",
+          "rss": true
+        },
+        {
+          "id": "s0614",
+          "name": "HK01",
+          "rss": true
+        },
+        {
+          "id": "s0616",
+          "name": "HK01",
+          "rss": true
+        },
+        {
+          "id": "s0763",
+          "name": "hk01.org 香港01調查組",
+          "rss": true
+        },
+        {
+          "id": "s0394",
+          "name": "Volo Car 香港01",
+          "rss": true
+        }
+      ],
+      "existing_with_rss": 5,
+      "target_source_id": "tmedia_59825f",
+      "coverage_status": "has_rss",
+      "priority": "high"
+    },
+    {
+      "name": "匯港通訊",
+      "news_count": 13,
+      "aliases": [
+        "匯港通訊"
+      ],
+      "domain": "hkspectrum.com",
+      "topic": "創興銀行 OR 定存",
+      "category": "hk_news_agency",
+      "provenance": [
+        "wiser"
+      ],
+      "matched_existing_sources": [],
+      "existing_with_rss": 0,
+      "target_source_id": "tmedia_84ce15",
+      "coverage_status": "gnews_site",
+      "priority": "high"
+    },
+    {
+      "name": "搜狐新聞",
+      "news_count": 12,
+      "aliases": [
+        "搜狐新聞",
+        "搜狐新聞 APP",
+        "搜狐新闻"
+      ],
+      "domain": "sohu.com",
+      "topic": "创兴银行 OR 定存",
+      "category": "cn_mainland",
+      "provenance": [
+        "wiser"
+      ],
+      "matched_existing_sources": [
+        {
+          "id": "s2160",
+          "name": "sohu.com 搜狐",
+          "rss": true
+        }
+      ],
+      "existing_with_rss": 1,
+      "target_source_id": "tmedia_30b30b",
+      "coverage_status": "has_rss",
+      "priority": "high"
+    },
+    {
+      "name": "經濟通",
+      "news_count": 7,
+      "aliases": [
+        "經濟通"
+      ],
+      "domain": "etnet.com.hk",
+      "topic": "創興銀行 OR 定存",
+      "category": "hk_business",
+      "provenance": [
+        "wiser"
+      ],
+      "matched_existing_sources": [],
+      "existing_with_rss": 0,
+      "target_source_id": "tmedia_dce7a8",
+      "coverage_status": "gnews_site",
+      "priority": "high"
+    },
+    {
+      "name": "東網",
+      "news_count": 6,
+      "aliases": [
+        "on.cc東網",
+        "東網"
+      ],
+      "domain": "on.cc",
+      "topic": "創興銀行 OR 定存",
+      "category": "hk_business",
+      "provenance": [
+        "wiser"
+      ],
+      "matched_existing_sources": [
+        {
+          "id": "s0173",
+          "name": "ON.CC 東方報業集團",
+          "rss": true
+        },
+        {
+          "id": "s0178",
+          "name": "ON.CC (In 東方互動(即時新聞)",
+          "rss": true
+        }
+      ],
+      "existing_with_rss": 2,
+      "target_source_id": "tmedia_754f98",
+      "coverage_status": "has_rss",
+      "priority": "high"
+    },
+    {
+      "name": "文匯報",
+      "news_count": 6,
+      "aliases": [
+        "大公文匯網",
+        "文匯報",
+        "文匯網"
+      ],
+      "domain": "wenweipo.com",
+      "topic": "創興銀行 OR 定存",
+      "category": "hk_business",
+      "provenance": [
+        "wiser"
+      ],
+      "matched_existing_sources": [],
+      "existing_with_rss": 0,
+      "target_source_id": "tmedia_958b2d",
+      "coverage_status": "gnews_site",
+      "priority": "high"
+    },
+    {
+      "name": "新浪財經",
+      "news_count": 5,
+      "aliases": [
+        "搜狐 | 新浪財經",
+        "新浪財經",
+        "新浪财经/上海证券报"
+      ],
+      "domain": "sina.com.cn",
+      "topic": "创兴银行 OR 定存",
+      "category": "cn_finance",
+      "provenance": [
+        "ours",
+        "wiser"
+      ],
+      "matched_existing_sources": [
+        {
+          "id": "s3196",
+          "name": "com.cn",
+          "rss": true
+        },
+        {
+          "id": "s3197",
+          "name": "com.cn",
+          "rss": true
+        },
+        {
+          "id": "s3199",
+          "name": "com.cn",
+          "rss": true
+        },
+        {
+          "id": "s3791",
+          "name": "sina.com.cn 新浪网",
+          "rss": true
+        },
+        {
+          "id": "s0659",
+          "name": "Sinaquote 新浪財經",
+          "rss": true
+        }
+      ],
+      "existing_with_rss": 5,
+      "target_source_id": "tmedia_6eca4c",
+      "coverage_status": "has_rss",
+      "priority": "high"
+    },
+    {
+      "name": "新假期",
+      "news_count": 5,
+      "aliases": [
+        "新假期"
+      ],
+      "domain": "weekendweekly.com",
+      "topic": "創興銀行 OR 定存",
+      "category": "hk_lifestyle",
+      "provenance": [
+        "wiser"
+      ],
+      "matched_existing_sources": [],
+      "existing_with_rss": 0,
+      "target_source_id": "tmedia_ea3ad2",
+      "coverage_status": "gnews_site",
+      "priority": "high"
+    },
+    {
+      "name": "香港商報",
+      "news_count": 4,
+      "aliases": [
+        "香港商報網"
+      ],
+      "domain": "hkcommercial.com",
+      "topic": "創興銀行 OR 定存",
+      "category": "hk_business",
+      "provenance": [
+        "wiser"
+      ],
+      "matched_existing_sources": [
+        {
+          "id": "s0177",
+          "name": "HKCD 香港商報網",
+          "rss": false
+        },
+        {
+          "id": "s0684",
+          "name": "Hong Kong 香港商報",
+          "rss": false
+        }
+      ],
+      "existing_with_rss": 0,
+      "target_source_id": "tmedia_323417",
+      "coverage_status": "gnews_site",
+      "priority": "medium"
+    },
+    {
+      "name": "The Standard",
+      "news_count": 4,
+      "aliases": [
+        "The Standard",
+        "The Standard (Web)"
+      ],
+      "domain": "thestandard.com.hk",
+      "topic": "Chong Hing Bank OR fixed deposit",
+      "category": "hk_business",
+      "provenance": [
+        "wiser"
+      ],
+      "matched_existing_sources": [],
+      "existing_with_rss": 0,
+      "target_source_id": "tmedia_5bbf78",
+      "coverage_status": "gnews_site",
+      "priority": "medium"
+    },
+    {
+      "name": "澳門日報",
+      "news_count": 4,
+      "aliases": [
+        "澳門日報"
+      ],
+      "domain": "modaily.com.mo",
+      "topic": "創興銀行 OR 定存",
+      "category": "mo_media",
+      "provenance": [
+        "wiser"
+      ],
+      "matched_existing_sources": [
+        {
+          "id": "s1286",
+          "name": "Macau Dai 澳門日報 時報",
+          "rss": false
+        }
+      ],
+      "existing_with_rss": 0,
+      "target_source_id": "tmedia_a9ec81",
+      "coverage_status": "gnews_site",
+      "priority": "medium"
+    },
+    {
+      "name": "am730網",
+      "news_count": 4,
+      "aliases": [
+        "am730網"
+      ],
+      "domain": "am730.com.hk",
+      "topic": "創興銀行 OR 定存",
+      "category": "hk_business",
+      "provenance": [
+        "wiser"
+      ],
+      "matched_existing_sources": [
+        {
+          "id": "s0224",
+          "name": "am730 We am730網",
+          "rss": false
+        }
+      ],
+      "existing_with_rss": 0,
+      "target_source_id": "tmedia_70977f",
+      "coverage_status": "gnews_site",
+      "priority": "medium"
+    },
+    {
+      "name": "大公報",
+      "news_count": 4,
+      "aliases": [
+        "大公報",
+        "大公網",
+        "大公財經"
+      ],
+      "domain": "takungpao.com",
+      "topic": "創興銀行 OR 定存",
+      "category": "hk_business",
+      "provenance": [
+        "wiser"
+      ],
+      "matched_existing_sources": [],
+      "existing_with_rss": 0,
+      "target_source_id": "tmedia_56a9fa",
+      "coverage_status": "gnews_site",
+      "priority": "medium"
+    },
+    {
+      "name": "讀特新聞",
+      "news_count": 3,
+      "aliases": [
+        "讀特新聞",
+        "讀特深圳",
+        "讀特深圳 | 深圳特區報"
+      ],
+      "domain": "dutenews.com",
+      "topic": "创兴银行 OR 定存",
+      "category": "cn_mainland",
+      "provenance": [
+        "wiser"
+      ],
+      "matched_existing_sources": [],
+      "existing_with_rss": 0,
+      "target_source_id": "tmedia_57ad8c",
+      "coverage_status": "gnews_site",
+      "priority": "medium"
+    },
+    {
+      "name": "證券日報",
+      "news_count": 3,
+      "aliases": [
+        "證券日報網",
+        "证券日报"
+      ],
+      "domain": "zqrb.cn",
+      "topic": "创兴银行 OR 定存",
+      "category": "cn_finance",
+      "provenance": [
+        "ours",
+        "wiser"
+      ],
+      "matched_existing_sources": [],
+      "existing_with_rss": 0,
+      "target_source_id": "tmedia_05bec0",
+      "coverage_status": "gnews_site",
+      "priority": "medium"
+    },
+    {
+      "name": "中財網",
+      "news_count": 3,
+      "aliases": [
+        "中財網"
+      ],
+      "domain": "cnfin.com",
+      "topic": "创兴银行 OR 定存",
+      "category": "cn_mainland",
+      "provenance": [
+        "wiser"
+      ],
+      "matched_existing_sources": [],
+      "existing_with_rss": 0,
+      "target_source_id": "tmedia_9a4c10",
+      "coverage_status": "gnews_site",
+      "priority": "medium"
+    },
+    {
+      "name": "華富財經",
+      "news_count": 2,
+      "aliases": [
+        "華富財經"
+      ],
+      "domain": "quamnet.com",
+      "topic": "創興銀行 OR 定存",
+      "category": "hk_finance",
+      "provenance": [
+        "wiser"
+      ],
+      "matched_existing_sources": [
+        {
+          "id": "s0577",
+          "name": "Quamnet 華富財經-中文版",
+          "rss": false
+        }
+      ],
+      "existing_with_rss": 0,
+      "target_source_id": "tmedia_ddbff1",
+      "coverage_status": "gnews_site",
+      "priority": "medium"
+    },
+    {
+      "name": "南方Plus App",
+      "news_count": 2,
+      "aliases": [
+        "南方Plus App",
+        "南方plus APP"
+      ],
+      "domain": "southplus.com",
+      "topic": "创兴银行 OR 定存",
+      "category": "cn_mainland",
+      "provenance": [
+        "wiser"
+      ],
+      "matched_existing_sources": [],
+      "existing_with_rss": 0,
+      "target_source_id": "tmedia_25ea46",
+      "coverage_status": "gnews_site",
+      "priority": "medium"
+    },
+    {
+      "name": "市民日報",
+      "news_count": 2,
+      "aliases": [
+        "市民日報"
+      ],
+      "domain": "shimindaily.com.mo",
+      "topic": "創興銀行 OR 定存",
+      "category": "mo_media",
+      "provenance": [
+        "wiser"
+      ],
+      "matched_existing_sources": [
+        {
+          "id": "s1281",
+          "name": "shmindaily 市民日報",
+          "rss": false
+        }
+      ],
+      "existing_with_rss": 0,
+      "target_source_id": "tmedia_c64af0",
+      "coverage_status": "gnews_site",
+      "priority": "medium"
+    },
+    {
+      "name": "今日頭條",
+      "news_count": 2,
+      "aliases": [
+        "今日頭條"
+      ],
+      "domain": "toutiao.com",
+      "topic": "创兴银行 OR 定存",
+      "category": "cn_aggregate",
+      "provenance": [
+        "wiser"
+      ],
+      "matched_existing_sources": [
+        {
+          "id": "s2162",
+          "name": "toutiao.com 今日頭條",
+          "rss": false
+        }
+      ],
+      "existing_with_rss": 0,
+      "target_source_id": "tmedia_cbe956",
+      "coverage_status": "gnews_site",
+      "priority": "medium"
+    },
+    {
+      "name": "同花順財經",
+      "news_count": 2,
+      "aliases": [
+        "同花順財經",
+        "同花順財經·公司要聞"
+      ],
+      "domain": "10jqka.com.cn",
+      "topic": "创兴银行 OR 定存",
+      "category": "cn_finance",
+      "provenance": [
+        "ours",
+        "wiser"
+      ],
+      "matched_existing_sources": [
+        {
+          "id": "s3196",
+          "name": "com.cn",
+          "rss": true
+        },
+        {
+          "id": "s3197",
+          "name": "com.cn",
+          "rss": true
+        },
+        {
+          "id": "s3199",
+          "name": "com.cn",
+          "rss": true
+        }
+      ],
+      "existing_with_rss": 3,
+      "target_source_id": "tmedia_c94704",
+      "coverage_status": "has_rss",
+      "priority": "medium"
+    },
+    {
+      "name": "金融界",
+      "news_count": 2,
+      "aliases": [
+        "金融界"
+      ],
+      "domain": "jrj.com.cn",
+      "topic": "创兴银行 OR 定存",
+      "category": "cn_finance",
+      "provenance": [
+        "wiser"
+      ],
+      "matched_existing_sources": [
+        {
+          "id": "s3196",
+          "name": "com.cn",
+          "rss": true
+        },
+        {
+          "id": "s3197",
+          "name": "com.cn",
+          "rss": true
+        },
+        {
+          "id": "s3199",
+          "name": "com.cn",
+          "rss": true
+        }
+      ],
+      "existing_with_rss": 3,
+      "target_source_id": "tmedia_832fee",
+      "coverage_status": "has_rss",
+      "priority": "medium"
+    },
+    {
+      "name": "智通財經",
+      "news_count": 2,
+      "aliases": [
+        "智通財經",
+        "智通财经APP"
+      ],
+      "domain": "zhitongcaijing.com",
+      "topic": "创兴银行 OR 定存",
+      "category": "hk_finance",
+      "provenance": [
+        "wiser"
+      ],
+      "matched_existing_sources": [
+        {
+          "id": "s2069",
+          "name": "zhitongcai 智通財經",
+          "rss": false
+        }
+      ],
+      "existing_with_rss": 0,
+      "target_source_id": "tmedia_13a9aa",
+      "coverage_status": "gnews_site",
+      "priority": "medium"
+    },
+    {
+      "name": "證券之星",
+      "news_count": 2,
+      "aliases": [
+        "證券之星",
+        "证券之星"
+      ],
+      "domain": "stockstar.com",
+      "topic": "创兴银行 OR 定存",
+      "category": "cn_finance",
+      "provenance": [
+        "wiser"
+      ],
+      "matched_existing_sources": [],
+      "existing_with_rss": 0,
+      "target_source_id": "tmedia_76b736",
+      "coverage_status": "gnews_site",
+      "priority": "medium"
+    },
+    {
+      "name": "格隆匯",
+      "news_count": 2,
+      "aliases": [
+        "格隆匯",
+        "格隆汇"
+      ],
+      "domain": "gelonghui.com",
+      "topic": "创兴银行 OR 定存",
+      "category": "hk_finance",
+      "provenance": [
+        "wiser"
+      ],
+      "matched_existing_sources": [],
+      "existing_with_rss": 0,
+      "target_source_id": "tmedia_ab2376",
+      "coverage_status": "gnews_site",
+      "priority": "medium"
+    },
+    {
+      "name": "南方日報",
+      "news_count": 2,
+      "aliases": [
+        "南方日報",
+        "南方日報(全国版)(數字報)"
+      ],
+      "domain": "nfnews.com",
+      "topic": "创兴银行 OR 定存",
+      "category": "cn_mainland",
+      "provenance": [
+        "wiser"
+      ],
+      "matched_existing_sources": [],
+      "existing_with_rss": 0,
+      "target_source_id": "tmedia_5e7c33",
+      "coverage_status": "gnews_site",
+      "priority": "medium"
+    },
+    {
+      "name": "東方日報",
+      "news_count": 2,
+      "aliases": [
+        "東方日報",
+        "東方日報網"
+      ],
+      "domain": "orientaldaily.on.cc",
+      "topic": "創興銀行 OR 定存",
+      "category": "hk_business",
+      "provenance": [
+        "wiser"
+      ],
+      "matched_existing_sources": [
+        {
+          "id": "s0173",
+          "name": "ON.CC 東方報業集團",
+          "rss": true
+        },
+        {
+          "id": "s0178",
+          "name": "ON.CC (In 東方互動(即時新聞)",
+          "rss": true
+        },
+        {
+          "id": "s0814",
+          "name": "ocd.com 東方日報",
+          "rss": true
+        },
+        {
+          "id": "s0174",
+          "name": "Oriental De 東方日報網",
+          "rss": true
+        }
+      ],
+      "existing_with_rss": 4,
+      "target_source_id": "tmedia_c3cd15",
+      "coverage_status": "has_rss",
+      "priority": "medium"
+    },
+    {
+      "name": "久期財經",
+      "news_count": 2,
+      "aliases": [
+        "久期財經",
+        "久期财经"
+      ],
+      "domain": "prcfe.com",
+      "topic": "创兴银行 OR 定存",
+      "category": "cn_finance",
+      "provenance": [
+        "wiser"
+      ],
+      "matched_existing_sources": [
+        {
+          "id": "s2646",
+          "name": "prcfe.com 中國財經新聞網",
+          "rss": false
+        }
+      ],
+      "existing_with_rss": 0,
+      "target_source_id": "tmedia_8d2ca9",
+      "coverage_status": "gnews_site",
+      "priority": "medium"
+    },
+    {
+      "name": "大河財立方",
+      "news_count": 1,
+      "aliases": [
+        "大河財立方"
+      ],
+      "domain": "dahecube.com",
+      "topic": "创兴银行 OR 定存",
+      "category": "cn_mainland",
+      "provenance": [
+        "wiser"
+      ],
+      "matched_existing_sources": [],
+      "existing_with_rss": 0,
+      "target_source_id": "tmedia_7865d5",
+      "coverage_status": "gnews_site",
+      "priority": "low"
+    },
+    {
+      "name": "南方財經網",
+      "news_count": 1,
+      "aliases": [
+        "南方財經網"
+      ],
+      "domain": "stcn.com",
+      "topic": "创兴银行 OR 定存",
+      "category": "cn_finance",
+      "provenance": [
+        "wiser"
+      ],
+      "matched_existing_sources": [
+        {
+          "id": "s1532",
+          "name": "stcn.com 證券時報網 中國",
+          "rss": true
+        },
+        {
+          "id": "s2700",
+          "name": "nfcjw.com 南方財經網",
+          "rss": false
+        }
+      ],
+      "existing_with_rss": 1,
+      "target_source_id": "tmedia_138eab",
+      "coverage_status": "has_rss",
+      "priority": "low"
+    },
+    {
+      "name": "中國網",
+      "news_count": 1,
+      "aliases": [
+        "中國網"
+      ],
+      "domain": "china.com.cn",
+      "topic": "创兴银行 OR 定存",
+      "category": "cn_mainland",
+      "provenance": [
+        "wiser"
+      ],
+      "matched_existing_sources": [
+        {
+          "id": "s2184",
+          "name": "china.com.cn 中國網",
+          "rss": true
+        },
+        {
+          "id": "s3196",
+          "name": "com.cn",
+          "rss": true
+        },
+        {
+          "id": "s3197",
+          "name": "com.cn",
+          "rss": true
+        },
+        {
+          "id": "s3199",
+          "name": "com.cn",
+          "rss": true
+        }
+      ],
+      "existing_with_rss": 4,
+      "target_source_id": "tmedia_68cbdd",
+      "coverage_status": "has_rss",
+      "priority": "low"
+    },
+    {
+      "name": "雅虎(香港)",
+      "news_count": 1,
+      "aliases": [
+        "雅虎(香港)"
+      ],
+      "domain": "hk.yahoo.com",
+      "topic": "創興銀行 OR 定存",
+      "category": "hk_portal",
+      "provenance": [
+        "wiser"
+      ],
+      "matched_existing_sources": [
+        {
+          "id": "s0221",
+          "name": "Yahoo HK 雅虎(香港)",
+          "rss": false
+        }
+      ],
+      "existing_with_rss": 0,
+      "target_source_id": "tmedia_ab4b57",
+      "coverage_status": "gnews_site",
+      "priority": "low"
+    },
+    {
+      "name": "深圳特區報",
+      "news_count": 1,
+      "aliases": [
+        "深圳特區報"
+      ],
+      "domain": "sznews.com",
+      "topic": "创兴银行 OR 定存",
+      "category": "cn_mainland",
+      "provenance": [
+        "wiser"
+      ],
+      "matched_existing_sources": [],
+      "existing_with_rss": 0,
+      "target_source_id": "tmedia_df4885",
+      "coverage_status": "gnews_site",
+      "priority": "low"
+    },
+    {
+      "name": "成報",
+      "news_count": 1,
+      "aliases": [
+        "成報"
+      ],
+      "domain": "sungpao.com.hk",
+      "topic": "創興銀行 OR 定存",
+      "category": "hk_business",
+      "provenance": [
+        "wiser"
+      ],
+      "matched_existing_sources": [],
+      "existing_with_rss": 0,
+      "target_source_id": "tmedia_d079e2",
+      "coverage_status": "gnews_site",
+      "priority": "low"
+    },
+    {
+      "name": "深圳商報",
+      "news_count": 1,
+      "aliases": [
+        "深圳商報"
+      ],
+      "domain": "sznews.com",
+      "topic": "创兴银行 OR 定存",
+      "category": "cn_mainland",
+      "provenance": [
+        "wiser"
+      ],
+      "matched_existing_sources": [],
+      "existing_with_rss": 0,
+      "target_source_id": "tmedia_df4885",
+      "coverage_status": "gnews_site",
+      "priority": "low"
+    },
+    {
+      "name": "上海證券報",
+      "news_count": 1,
+      "aliases": [
+        "上海證券報"
+      ],
+      "domain": "cnstock.com",
+      "topic": "创兴银行 OR 定存",
+      "category": "cn_finance",
+      "provenance": [
+        "wiser"
+      ],
+      "matched_existing_sources": [
+        {
+          "id": "s1534",
+          "name": "Cnstock.co 上海證券 中國證券網",
+          "rss": false
+        },
+        {
+          "id": "s3172",
+          "name": "shzq.com 上海證券",
+          "rss": false
+        }
+      ],
+      "existing_with_rss": 0,
+      "target_source_id": "tmedia_061fe6",
+      "coverage_status": "gnews_site",
+      "priority": "low"
+    },
+    {
+      "name": "深圳新聞網",
+      "news_count": 1,
+      "aliases": [
+        "深圳新聞網"
+      ],
+      "domain": "sznews.com",
+      "topic": "创兴银行 OR 定存",
+      "category": "cn_mainland",
+      "provenance": [
+        "wiser"
+      ],
+      "matched_existing_sources": [
+        {
+          "id": "s1573",
+          "name": "SZNews 深圳新聞網",
+          "rss": false
+        }
+      ],
+      "existing_with_rss": 0,
+      "target_source_id": "tmedia_df4885",
+      "coverage_status": "gnews_site",
+      "priority": "low"
+    },
+    {
+      "name": "東方財經雜誌",
+      "news_count": 1,
+      "aliases": [
+        "東方財經雜誌"
+      ],
+      "domain": "eastmoney.com",
+      "topic": "创兴银行 OR 定存",
+      "category": "cn_finance",
+      "provenance": [
+        "wiser"
+      ],
+      "matched_existing_sources": [],
+      "existing_with_rss": 0,
+      "target_source_id": "tmedia_adcaaf",
+      "coverage_status": "gnews_site",
+      "priority": "low"
+    },
+    {
+      "name": "實況網",
+      "news_count": 1,
+      "aliases": [
+        "實況網"
+      ],
+      "domain": "fitnews.com.hk",
+      "topic": "創興銀行 OR 定存",
+      "category": "hk_business",
+      "provenance": [
+        "wiser"
+      ],
+      "matched_existing_sources": [],
+      "existing_with_rss": 0,
+      "target_source_id": "tmedia_172193",
+      "coverage_status": "gnews_site",
+      "priority": "low"
+    },
+    {
+      "name": "新財網",
+      "news_count": 1,
+      "aliases": [
+        "新財網"
+      ],
+      "domain": "xcfinance.com",
+      "topic": "创兴银行 OR 定存",
+      "category": "cn_finance",
+      "provenance": [
+        "wiser"
+      ],
+      "matched_existing_sources": [],
+      "existing_with_rss": 0,
+      "target_source_id": "tmedia_e2bb5f",
+      "coverage_status": "gnews_site",
+      "priority": "low"
+    },
+    {
+      "name": "21世紀經濟報道",
+      "news_count": 1,
+      "aliases": [
+        "21世紀經濟報道"
+      ],
+      "domain": "21jingji.com",
+      "topic": "创兴银行 OR 定存",
+      "category": "cn_finance",
+      "provenance": [
+        "wiser"
+      ],
+      "matched_existing_sources": [],
+      "existing_with_rss": 0,
+      "target_source_id": "tmedia_869c1c",
+      "coverage_status": "gnews_site",
+      "priority": "low"
+    },
+    {
+      "name": "國際金融報",
+      "news_count": 1,
+      "aliases": [
+        "國際金融報"
+      ],
+      "domain": "cnfin.com",
+      "topic": "创兴银行 OR 定存",
+      "category": "cn_finance",
+      "provenance": [
+        "wiser"
+      ],
+      "matched_existing_sources": [],
+      "existing_with_rss": 0,
+      "target_source_id": "tmedia_9a4c10",
+      "coverage_status": "gnews_site",
+      "priority": "low"
+    },
+    {
+      "name": "紅商網",
+      "news_count": 1,
+      "aliases": [
+        "紅商網"
+      ],
+      "domain": "redshang.com",
+      "topic": "创兴银行 OR 定存",
+      "category": "cn_mainland",
+      "provenance": [
+        "wiser"
+      ],
+      "matched_existing_sources": [],
+      "existing_with_rss": 0,
+      "target_source_id": "tmedia_4fb41a",
+      "coverage_status": "gnews_site",
+      "priority": "low"
+    },
+    {
+      "name": "大智慧資訊",
+      "news_count": 1,
+      "aliases": [
+        "大智慧資訊"
+      ],
+      "domain": "dzh.com.cn",
+      "topic": "创兴银行 OR 定存",
+      "category": "cn_finance",
+      "provenance": [
+        "wiser"
+      ],
+      "matched_existing_sources": [
+        {
+          "id": "s3196",
+          "name": "com.cn",
+          "rss": true
+        },
+        {
+          "id": "s3197",
+          "name": "com.cn",
+          "rss": true
+        },
+        {
+          "id": "s3199",
+          "name": "com.cn",
+          "rss": true
+        }
+      ],
+      "existing_with_rss": 3,
+      "target_source_id": "tmedia_c1e720",
+      "coverage_status": "has_rss",
+      "priority": "low"
+    },
+    {
+      "name": "新城廣播有限公司",
+      "news_count": 1,
+      "aliases": [
+        "新城廣播有限公司"
+      ],
+      "domain": "metraday.com",
+      "topic": "創興銀行 OR 定存",
+      "category": "hk_broadcast",
+      "provenance": [
+        "wiser"
+      ],
+      "matched_existing_sources": [
+        {
+          "id": "s0561",
+          "name": "Metr Broa 新城廣播有限公司",
+          "rss": false
+        }
+      ],
+      "existing_with_rss": 0,
+      "target_source_id": "tmedia_c48ff8",
+      "coverage_status": "gnews_site",
+      "priority": "low"
+    },
+    {
+      "name": "美通社",
+      "news_count": 1,
+      "aliases": [
+        "美通社"
+      ],
+      "domain": "prnasia.com",
+      "topic": "Chong Hing Bank OR 创兴银行",
+      "category": "news_agency",
+      "provenance": [
+        "wiser"
+      ],
+      "matched_existing_sources": [],
+      "existing_with_rss": 0,
+      "target_source_id": "tmedia_4572aa",
+      "coverage_status": "gnews_site",
+      "priority": "low"
+    },
+    {
+      "name": "阿思達克財經網",
+      "news_count": 1,
+      "aliases": [
+        "阿思達克財經網"
+      ],
+      "domain": "aastocks.com",
+      "topic": "創興銀行 OR 定存",
+      "category": "hk_finance",
+      "provenance": [
+        "wiser"
+      ],
+      "matched_existing_sources": [
+        {
+          "id": "s0190",
+          "name": "aastocks.c 阿思達克財經網",
+          "rss": false
+        },
+        {
+          "id": "s0570",
+          "name": "aastocks.c 阿思達克財經網-英文版",
+          "rss": false
+        }
+      ],
+      "existing_with_rss": 0,
+      "target_source_id": "tmedia_310f0e",
+      "coverage_status": "gnews_site",
+      "priority": "low"
+    },
+    {
+      "name": "橙新聞",
+      "news_count": 1,
+      "aliases": [
+        "橙新聞"
+      ],
+      "domain": "orangenews.com.hk",
+      "topic": "創興銀行 OR 定存",
+      "category": "hk_business",
+      "provenance": [
+        "wiser"
+      ],
+      "matched_existing_sources": [],
+      "existing_with_rss": 0,
+      "target_source_id": "tmedia_3f0c5f",
+      "coverage_status": "gnews_site",
+      "priority": "low"
+    },
+    {
+      "name": "南方都市報",
+      "news_count": 1,
+      "aliases": [
+        "南方都市報"
+      ],
+      "domain": "oeeee.com",
+      "topic": "创兴银行 OR 定存",
+      "category": "cn_mainland",
+      "provenance": [
+        "wiser"
+      ],
+      "matched_existing_sources": [],
+      "existing_with_rss": 0,
+      "target_source_id": "tmedia_0bee4f",
+      "coverage_status": "gnews_site",
+      "priority": "low"
+    },
+    {
+      "name": "廣州日報新花城",
+      "news_count": 1,
+      "aliases": [
+        "廣州日報新花城"
+      ],
+      "domain": "dayoo.com",
+      "topic": "创兴银行 OR 定存",
+      "category": "cn_mainland",
+      "provenance": [
+        "wiser"
+      ],
+      "matched_existing_sources": [
+        {
+          "id": "s2238",
+          "name": "Dayoo.com 大洋網",
+          "rss": false
+        }
+      ],
+      "existing_with_rss": 0,
+      "target_source_id": "tmedia_11acc3",
+      "coverage_status": "gnews_site",
+      "priority": "low"
+    },
+    {
+      "name": "百度APP",
+      "news_count": 1,
+      "aliases": [
+        "百度APP"
+      ],
+      "domain": "baidu.com",
+      "topic": "创兴银行 OR 定存",
+      "category": "cn_portal",
+      "provenance": [
+        "wiser"
+      ],
+      "matched_existing_sources": [],
+      "existing_with_rss": 0,
+      "target_source_id": "tmedia_60d2f4",
+      "coverage_status": "gnews_site",
+      "priority": "low"
+    },
+    {
+      "name": "快資訊",
+      "news_count": 1,
+      "aliases": [
+        "快資訊"
+      ],
+      "domain": "kuaizixun.com",
+      "topic": "创兴银行 OR 定存",
+      "category": "cn_aggregate",
+      "provenance": [
+        "wiser"
+      ],
+      "matched_existing_sources": [],
+      "existing_with_rss": 0,
+      "target_source_id": "tmedia_a3daa0",
+      "coverage_status": "gnews_site",
+      "priority": "low"
+    },
+    {
+      "name": "智富雜誌(電子版)",
+      "news_count": 1,
+      "aliases": [
+        "智富雜誌(電子版)"
+      ],
+      "domain": "smartmoney.com.hk",
+      "topic": "創興銀行 OR 定存",
+      "category": "hk_finance",
+      "provenance": [
+        "wiser"
+      ],
+      "matched_existing_sources": [],
+      "existing_with_rss": 0,
+      "target_source_id": "tmedia_a35637",
+      "coverage_status": "gnews_site",
+      "priority": "low"
+    },
+    {
+      "name": "濠江日報",
+      "news_count": 1,
+      "aliases": [
+        "濠江日報"
+      ],
+      "domain": "haoujiang.com",
+      "topic": "創興銀行 OR 定存",
+      "category": "mo_media",
+      "provenance": [
+        "wiser"
+      ],
+      "matched_existing_sources": [
+        {
+          "id": "s1292",
+          "name": "houkoonge 濠江日報",
+          "rss": false
+        },
+        {
+          "id": "s1360",
+          "name": "houkongdie 濠江日報",
+          "rss": false
+        }
+      ],
+      "existing_with_rss": 0,
+      "target_source_id": "tmedia_bd033d",
+      "coverage_status": "gnews_site",
+      "priority": "low"
+    },
+    {
+      "name": "微信公眾號 | JRRS",
+      "news_count": 1,
+      "aliases": [
+        "微信公眾號 | JRRS"
+      ],
+      "domain": "weixin.qq.com",
+      "topic": "创兴银行",
+      "category": "cn_social",
+      "provenance": [
+        "wiser"
+      ],
+      "matched_existing_sources": [
+        {
+          "id": "s2168",
+          "name": "qq.com 騰訊網",
+          "rss": false
+        }
+      ],
+      "existing_with_rss": 0,
+      "target_source_id": "tmedia_1a4563",
+      "coverage_status": "gnews_site",
+      "priority": "low"
+    },
+    {
+      "name": "經濟一週",
+      "news_count": 1,
+      "aliases": [
+        "經濟一週"
+      ],
+      "domain": "经济一周.com.hk",
+      "topic": "創興銀行 OR 定存",
+      "category": "hk_finance",
+      "provenance": [
+        "wiser"
+      ],
+      "matched_existing_sources": [
+        {
+          "id": "s0327",
+          "name": "Economic 經濟一週",
+          "rss": false
+        }
+      ],
+      "existing_with_rss": 0,
+      "target_source_id": "tmedia_eaeedd",
+      "coverage_status": "gnews_site",
+      "priority": "low"
+    },
+    {
+      "name": "ZAKER新闻",
+      "news_count": 1,
+      "aliases": [
+        "ZAKER新闻"
+      ],
+      "domain": "myzaker.com",
+      "topic": "创兴银行 OR 定存",
+      "category": "cn_aggregate",
+      "provenance": [
+        "wiser"
+      ],
+      "matched_existing_sources": [],
+      "existing_with_rss": 0,
+      "target_source_id": "tmedia_a07e83",
+      "coverage_status": "gnews_site",
+      "priority": "low"
+    },
+    {
+      "name": "NOW免費即時資訊網站",
+      "news_count": 1,
+      "aliases": [
+        "NOW免費即時資訊網站"
+      ],
+      "domain": "now.com",
+      "topic": "創興銀行 OR 定存",
+      "category": "hk_broadcast",
+      "provenance": [
+        "wiser"
+      ],
+      "matched_existing_sources": [
+        {
+          "id": "s0166",
+          "name": "Now.com (NOW免費即時資訊網站",
+          "rss": true
+        }
+      ],
+      "existing_with_rss": 1,
+      "target_source_id": "tmedia_a4d3cb",
+      "coverage_status": "has_rss",
+      "priority": "low"
+    },
+    {
+      "name": "網易",
+      "news_count": 1,
+      "aliases": [
+        "網易"
+      ],
+      "domain": "163.com",
+      "topic": "创兴银行 OR 定存",
+      "category": "cn_portal",
+      "provenance": [
+        "wiser"
+      ],
+      "matched_existing_sources": [],
+      "existing_with_rss": 0,
+      "target_source_id": "tmedia_a51423",
+      "coverage_status": "gnews_site",
+      "priority": "low"
+    },
+    {
+      "name": "港人講地",
+      "news_count": 1,
+      "aliases": [
+        "港人講地"
+      ],
+      "domain": "speakout.hk",
+      "topic": "創興銀行 OR 定存",
+      "category": "hk_business",
+      "provenance": [
+        "wiser"
+      ],
+      "matched_existing_sources": [
+        {
+          "id": "w4338",
+          "name": "WG-speakout.hk",
+          "rss": true
+        }
+      ],
+      "existing_with_rss": 1,
+      "target_source_id": "tmedia_d7b434",
+      "coverage_status": "has_rss",
+      "priority": "low"
+    },
+    {
+      "name": "CT GoodJobs",
+      "news_count": 1,
+      "aliases": [
+        "CT GoodJobs"
+      ],
+      "domain": "ctgoodjobs.hk",
+      "topic": "創興銀行 OR Chong Hing",
+      "category": "hk_jobs",
+      "provenance": [
+        "wiser"
+      ],
+      "matched_existing_sources": [],
+      "existing_with_rss": 0,
+      "target_source_id": "tmedia_15b7da",
+      "coverage_status": "gnews_site",
+      "priority": "low"
+    },
+    {
+      "name": "香港金融管理局",
+      "news_count": 1,
+      "aliases": [
+        "香港金融管理局"
+      ],
+      "domain": "hkma.gov.hk",
+      "topic": "創興銀行 OR Chong Hing",
+      "category": "hk_regulator",
+      "provenance": [
+        "ours"
+      ],
+      "matched_existing_sources": [
+        {
+          "id": "s0440",
+          "name": "gov.hk 香港特區政府中文版",
+          "rss": false
+        }
+      ],
+      "existing_with_rss": 0,
+      "target_source_id": "tmedia_4a7be5",
+      "coverage_status": "gnews_site",
+      "priority": "low"
+    },
+    {
+      "name": "巴士的報",
+      "news_count": 1,
+      "aliases": [
+        "巴士的報"
+      ],
+      "domain": "bakeryhk.com",
+      "topic": "創興銀行 OR 定存",
+      "category": "hk_business",
+      "provenance": [
+        "wiser"
+      ],
+      "matched_existing_sources": [
+        {
+          "id": "s0220",
+          "name": "Bastille Po 巴士的報",
+          "rss": false
+        }
+      ],
+      "existing_with_rss": 0,
+      "target_source_id": "tmedia_812771",
+      "coverage_status": "gnews_site",
+      "priority": "low"
+    },
+    {
+      "name": "中國證券報",
+      "news_count": 1,
+      "aliases": [
+        "中国证券报"
+      ],
+      "domain": "cs.com.cn",
+      "topic": "创兴银行 OR 定存",
+      "category": "cn_finance",
+      "provenance": [
+        "ours"
+      ],
+      "matched_existing_sources": [
+        {
+          "id": "s3196",
+          "name": "com.cn",
+          "rss": true
+        },
+        {
+          "id": "s3197",
+          "name": "com.cn",
+          "rss": true
+        },
+        {
+          "id": "s3199",
+          "name": "com.cn",
+          "rss": true
+        },
+        {
+          "id": "s3778",
+          "name": "cs.com.cn _]zon8.cn",
+          "rss": true
+        }
+      ],
+      "existing_with_rss": 4,
+      "target_source_id": "tmedia_6dfd5f",
+      "coverage_status": "has_rss",
+      "priority": "low"
+    },
+    {
+      "name": "10Life",
+      "news_count": 1,
+      "aliases": [
+        "10Life"
+      ],
+      "domain": "10life.com",
+      "topic": "Chong Hing Bank OR fixed deposit",
+      "category": "hk_finance",
+      "provenance": [
+        "ours"
+      ],
+      "matched_existing_sources": [],
+      "existing_with_rss": 0,
+      "target_source_id": "tmedia_b6b592",
+      "coverage_status": "gnews_site",
+      "priority": "low"
+    },
+    {
+      "name": "看点时报",
+      "news_count": 1,
+      "aliases": [
+        "看点时报"
+      ],
+      "domain": "kanditimes.com",
+      "topic": "创兴银行 OR 定存",
+      "category": "cn_mainland",
+      "provenance": [
+        "wiser"
+      ],
+      "matched_existing_sources": [],
+      "existing_with_rss": 0,
+      "target_source_id": "tmedia_98115a",
+      "coverage_status": "gnews_site",
+      "priority": "low"
+    },
+    {
+      "name": "觀點網",
+      "news_count": 1,
+      "aliases": [
+        "观点网"
+      ],
+      "domain": "guandian.cn",
+      "topic": "创兴银行 OR 越秀",
+      "category": "cn_finance",
+      "provenance": [
+        "wiser"
+      ],
+      "matched_existing_sources": [],
+      "existing_with_rss": 0,
+      "target_source_id": "tmedia_fb8faf",
+      "coverage_status": "gnews_site",
+      "priority": "low"
+    },
+    {
+      "name": "中國金融商報網",
+      "news_count": 1,
+      "aliases": [
+        "中国金融商报网"
+      ],
+      "domain": "prcfe.com",
+      "topic": "创兴银行 OR 定存",
+      "category": "cn_finance",
+      "provenance": [
+        "ours"
+      ],
+      "matched_existing_sources": [
+        {
+          "id": "s2646",
+          "name": "prcfe.com 中國財經新聞網",
+          "rss": false
+        },
+        {
+          "id": "s2613",
+          "name": "china.prcfe 中國金融商報網",
+          "rss": false
+        }
+      ],
+      "existing_with_rss": 0,
+      "target_source_id": "tmedia_8d2ca9",
+      "coverage_status": "gnews_site",
+      "priority": "low"
+    },
+    {
+      "name": "BusinessFocus",
+      "news_count": 1,
+      "aliases": [
+        "BusinessFocus"
+      ],
+      "domain": "businessfocus.io",
+      "topic": "創興銀行 OR 定存",
+      "category": "hk_finance",
+      "provenance": [
+        "wiser"
+      ],
+      "matched_existing_sources": [
+        {
+          "id": "w4411",
+          "name": "WG-businessfocus.io",
+          "rss": true
+        },
+        {
+          "id": "s0843",
+          "name": "businessf BusinessFocus",
+          "rss": false
+        }
+      ],
+      "existing_with_rss": 1,
+      "target_source_id": "tmedia_3ec579",
+      "coverage_status": "has_rss",
+      "priority": "low"
+    }
+  ]
+}
