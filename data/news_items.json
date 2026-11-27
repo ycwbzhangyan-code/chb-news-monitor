@@ -16619,5 +16619,24 @@
     "discovery": "wide_topic_verified",
     "created_at": "2026-11-27T01:31:54.887Z",
     "legacy_id": "stheadline_3623151_1127"
+  },
+  {
+    "id": "verified_ba67a318afe23bb7",
+    "hash": "ba67a318afe23bb7",
+    "title": "【邻近窗口·供参考】創興銀行有限公司 認可機構紀錄冊",
+    "link": "https://vpr.hkma.gov.hk/chi/regulatory-resources/registers/register-of-ais-and-lros/info/100039",
+    "description": "正文核验： 主頁 / 監管資源 / 紀錄冊 / 認可機構及本地代表辦事處紀錄冊 認可機構/本地代表辦事處名稱 創興銀行有限公司 (CHONG HING BANK LIMITED) 基本資料 類別 持牌銀行 香港主要業務地址 香 港 中 環 德 輔 道 中 24 號 創 興 銀 行 中 心 地 下 香港境外主要（点名创兴）",
+    "source_id": "s_hkma",
+    "source_name": "香港金融管理局",
+    "source_cat": "hk_print",
+    "lang": "CH",
+    "pub_date": "2026-11-05T00:00:00+08:00",
+    "fetch_date": "2026-11-27T05:35:04.350Z",
+    "tier": "C",
+    "tier_reason": "正文核验含创兴银行",
+    "status": "active",
+    "ai_researched": 1,
+    "discovery": "body_verified",
+    "body_verified_at": "2026-11-27T05:35:04.350Z"
   }
 ]
