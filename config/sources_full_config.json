@@ -2136,11 +2136,21 @@
       "lang": "CH",
       "cat": "cn_mainland",
       "cat_name": "内地媒体",
-      "rss": "https://www.hkej.com/rss/onlinenews.xml",
+      "rss": "",
       "site": "https://www.hket",
       "domain": "www.hket",
-      "access": "rss",
-      "no": 160
+      "access": "crawl_only",
+      "no": 160,
+      "rss_dead_note": "原 hkej.com/rss/onlinenews.xml 实测 HTTP 404（信报域名，非hket）；2026-11-27 停用",
+      "sitemap": [
+        "https://news.hket.com/hknews.xml",
+        "https://news.hket.com/policy.xml",
+        "https://wealth.hket.com/interest.xml",
+        "https://wealth.hket.com/saving.xml",
+        "https://wealth.hket.com/manage.xml",
+        "https://wealth.hket.com/workplace.xml"
+      ],
+      "covered_by": "scripts/broad_scan.js（sitemap逐篇正文核验）"
     },
     {
       "id": "s0161",
@@ -2188,11 +2198,21 @@
       "lang": "CH",
       "cat": "cn_mainland",
       "cat_name": "内地媒体",
-      "rss": "https://www.hkej.com/rss/onlinenews.xml",
+      "rss": "",
       "site": "",
       "domain": "",
-      "access": "rss",
-      "no": 164
+      "access": "crawl_only",
+      "no": 164,
+      "rss_dead_note": "原 hkej.com/rss/onlinenews.xml 实测 HTTP 404（信报域名，非hket）；2026-11-27 停用",
+      "sitemap": [
+        "https://news.hket.com/hknews.xml",
+        "https://news.hket.com/policy.xml",
+        "https://wealth.hket.com/interest.xml",
+        "https://wealth.hket.com/saving.xml",
+        "https://wealth.hket.com/manage.xml",
+        "https://wealth.hket.com/workplace.xml"
+      ],
+      "covered_by": "scripts/broad_scan.js（sitemap逐篇正文核验）"
     },
     {
       "id": "s0165",
@@ -7505,11 +7525,21 @@
       "lang": "CH",
       "cat": "cn_mainland",
       "cat_name": "内地媒体",
-      "rss": "https://www.hkej.com/rss/onlinenews.xml",
+      "rss": "",
       "site": "https://hket.com",
       "domain": "hket.com",
-      "access": "rss",
-      "no": 582
+      "access": "crawl_only",
+      "no": 582,
+      "rss_dead_note": "原 hkej.com/rss/onlinenews.xml 实测 HTTP 404（信报域名，非hket）；2026-11-27 停用",
+      "sitemap": [
+        "https://news.hket.com/hknews.xml",
+        "https://news.hket.com/policy.xml",
+        "https://wealth.hket.com/interest.xml",
+        "https://wealth.hket.com/saving.xml",
+        "https://wealth.hket.com/manage.xml",
+        "https://wealth.hket.com/workplace.xml"
+      ],
+      "covered_by": "scripts/broad_scan.js（sitemap逐篇正文核验）"
     },
     {
       "id": "s0574",
