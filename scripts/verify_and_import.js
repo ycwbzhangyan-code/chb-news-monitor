@@ -13,6 +13,7 @@ const fs = require('fs');
 const path = require('path');
 const crypto = require('crypto');
 const fetch = require('node-fetch');
+const store = require('../src/services/store');
 
 const BASE = path.join(__dirname, '..');
 const PENDING = path.join(BASE, 'data', 'pending_articles.json');
@@ -59,7 +60,9 @@ async function verifyBody(link) {
   const d = JSON.parse(fs.readFileSync(NEWS, 'utf-8'));
   const isArr = Array.isArray(d);
   const news = isArr ? d : (d.items || d);
-  const existing = new Set(news.filter(x => x.status === 'active').map(x => normTitle(x.title)));
+  // 用统一去重策略（同一链接 / 精确同题 / 截断标题），不再用20字前缀互含
+  const existingActive = news.filter(x => x.status === 'active');
+  const seenInBatch = [];
 
   const verified = [], rejected = [];
   for (let i = 0; i < pending.length; i += 8) {
@@ -67,9 +70,12 @@ async function verifyBody(link) {
     const results = await Promise.all(batch.map(async p => ({ p, v: await verifyBody(p.link) })));
     for (const { p, v } of results) {
       if (v.ok) {
-        if (existing.has(normTitle(p.title))) { rejected.push({ title: p.title, reason: 'duplicate' }); continue; }
+        const candidate = { title: p.title, link: p.link };
+        if (store.isDuplicate(candidate, existingActive) || store.isDuplicate(candidate, seenInBatch)) {
+          rejected.push({ title: p.title, link: p.link, reason: 'duplicate' }); continue;
+        }
         verified.push({ p, evidence: v.evidence });
-        existing.add(normTitle(p.title));
+        seenInBatch.push(candidate);
       } else {
         rejected.push({ title: p.title, link: p.link, reason: v.reason });
       }

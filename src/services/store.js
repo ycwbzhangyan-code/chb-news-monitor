@@ -70,30 +70,56 @@ function getAllNews() {
   return readJSON(NEWS_FILE) || [];
 }
 
+/**
+ * 去重辅助：只认「同一链接」或「同一报道的精确/截断标题」，不再用20字前缀互相包含。
+ * 前版 prefix 包含判定会把「港元定存…3.25厘」和「港元定存…3.5厘」等不同报道误合并。
+ */
+function titleKey(title) {
+  // 注意：不能用 normalizeTitle()——它会^[｜|].*$砍掉分隔符后的具体标题，
+  // 导致「港元定存｜…3.55厘」与「港元定存｜…3.68厘」都变成「港元定存」被误合并。
+  // 这里保留 ｜ 后的实质内容，仅去纯标点/空白/尾部媒体名，做完整标题精确比对。
+  return String(title || '')
+    .replace(/\s*\|\s*(UHK 港生活|香港01|香港經濟日報|HKET|明報|星島頭條|信報)$/i, '') // 仅剥离已知媒体后缀
+    .replace(/[…\.]{2,}$/g, '')   // 尾部省略号
+    .replace(/[\s，,。！!：:、「」"'（）()《》【】\[\]|｜]/g, '')
+    .replace(/(有片|獨家)$/g, '')
+    .toLowerCase()
+    .trim();
+}
+function linkKey(link) {
+  if (!link || !/^https?:\/\//i.test(link)) return '';
+  try {
+    const u = new URL(link);
+    return (u.host.replace(/^www\./, '') + u.pathname).replace(/\/+$/, '').toLowerCase();
+  } catch (e) { return ''; }
+}
+function isDuplicate(item, existing) {
+  const lk = linkKey(item.link);
+  const tk = titleKey(item.title);
+  if (item.hash && existing.some(n => n.hash === item.hash)) return true;
+  if (lk && existing.some(n => linkKey(n.link) === lk)) return true;      // 同一链接
+  if (!tk) return false;
+  return existing.some(n => {
+    const nt = titleKey(n.title);
+    if (!nt) return false;
+    if (nt === tk) return true;                                            // 精确同题
+    // 仅当一方是另一方的「截断标题」（以省略号结尾）时才认重复，避免相似标题误合并
+    const truncated = (s) => /[…\.]{2,}$/.test(String(s || '').trim());
+    if (truncated(n.title) && tk.startsWith(nt) && nt.length >= 8) return true;
+    if (truncated(item.title) && nt.startsWith(tk) && tk.length >= 8) return true;
+    return false;
+  });
+}
+
 function addNews(items) {
   const existing = getAllNews();
-  const existingHashes = new Set(existing.map(n => n.hash));
-  // 只与有效条目比对去重，避免重复累积
   const validExisting = existing.filter(n => n.status === 'active' || !n.status);
-  const existingNorm = validExisting.map(n => normalizeTitle(n.title));
 
   let newCount = 0;
   let dupCount = 0;
 
   for (const item of items) {
-    // SHA1去重
-    if (existingHashes.has(item.hash)) {
-      dupCount++;
-      continue;
-    }
-    // 规范化标题前缀匹配（20字）：可捕获"截断标题带..."与完整标题重复
-    const normTitle = normalizeTitle(item.title);
-    const prefix = normTitle.substring(0, 20);
-    if (prefix.length >= 6 && existingNorm.some(t => {
-      const p = t.substring(0, 20);
-      // 完全相等，或其中一个是另一个的前缀（截断标题场景）
-      return p === prefix || (p.length >= 6 && prefix.startsWith(p)) || (p.length >= 6 && p.startsWith(prefix));
-    })) {
+    if (isDuplicate(item, validExisting)) {
       dupCount++;
       continue;
     }
@@ -103,8 +129,7 @@ function addNews(items) {
       ...item,
       created_at: new Date().toISOString(),
     });
-    existingHashes.add(item.hash);
-    existingNorm.push(normTitle);
+    validExisting.push(item);   // 同批次内也去重
     newCount++;
   }
 
@@ -306,4 +331,7 @@ module.exports = {
   getStats,
   normalizeTitle,
   normalizeDate,
+  titleKey,
+  linkKey,
+  isDuplicate,
 };

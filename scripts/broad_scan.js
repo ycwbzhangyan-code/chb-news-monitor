@@ -19,6 +19,7 @@ const fs = require('fs');
 const path = require('path');
 const crypto = require('crypto');
 const { execFileSync } = require('child_process');
+const store = require('../src/services/store');
 
 const NEWS_FILE = path.join(__dirname, '..', 'data', 'news_items.json');
 const LOG_FILE = path.join(__dirname, '..', 'data', 'broad_scan_log.json');
@@ -180,10 +181,10 @@ function extractMeta(html, url) {
   return { title, date };
 }
 
+// 去重与 Wiser 回填一律用「完整规范化标题」精确比对；
+// 旧版20字前缀会把「港元定存…3.25厘」「港元定存…3.5厘」等不同报道误判为同一篇，已废弃。
 function normalizeKey(title) {
-  return (title || '').replace(/\s+/g, '')
-    .replace(/[｜|].*$/, '').replace(/[，,。！!：:、「」"'（）()《》]/g, '')
-    .toLowerCase().trim().slice(0, 20);
+  return store.titleKey(title);
 }
 
 function hashUrl(url) {
@@ -295,10 +296,9 @@ async function main() {
       titleHasChb, body: evidence, hash: urlHash, key,
     };
     if (key && existKeys.has(key)) {
-      // 命中已有标题：检查是否是 Wiser 无链接记录，可以回填真实链接 + 正文核验
+      // 命中完整同题：优先回填同日期的 Wiser 无链接记录（精确标题+日期双条件）
       const cands = wiserNoLink.get(key) || [];
-      let target = cands.find(n => n.pub_date === base.date);
-      if (!target && cands.length === 1) target = cands[0]; // 仅一条候选时保守回填
+      const target = cands.find(n => (n.pub_date || '').slice(0, 10) === base.date);
       if (target && !target.link) return { ...base, upgradeId: target.id };
       skippedDup++;
       return null;
