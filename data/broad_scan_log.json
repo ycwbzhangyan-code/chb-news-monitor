@@ -1,12 +1,12 @@
 {
-  "run": "2026-11-27T06:20:36.121Z",
+  "run": "2026-11-27T07:00:18.580Z",
   "days": 30,
-  "dry": true,
-  "scanned": 42,
+  "dry": false,
+  "scanned": 297,
   "found": 0,
   "titleHit": 0,
   "bodyHit": 0,
   "skippedDate": 0,
-  "skippedDup": 2,
+  "skippedDup": 8,
   "items": []
 }

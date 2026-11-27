@@ -18,6 +18,7 @@ const fetch = require('node-fetch');
 const fs = require('fs');
 const path = require('path');
 const crypto = require('crypto');
+const { execFileSync } = require('child_process');
 
 const NEWS_FILE = path.join(__dirname, '..', 'data', 'news_items.json');
 const LOG_FILE = path.join(__dirname, '..', 'data', 'broad_scan_log.json');
@@ -40,11 +41,32 @@ const SITEMAPS = [
     'https://news.hket.com/hknews.xml', 'https://news.hket.com/policy.xml',
   ]},
   { name: '香港01', srcId: 's0171', urls: ['https://www.hk01.com/sitemap.xml'] },
+  // 星島頭條：sitemap-index.xml 实际是完整 urlset，含 lastmod，最新在前
+  { name: '星島頭條', srcId: 's0165', urls: ['https://www.stheadline.com/sitemap-index.xml'] },
 ];
 
-// 栏目页 HTML 模式（从页面提取文章链接）
-// 明报首页为 JS 渲染，静态 HTML 取不到 article 链接，改由 GNews 定向源覆盖，此处不重复请求。
-const LIST_PAGES = [];
+// 栏目页 HTML 模式（从页面提取文章链接，逐篇抓正文核验，不筛标题）
+// 信报栏目页为静态 HTML；明报首页是 JS 跳转壳，真实入口 /明報新聞網/main 为静态 HTML；
+// U Lifestyle 理财栏目静态 HTML。三者均已实测可提取真实文章链接。
+const LIST_PAGES = [
+  { name: '信報·財經', srcId: 's0152', base: 'https://www.hkej.com',
+    urls: ['https://www.hkej.com/dailynews/finnews', 'https://www.hkej.com/dailynews/investment'],
+    linkRe: /href=["'](\/dailynews\/[^"']*\/article\/\d+\/[^"']+)["']/gi },
+  { name: '信報·頭條評論', srcId: 's0152', base: 'https://www.hkej.com',
+    urls: ['https://www.hkej.com/dailynews/headline', 'https://www.hkej.com/dailynews/commentary'],
+    linkRe: /href=["'](\/dailynews\/[^"']*\/article\/\d+\/[^"']+)["']/gi },
+  // 明报：首页是 JS 跳转壳，真实入口 /ins/經濟/main（401KB/86篇）为静态 HTML。
+  // 文章链接为 ../ins/... 相对路径，base 用两级深度的壳 URL 才能 new URL 解析到域名根；
+  // node-fetch 被 403（TLS 指纹），整条通道走 curl。
+  { name: '明報', srcId: 's0162', base: 'https://news.mingpao.com/明報新聞網/main', useCurl: true,
+    urls: ['https://news.mingpao.com/ins/%E7%B6%93%E6%BF%9F/main',
+           'https://news.mingpao.com/ins/%E5%B0%88%E9%A1%8C/focus/latest'],
+    linkRe: /href=["']([^"']*\/article\/20\d{6}\/[^"']+)["']/gi },
+  // U Lifestyle：绝对 URL，topic/detail 为文章，activity/detail 为活动，都抓正文核验
+  { name: 'U Lifestyle·理財', srcId: 'tmedia_e607af', base: '',
+    urls: ['https://hk.ulifestyle.com.hk/category/10404/理財'],
+    linkRe: /href=["'](https:\/\/hk\.ulifestyle\.com\.hk\/(?:topic|activity)\/detail\/\d+[^"']*)["']/gi },
+];
 
 const argv = process.argv.slice(2);
 function arg(name, def) {
@@ -56,16 +78,50 @@ const DAYS = parseInt(arg('days', '7'), 10);
 const MAX_PER_SITE = parseInt(arg('max', '25'), 10);
 const CUTOFF = new Date(Date.now() - DAYS * 86400000).toISOString().slice(0, 10);
 
-async function getText(url, timeout = 15000) {
+// 降级通道：部分站点（如明报）对 node-fetch 的 TLS 指纹返回 403，但 curl 正常
+function curlText(url, timeout = 15000) {
+  try {
+    const secs = Math.max(5, Math.ceil(timeout / 1000));
+    const buf = execFileSync('curl', [
+      '-sL', '--compressed', '--max-time', String(secs),
+      '-A', HDR['User-Agent'],
+      '-H', 'Accept-Language: ' + HDR['Accept-Language'],
+      url,
+    ], { maxBuffer: 12 * 1024 * 1024, timeout: timeout + 5000 });
+    let t = buf.toString('utf8');
+    if ((t.match(/\uFFFD/g) || []).length > 5) t = buf.toString('gbk');
+    return t;
+  } catch (e) { return null; }
+}
+
+// 判断是否 WAF / 人机验证 / Cloudflare 拦截页
+function isBlocked(t) {
+  return /Human Verification|awsWaf|gokuProps|Access Denied|Attention Required|cf-browser-verification|Just a moment/i.test(t.slice(0, 3000));
+}
+
+async function getText(url, timeout = 15000, useCurl = false) {
   for (let i = 0; i < 2; i++) {
+    let t = null;
+    if (useCurl) {
+      t = curlText(url, timeout);
+      if (!t || isBlocked(t)) { await new Promise(r => setTimeout(r, 1500 * (i + 1))); continue; }
+      return t;
+    }
     try {
       const resp = await fetch(url, { headers: HDR, timeout });
-      if (!resp.ok) return null;
+      if (!resp.ok) {
+        // 403/429 可能被 TLS 指纹识别拦截，尝试 curl 降级
+        if (resp.status === 403 || resp.status === 429) {
+          const alt = curlText(url, timeout);
+          if (alt && !isBlocked(alt)) return alt;
+        }
+        return null;
+      }
       const buf = await resp.buffer();
-      let t = buf.toString('utf8');
-      if (t.includes('\uFFFD')) t = buf.toString('gbk');
+      t = buf.toString('utf8');
+      if ((t.match(/\uFFFD/g) || []).length > 5) t = buf.toString('gbk');
       // WAF 人机验证页不是正文，视为失败并退避
-      if (/Human Verification|awsWaf|gokuProps|Access Denied/i.test(t.slice(0, 3000))) {
+      if (isBlocked(t)) {
         await new Promise(r => setTimeout(r, 3000 * (i + 1)));
         continue;
       }
@@ -165,12 +221,19 @@ async function main() {
   }
   for (const lp of LIST_PAGES) {
     for (const pu of lp.urls) {
-      const html = await getText(pu);
+      const html = await getText(pu, 15000, !!lp.useCurl);
       if (!html) { console.log('  [跳过] ' + pu); continue; }
       const links = new Set(); let m;
       lp.linkRe.lastIndex = 0;
-      while ((m = lp.linkRe.exec(html)) !== null) links.add(m[1]);
-      const picked = [...links].slice(0, MAX_PER_SITE).map(u => ({ url: u, lastmod: '', source: lp.name, srcId: lp.srcId }));
+      while ((m = lp.linkRe.exec(html)) !== null) {
+        let href = m[1];
+        // 相对/根相对链接解析成绝对 URL
+        if (lp.base) {
+          try { href = new URL(href, lp.base).href; } catch (e) { continue; }
+        }
+        links.add(href);
+      }
+      const picked = [...links].slice(0, MAX_PER_SITE).map(u => ({ url: u, lastmod: '', source: lp.name, srcId: lp.srcId, useCurl: !!lp.useCurl }));
       candidates.push(...picked);
       console.log('  [栏目页] ' + lp.name + ': ' + links.size + ' 篇，取 ' + picked.length);
     }
@@ -193,9 +256,20 @@ async function main() {
   const existHashes = new Set(news.map(n => n.hash));
   const existKeys = new Set(news.filter(n => n.status === 'active' || !n.status).map(n => normalizeKey(n.title)));
   const existUrls = new Set(news.map(n => n.link));
+  // Wiser 归档无链接、未核验的记录：按 (日期+标题key) 与 标题key 建索引，
+  // 若广撒网用真实原文链接 + 正文证据重新找到同一篇，则回填升级，而不是当重复丢弃。
+  const wiserNoLink = new Map();   // key -> [item]
+  for (const n of news) {
+    if (n.provenance === 'wiser_archive' && !n.link) {
+      const k = normalizeKey(n.title);
+      if (!k) continue;
+      if (!wiserNoLink.has(k)) wiserNoLink.set(k, []);
+      wiserNoLink.get(k).push(n);
+    }
+  }
 
   const results = await mapLimit(uniq, 2, async (c) => {
-    const html = await getText(c.url);
+    const html = await getText(c.url, 15000, !!c.useCurl);
     await new Promise(r => setTimeout(r, 600)); // 每篇后限速，避免 WAF
     if (!html) return null;
     scanned++;
@@ -213,15 +287,23 @@ async function main() {
     const urlHash = hashUrl(c.url);
     if (existHashes.has(urlHash) || existUrls.has(c.url)) { skippedDup++; return null; }
     const key = normalizeKey(meta.title);
-    if (key && existKeys.has(key)) { skippedDup++; return null; }
-    // 截取含创兴的上下文作为证据（而非正文开头，创兴常出现在利率表中段）
     const hitMatch = body.match(new RegExp('.{0,80}(?:' + CHB.source + ').{0,140}', 'i'));
     const evidence = hitMatch ? hitMatch[0] : body.slice(0, 300);
-    return {
+    const base = {
       source: c.source, srcId: c.srcId, title: meta.title || '',
       url: c.url, date: date || new Date().toISOString().slice(0, 10),
       titleHasChb, body: evidence, hash: urlHash, key,
     };
+    if (key && existKeys.has(key)) {
+      // 命中已有标题：检查是否是 Wiser 无链接记录，可以回填真实链接 + 正文核验
+      const cands = wiserNoLink.get(key) || [];
+      let target = cands.find(n => n.pub_date === base.date);
+      if (!target && cands.length === 1) target = cands[0]; // 仅一条候选时保守回填
+      if (target && !target.link) return { ...base, upgradeId: target.id };
+      skippedDup++;
+      return null;
+    }
+    return base;
   });
 
   for (const r of results) {
@@ -239,11 +321,32 @@ async function main() {
   const log = { run: new Date().toISOString(), days: DAYS, dry: DRY, scanned, found: found.length, titleHit, bodyHit, skippedDate, skippedDup, items: found };
   fs.writeFileSync(LOG_FILE, JSON.stringify(log, null, 2), 'utf-8');
 
-  if (DRY) { console.log('\nDRY-RUN 完成，未入库。日志: data/broad_scan_log.json'); return; }
+  if (DRY) {
+    const upgradable = found.filter(f => f.upgradeId);
+    console.log('\n★ Wiser归档回填机会（真实原文链接 + 正文核验）: ' + upgradable.length + ' 条');
+    upgradable.forEach(f => console.log('  - [回填 #' + f.upgradeId + '] ' + f.date + ' ' + f.title.slice(0, 50) + '\n      ' + f.url.slice(0, 95)));
+    console.log('\nDRY-RUN 完成，未入库。日志: data/broad_scan_log.json');
+    return;
+  }
 
-  // 3. 入库
-  let added = 0;
-  for (const f of found) {
+  // 3. 入库 —— 先回填 Wiser 归档无链接记录，再新增全新文章
+  let upgraded = 0, added = 0;
+  for (const f of found.filter(x => x.upgradeId)) {
+    const target = news.find(n => n.id === f.upgradeId);
+    if (!target || target.link) continue;
+    target.link = f.url;                      // 补真实原文链接
+    target.hash = f.hash;
+    target.description = '广撒网正文核验证据：' + f.body;
+    target.body_verified = true;              // 正文已经逐篇核验含创兴
+    target.source_name = f.source;
+    target.source_id = f.srcId;
+    target.tier_reason = (target.tier_reason || '') + '｜广撒网回填原文链接+正文核验';
+    target.verified_at = new Date().toISOString();
+    upgraded++;
+  }
+  if (upgraded) console.log('Wiser归档回填升级: ' + upgraded + ' 条（补原文链接+正文核验）');
+
+  for (const f of found.filter(x => !x.upgradeId)) {
     const item = {
       id: news.length + 1,
       hash: f.hash,
@@ -270,7 +373,7 @@ async function main() {
   news.sort((a, b) => (b.pub_date || '').localeCompare(a.pub_date || ''));
   news.forEach((n, i) => n.id = i + 1);
   fs.writeFileSync(NEWS_FILE, JSON.stringify(news, null, 2), 'utf-8');
-  console.log('\n入库新增: ' + added + ' 条 | 主库 active: ' + news.filter(n => n.status === 'active' || !n.status).length);
+  console.log('\n入库新增: ' + added + ' 条 | 归档回填升级: ' + upgraded + ' 条 | 主库 active: ' + news.filter(n => n.status === 'active' || !n.status).length);
 }
 
 main();
