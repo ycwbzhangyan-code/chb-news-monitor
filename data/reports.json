@@ -1,7 +1,53 @@
 [
   {
+    "report_date": "2026-11-28",
+    "generated_at": "2026-11-28T05:12:36.868Z",
+    "stats": {
+      "total": 0,
+      "A": 0,
+      "B": 0,
+      "C": 0,
+      "X": 0
+    },
+    "summary": "今日未监测到涉及创兴银行的新闻。",
+    "tiers": {
+      "B": [],
+      "C": [],
+      "X": []
+    },
+    "by_category": {},
+    "run_health": {
+      "run_at": "2026-11-28T05:07:25.356Z",
+      "steps": [
+        {
+          "name": "rss_fetch",
+          "ok": true,
+          "detail": "581/689源正常，108源失败，命中2063"
+        },
+        {
+          "name": "site_crawlers",
+          "ok": true,
+          "detail": "匯港通訊0条/U Lifestyle0条"
+        },
+        {
+          "name": "body_verification",
+          "ok": true,
+          "detail": "入库0条"
+        },
+        {
+          "name": "broad_scan",
+          "ok": true,
+          "detail": "新增0条/回填0条"
+        }
+      ],
+      "status": "ok",
+      "failed_steps": [],
+      "note": ""
+    }
+  },
+  {
     "report_date": "2026-11-26",
-    "generated_at": "2026-11-27T08:46:00.000Z",
+    "generated_at": "2026-11-28T05:12:36.909Z",
     "stats": {
       "total": 1,
       "A": 0,
@@ -63,7 +109,7 @@
   },
   {
     "report_date": "2026-11-25",
-    "generated_at": "2026-11-27T05:35:04.391Z",
+    "generated_at": "2026-11-28T05:12:36.934Z",
     "stats": {
       "total": 1,
       "A": 0,
@@ -76,7 +122,7 @@
       "B": [],
       "C": [
         {
-          "id": 707,
+          "id": 2,
           "hash": "698a940483c29685",
           "title": "定存攻略｜美元定期存款大比拼 经济数据公布前夕多间银行加息",
           "link": "https://www.stheadline.com/zh-hans/investment/3623151/定存攻略美元定期存款大比拼-经济数据公布前夕多间银行加息",
@@ -93,7 +139,9 @@
           "ai_researched": 0,
           "discovery": "wide_topic_verified",
           "created_at": "2026-11-27T01:31:54.887Z",
-          "legacy_id": "stheadline_3623151_1127"
+          "legacy_id": "stheadline_3623151_1127",
+          "provenance": "ours",
+          "body_verified": true
         }
       ],
       "X": []
@@ -101,7 +149,7 @@
     "by_category": {
       "hk_business": [
         {
-          "id": 707,
+          "id": 2,
           "hash": "698a940483c29685",
           "title": "定存攻略｜美元定期存款大比拼 经济数据公布前夕多间银行加息",
           "link": "https://www.stheadline.com/zh-hans/investment/3623151/定存攻略美元定期存款大比拼-经济数据公布前夕多间银行加息",
@@ -118,14 +166,16 @@
           "ai_researched": 0,
           "discovery": "wide_topic_verified",
           "created_at": "2026-11-27T01:31:54.887Z",
-          "legacy_id": "stheadline_3623151_1127"
+          "legacy_id": "stheadline_3623151_1127",
+          "provenance": "ours",
+          "body_verified": true
         }
       ]
     }
   },
   {
     "report_date": "2026-11-24",
-    "generated_at": "2026-11-27T05:35:04.431Z",
+    "generated_at": "2026-11-28T05:12:36.959Z",
     "stats": {
       "total": 3,
       "A": 0,
@@ -138,7 +188,7 @@
       "B": [],
       "C": [
         {
-          "id": 704,
+          "id": 4,
           "hash": "dba445ddd9070aa96ecfe1214e7481c3f6ec8e39",
           "title": "股市波動 做高息美元定存分散投資",
           "link": "",
@@ -162,7 +212,7 @@
           "created_at": "2026-11-27T04:26:46.178402Z"
         },
         {
-          "id": 705,
+          "id": 5,
           "hash": "b37b1578a76bb52d9615488af1d9859463ef9483",
           "title": "兌換台幣攻略｜7大台幣兌換最抵心得ATM提款唔係最平？港元換台幣哪裡換",
           "link": "",
@@ -186,7 +236,7 @@
           "created_at": "2026-11-27T04:26:46.178408Z"
         },
         {
-          "id": 706,
+          "id": 6,
           "hash": "16317499199c8f997420e2b6d019fdc1777c104d",
           "title": "【稅貸2026】銀行稅貸低息搶大額客 稅貸需求增銀行優惠卻門檻高？ 一文拆解最低利率與實際成本！",
           "link": "",
@@ -215,7 +265,7 @@
     "by_category": {
       "wiser_archive": [
         {
-          "id": 704,
+          "id": 4,
           "hash": "dba445ddd9070aa96ecfe1214e7481c3f6ec8e39",
           "title": "股市波動 做高息美元定存分散投資",
           "link": "",
@@ -239,7 +289,7 @@
           "created_at": "2026-11-27T04:26:46.178402Z"
         },
         {
-          "id": 705,
+          "id": 5,
           "hash": "b37b1578a76bb52d9615488af1d9859463ef9483",
           "title": "兌換台幣攻略｜7大台幣兌換最抵心得ATM提款唔係最平？港元換台幣哪裡換",
           "link": "",
@@ -263,7 +313,7 @@
           "created_at": "2026-11-27T04:26:46.178408Z"
         },
         {
-          "id": 706,
+          "id": 6,
           "hash": "16317499199c8f997420e2b6d019fdc1777c104d",
           "title": "【稅貸2026】銀行稅貸低息搶大額客 稅貸需求增銀行優惠卻門檻高？ 一文拆解最低利率與實際成本！",
           "link": "",
@@ -291,7 +341,7 @@
   },
   {
     "report_date": "2026-11-23",
-    "generated_at": "2026-11-27T05:35:04.459Z",
+    "generated_at": "2026-11-28T05:12:36.981Z",
     "stats": {
       "total": 1,
       "A": 0,
@@ -304,7 +354,7 @@
       "B": [],
       "C": [
         {
-          "id": 702,
+          "id": 7,
           "hash": "e59a05a8f9c39571b01c2227d5f4063b58431e27",
           "title": "港元定期2026丨波動市尋資金避風港 1個月vs2個月存期點揀？",
           "link": "",
@@ -333,7 +383,7 @@
     "by_category": {
       "wiser_archive": [
         {
-          "id": 702,
+          "id": 7,
           "hash": "e59a05a8f9c39571b01c2227d5f4063b58431e27",
           "title": "港元定期2026丨波動市尋資金避風港 1個月vs2個月存期點揀？",
           "link": "",
@@ -361,7 +411,7 @@
   },
   {
     "report_date": "2026-11-22",
-    "generated_at": "2026-11-27T05:35:04.488Z",
+    "generated_at": "2026-11-28T05:12:37.002Z",
     "stats": {
       "total": 1,
       "A": 0,
@@ -374,19 +424,19 @@
       "B": [],
       "C": [
         {
-          "id": 701,
-          "hash": "5a3565fe4490fe4bf4fd62ece12c0a0fcd0a9d1a",
+          "id": 8,
+          "hash": "84ca9ccc71d77c71035d3a346753bfb654a7a15e",
           "title": "港元定存｜半年期成加息熱點　多款3.3厘鬥搶存　美元加至4.3厘",
-          "link": "",
-          "description": "Wiser 2026 监测记录；Wiser 宽口径收录（标题不点名创兴），未提供原文链接，正文未核验。",
-          "source_id": "wiser_archive",
-          "source_name": "香港經濟日報網",
+          "link": "https://wealth.hket.com/article/4228594/%E6%B8%AF%E5%85%83%E5%AE%9A%E5%AD%98%EF%BD%9C%E5%8D%8A%E5%B9%B4%E6%9C%9F%E6%88%90%E5%8A%A0%E6%81%AF%E7%86%B1%E9%BB%9E%E3%80%80%E5%A4%9A%E6%AC%BE3.3%E5%8E%98%E9%AC%A5%E6%90%B6%E5%AD%98%E3%80%80%E7%BE%8E%E5%85%83%E5%8A%A0%E8%87%B34.3%E5%8E%98",
+          "description": "广撒网正文核验证据：8萬美元 手機銀行開立，不分新舊資金 華僑銀行 4.3厘 10萬港元等值 理財客戶新資金 信銀國際 4.3厘 1500美元 理財客戶手機銀行開立，不分新舊資金 創興銀行 4.25厘 3000美元 全新客戶完成指定項目 大眾銀行 4.25厘 2000美元 不分新舊資金 工銀亞洲 4.2厘（188天） 50萬美元 工銀財富客戶分行新資金 建行亞洲 4.15厘 10萬美元 網上新資金 東亞銀行 4.15厘 100萬港元等值 全新顯卓私人理財客戶 本文",
+          "source_id": "s0160",
+          "source_name": "香港經濟日報·理財",
           "source_cat": "wiser_archive",
           "lang": "CH",
           "pub_date": "2026-11-22",
           "fetch_date": "2026-11-27T04:26:46.178387Z",
           "tier": "C",
-          "tier_reason": "Wiser专业监测收录·wide_unverified",
+          "tier_reason": "Wiser专业监测收录·wide_unverified｜广撒网回填原文链接+正文核验",
           "sentiment": "Positive",
           "status": "active",
           "provenance": "wiser_archive",
@@ -394,8 +444,9 @@
           "wiser_no": 626,
           "wiser_layer": "wide_unverified",
           "wiser_label": "Wiser宽口径·标题不含创兴·未核验",
-          "body_verified": false,
-          "created_at": "2026-11-27T04:26:46.178389Z"
+          "body_verified": true,
+          "created_at": "2026-11-27T04:26:46.178389Z",
+          "verified_at": "2026-11-27T06:57:59.092Z"
         }
       ],
       "X": []
@@ -403,19 +454,19 @@
     "by_category": {
       "wiser_archive": [
         {
-          "id": 701,
-          "hash": "5a3565fe4490fe4bf4fd62ece12c0a0fcd0a9d1a",
+          "id": 8,
+          "hash": "84ca9ccc71d77c71035d3a346753bfb654a7a15e",
           "title": "港元定存｜半年期成加息熱點　多款3.3厘鬥搶存　美元加至4.3厘",
-          "link": "",
-          "description": "Wiser 2026 监测记录；Wiser 宽口径收录（标题不点名创兴），未提供原文链接，正文未核验。",
-          "source_id": "wiser_archive",
-          "source_name": "香港經濟日報網",
+          "link": "https://wealth.hket.com/article/4228594/%E6%B8%AF%E5%85%83%E5%AE%9A%E5%AD%98%EF%BD%9C%E5%8D%8A%E5%B9%B4%E6%9C%9F%E6%88%90%E5%8A%A0%E6%81%AF%E7%86%B1%E9%BB%9E%E3%80%80%E5%A4%9A%E6%AC%BE3.3%E5%8E%98%E9%AC%A5%E6%90%B6%E5%AD%98%E3%80%80%E7%BE%8E%E5%85%83%E5%8A%A0%E8%87%B34.3%E5%8E%98",
+          "description": "广撒网正文核验证据：8萬美元 手機銀行開立，不分新舊資金 華僑銀行 4.3厘 10萬港元等值 理財客戶新資金 信銀國際 4.3厘 1500美元 理財客戶手機銀行開立，不分新舊資金 創興銀行 4.25厘 3000美元 全新客戶完成指定項目 大眾銀行 4.25厘 2000美元 不分新舊資金 工銀亞洲 4.2厘（188天） 50萬美元 工銀財富客戶分行新資金 建行亞洲 4.15厘 10萬美元 網上新資金 東亞銀行 4.15厘 100萬港元等值 全新顯卓私人理財客戶 本文",
+          "source_id": "s0160",
+          "source_name": "香港經濟日報·理財",
           "source_cat": "wiser_archive",
           "lang": "CH",
           "pub_date": "2026-11-22",
           "fetch_date": "2026-11-27T04:26:46.178387Z",
           "tier": "C",
-          "tier_reason": "Wiser专业监测收录·wide_unverified",
+          "tier_reason": "Wiser专业监测收录·wide_unverified｜广撒网回填原文链接+正文核验",
           "sentiment": "Positive",
           "status": "active",
           "provenance": "wiser_archive",
@@ -423,15 +474,16 @@
           "wiser_no": 626,
           "wiser_layer": "wide_unverified",
           "wiser_label": "Wiser宽口径·标题不含创兴·未核验",
-          "body_verified": false,
-          "created_at": "2026-11-27T04:26:46.178389Z"
+          "body_verified": true,
+          "created_at": "2026-11-27T04:26:46.178389Z",
+          "verified_at": "2026-11-27T06:57:59.092Z"
         }
       ]
     }
   },
   {
     "report_date": "2026-11-21",
-    "generated_at": "2026-11-27T05:35:04.514Z",
+    "generated_at": "2026-11-28T05:12:37.022Z",
     "stats": {
       "total": 2,
       "A": 0,
@@ -444,19 +496,19 @@
       "B": [],
       "C": [
         {
-          "id": 699,
-          "hash": "8af794ce76d0a21d502aea6f548bc82ed8a29db5",
+          "id": 9,
+          "hash": "d8722b157d017187810da5713931fca3ef94568d",
           "title": "港元定存｜3個月收息逾4萬元　年底避險收息！美元多款4厘以上",
-          "link": "",
-          "description": "Wiser 2026 监测记录；Wiser 宽口径收录（标题不点名创兴），未提供原文链接，正文未核验。",
-          "source_id": "wiser_archive",
-          "source_name": "香港經濟日報網",
+          "link": "https://wealth.hket.com/article/4228494/%E6%B8%AF%E5%85%83%E5%AE%9A%E5%AD%98%EF%BD%9C3%E5%80%8B%E6%9C%88%E6%94%B6%E6%81%AF%E9%80%BE4%E8%90%AC%E5%85%83%E3%80%80%E5%B9%B4%E5%BA%95%E9%81%BF%E9%9A%AA%E6%94%B6%E6%81%AF%EF%BC%81%E7%BE%8E%E5%85%83%E5%A4%9A%E6%AC%BE4%E5%8E%98%E4%BB%A5%E4%B8%8A",
+          "description": "广撒网正文核验证据：5厘 10元 不論新舊資金 信銀國際 3.11厘 1萬元 手機銀行開立 富邦銀行 3.1厘 100萬元 手機銀行新資金 集友銀行 3.1厘 100萬元 新資金 創興銀行 3.1厘 50萬元 現有客戶網上開立 大眾銀行 3.1厘 50萬元 手機銀行開立有額外0.15厘 平安數字銀行 3.08厘 100元 不分新舊資金 滙豐銀行 3.005厘 1萬元 獎賞錢定存 南洋商業銀行3.68厘 即日起至2027年1月31日或之前，透過該行成功認購基金（包括",
+          "source_id": "s0160",
+          "source_name": "香港經濟日報·理財",
           "source_cat": "wiser_archive",
           "lang": "CH",
           "pub_date": "2026-11-21",
           "fetch_date": "2026-11-27T04:26:46.178374Z",
           "tier": "C",
-          "tier_reason": "Wiser专业监测收录·wide_unverified",
+          "tier_reason": "Wiser专业监测收录·wide_unverified｜广撒网回填原文链接+正文核验",
           "sentiment": "Positive",
           "status": "active",
           "provenance": "wiser_archive",
@@ -464,11 +516,12 @@
           "wiser_no": 624,
           "wiser_layer": "wide_unverified",
           "wiser_label": "Wiser宽口径·标题不含创兴·未核验",
-          "body_verified": false,
-          "created_at": "2026-11-27T04:26:46.178376Z"
+          "body_verified": true,
+          "created_at": "2026-11-27T04:26:46.178376Z",
+          "verified_at": "2026-11-27T06:57:59.092Z"
         },
         {
-          "id": 700,
+          "id": 10,
           "hash": "9c48d26328a0063aa2c373fb7c267c2b0a747fa7",
           "title": "日元兌港元最新匯率 | 香港22間銀行/找換店日元兌港元匯率比較｜每天更新",
           "link": "",
@@ -497,19 +550,19 @@
     "by_category": {
       "wiser_archive": [
         {
-          "id": 699,
-          "hash": "8af794ce76d0a21d502aea6f548bc82ed8a29db5",
+          "id": 9,
+          "hash": "d8722b157d017187810da5713931fca3ef94568d",
           "title": "港元定存｜3個月收息逾4萬元　年底避險收息！美元多款4厘以上",
-          "link": "",
-          "description": "Wiser 2026 监测记录；Wiser 宽口径收录（标题不点名创兴），未提供原文链接，正文未核验。",
-          "source_id": "wiser_archive",
-          "source_name": "香港經濟日報網",
+          "link": "https://wealth.hket.com/article/4228494/%E6%B8%AF%E5%85%83%E5%AE%9A%E5%AD%98%EF%BD%9C3%E5%80%8B%E6%9C%88%E6%94%B6%E6%81%AF%E9%80%BE4%E8%90%AC%E5%85%83%E3%80%80%E5%B9%B4%E5%BA%95%E9%81%BF%E9%9A%AA%E6%94%B6%E6%81%AF%EF%BC%81%E7%BE%8E%E5%85%83%E5%A4%9A%E6%AC%BE4%E5%8E%98%E4%BB%A5%E4%B8%8A",
+          "description": "广撒网正文核验证据：5厘 10元 不論新舊資金 信銀國際 3.11厘 1萬元 手機銀行開立 富邦銀行 3.1厘 100萬元 手機銀行新資金 集友銀行 3.1厘 100萬元 新資金 創興銀行 3.1厘 50萬元 現有客戶網上開立 大眾銀行 3.1厘 50萬元 手機銀行開立有額外0.15厘 平安數字銀行 3.08厘 100元 不分新舊資金 滙豐銀行 3.005厘 1萬元 獎賞錢定存 南洋商業銀行3.68厘 即日起至2027年1月31日或之前，透過該行成功認購基金（包括",
+          "source_id": "s0160",
+          "source_name": "香港經濟日報·理財",
           "source_cat": "wiser_archive",
           "lang": "CH",
           "pub_date": "2026-11-21",
           "fetch_date": "2026-11-27T04:26:46.178374Z",
           "tier": "C",
-          "tier_reason": "Wiser专业监测收录·wide_unverified",
+          "tier_reason": "Wiser专业监测收录·wide_unverified｜广撒网回填原文链接+正文核验",
           "sentiment": "Positive",
           "status": "active",
           "provenance": "wiser_archive",
@@ -517,11 +570,12 @@
           "wiser_no": 624,
           "wiser_layer": "wide_unverified",
           "wiser_label": "Wiser宽口径·标题不含创兴·未核验",
-          "body_verified": false,
-          "created_at": "2026-11-27T04:26:46.178376Z"
+          "body_verified": true,
+          "created_at": "2026-11-27T04:26:46.178376Z",
+          "verified_at": "2026-11-27T06:57:59.092Z"
         },
         {
-          "id": 700,
+          "id": 10,
           "hash": "9c48d26328a0063aa2c373fb7c267c2b0a747fa7",
           "title": "日元兌港元最新匯率 | 香港22間銀行/找換店日元兌港元匯率比較｜每天更新",
           "link": "",

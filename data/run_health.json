@@ -1,0 +1,28 @@
+{
+  "run_at": "2026-11-28T05:07:25.356Z",
+  "steps": [
+    {
+      "name": "rss_fetch",
+      "ok": true,
+      "detail": "581/689源正常，108源失败，命中2063"
+    },
+    {
+      "name": "site_crawlers",
+      "ok": true,
+      "detail": "匯港通訊0条/U Lifestyle0条"
+    },
+    {
+      "name": "body_verification",
+      "ok": true,
+      "detail": "入库0条"
+    },
+    {
+      "name": "broad_scan",
+      "ok": true,
+      "detail": "新增0条/回填0条"
+    }
+  ],
+  "status": "ok_no_hits",
+  "failed_steps": [],
+  "note": "各采集环节正常完成，今日未发现正文含创兴银行的新闻"
+}
